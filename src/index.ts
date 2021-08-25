@@ -13,42 +13,67 @@ const VCI_ISSUERS_DIR_URL = "https://raw.githubusercontent.com/the-commons-proje
 // interfaces
 //
 
+// issuer info in the directory
 interface TrustedIssuer {
     iss: string,
     name: string
 }
 
+// directory structure
 interface TrustedIssuers {
     participating_issuers: TrustedIssuer[]
 }
 
+// issuer log info
 interface IssuerLogInfo {
+    // the issuer info
     issuer: TrustedIssuer,
+    // the issuer's JWK set
     keys: JWK.Key[],
+    // errors while retrieving the issuer JWK set, if any
     errors?: string[]
 }
 
+// Key identifiers (KID) of one issuer
 interface IssuerKids {
     iss: string,
     kids: string[]
 }
 
+// directory log, a snapshot of the directory
 interface DirectoryLog {
+    // directory URL
     directory: string,
+    // retrieval time
     time: string,
+    // directory issuers
     issuerInfo: IssuerLogInfo[]
 }
 
+// audit log
 interface AuditLog {
+    // URL of the audited directory
     directory: string,
-    time: string,
+    // audit time
+    auditTime: string,
+    // previous audit time (if available)
+    previousAuditTime?: string,
+    // count of issuers present in the directory
     issuerCount: number,
+    // count of new issuers since previous audit (if available)
     newIssuerCount?: number,
+    // count of new issuers since previous audit (if available)
     deletedIssuerCount?: number,
+    // issuers with errors during scan
     issuersWithErrors: IssuerLogInfo[],
+    // duplicated key identifiers (KID) in the directory
     duplicatedKids: string[],
+    // duplicated issuer URL (iss) in the directory
     duplicatedIss: string[],    
+    // duplicated display name in the directory (not prohibited, but good to know)
     duplicatedNames: string[],
+    // list of removed key identifiers since last audit (if available); should only
+    // occur when the corresponding key is revoked by the issuer
     removedKids?: IssuerKids[]
 }
 
@@ -160,7 +185,7 @@ function audit(isTest: boolean, currentLog: DirectoryLog, previousLog: Directory
     const currentIss = getIssuers(currentLog);
     const auditLog: AuditLog = {
         directory: currentLog.directory,
-        time: currentLog.time,
+        auditTime: currentLog.time,
         issuerCount: currentLog.issuerInfo.length,
         issuersWithErrors: currentLog.issuerInfo.filter(info => info.errors != undefined && info.errors.length > 0),
         duplicatedKids: getDuplicates(currentLog.issuerInfo.flatMap(info => info.keys.map(key => key.kid))),
@@ -168,6 +193,7 @@ function audit(isTest: boolean, currentLog: DirectoryLog, previousLog: Directory
         duplicatedNames: getDuplicates(currentLog.issuerInfo.map(info => info.issuer.name))
     }
     if (previousLog) {
+        auditLog.previousAuditTime = previousLog?.time;
         const initialCount = 0;
         const previousIss = getIssuers(previousLog);
         auditLog.newIssuerCount = currentIss.reduce((acc, current) => acc + (previousIss.includes(current) ? 0 : 1), initialCount);
