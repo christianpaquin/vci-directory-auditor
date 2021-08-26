@@ -16,4 +16,13 @@ jobs:
       - run: npm install
       - run: npm run build --if-present
       - run: npm run audit
+      - name: Output Run ID
+        run: echo ${{ github.run_id }}
+      - name: Output Run Number
+        run: echo ${{ github.run_number }}
+      - name: Output Run ID - 1
+        run: echo ${{ github.run_id }} - 1
+      - name: Output Run Number
+        run: echo ${{ github.run_number }} - 1
+      
   
