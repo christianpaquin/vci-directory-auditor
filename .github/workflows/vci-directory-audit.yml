@@ -20,8 +20,8 @@ jobs:
       - name: Output Run Number
         run: echo ${{ github.run_number }}
       - name: Output Run ID - 1
-        run: echo ${{ github.run_id }} - 1
+        run: echo ${{ github.run_id - 1 }}
       - name: Output Run Number
-        run: echo ${{ github.run_number }} - 1
+        run: echo ${{ github.run_number - 1 }}
       
   
