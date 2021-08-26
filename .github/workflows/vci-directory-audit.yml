@@ -15,7 +15,6 @@ jobs:
           node-version: '14'
       - run: npm install
       - run: npm run build --if-present
-      - run: npm run audit
       - name: Output Run ID
         run: echo ${{ github.run_id }}
       - name: Output Run Number
