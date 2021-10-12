@@ -6,6 +6,8 @@ import got from 'got';
 import fs from 'fs';
 import path from 'path';
 import date from 'date-and-time';
+import Url from 'url-parse';
+import { TlsDetails, auditTlsDetails, getDefaultTlsDetails } from './bcp195';
 
 const VCI_ISSUERS_DIR_URL = "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json";
 
@@ -30,6 +32,8 @@ interface IssuerLogInfo {
     issuer: TrustedIssuer,
     // the issuer's JWK set
     keys: JWK.Key[],
+    // the issuer's default TLS session details
+    tlsDetails: TlsDetails | undefined,
     // errors while retrieving the issuer JWK set, if any
     errors?: string[]
 }
@@ -86,7 +90,7 @@ interface Options {
     previous: string;
     auditlog: string;
     directory: string;
-    test: boolean
+    test: boolean;
 }
 
 //
@@ -130,6 +134,7 @@ async function fetchDirectory(directoryUrl: string) : Promise<DirectoryLog> {
         const issuerLogInfo: IssuerLogInfo = {
             issuer: issuer,
             keys: [],
+            tlsDetails: undefined,
             errors: []
         }
         try {
@@ -141,7 +146,12 @@ async function fetchDirectory(directoryUrl: string) : Promise<DirectoryLog> {
             if (!keySet) {
                 throw "Failed to parse JSON KeySet schema";
             }
-            issuerLogInfo.keys = keySet.keys; 
+            issuerLogInfo.keys = keySet.keys;
+        } catch (err) {
+            issuerLogInfo.errors?.push((err as Error).toString());
+        }
+        try {
+            issuerLogInfo.tlsDetails = getDefaultTlsDetails(new Url(issuer.iss).hostname);
         } catch (err) {
             issuerLogInfo.errors?.push((err as Error).toString());
         }
