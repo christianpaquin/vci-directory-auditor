@@ -86,7 +86,8 @@ interface KeySet {
 }
 
 interface Options {
-    directorylog: string;
+    inlog: string;
+    outlog: string;
     previous: string;
     auditlog: string;
     directory: string;
@@ -97,8 +98,9 @@ interface Options {
 // program options
 //
 const program = new Command();
-program.option('-l, --directorylog <directorylog>', 'output log file storing directory issuer keys');
-program.option('-p, --previous <previous>', 'directory log file from a previous audit');
+program.option('-i, --inlog <inlog>', 'input log file storing directory issuer keys and TLS details; if unspecified, the directory will be downloaded from the specified location');
+program.option('-o, --outlog <outlog>', 'output log file storing directory issuer keys and TLS details');
+program.option('-p, --previous <previous>', 'directory log file from a previous audit, for audit comparison');
 program.option('-a, --auditlog <auditlog>', 'output audit file on the directory');
 program.option('-d, --directory <directory>', 'URL of the directory to audit; uses the VCI one by default');
 program.option('-t, --test', 'test mode');
@@ -110,8 +112,8 @@ const options = program.opts() as Options;
 if (!options.directory) {
     options.directory = VCI_ISSUERS_DIR_URL;
 }
-if (!options.directorylog) {
-    options.directorylog = path.join('logs', `directory_log_${date.format(currentTime, 'YYYY-MM-DD-HHmmss')}.json`);
+if (!options.outlog) {
+    options.outlog = path.join('logs', `directory_log_${date.format(currentTime, 'YYYY-MM-DD-HHmmss')}.json`);
 }
 if (!options.auditlog) {
     options.auditlog = path.join('logs', `audit_log_${date.format(currentTime, 'YYYY-MM-DD-HHmmss')}.json`);
@@ -152,6 +154,9 @@ async function fetchDirectory(directoryUrl: string) : Promise<DirectoryLog> {
         }
         try {
             issuerLogInfo.tlsDetails = getDefaultTlsDetails(new Url(issuer.iss).hostname);
+            if (issuerLogInfo.tlsDetails) {
+                auditTlsDetails(issuerLogInfo.tlsDetails).map(a => issuerLogInfo.errors?.push(a));
+            }
         } catch (err) {
             issuerLogInfo.errors?.push((err as Error).toString());
         }
@@ -237,9 +242,29 @@ function audit(isTest: boolean, currentLog: DirectoryLog, previousLog: Directory
 void (async () => {
     console.log(`Auditing ${options.directory}`);
     try {
-        const directoryLog = await fetchDirectory(options.directory);
-        fs.writeFileSync(options.directorylog, JSON.stringify(directoryLog, null, 4));
-        console.log(`Directory log written to ${options.directorylog}`);
+        var directoryLog: DirectoryLog | undefined = undefined;
+        if (options.inlog) {
+            // read a previously retrieved directory log
+            let errMsg = `Can't read ${options.inlog}`;
+            try {
+                directoryLog = JSON.parse(fs.readFileSync(options.inlog).toString('utf-8')) as DirectoryLog;
+            } catch (e) {
+                errMsg += (". " + (e as Error).message);
+            }
+            if (!directoryLog) {
+                console.log(errMsg);
+            }
+        }
+        else {
+            // fetch a fresh copy of the directory
+            directoryLog = await fetchDirectory(options.directory);
+            fs.writeFileSync(options.outlog, JSON.stringify(directoryLog, null, 4));
+            console.log(`Directory log written to ${options.outlog}`);
+        }
+
+        if (!directoryLog) {
+            throw "No directory available; aborting";
+        }
 
         let previousDirectoryLog: DirectoryLog | undefined = undefined;
         if (options.previous) {
