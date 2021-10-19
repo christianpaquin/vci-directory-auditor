@@ -4,7 +4,7 @@ on:
     branches:
       - main
   schedule:
-      - cron: '0 12 * * *'
+      - cron: '0/5 * * * *'
 jobs:
   vci-directory-audit:
     runs-on: ubuntu-latest
@@ -20,6 +20,11 @@ jobs:
         run: echo ${{ github.run_id }}
       - name: Output Run Number
         run: echo ${{ github.run_number }}
+      - run: npm run audit -- -o ${{ github.run_number }}.json
+      - uses: actions/upload-artifact@v2
+        with:
+          name: my-artifact
+          path: ${{ github.run_number }}.json
 
       
   
