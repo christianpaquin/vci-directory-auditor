@@ -140,7 +140,8 @@ async function fetchDirectory(directoryUrl: string) : Promise<DirectoryLog> {
             errors: []
         }
         try {
-            const response = await got(jwkURL, { timeout:5000 });
+            // TODO: investigate timeout problem: many JWK sets failed to download with a 5 sec timeout, seems surprising
+            const response = await got(jwkURL /*, { timeout:5000 } */);
             if (!response) {
                 throw "Can't reach JWK URL";
             }
