@@ -1,0 +1,110 @@
+{
+    "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
+    "auditTime": "2021-10-19 11:20:02",
+    "issuerCount": 287,
+    "issuersWithErrors": [
+        {
+            "issuer": {
+                "iss": "https://mychart.uchealth.org",
+                "name": "UCHealth"
+            },
+            "keys": [
+                {
+                    "crv": "P-256",
+                    "kty": "EC",
+                    "x": "xn4u3l6l1U3JMkwh8d8p03Qz3dg5adMToIMlvb3UnZU",
+                    "y": "y-QXzAqkdbbLjVVIrgl-63uUkSWWde58YE7RpCo5sWs",
+                    "alg": "ES256",
+                    "use": "sig",
+                    "kid": "lJy0tb3fWq3xdiws7bCxz1goyxTu22xHc2TrXB8UERQ"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "AES256-SHA",
+                "kexAlg": "RSA",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://webservices.dhha.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Denver Health"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "HTTPError: Response code 401 (Unauthorized)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apps.vdh.virginia.gov/credentials",
+                "name": "Virginia Department of Health"
+            },
+            "keys": [
+                {
+                    "kty": "EC",
+                    "use": "sig",
+                    "crv": "P-256",
+                    "kid": "sy5Q85VbiH4jNee-IpFkQvMxlVAhZ_poLMPLHiDF_8I",
+                    "x": "UDYtkThsYIdMuzC9AJi0CDNwwmSGt8Z75BBl9DbLXn0",
+                    "y": "xWNNHxwz0RtTgTlBom3X8xFP6U5e92KYGZIBI2SYImA",
+                    "alg": "ES256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "AES128-SHA256",
+                "kexAlg": "RSA",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
+            ]
+        }
+    ],
+    "duplicatedKids": [
+        "nQM-36EWDZU5kLoCoeOvshvT2P9JUyc8Do6yWRhNokg",
+        "N2maG8qOhITe_zyPqcrCa6LT_mW18ZtFPy09cGAB24w",
+        "SPWZW51rFOoPACYISQNT37M4zY4c9hzxw2f66OrHIbY",
+        "348jzyKWtD8225Duqr6zJHqw-Jc0jlXm_pCWq6Nw_1c",
+        "wdqzOShT_Gnt8uP5fYzHKAxp0eWweAk5zpoEvaI_VmU",
+        "3Ujv5kjdbTwbZAfjC5OrWCHDnJtENU3sTckG-vmZzHw",
+        "g1ot2FJmActNYkz-MRXX4Vq5Vk9oPf6aIRPgYvI-l2g",
+        "JGu1o4nn0XCXg9zJ4HqhQ3z9DphFMruWQ2_47C9Ozog",
+        "zswRh4FtXw_oC8R_unDMagTyHSdUjoFZadoGgIvEgO0",
+        "uBrPkpHPRwoB-QEe8VML32s0zq0g_p3FI6m891ztMWY",
+        "ni-iRbTdShFjSgtDNAcq2m1vYwMtYg0MbcRnaAUvxaA",
+        "AVJpN_VVlyCtb7SQG9ddP8T3D9ZWNZLMWhDSUVEMFHw",
+        "KGRVZgLMuFYQE28ZpW3xkQu0J2cxCwu1xXBE95XkjtA",
+        "1cbWQj6OEipUmkMhXGpgGPSf83uWS4ew4bJPpkbcong",
+        "r6TOQW6N9Twi0iPMoZLygAKX80fCeZAduGCeghxft0Q"
+    ],
+    "duplicatedIss": [],
+    "duplicatedNames": [
+        "UC Health (San Diego / Irvine / Riverside) and Affiliates",
+        "Dignity Health",
+        "Tenet HealthSystem Medical Inc.",
+        "Barnabas Health",
+        "Kaiser Permanente",
+        "Providence St. Joseph Health",
+        "Baptist Health",
+        "eHealth Saskatchewan",
+        "Methodist Health System"
+    ]
+}

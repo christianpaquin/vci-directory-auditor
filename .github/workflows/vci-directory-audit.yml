@@ -14,17 +14,28 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: npm install
-      - run: npm run build --if-present
-      - name: Output Run ID
-        run: echo ${{ github.run_id }}
-      - name: Output Run Number
-        run: echo ${{ github.run_number }}
-      - run: npm run audit -- -o ${{ github.run_number }}.json
-      - uses: actions/upload-artifact@v2
-        with:
-          name: my-artifact
-          path: ${{ github.run_number }}.json
+      - run: |
+        npm install
+        npm run build --if-present
+        npm run audit -- -o logs/latest_dir.json -p logs/daily_dir_snapshot.json -a logs/audit.json
+        mv logs/audit.json logs/daily_audit.json
+        mv logs/latest_dir.json logs/daily_dir_snapshot.json
+      - name: git check in
+        env:
+          GIT_OWNER_EMAIL: ${{ secrets.GIT_OWNER_EMAIL }}
+          PUSH_TOKEN: ${{ secrets.PUSH_TOKEN }}
+        run: |
+          git config user.email "$GIT_OWNER_EMAIL"
+          git config user.name "christianpaquin"
+          if [[ `git status --porcelain` ]]; then
+            git add logs/daily_audit.json
+            git add logs/daily_dir_snapshot.json
+            git commit -a -m "daily dir and audit snapshot"
+            git remote add myorigin https://christianpaquin:$PUSH_TOKEN@github.com/christianpaquin/vci-directory-auditor.git
+            git push myorigin HEAD:main
+          else
+            echo 'no changes'
+          fi
 
       
   
