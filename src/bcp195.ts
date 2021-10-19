@@ -143,7 +143,8 @@ export function auditTlsDetails(details: TlsDetails): string[] {
         } else if (authKeySize < MIN_EC_KEY_SIZE) {
             errors.push(TLS_ERROR_PREFIX + `ECDSA key too small ( < ${MIN_EC_KEY_SIZE} bits ): ${authKeySize}`);
         }
-    } else if (details.authAlg == "RSA") {
+    } else if (details.authAlg?.startsWith("RSA")) {
+        // could be "RSA", "RSA-PSS"
         if (authKeySize < 0) {
             errors.push(TLS_ERROR_PREFIX + `Can't determine authentication public key size: ${details.pubKeySize}`);
         } else if (authKeySize < MIN_RSA_KEY_SIZE) {
