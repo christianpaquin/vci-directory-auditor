@@ -4,6 +4,8 @@ WORK-IN-PROGRESS!
 
 Audit tool for the [VCI directory](https://github.com/the-commons-project/vci-directory/).
 
+The `.github/workflows/vci-directory-audit.yml` obtains and audits a daily snapshot of the directory, storing the results in `logs/daily_audit.json` and `logs/daily_dir_snapshot.json`, respectively.
+
 ## Setup
 
 Make sure [node.js](https://nodejs.org/) and [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) are installed on your system; the latest Long-Term Support (LTS) version is recommended for both. [OpenSSL](https://www.openssl.org/) is also needed to validate TLS connections.
