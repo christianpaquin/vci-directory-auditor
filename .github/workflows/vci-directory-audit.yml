@@ -17,6 +17,7 @@ jobs:
       - run: |
           npm install
           npm run build --if-present
+      - run: |
           npm run audit -- -o logs/latest_dir.json -p logs/daily_dir_snapshot.json -a logs/audit.json
           mv logs/audit.json logs/daily_audit.json
           mv logs/latest_dir.json logs/daily_dir_snapshot.json
