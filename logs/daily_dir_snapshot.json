@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2021-10-20 15:32:04",
+    "time": "2021-10-21 12:30:50",
     "issuerInfo": [
         {
             "issuer": {
@@ -5303,7 +5303,17 @@
                 "iss": "https://ep-rpfg.rivhs.com/Interconnect-FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Riverside Health System"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "2VSepAIBJ_KVp5SAblYlQssmOoclvlT_b7TVXtmTP1I",
+                    "y": "uLutWa6dYAtZLrxuZ9tPj2_AvhsuwaYQ8cvljI4kN7o",
+                    "kid": "l0JUwp6xs9h_s9fCWzu3ocKdSnJx7MNN-HhM4uVghlQ",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
@@ -5312,9 +5322,7 @@
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
-            "errors": [
-                "HTTPError: Response code 400 (An error occurred while executing the command: USER-NOT-AUTHORIZED.)"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -5852,14 +5860,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "errors": []
         },
         {
@@ -7686,6 +7686,123 @@
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
                 "kexAlg": "ECDH, P-384, 384 bits",
                 "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://epicproxy.et1127.epichosted.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "United Health Services"
+            },
+            "keys": [
+                {
+                    "x": "vzuCvPQFhjFIEJVjsf1aLzWm0kUby-PfYcHlPc4tn0M",
+                    "y": "_iyzBLy69fhEps56N_UyaKZ5WIL0GMtbzPoXK8g8TFM",
+                    "kid": "8fh6q6S2ASUK1AD9uz5FtPxNsxoMJsor8iMrE8puvho",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://fhir.promedica.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "ProMedica",
+                "website": "https://www.promedica.org/"
+            },
+            "keys": [
+                {
+                    "x": "Hty2sTB8Apkrr-Zvi7nuchk-U9dey3nS5wZxxsP6ZeY",
+                    "y": "3zXcnWpnWc6jJEvVUuHph2SZ4h7KSJm8HSnL3HoFAuk",
+                    "kid": "uPWKKpoWI3OIa11UbV9xdoRHdf5ZsYsAyvczK79L3RE",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://fhir.mdanderson.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "The University of Texas MD Anderson Cancer Center",
+                "website": "https://www.mdanderson.org/"
+            },
+            "keys": [
+                {
+                    "x": "77K07EhwPGJ-HbndHQalVHtz9z_DSI6crc-mU9EytrE",
+                    "y": "2hP4-EzBdsV7VHyADayWEiYLhghilQPVI9AKyps3Pxk",
+                    "kid": "WG_qC2lsWHa2WgqHa_dcCG27Tic7kyNi8WulJ3DUbNQ",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://epicproxy.et0958.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Mayo Clinic"
+            },
+            "keys": [
+                {
+                    "x": "xn2lXUje1oEtdXpeN2cJAatuPKukPAT5c7cMR6rxufU",
+                    "y": "QvV3rnwnLld4QJEv0nD2gEE1z235Bva9hpbMZtp9SCE",
+                    "kid": "Akfcd16Qc_fhbPsoep3rbEcPlOXGKn9mIDVcb8c2kyo",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://fhir.genesishcs.org/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Genesis Healthcare System",
+                "website": "https://www.genesishcs.org/"
+            },
+            "keys": [
+                {
+                    "x": "lvNUQrSwjIVf2XyfffOFqvvSdI6Qt5nEDv1i_PuwleE",
+                    "y": "DQArVvEDp0Hga4fFx1b9b2xEopMfW4Sr2EopFbkvDc8",
+                    "kid": "YUhLaxhyu1Rl7fiLLxXEP0Sort3tLH9aiSawcQMxjBA",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },

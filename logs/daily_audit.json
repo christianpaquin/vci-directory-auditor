@@ -1,7 +1,7 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2021-10-20 15:32:04",
-    "issuerCount": 287,
+    "auditTime": "2021-10-21 12:30:50",
+    "issuerCount": 292,
     "issuersWithErrors": [
         {
             "issuer": {
@@ -58,24 +58,6 @@
             "errors": [
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
-        },
-        {
-            "issuer": {
-                "iss": "https://ep-rpfg.rivhs.com/Interconnect-FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Riverside Health System"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "HTTPError: Response code 400 (An error occurred while executing the command: USER-NOT-AUTHORIZED.)"
-            ]
         }
     ],
     "duplicatedKids": [
@@ -107,15 +89,8 @@
         "eHealth Saskatchewan",
         "Methodist Health System"
     ],
-    "previousAuditTime": "2021-10-19 19:59:42",
-    "newIssuerCount": 0,
+    "previousAuditTime": "2021-10-20 15:32:04",
+    "newIssuerCount": 5,
     "deletedIssuerCount": 0,
-    "removedKids": [
-        {
-            "iss": "https://ep-rpfg.rivhs.com/Interconnect-FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "l0JUwp6xs9h_s9fCWzu3ocKdSnJx7MNN-HhM4uVghlQ"
-            ]
-        }
-    ]
+    "removedKids": []
 }
