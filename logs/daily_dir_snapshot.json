@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2021-10-26 12:30:29",
+    "time": "2021-10-27 12:30:54",
     "issuerInfo": [
         {
             "issuer": {
@@ -4252,7 +4252,17 @@
                 "iss": "https://patientfhirapis.ynhh.org/PFF/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Yale New Haven Health System and Yale University"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "I4AzTlLReCmNFvjeCI5j0Atm7JmXf4xVJmLzQgCagd4",
+                    "y": "rchrXnw0iDvaOtbnEFJ_zT9B5bDQuFxp5x6cUpLK-fM",
+                    "kid": "57uZ0pBa-RU1i70nVRNhcfhjmCoenByGdoYbY_n_RNM",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
@@ -4261,9 +4271,7 @@
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
-            "errors": [
-                "HTTPError: Response code 400 (All available connections are in use.  Unable to obtain a new connection at this time.)"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -5852,6 +5860,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "errors": []
         },
         {
@@ -6502,14 +6518,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "errors": []
         },
         {
@@ -7646,14 +7654,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "DHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "DH, 2048 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "errors": []
         },
         {
@@ -8029,6 +8029,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-384, 384 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "4096",
+                "compression": "NONE"
+            },
             "errors": []
         },
         {
@@ -8273,6 +8281,190 @@
                 "cipher": "TLS_AES_128_GCM_SHA256",
                 "kexAlg": "X25519, 253 bits",
                 "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://ihismufhir.osumc.edu/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "The Ohio State University Wexner Medical Center"
+            },
+            "keys": [
+                {
+                    "x": "tngB7LSkykH3of1zIg7_REGAWSKGBF2mxSYC5t3cPdA",
+                    "y": "rDGNY6vD3pLNAfmtLegmFgrRWuPlP59_TQTWdeWmz3g",
+                    "kid": "r1M-HNS30Li0J4WlLMrKUwKppsOK61ZfkZy7WhTez7w",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://epiclbsprxyprodpass.houstonmethodist.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Houston Methodist",
+                "website": "https://www.houstonmethodist.org"
+            },
+            "keys": [
+                {
+                    "x": "eVXPEAN8cSBXkLkDZjYummMTu6QVY2Yy85F2wCala40",
+                    "y": "2M7ZLV2U3wA-8GCV-0rzk9f6EVsjfwJJjRBmiu7g4hg",
+                    "kid": "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://epicproxy-np.et1023.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "UMC Southern Nevada"
+            },
+            "keys": [
+                {
+                    "x": "dDoX-3hLrjxLoRSzavjJVkHI2ufI6Ubc0Lf8iLyPPRw",
+                    "y": "_XQIYke6iITABG1Uc2l_jeA-0xvnnlNfSsGlnPML7QU",
+                    "kid": "nctCDXtOPz8NuTr7gA8Fzw6mpt2atFPxgpF4yJq0-vQ",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://prd-proxy.vidanthealth.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Vidant Health",
+                "website": "https://www.vidanthealth.com/"
+            },
+            "keys": [
+                {
+                    "x": "hb-Jn15vQiHVDiiynhqw4G_4SwtdCeYXHEqc2vLxOFQ",
+                    "y": "y2ogiNUBCofwKr2xSWJGjSCbR5ItZerL0fstmQwEw58",
+                    "kid": "WfODizKk3y0fg5jvkhKAxnGEoHuulEW5x7VWbSngWdI",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://smarthealthcard.iisregistry.net/palau/issuer",
+                "name": "Palau Registry"
+            },
+            "keys": [
+                {
+                    "kty": "EC",
+                    "kid": "ah4qU-camAEEBAPzgMTUvVc16K4J4_vPevvASUffDo4",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "fGX2ZdfeRVJl7_ZHQ9m-lc3TBN6N63wphzJzD1ZRtiE",
+                    "y": "cdRRgwZ4NTuyNJ-y67DEBgpK1x2jXu6C03e8XPK96wg"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://waverify.doh.wa.gov/creds",
+                "name": "Washington State Department of Health"
+            },
+            "keys": [
+                {
+                    "kty": "EC",
+                    "kid": "n0S0H6_mbA93e3pEu-a67qoiF4CAWYsOGoWo6TLHUzQ",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "fdoNeWZk1SrLpN3QDua5vF3_rA-SMtJC_FyGOuoxfQM",
+                    "y": "T6qVaWSULDDzPhWL0fK9lq1yPC9YFt_wOQYC9VlKRa4"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-384, 384 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://cdphe.colorado.gov",
+                "name": "State of Colorado Department of Public Health and Environment"
+            },
+            "keys": [
+                {
+                    "kty": "EC",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "kid": "2mDaFWzZK1ACh7J9GKmeI5mvGuSidpSMFaEtEbMs2SM",
+                    "crv": "P-256",
+                    "x": "EJrswgDkiAKdfeGL_RXI5AENbgrkd2ZrE5bLDHkB7RE",
+                    "y": "f16VYR8cqEytzDp5ednA2NYIRBgncdsb7mco87bFu8o"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
