@@ -37,6 +37,10 @@ jobs:
           else
             echo 'no changes'
           fi
+      - uses: actions/upload-artifact@v2
+        with:
+          name: save-log-files
+          path: logs/*
 
       
   
