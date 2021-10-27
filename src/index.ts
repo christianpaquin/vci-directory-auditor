@@ -7,79 +7,11 @@ import fs from 'fs';
 import path from 'path';
 import date from 'date-and-time';
 import Url from 'url-parse';
-import { TlsDetails, auditTlsDetails, getDefaultTlsDetails } from './bcp195';
+import { AuditLog, DirectoryLog, IssuerKids, IssuerLogInfo, TrustedIssuers } from './interfaces';
+import { auditTlsDetails, getDefaultTlsDetails } from './bcp195';
 
 const VCI_ISSUERS_DIR_URL = "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json";
 
-//
-// interfaces
-//
-
-// issuer info in the directory
-interface TrustedIssuer {
-    iss: string,
-    name: string
-}
-
-// directory structure
-interface TrustedIssuers {
-    participating_issuers: TrustedIssuer[]
-}
-
-// issuer log info
-interface IssuerLogInfo {
-    // the issuer info
-    issuer: TrustedIssuer,
-    // the issuer's JWK set
-    keys: JWK.Key[],
-    // the issuer's default TLS session details
-    tlsDetails: TlsDetails | undefined,
-    // errors while retrieving the issuer JWK set, if any
-    errors?: string[]
-}
-
-// Key identifiers (KID) of one issuer
-interface IssuerKids {
-    iss: string,
-    kids: string[]
-}
-
-// directory log, a snapshot of the directory
-interface DirectoryLog {
-    // directory URL
-    directory: string,
-    // retrieval time
-    time: string,
-    // directory issuers
-    issuerInfo: IssuerLogInfo[]
-}
-
-// audit log
-interface AuditLog {
-    // URL of the audited directory
-    directory: string,
-    // audit time
-    auditTime: string,
-    // previous audit time (if available)
-    previousAuditTime?: string,
-    // count of issuers present in the directory
-    issuerCount: number,
-    // count of new issuers since previous audit (if available)
-    newIssuerCount?: number,
-    // count of new issuers since previous audit (if available)
-    deletedIssuerCount?: number,
-    // issuers with errors during scan
-    issuersWithErrors: IssuerLogInfo[],
-    // duplicated key identifiers (KID) in the directory
-    duplicatedKids: string[],
-    // duplicated issuer URL (iss) in the directory
-    duplicatedIss: string[],    
-    // duplicated display name in the directory (not prohibited, but good to know)
-    duplicatedNames: string[],
-    // list of removed key identifiers since last audit (if available); should only
-    // occur when the corresponding key is revoked by the issuer
-    removedKids?: IssuerKids[]
-}
 
 interface KeySet {
     keys : JWK.Key[]
@@ -141,7 +73,7 @@ async function fetchDirectory(directoryUrl: string) : Promise<DirectoryLog> {
         }
         try {
             // TODO: investigate timeout problem: many JWK sets failed to download with a 5 sec timeout, seems surprising
-            const response = await got(jwkURL /*, { timeout:5000 } */);
+            const response = await got(jwkURL, { timeout:10000 });
             if (!response) {
                 throw "Can't reach JWK URL";
             }

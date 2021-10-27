@@ -6,6 +6,9 @@
   "scripts": {
     "build": "tsc",
     "audit": "ts-node --files src/index.ts",
+    "genkeys": "ts-node --files src/genkeys.ts -p public.json -s private.json",
+    "sign": "ts-node --files src/signfiles.ts -k private.json -f logs/daily_dir_snapshot.json -o logs/signed.json",
+    "verify": "ts-node --files src/verifyfiles.ts -k public.json -o logs/verified_daily_dir_snapshot.json -f  logs/signed.json",
     "test": "ts-node --files src/index.ts --directory 'https://raw.githubusercontent.com/smart-on-fhir/health-cards-validation-SDK/main/testdata/test-issuers.json'",
     "test-audit-1": "ts-node --files src/index.ts -t -d 'https://raw.githubusercontent.com/christianpaquin/void/main/shc/audit-1/test-directory.json' -a logs/audit-1.json -o logs/dirlog-1.json",
     "test-audit-2": "ts-node --files src/index.ts -t -d 'https://raw.githubusercontent.com/christianpaquin/void/main/shc/audit-2/test-directory.json' -a logs/audit-2.json -o logs/dirlog-2.json -p logs/dirlog-1.json",
@@ -14,6 +17,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "base64url": "^3.0.1",
     "commander": "^8.1.0",
     "date-and-time": "^1.0.1",
     "execa": "^5.1.1",

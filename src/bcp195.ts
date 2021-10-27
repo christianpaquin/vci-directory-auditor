@@ -3,6 +3,7 @@
 //  - RFC 8996: Deprecating TLS 1.0 and TLS 1.1
 
 import execa from 'execa';
+import { TlsDetails } from './interfaces';
 
 // min key sizes rfc7525, section 4.3
 const MIN_EC_KEY_SIZE = 192;
@@ -10,15 +11,6 @@ const MIN_RSA_KEY_SIZE = 2048;
 const MIN_DH_KEY_SIZE = 2048;
 
 const TLS_ERROR_PREFIX = "TLS error: ";
-
-export interface TlsDetails {
-    version: string | undefined,
-    cipher: string | undefined,
-    kexAlg: string | undefined,
-    authAlg: string | undefined,
-    pubKeySize: string | undefined,
-    compression: string | undefined
-}
 
 function isOpensslAvailable(): boolean {
     try {
