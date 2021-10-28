@@ -3,7 +3,6 @@
 import fs from "fs";
 import { Command } from 'commander';
 import { JWK, JWS } from "node-jose";
-import { DirectoryLog } from "./interfaces";
 
 interface Options {
     key: string;
@@ -27,11 +26,11 @@ const options = program.opts() as Options;
 
 const verify = async (keyPath: string, filePath: string, outPath: string) => {
     try {
-        const key = await JWK.asKey(JSON.parse(fs.readFileSync(keyPath).toString('utf-8')));// as JWK.Key;
+        const key = await JWK.asKey(JSON.parse(fs.readFileSync(keyPath).toString('utf-8')));
         if (!key) {
             throw "Can't parse key from " + keyPath;
         }
-        const jws = fs.readFileSync(filePath).toString('utf-8');// JSON.parse(fs.readFileSync(filePath).toString('utf-8')) as Jws;
+        const jws = fs.readFileSync(filePath).toString('utf-8');
         if (!jws) {
             throw "Can't parse file from " + filePath;
         }
@@ -45,8 +44,6 @@ const verify = async (keyPath: string, filePath: string, outPath: string) => {
             catch(err => {
                 console.log("Error verifying file" + err);
             })
-
-
     } catch (err) {
         console.log("Verification error");
         console.log(err);
