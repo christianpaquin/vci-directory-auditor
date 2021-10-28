@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2021-10-28 12:30:33",
+    "time": "2021-10-28 13:26:01",
     "issuerInfo": [
         {
             "issuer": {
@@ -3832,17 +3832,7 @@
                 "iss": "https://emrrp.ucdmc.ucdavis.edu/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "UC Davis Health"
             },
-            "keys": [
-                {
-                    "x": "k-KN6zgoz8XHIxpsTJ6_cXz3JDiA-LDyERk4JmHgrz0",
-                    "y": "udhlKbFi4WIXUJ_xG6LYN80TwCIdWb0VAc8Exbesjk8",
-                    "kid": "6rOie4oR3-44pk1sDn4QuqlDs8pFQj2zauY7qSHbHqw",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "DHE-RSA-AES256-GCM-SHA384",
@@ -3851,7 +3841,9 @@
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
         },
         {
             "issuer": {
@@ -5256,6 +5248,14 @@
                 "name": "City of Hope"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 10000ms"
             ]
@@ -6184,14 +6184,6 @@
                 "name": "Express Scripts"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 10000ms"
             ]
@@ -6760,14 +6752,6 @@
                 "website": "https://www.nch.org/"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-384, 384 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "4096",
-                "compression": "NONE"
-            },
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 10000ms"
             ]
