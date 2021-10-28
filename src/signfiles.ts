@@ -41,9 +41,8 @@ const sign = async (keyPath: string, filePath: string, outPath: string) => {
             update(payload).
             final().
             then(result => {
-                const jws = result as unknown as /*Jws*/ string;
-//                const jwsString = JSON.stringify(jws);
-                fs.writeFileSync(outPath, /*jwsString*/ jws);
+                const jws = result as unknown as string;
+                fs.writeFileSync(outPath, jws);
             }).
             catch(err => {
                 console.log("Error signing file" + err);
