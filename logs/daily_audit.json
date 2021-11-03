@@ -1,36 +1,8 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2021-10-28 13:26:01",
-    "issuerCount": 323,
+    "auditTime": "2021-11-03 12:30:28",
+    "issuerCount": 337,
     "issuersWithErrors": [
-        {
-            "issuer": {
-                "iss": "https://mychart.uchealth.org",
-                "name": "UCHealth"
-            },
-            "keys": [
-                {
-                    "crv": "P-256",
-                    "kty": "EC",
-                    "x": "xn4u3l6l1U3JMkwh8d8p03Qz3dg5adMToIMlvb3UnZU",
-                    "y": "y-QXzAqkdbbLjVVIrgl-63uUkSWWde58YE7RpCo5sWs",
-                    "alg": "ES256",
-                    "use": "sig",
-                    "kid": "lJy0tb3fWq3xdiws7bCxz1goyxTu22xHc2TrXB8UERQ"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "AES256-SHA",
-                "kexAlg": "RSA",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
-            ]
-        },
         {
             "issuer": {
                 "iss": "https://emrrp.ucdmc.ucdavis.edu/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -51,68 +23,14 @@
         },
         {
             "issuer": {
-                "iss": "https://myc.ochsner.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Ochsner Health System"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epicproxy.et1073.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Englewood Hospital and Medical Center"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://EpicFHIR.aurora.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Advocate Aurora Health"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://patientfhirapis.ynhh.org/PFF/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Yale New Haven Health System and Yale University"
+                "iss": "https://epicsoapprd.communitymedical.org/arr_fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Community Medical Centers"
             },
             "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
+                "kexAlg": "ECDH, P-521, 521 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -130,24 +48,6 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epicproxy.et0965.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "BJC HealthCare and Washington University Physicians"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
                 "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
@@ -179,42 +79,6 @@
             "issuer": {
                 "iss": "https://soap.phci.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "ProHealth"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "DHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "DH, 2048 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://hygieia.bronsonhg.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Bronson Healthcare Group"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epproxy.texashealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Texas Health Resources"
             },
             "keys": [],
             "tlsDetails": {
@@ -303,96 +167,6 @@
         },
         {
             "issuer": {
-                "iss": "https://epicproxy.et1123.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "AltaMed"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epic-soap.uchealth.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "UC Health (Cincinnati)"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://healthy.kaiserpermanente.org/public-keys/shc/v1/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Kaiser Permanente"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://haikuwa.providence.org/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Providence St. Joseph Health"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://haikuor.providence.org/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Providence St. Joseph Health"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://haikuak.providence.org/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Providence St. Joseph Health"
             },
@@ -403,24 +177,6 @@
                 "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://minerva.northmemorial.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "North Memorial Health"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-521, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "4096",
                 "compression": "NONE"
             },
             "errors": [
@@ -519,60 +275,6 @@
         },
         {
             "issuer": {
-                "iss": "https://epicservicegw.froedtert.com/FHIRproxyPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Froedtert Health"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://rxedi.bmhcc.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Baptist Memorial Health Care"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://iatrius.atriushealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Atrius Health"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-ECDSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "ECDSA",
-                "pubKeySize": "256",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://uhealthsoap.med.miami.edu/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "UHealth – University of Miami Health System"
             },
@@ -611,24 +313,6 @@
             "issuer": {
                 "iss": "https://epicproxy.et1057.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Molina Healthcare"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://haiku.sparrow.org/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Sparrow Health System"
             },
             "keys": [],
             "tlsDetails": {
@@ -684,7 +368,17 @@
                 "iss": "https://apps.vdh.virginia.gov/credentials",
                 "name": "Virginia Department of Health"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "use": "sig",
+                    "crv": "P-256",
+                    "kid": "sy5Q85VbiH4jNee-IpFkQvMxlVAhZ_poLMPLHiDF_8I",
+                    "x": "UDYtkThsYIdMuzC9AJi0CDNwwmSGt8Z75BBl9DbLXn0",
+                    "y": "xWNNHxwz0RtTgTlBom3X8xFP6U5e92KYGZIBI2SYImA",
+                    "alg": "ES256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "AES128-SHA256",
@@ -694,7 +388,6 @@
                 "compression": "NONE"
             },
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms",
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
         },
@@ -754,42 +447,6 @@
         },
         {
             "issuer": {
-                "iss": "https://ep-rpfg.rivhs.com/Interconnect-FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Riverside Health System"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://fhir.ssmhc.com/Fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "SSM Health"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epincoming.slhs.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "St. Luke’s Health System (Idaho)"
             },
@@ -834,24 +491,6 @@
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
                 "kexAlg": "ECDH, P-384, 384 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://fhir.seattlechildrens.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Seattle Children’s"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -952,24 +591,6 @@
         },
         {
             "issuer": {
-                "iss": "https://epicproxy.et1124.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Middlesex Health"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epic-p-foreground.centura.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Centura Health"
             },
@@ -1024,24 +645,6 @@
         },
         {
             "issuer": {
-                "iss": "https://commons.ehealthsask.ca",
-                "name": "eHealth Saskatchewan"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://moc.beaumont.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Beaumont Health"
             },
@@ -1060,24 +663,6 @@
         },
         {
             "issuer": {
-                "iss": "https://interconnect.wellspan.org/interconnect-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "WellSpan Health"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_CHACHA20_POLY1305_SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://scproxy.gundersenhealth.org/FHIRARR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Gundersen Health System"
             },
@@ -1086,24 +671,6 @@
                 "version": "TLSv1.2",
                 "cipher": "DHE-RSA-AES256-GCM-SHA384",
                 "kexAlg": "DH, 2048 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epicproxy.hosp.wisc.edu/FhirProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "UW Health"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -1136,14 +703,6 @@
                 "name": "City of Hope"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 10000ms"
             ]
@@ -1204,42 +763,6 @@
         },
         {
             "issuer": {
-                "iss": "https://rx.premierhealthpartners.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Premier Health"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "DHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "DH, 2048 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://sshic.southshorehealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "South Shore Health"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epicsoap.carle.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Carle Foundation Hospital"
             },
@@ -1248,24 +771,6 @@
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
                 "kexAlg": "ECDH, P-521, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apiservices.sutterhealth.org/ifs/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Sutter Health"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -1564,24 +1069,6 @@
         },
         {
             "issuer": {
-                "iss": "https://epicmobile.johnshopkins.edu/FHIR_PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Johns Hopkins Medicine"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epicsoap.stormontvail.org/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Stormont-Vail"
             },
@@ -1834,24 +1321,6 @@
         },
         {
             "issuer": {
-                "iss": "https://ssrx.ksnet.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Kelsey-Seybold Clinic"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "4096",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epicprod-mobile.parkview.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Parkview Health"
             },
@@ -2072,6 +1541,14 @@
                 "name": "Express Scripts"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 10000ms"
             ]
@@ -2391,25 +1868,6 @@
         },
         {
             "issuer": {
-                "iss": "https://covid19.quebec.ca/PreuveVaccinaleApi/issuer",
-                "name": "Gouvernement du Québec - Government of Quebec",
-                "website": "https://www.quebec.ca/vaccinationpassport"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-384, 384 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epicproxy.et1127.epichosted.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "United Health Services"
             },
@@ -2444,24 +1902,6 @@
                 "website": "https://www.mdanderson.org/"
             },
             "keys": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epicproxy.et0958.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Mayo Clinic"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 10000ms"
             ]
@@ -3049,11 +2489,287 @@
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 10000ms"
             ]
+        },
+        {
+            "issuer": {
+                "iss": "https://ehrmobile.monument.health/interconnect-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Monument Health",
+                "website": " https://monument.health/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://scripts.prevea.com/FHIR-ARR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Hospital Sisters Health System"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-521, 521 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicedge.upstate.edu/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "SUNY Upstate"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://lmcrcs.lexmed.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Lexington Medical Center",
+                "website": "https://www.lexmed.com/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://webproxy.mynovant.org/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Novant Health",
+                "website": "https://www.novanthealth.org/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-384, 384 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "4096",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicrp.firsthealth.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "FirstHealth of the Carolinas",
+                "website": "https://www.firsthealth.org/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicmobile.ohsu.edu/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Oregon Health & Science University",
+                "website": "https://www.ohsu.edu/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "4096",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicrpprd.inova.org/fhirrp/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Inova Health System"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://ic.valleychildrens.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Valley Children’s Healthcare",
+                "website": "https://www.valleychildrens.org/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicproxy.et1240.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "El Rio Health",
+                "website": "https://www.elrio.org/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicproxy.et1222.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "GW University Medical Faculty Associates",
+                "website": "https://gwdocs.com/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://fhir.archildrens.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Arkansas Children’s",
+                "website": "https://www.archildrens.org/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://arrprd.metrohealth.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "University of Michigan Health-West",
+                "website": "https://uofmhealthwest.org/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicproxy.et0927.epichosted.com/VCI_PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Hospital for Special Surgery",
+                "website": "https://www.hss.edu/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
         }
     ],
     "duplicatedKids": [
         "nQM-36EWDZU5kLoCoeOvshvT2P9JUyc8Do6yWRhNokg",
-        "N2maG8qOhITe_zyPqcrCa6LT_mW18ZtFPy09cGAB24w"
+        "N2maG8qOhITe_zyPqcrCa6LT_mW18ZtFPy09cGAB24w",
+        "SPWZW51rFOoPACYISQNT37M4zY4c9hzxw2f66OrHIbY",
+        "348jzyKWtD8225Duqr6zJHqw-Jc0jlXm_pCWq6Nw_1c",
+        "wdqzOShT_Gnt8uP5fYzHKAxp0eWweAk5zpoEvaI_VmU",
+        "3Ujv5kjdbTwbZAfjC5OrWCHDnJtENU3sTckG-vmZzHw",
+        "g1ot2FJmActNYkz-MRXX4Vq5Vk9oPf6aIRPgYvI-l2g",
+        "JGu1o4nn0XCXg9zJ4HqhQ3z9DphFMruWQ2_47C9Ozog",
+        "zswRh4FtXw_oC8R_unDMagTyHSdUjoFZadoGgIvEgO0",
+        "uBrPkpHPRwoB-QEe8VML32s0zq0g_p3FI6m891ztMWY",
+        "ni-iRbTdShFjSgtDNAcq2m1vYwMtYg0MbcRnaAUvxaA",
+        "AVJpN_VVlyCtb7SQG9ddP8T3D9ZWNZLMWhDSUVEMFHw",
+        "KGRVZgLMuFYQE28ZpW3xkQu0J2cxCwu1xXBE95XkjtA",
+        "1cbWQj6OEipUmkMhXGpgGPSf83uWS4ew4bJPpkbcong",
+        "r6TOQW6N9Twi0iPMoZLygAKX80fCeZAduGCeghxft0Q"
     ],
     "duplicatedIss": [],
     "duplicatedNames": [
@@ -3069,14 +2785,32 @@
         "Atrium Health",
         "State of Colorado"
     ],
-    "previousAuditTime": "2021-10-28 12:30:33",
+    "previousAuditTime": "2021-11-02 12:30:55",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://emrrp.ucdmc.ucdavis.edu/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://linkpoint.ghcscw.com/Interconnect-PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "6rOie4oR3-44pk1sDn4QuqlDs8pFQj2zauY7qSHbHqw"
+                "O9F5s7NFdLhpbWtPGaNATiaND6att30ljwd81UtZh7s"
+            ]
+        },
+        {
+            "iss": "https://epicproxy.et0978.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "4wII3Qmqml42zXXv51JGOLjQaJ5p7zkdGzFefru14Pc"
+            ]
+        },
+        {
+            "iss": "https://ccpintconfg.ohiohealth.com/Interconnect-PRD-MUAPI/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "bmZaEJ1u1TD7LAAWuUTNaq0AycbDuCtJL1v9rZUvD9g"
+            ]
+        },
+        {
+            "iss": "https://ssproxy.osfhealthcare.org/fhir-proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "ta3yKjoYleeW_c6DGd9Sg6QdgrgaQ7FGrlnwQRpZ1v8"
             ]
         }
     ]
