@@ -1,8 +1,26 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2021-11-11 12:30:32",
-    "issuerCount": 363,
+    "auditTime": "2021-11-12 12:30:33",
+    "issuerCount": 365,
     "issuersWithErrors": [
+        {
+            "issuer": {
+                "iss": "https://epicproxy.et1073.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Englewood Hospital and Medical Center"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
         {
             "issuer": {
                 "iss": "https://EpicFHIR.aurora.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -13,6 +31,61 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://patientfhirapis.ynhh.org/PFF/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Yale New Haven Health System and Yale University"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://linkpoint.ghcscw.com/Interconnect-PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Group Health Cooperative - South Central Wisconsin",
+                "website": "https://ghcscw.com/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicproxy.et0965.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "BJC HealthCare and Washington University Physicians"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
                 "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
@@ -51,6 +124,24 @@
                 "version": "TLSv1.2",
                 "cipher": "DHE-RSA-AES256-GCM-SHA384",
                 "kexAlg": "DH, 2048 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://hygieia.bronsonhg.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Bronson Healthcare Group"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "X25519, 253 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -189,24 +280,6 @@
         },
         {
             "issuer": {
-                "iss": "https://healthy.kaiserpermanente.org/public-keys/shc/v1/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Kaiser Permanente"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://haikuwa.providence.org/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Providence St. Joseph Health"
             },
@@ -229,6 +302,14 @@
                 "name": "Providence St. Joseph Health"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 10000ms"
             ]
@@ -738,6 +819,14 @@
                 "name": "Baptist Health"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 10000ms"
             ]
@@ -827,24 +916,6 @@
                 "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
                 "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://ovc-api.optum.com/imm/ocm/issuer",
-                "name": "United Healthcare Services, Inc."
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
@@ -1875,6 +1946,14 @@
                 "name": "Deaconess Health System"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-521, 521 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 10000ms"
             ]
@@ -2317,7 +2396,7 @@
             "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
                 "kexAlg": "ECDH, P-521, 521 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
@@ -2530,6 +2609,14 @@
                 "website": "https://www.nch.org/"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 10000ms"
             ]
@@ -3541,16 +3628,15 @@
             },
             "keys": [],
             "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "AES256-SHA",
-                "kexAlg": "RSA",
-                "authAlg": "RSA",
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 10000ms",
-                "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
             ]
         },
         {
@@ -3596,14 +3682,6 @@
                 "website": "https://www.texaschildrens.org/"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 10000ms"
             ]
@@ -3663,12 +3741,61 @@
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 10000ms"
             ]
+        },
+        {
+            "issuer": {
+                "iss": "https://credenciales.cescodigital.pr.gov",
+                "name": "Government of Puerto Rico"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://covidrecords.alberta.ca/smarthealth/issuer",
+                "name": "Government of Alberta"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "ECDSA",
+                "pubKeySize": "256",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
         }
     ],
     "duplicatedKids": [
         "nQM-36EWDZU5kLoCoeOvshvT2P9JUyc8Do6yWRhNokg",
         "N2maG8qOhITe_zyPqcrCa6LT_mW18ZtFPy09cGAB24w",
-        "q59IjbeGtaRpuHvdRuU9UxpNvzpQHCLcRXVD7rM563I"
+        "q59IjbeGtaRpuHvdRuU9UxpNvzpQHCLcRXVD7rM563I",
+        "SPWZW51rFOoPACYISQNT37M4zY4c9hzxw2f66OrHIbY",
+        "348jzyKWtD8225Duqr6zJHqw-Jc0jlXm_pCWq6Nw_1c",
+        "wdqzOShT_Gnt8uP5fYzHKAxp0eWweAk5zpoEvaI_VmU",
+        "3Ujv5kjdbTwbZAfjC5OrWCHDnJtENU3sTckG-vmZzHw",
+        "g1ot2FJmActNYkz-MRXX4Vq5Vk9oPf6aIRPgYvI-l2g",
+        "JGu1o4nn0XCXg9zJ4HqhQ3z9DphFMruWQ2_47C9Ozog",
+        "zswRh4FtXw_oC8R_unDMagTyHSdUjoFZadoGgIvEgO0",
+        "uBrPkpHPRwoB-QEe8VML32s0zq0g_p3FI6m891ztMWY",
+        "ni-iRbTdShFjSgtDNAcq2m1vYwMtYg0MbcRnaAUvxaA",
+        "AVJpN_VVlyCtb7SQG9ddP8T3D9ZWNZLMWhDSUVEMFHw",
+        "KGRVZgLMuFYQE28ZpW3xkQu0J2cxCwu1xXBE95XkjtA",
+        "1cbWQj6OEipUmkMhXGpgGPSf83uWS4ew4bJPpkbcong",
+        "r6TOQW6N9Twi0iPMoZLygAKX80fCeZAduGCeghxft0Q"
     ],
     "duplicatedIss": [],
     "duplicatedNames": [
@@ -3686,182 +3813,38 @@
         "State of Colorado",
         "Hospital for Special Surgery"
     ],
-    "previousAuditTime": "2021-11-10 12:30:49",
-    "newIssuerCount": 1,
-    "deletedIssuerCount": 1,
+    "previousAuditTime": "2021-11-11 12:30:32",
+    "newIssuerCount": 2,
+    "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://EpicFHIR.aurora.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://epicproxy.et1073.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "uOMSmJPwphyuvhjU54UnpRZ8_wefjoWSaMHz1eopGVM"
+                "4nvtz4SKm7W0Kl5AZ-3tIpw_FqqcrdWIVqryIUzfygs"
             ]
         },
         {
-            "iss": "https://soap.phci.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://patientfhirapis.ynhh.org/PFF/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "h6AujjtsFx1EU-9_LXSZ9hNdn_3h_Jh5JvQyB_sfPlI"
+                "57uZ0pBa-RU1i70nVRNhcfhjmCoenByGdoYbY_n_RNM"
             ]
         },
         {
-            "iss": "https://hie.hcmed.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://linkpoint.ghcscw.com/Interconnect-PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "ESfry2QZcfrybMvZXIZGXhFF-MqmiYMJec8UOnEygnU"
+                "O9F5s7NFdLhpbWtPGaNATiaND6att30ljwd81UtZh7s"
             ]
         },
         {
-            "iss": "https://healthy.kaiserpermanente.org/public-keys/shc/v1/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://epicproxy.et0965.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "SPWZW51rFOoPACYISQNT37M4zY4c9hzxw2f66OrHIbY",
-                "348jzyKWtD8225Duqr6zJHqw-Jc0jlXm_pCWq6Nw_1c",
-                "wdqzOShT_Gnt8uP5fYzHKAxp0eWweAk5zpoEvaI_VmU",
-                "3Ujv5kjdbTwbZAfjC5OrWCHDnJtENU3sTckG-vmZzHw",
-                "g1ot2FJmActNYkz-MRXX4Vq5Vk9oPf6aIRPgYvI-l2g",
-                "JGu1o4nn0XCXg9zJ4HqhQ3z9DphFMruWQ2_47C9Ozog",
-                "zswRh4FtXw_oC8R_unDMagTyHSdUjoFZadoGgIvEgO0",
-                "uBrPkpHPRwoB-QEe8VML32s0zq0g_p3FI6m891ztMWY",
-                "ni-iRbTdShFjSgtDNAcq2m1vYwMtYg0MbcRnaAUvxaA",
-                "AVJpN_VVlyCtb7SQG9ddP8T3D9ZWNZLMWhDSUVEMFHw",
-                "KGRVZgLMuFYQE28ZpW3xkQu0J2cxCwu1xXBE95XkjtA",
-                "1cbWQj6OEipUmkMhXGpgGPSf83uWS4ew4bJPpkbcong",
-                "r6TOQW6N9Twi0iPMoZLygAKX80fCeZAduGCeghxft0Q"
+                "2gE2ashpDfzsbMfw4Mi6akYTE-jAr7YKCqqg8yZouZs"
             ]
         },
         {
-            "iss": "https://epicservicegw.froedtert.com/FHIRproxyPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://hygieia.bronsonhg.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "Csx3qVWGVN55khs60Uu__EV93pYnz0eRAx0fhoTod7k"
-            ]
-        },
-        {
-            "iss": "https://epicproxy.et1057.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "k_n5C2uxa3xRhCUh7N6Tbc-bt7Nu2HiQpCQcygxX4h8"
-            ]
-        },
-        {
-            "iss": "https://haiku.sparrow.org/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "A8sNGeV-QEu6Pg48dhiHU0E1AsiNUFrOLqUH8XsHTg8"
-            ]
-        },
-        {
-            "iss": "https://fhir.lakelandregional.org/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "MP4R9FJRtzIt2Cqlvz2WfPbBXr24gxu_Z01GLB8N1uM"
-            ]
-        },
-        {
-            "iss": "https://www.riteaid.com",
-            "kids": [
-                "vqHxrsBwtWp2-NS2APN4m8aGjnaec8_juc9C4wFw9hI"
-            ]
-        },
-        {
-            "iss": "https://ovc-api.optum.com/imm/ocm/issuer",
-            "kids": [
-                "F8F5TxPt4A1jBA5ytKc-bKw8C4bG6BL_qh0mzKQ6QVA"
-            ]
-        },
-        {
-            "iss": "https://interconnect.wellspan.org/interconnect-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "2CTIFrq4etN7ahQYM9VVQBH2JaHZvaqt6jvfl3CbMGo"
-            ]
-        },
-        {
-            "iss": "https://scproxy.gundersenhealth.org/FHIRARR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "t8ECc0bKpCa5j7Hhu5gejMrHXMoJHRiPT_AXjrX9rk4"
-            ]
-        },
-        {
-            "iss": "https://epicproxy.hosp.wisc.edu/FhirProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "OIco740ONLpRLW0WKL5VY8vcMTOftq_JqFPH-bwBce8"
-            ]
-        },
-        {
-            "iss": "https://epic-arr.utmb.edu/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "UwqgQQ5XiNYjrPXhb3R7g7icjJljvasf2FHyV6uahyY"
-            ]
-        },
-        {
-            "iss": "https://eportaltest.gbmc.org/fhir-tst/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "SxHOCqarFFUDd_sWTvJAZvmt6brO0tVjn_iYCm_vVrk"
-            ]
-        },
-        {
-            "iss": "https://ema.franciscanalliance.org/FHIR_PROXY/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "V9yROrH8TnnMh8hV0-0I4QrlZCTJP3Y5uvZNfmixFG0"
-            ]
-        },
-        {
-            "iss": "https://rxproxy.sw.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "KFLKUh-mUZhkp5fye45PAcLesScYWHYaH49kZnT7ArE"
-            ]
-        },
-        {
-            "iss": "https://ssrx.ksnet.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "c9kEQ5g4ncmCuRKm4AOOtknhTG_wHCGtOCp-eTL9atc"
-            ]
-        },
-        {
-            "iss": "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "imnTqWDx_qeAsWg9OE-_hojNlEGxcU4RIsVa1lv1r-w"
-            ]
-        },
-        {
-            "iss": "https://healthcard.walgreens.com",
-            "kids": [
-                "HU_oQtpaUSKgrD7QzeQ9TxED9BtPRFGcD8MqI6og_8A"
-            ]
-        },
-        {
-            "iss": "https://epicproxy.et1144.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "BvZy98sZVulgVwK2D_-LcT2akKpadjH5AvCeMkdyiFc"
-            ]
-        },
-        {
-            "iss": "https://soapproxy.peacehealth.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "dtvI30LBfmPBc8KH47PpgJpDGMBQhnTJn01IGmG6t68"
-            ]
-        },
-        {
-            "iss": "https://scripts.prevea.com/FHIR-ARR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "brUxRd9nVAk5WpPbHrpJx0wx2ABpgUQ4bP1kp90o8gc"
-            ]
-        },
-        {
-            "iss": "https://epicproxy.et0764.epichosted.com/Fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "LBHy9yteMf6D1ZOlGHxVZ2VJlT073apFfgck7uEnHUU"
-            ]
-        },
-        {
-            "iss": "https://www.gov.nl.ca/covid-19/life-during-covid-19/vaccination-record/prod",
-            "kids": [
-                "UboztS3pE1mr0dnG7Rv24kRNqlYbHrbxd-qBFerpZvI"
-            ]
-        },
-        {
-            "iss": "https://pvc.novascotia.ca/issuer",
-            "kids": [
-                "UJrT9jU8vOCUl4xsI1RZjOPP8hFUv7n9mhVtolqH9qw"
-            ]
-        },
-        {
-            "iss": "https://epicproxy.et1130.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "OQMCTfOWqE-cTVFeh_pDyZrQw95BgkklaBGAIzfwK50"
+                "yNrADAskh560Ou9Rdc8C86K3RjbtfxZo9uCOL_4D0xQ"
             ]
         }
     ]
