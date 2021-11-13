@@ -1,8 +1,121 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2021-11-12 12:30:33",
+    "auditTime": "2021-11-13 12:29:17",
     "issuerCount": 365,
     "issuersWithErrors": [
+        {
+            "issuer": {
+                "iss": "https://epicsoapprd.communitymedical.org/arr_fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Community Medical Centers",
+                "website": "https://communitymedical.org/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-521, 521 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicfe.unch.unc.edu/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "UNC Health Care System",
+                "website": "https://www.unchealthcare.org/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epic-cs.unch.unc.edu/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "canonical_iss": "https://epicfe.unch.unc.edu/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "UNC Health Care System",
+                "website": "https://www.unchealthcare.org/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicfhir.unitypoint.org/ProdFHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "UnityPoint Health",
+                "website": "https://www.unitypoint.org/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://myc.ochsner.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Ochsner Health System"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://healthy.kaiserpermanente.org/public-keys/shc/v1",
+                "name": "Kaiser Permanente"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
         {
             "issuer": {
                 "iss": "https://epicproxy.et1073.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -271,6 +384,24 @@
                 "cipher": "ECDHE-RSA-AES256-SHA",
                 "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://healthy.kaiserpermanente.org/public-keys/shc/v1/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Kaiser Permanente"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
@@ -764,14 +895,6 @@
                 "website": "https://www.mercycare.org/"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-384, 384 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 10000ms"
             ]
@@ -916,6 +1039,24 @@
                 "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
                 "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://ovc-api.optum.com/imm/ocm/issuer",
+                "name": "United Healthcare Services, Inc."
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
@@ -3316,14 +3457,6 @@
                 "name": "Sanford Health"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-521, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 10000ms"
             ]
@@ -3391,6 +3524,14 @@
                 "name": "University of Pittsburgh Medical Center (UPMC)"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 10000ms"
             ]
@@ -3781,21 +3922,7 @@
     ],
     "duplicatedKids": [
         "nQM-36EWDZU5kLoCoeOvshvT2P9JUyc8Do6yWRhNokg",
-        "N2maG8qOhITe_zyPqcrCa6LT_mW18ZtFPy09cGAB24w",
-        "q59IjbeGtaRpuHvdRuU9UxpNvzpQHCLcRXVD7rM563I",
-        "SPWZW51rFOoPACYISQNT37M4zY4c9hzxw2f66OrHIbY",
-        "348jzyKWtD8225Duqr6zJHqw-Jc0jlXm_pCWq6Nw_1c",
-        "wdqzOShT_Gnt8uP5fYzHKAxp0eWweAk5zpoEvaI_VmU",
-        "3Ujv5kjdbTwbZAfjC5OrWCHDnJtENU3sTckG-vmZzHw",
-        "g1ot2FJmActNYkz-MRXX4Vq5Vk9oPf6aIRPgYvI-l2g",
-        "JGu1o4nn0XCXg9zJ4HqhQ3z9DphFMruWQ2_47C9Ozog",
-        "zswRh4FtXw_oC8R_unDMagTyHSdUjoFZadoGgIvEgO0",
-        "uBrPkpHPRwoB-QEe8VML32s0zq0g_p3FI6m891ztMWY",
-        "ni-iRbTdShFjSgtDNAcq2m1vYwMtYg0MbcRnaAUvxaA",
-        "AVJpN_VVlyCtb7SQG9ddP8T3D9ZWNZLMWhDSUVEMFHw",
-        "KGRVZgLMuFYQE28ZpW3xkQu0J2cxCwu1xXBE95XkjtA",
-        "1cbWQj6OEipUmkMhXGpgGPSf83uWS4ew4bJPpkbcong",
-        "r6TOQW6N9Twi0iPMoZLygAKX80fCeZAduGCeghxft0Q"
+        "N2maG8qOhITe_zyPqcrCa6LT_mW18ZtFPy09cGAB24w"
     ],
     "duplicatedIss": [],
     "duplicatedNames": [
@@ -3813,38 +3940,80 @@
         "State of Colorado",
         "Hospital for Special Surgery"
     ],
-    "previousAuditTime": "2021-11-11 12:30:32",
-    "newIssuerCount": 2,
+    "previousAuditTime": "2021-11-12 12:30:33",
+    "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://epicproxy.et1073.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://epicsoapprd.communitymedical.org/arr_fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "4nvtz4SKm7W0Kl5AZ-3tIpw_FqqcrdWIVqryIUzfygs"
+                "ujxdFgXdMW4j2lfl3F5OWt6xhae2K_zsbFvZUvGUChg"
             ]
         },
         {
-            "iss": "https://patientfhirapis.ynhh.org/PFF/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://epicfe.unch.unc.edu/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "57uZ0pBa-RU1i70nVRNhcfhjmCoenByGdoYbY_n_RNM"
+                "q59IjbeGtaRpuHvdRuU9UxpNvzpQHCLcRXVD7rM563I"
             ]
         },
         {
-            "iss": "https://linkpoint.ghcscw.com/Interconnect-PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://epic-cs.unch.unc.edu/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "O9F5s7NFdLhpbWtPGaNATiaND6att30ljwd81UtZh7s"
+                "q59IjbeGtaRpuHvdRuU9UxpNvzpQHCLcRXVD7rM563I"
             ]
         },
         {
-            "iss": "https://epicproxy.et0965.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://epicfhir.unitypoint.org/ProdFHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "2gE2ashpDfzsbMfw4Mi6akYTE-jAr7YKCqqg8yZouZs"
+                "xD5RaKpX6ta3w0xtO54vV8AWjJ7JY2d8cMvop1SrRj4"
             ]
         },
         {
-            "iss": "https://hygieia.bronsonhg.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://myc.ochsner.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "yNrADAskh560Ou9Rdc8C86K3RjbtfxZo9uCOL_4D0xQ"
+                "XDwaeyJyEXvFo-lkeVW8TCPGM7sMLKlJJmU74Hy60ts"
+            ]
+        },
+        {
+            "iss": "https://healthy.kaiserpermanente.org/public-keys/shc/v1",
+            "kids": [
+                "SPWZW51rFOoPACYISQNT37M4zY4c9hzxw2f66OrHIbY",
+                "348jzyKWtD8225Duqr6zJHqw-Jc0jlXm_pCWq6Nw_1c",
+                "wdqzOShT_Gnt8uP5fYzHKAxp0eWweAk5zpoEvaI_VmU",
+                "3Ujv5kjdbTwbZAfjC5OrWCHDnJtENU3sTckG-vmZzHw",
+                "g1ot2FJmActNYkz-MRXX4Vq5Vk9oPf6aIRPgYvI-l2g",
+                "JGu1o4nn0XCXg9zJ4HqhQ3z9DphFMruWQ2_47C9Ozog",
+                "zswRh4FtXw_oC8R_unDMagTyHSdUjoFZadoGgIvEgO0",
+                "uBrPkpHPRwoB-QEe8VML32s0zq0g_p3FI6m891ztMWY",
+                "ni-iRbTdShFjSgtDNAcq2m1vYwMtYg0MbcRnaAUvxaA",
+                "AVJpN_VVlyCtb7SQG9ddP8T3D9ZWNZLMWhDSUVEMFHw",
+                "KGRVZgLMuFYQE28ZpW3xkQu0J2cxCwu1xXBE95XkjtA",
+                "1cbWQj6OEipUmkMhXGpgGPSf83uWS4ew4bJPpkbcong",
+                "r6TOQW6N9Twi0iPMoZLygAKX80fCeZAduGCeghxft0Q"
+            ]
+        },
+        {
+            "iss": "https://healthy.kaiserpermanente.org/public-keys/shc/v1/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "SPWZW51rFOoPACYISQNT37M4zY4c9hzxw2f66OrHIbY",
+                "348jzyKWtD8225Duqr6zJHqw-Jc0jlXm_pCWq6Nw_1c",
+                "wdqzOShT_Gnt8uP5fYzHKAxp0eWweAk5zpoEvaI_VmU",
+                "3Ujv5kjdbTwbZAfjC5OrWCHDnJtENU3sTckG-vmZzHw",
+                "g1ot2FJmActNYkz-MRXX4Vq5Vk9oPf6aIRPgYvI-l2g",
+                "JGu1o4nn0XCXg9zJ4HqhQ3z9DphFMruWQ2_47C9Ozog",
+                "zswRh4FtXw_oC8R_unDMagTyHSdUjoFZadoGgIvEgO0",
+                "uBrPkpHPRwoB-QEe8VML32s0zq0g_p3FI6m891ztMWY",
+                "ni-iRbTdShFjSgtDNAcq2m1vYwMtYg0MbcRnaAUvxaA",
+                "AVJpN_VVlyCtb7SQG9ddP8T3D9ZWNZLMWhDSUVEMFHw",
+                "KGRVZgLMuFYQE28ZpW3xkQu0J2cxCwu1xXBE95XkjtA",
+                "1cbWQj6OEipUmkMhXGpgGPSf83uWS4ew4bJPpkbcong",
+                "r6TOQW6N9Twi0iPMoZLygAKX80fCeZAduGCeghxft0Q"
+            ]
+        },
+        {
+            "iss": "https://ovc-api.optum.com/imm/ocm/issuer",
+            "kids": [
+                "F8F5TxPt4A1jBA5ytKc-bKw8C4bG6BL_qh0mzKQ6QVA"
             ]
         }
     ]
