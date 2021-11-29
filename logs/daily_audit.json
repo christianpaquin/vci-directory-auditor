@@ -1,8 +1,47 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2021-11-28 12:29:39",
+    "auditTime": "2021-11-29 12:31:21",
     "issuerCount": 414,
     "issuersWithErrors": [
+        {
+            "issuer": {
+                "iss": "https://epic-cs.unch.unc.edu/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "canonical_iss": "https://epicfe.unch.unc.edu/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "UNC Health Care System",
+                "website": "https://www.unchealthcare.org/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicfhir.unitypoint.org/ProdFHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "UnityPoint Health",
+                "website": "https://www.unitypoint.org/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
         {
             "issuer": {
                 "iss": "https://myc.ochsner.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
@@ -14,6 +53,24 @@
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
                 "kexAlg": "X25519, 253 bits",
                 "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 10000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://healthy.kaiserpermanente.org/public-keys/shc/v1",
+                "name": "Kaiser Permanente"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
@@ -2073,14 +2130,6 @@
                 "name": "Express Scripts"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 10000ms"
             ]
@@ -2663,6 +2712,14 @@
                 "website": "https://www.nch.org/"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 10000ms"
             ]
@@ -3978,7 +4035,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-521, 521 bits",
+                "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -4740,8 +4797,7 @@
     ],
     "duplicatedKids": [
         "nQM-36EWDZU5kLoCoeOvshvT2P9JUyc8Do6yWRhNokg",
-        "N2maG8qOhITe_zyPqcrCa6LT_mW18ZtFPy09cGAB24w",
-        "q59IjbeGtaRpuHvdRuU9UxpNvzpQHCLcRXVD7rM563I"
+        "N2maG8qOhITe_zyPqcrCa6LT_mW18ZtFPy09cGAB24w"
     ],
     "duplicatedIss": [],
     "duplicatedNames": [
@@ -4760,8 +4816,39 @@
         "Hospital for Special Surgery",
         "Cedars-Sinai Health System"
     ],
-    "previousAuditTime": "2021-11-27 12:29:34",
+    "previousAuditTime": "2021-11-28 12:29:39",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
-    "removedKids": []
+    "removedKids": [
+        {
+            "iss": "https://epic-cs.unch.unc.edu/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "q59IjbeGtaRpuHvdRuU9UxpNvzpQHCLcRXVD7rM563I"
+            ]
+        },
+        {
+            "iss": "https://epicfhir.unitypoint.org/ProdFHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "xD5RaKpX6ta3w0xtO54vV8AWjJ7JY2d8cMvop1SrRj4"
+            ]
+        },
+        {
+            "iss": "https://healthy.kaiserpermanente.org/public-keys/shc/v1",
+            "kids": [
+                "SPWZW51rFOoPACYISQNT37M4zY4c9hzxw2f66OrHIbY",
+                "348jzyKWtD8225Duqr6zJHqw-Jc0jlXm_pCWq6Nw_1c",
+                "wdqzOShT_Gnt8uP5fYzHKAxp0eWweAk5zpoEvaI_VmU",
+                "3Ujv5kjdbTwbZAfjC5OrWCHDnJtENU3sTckG-vmZzHw",
+                "g1ot2FJmActNYkz-MRXX4Vq5Vk9oPf6aIRPgYvI-l2g",
+                "JGu1o4nn0XCXg9zJ4HqhQ3z9DphFMruWQ2_47C9Ozog",
+                "zswRh4FtXw_oC8R_unDMagTyHSdUjoFZadoGgIvEgO0",
+                "uBrPkpHPRwoB-QEe8VML32s0zq0g_p3FI6m891ztMWY",
+                "ni-iRbTdShFjSgtDNAcq2m1vYwMtYg0MbcRnaAUvxaA",
+                "AVJpN_VVlyCtb7SQG9ddP8T3D9ZWNZLMWhDSUVEMFHw",
+                "KGRVZgLMuFYQE28ZpW3xkQu0J2cxCwu1xXBE95XkjtA",
+                "1cbWQj6OEipUmkMhXGpgGPSf83uWS4ew4bJPpkbcong",
+                "r6TOQW6N9Twi0iPMoZLygAKX80fCeZAduGCeghxft0Q"
+            ]
+        }
+    ]
 }
