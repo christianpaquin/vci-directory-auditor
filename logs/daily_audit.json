@@ -1,7 +1,7 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2021-12-08 21:26:17",
-    "issuerCount": 430,
+    "auditTime": "2021-12-09 12:32:12",
+    "issuerCount": 432,
     "issuersWithErrors": [
         {
             "issuer": {
@@ -29,6 +29,24 @@
             },
             "errors": [
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://patientfhirapis.ynhh.org/PFF/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Yale New Haven Health System and Yale University"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 90000ms"
             ]
         },
         {
@@ -61,27 +79,9 @@
         },
         {
             "issuer": {
-                "iss": "https://ssrx.ksnet.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Kelsey-Seybold Clinic",
-                "website": "https://www.kelsey-seybold.com"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "4096",
-                "compression": "NONE"
-            },
-            "errors": [
-                "RequestError: connect ECONNRESET 204.28.12.74:443"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://fhir.memorialcare.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "MemorialCare"
+                "iss": "https://epicprdproxy.nch.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Northwest Community Hospital",
+                "website": "https://www.nch.org/"
             },
             "keys": [],
             "tlsDetails": {
@@ -93,55 +93,7 @@
                 "compression": "NONE"
             },
             "errors": [
-                "RequestError: connect ECONNRESET 192.96.41.160:443"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epicfhir.nyumc.org/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "NYU Langone Health System",
-                "website": "https://nyulangone.org/"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "RequestError: connect ECONNRESET 216.165.125.119:443"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://fhir.mdanderson.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "The University of Texas MD Anderson Cancer Center",
-                "website": "https://www.mdanderson.org/"
-            },
-            "keys": [],
-            "errors": [
-                "RequestError: connect ECONNRESET 143.111.156.190:443"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://FHIR.umm.edu/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "University of Maryland Medical System"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "RequestError: connect ECONNRESET 134.192.254.37:443"
+                "HTTPError: Response code 403 (Forbidden)"
             ]
         },
         {
@@ -150,182 +102,8 @@
                 "name": "University of Pittsburgh Medical Center (UPMC)"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "errors": [
-                "RequestError: Client network socket disconnected before secure TLS connection was established"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://emrproxy.mcfarlandclinic.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Health Ventures"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "RequestError: Client network socket disconnected before secure TLS connection was established"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://fhir.lluh.org/interconnect-fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Loma Linda University Health, Riverside University Health System, SAC Health System, and Affiliates",
-                "website": "https://mychart.ieccn.org/MyChart"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "RequestError: Client network socket disconnected before secure TLS connection was established"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://fhir.kansashealthsystem.com/interconnect-PRD_FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "University of Kansas"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "RequestError: write ECONNRESET"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://travel.hawaii.gov",
-                "name": "State of Hawaii"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "RequestError: socket hang up"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://interconapps.uchospitals.edu/PRD-FHIR-Proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "University of Chicago Medical Center"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "RequestError: Client network socket disconnected before secure TLS connection was established"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://soap.crmcwy.org/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Cheyenne Regional Medical Center",
-                "website": "https://www.cheyenneregional.org/"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "RequestError: Client network socket disconnected before secure TLS connection was established"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://myepicapps.uihealthcare.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "University of Iowa and our Community Connect Hospitals and Clinics: Cass Health, ISH, JCHC, MMC, VBCH and WMC"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "RequestError: Client network socket disconnected before secure TLS connection was established"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://esoap.mihs.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Valleywise Health",
-                "website": "https://valleywisehealth.org/"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_128_GCM_SHA256",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "RequestError: write ECONNRESET"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epicproxy.rush.edu/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Rush University Medical Center",
-                "website": "https://www.rush.edu/"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "RequestError: Client network socket disconnected before secure TLS connection was established"
+                "TimeoutError: Timeout awaiting 'request' for 90000ms"
             ]
         },
         {
@@ -345,25 +123,6 @@
             },
             "errors": [
                 "HTTPError: Response code 404 (Resource not available)"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://arr01.service.vumc.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Vanderbilt University Medical Center",
-                "website": "https://www.vanderbilthealth.com/"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-384, 384 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "RequestError: Client network socket disconnected before secure TLS connection was established"
             ]
         }
     ],
@@ -404,8 +163,21 @@
         "Hospital for Special Surgery",
         "Cedars-Sinai Health System"
     ],
-    "previousAuditTime": "2021-12-08 12:32:07",
-    "newIssuerCount": 1,
+    "previousAuditTime": "2021-12-08 21:26:17",
+    "newIssuerCount": 2,
     "deletedIssuerCount": 0,
-    "removedKids": []
+    "removedKids": [
+        {
+            "iss": "https://patientfhirapis.ynhh.org/PFF/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "57uZ0pBa-RU1i70nVRNhcfhjmCoenByGdoYbY_n_RNM"
+            ]
+        },
+        {
+            "iss": "https://epicprdproxy.nch.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "UjF5uQPh6HUHhByMFl-Fx_4H26-xSi2gb7n2wcgbjYw"
+            ]
+        }
+    ]
 }
