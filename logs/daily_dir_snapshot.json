@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2021-12-13 12:32:02",
+    "time": "2021-12-14 12:31:39",
     "issuerInfo": [
         {
             "issuer": {
@@ -178,8 +178,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-384, 384 bits",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -5536,10 +5536,26 @@
                 "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Baptist Health"
             },
-            "keys": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 90000ms"
-            ]
+            "keys": [
+                {
+                    "x": "hA1cB_UjKPGaLnIm9mlJ0wLrK6g5QCd_eae2UKFRvpw",
+                    "y": "o1SsIsu0ZWeSsGkyxR6it-8MdJRny_deosxdrm1a3FI",
+                    "kid": "2Y6IshBllIuZBWuUMPeefWvqSHynjSDrmXHpOKo9JnU",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": []
         },
         {
             "issuer": {
@@ -5830,14 +5846,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "errors": []
         },
         {
@@ -5883,14 +5891,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "errors": []
         },
         {
@@ -6214,17 +6214,7 @@
                 "iss": "https://epicproxy.et1038.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "EPIC Management"
             },
-            "keys": [
-                {
-                    "x": "KRSjdIMaBf53Ctu7_-vRBaYklj9MORO9Q8LlNYSUg0I",
-                    "y": "uuRhhiaaYaVKLG4WJvn7OtUkRT2ah00A8m55NuZp1F0",
-                    "kid": "08IMBTeXJ7px5KXBRgJK_qm3QU3eD1VR8mClLsi_Sck",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -6233,7 +6223,9 @@
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
-            "errors": []
+            "errors": [
+                "HTTPError: Response code 503 (Service Unavailable)"
+            ]
         },
         {
             "issuer": {
@@ -6268,17 +6260,7 @@
                 "name": "Renown Health",
                 "website": "https://www.renown.org/en/"
             },
-            "keys": [
-                {
-                    "x": "rozoNtkKTerrT5E50x0vSBcq6GXPhSfSrRP-5aoQm8c",
-                    "y": "gX_euo9ozZT2QIji_KihWn_IelYmO3NqRui9CZYMpeg",
-                    "kid": "aaPAzrs7vTMwGbUpmJXXv-K_rb6I4ljVYwgztBAVcGY",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
@@ -6287,7 +6269,9 @@
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
-            "errors": []
+            "errors": [
+                "RequestError: connect ECONNRESET 204.115.222.77:443"
+            ]
         },
         {
             "issuer": {
@@ -11424,7 +11408,8 @@
         {
             "issuer": {
                 "iss": "https://ocsoapprd.nebraskamed.com/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Nebraska Medicine"
+                "name": "Nebraska Medicine",
+                "website": "https://www.nebraskamed.com/"
             },
             "keys": [
                 {
@@ -11569,6 +11554,164 @@
                     "kty": "EC",
                     "alg": "ES256",
                     "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://epicapp.mylrh.org/OAuth2/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Lakeland Regional Health",
+                "website": "https://www.mylrh.org/"
+            },
+            "keys": [
+                {
+                    "x": "wXN7LS59Jpd_6vHhbK9TlHmIjlazTO1wu9I37CVX4a0",
+                    "y": "XIfwe_6-PXeg0uCxRgt7nhsHXoF-xhksZUuGtsiIonw",
+                    "kid": "h_Z1WIF7m6_q59f7JiB1_q2-rRhr8uGlJiiBBzGlXUY",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-384, 384 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://epicproxy.et1007.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Main Line Health",
+                "website": "https://www.mainlinehealth.org/"
+            },
+            "keys": [
+                {
+                    "x": "XgqqZhCgo6e7kqCRnf2eQVGHq2uZfnBa45J_5WndBkc",
+                    "y": "8rE8iUavnTUrILougfkMWgRWxyvKnI0eq3hz5mv_jbM",
+                    "kid": "pLS2q7bqcCbK49m-zjJkRQil3MQISMrwc-012pCHEkY",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://smarthealthcard.iisregistry.net/rmi/issuer",
+                "name": "RMI Ministry of Health and Human Services"
+            },
+            "keys": [
+                {
+                    "kty": "EC",
+                    "kid": "-b19goNbl4_TqU-BngNWMobzTZc6XG-bpSVQppsh7TY",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "Lc4INqQHBirrbOzsO8cMVsIqn7Sj69xqM5QEgIjH7bQ",
+                    "y": "DdzR_s2Yi4dUQlnVuDpazXirK5pM9CXKbluw_nwkHf0"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://smarthealthcard.iisregistry.net/philadelphia/issuer",
+                "name": "City of Philadelphia"
+            },
+            "keys": [
+                {
+                    "kty": "EC",
+                    "kid": "0IkOoOtxTAp0DpLmK2na2rpCnKF7LGhngdT3hIGFWnQ",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "kWNSzSHib3SbIY8gH-M3BgTp9m7VaGibbC5HjWQFNbw",
+                    "y": "LxsppZ3ibAh5vwTO-qhom71PJXc55lPXfr4mZ-1OIaI"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://smarthealthcard.iisregistry.net/americansamoa/issuer",
+                "name": "American Samoa"
+            },
+            "keys": [
+                {
+                    "kty": "EC",
+                    "kid": "BY-MED9jsICOyQBrvR6EJAD66k4djQ2_-YltJVc5QKk",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "R5hSTm3-7mybxLj_JBjhR0fgl4VlELtAHxKsWINxEms",
+                    "y": "TrmcugtIji8--RIYuNwz_6oVRvnTSqN0vH3otTQheQU"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://smarthealthcard.iisregistry.net/fsm/issuer",
+                "name": "FSM Department of Health and Social Affairs"
+            },
+            "keys": [
+                {
+                    "kty": "EC",
+                    "kid": "0Hs0endtJ3U4Saxq2KF6-bC4UJp5mkuibFk4AVviieI",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "GwI3hBX_u_zQV3LxncsyQIBx59Tqx8XBA4GaG5e8S_c",
+                    "y": "MGvii97oobk5Cb0kkbCrIThn-F6BzAPZkSudBW-bSvE"
                 }
             ],
             "tlsDetails": {
