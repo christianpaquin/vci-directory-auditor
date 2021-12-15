@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2021-12-15 12:31:45",
+    "time": "2021-12-15 21:29:42",
     "issuerInfo": [
         {
             "issuer": {
@@ -5720,7 +5720,17 @@
                 "iss": "https://skphr.prd.telushealthspace.com",
                 "name": "eHealth Saskatchewan"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "use": "sig",
+                    "crv": "P-256",
+                    "kid": "xOqUO82bEz8APn_5wohZZvSK4Ui6pqWdSAv5BEhkes0",
+                    "x": "Hk4ktlNfoIIo7jp5I8cefp54Ils3TsKvKXw_E9CGIPE",
+                    "y": "7hVieFGuHJeaNRCxVgKeVpoxDJevytgoCxqVZ6cfcdk",
+                    "alg": "ES256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
@@ -5729,9 +5739,7 @@
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
-            "errors": [
-                "RequestError: connect ECONNRESET 216.168.147.90:443"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -5764,7 +5772,17 @@
                 "iss": "https://moc.beaumont.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Beaumont Health"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "iaTqSHcKw4bEMMHQ-UsGpBGYtUWblmu317BeLb01rKc",
+                    "y": "tMJSsoDOJu-geTA38aWARqlK5eA4m3UYFXP2zIF7U8M",
+                    "kid": "hOS6LGMSk4BDXFirAHIebJQ_OhJdXF2bSKzry3B3MYk",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -5773,9 +5791,7 @@
                 "pubKeySize": "4096",
                 "compression": "NONE"
             },
-            "errors": [
-                "RequestError: connect ECONNRESET 162.82.212.27:443"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -5899,6 +5915,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "errors": []
         },
         {
@@ -7197,26 +7221,10 @@
                 "iss": "https://soap.uhcs.org/IC-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "University Health Care System"
             },
-            "keys": [
-                {
-                    "x": "aOxEqNnR-C6boWr8xf6_mMLp2sNjGYPX_K6Oi_VCkGA",
-                    "y": "pJfGGA8nxvktLL-aOjaQCaSdT1LOiHvKaaDTGtlR0_w",
-                    "kid": "m_Iqa--J0odnT7cyJiObD1px1jxmm0x5v00ETHXM1VM",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": []
+            "keys": [],
+            "errors": [
+                "RequestError: connect ECONNREFUSED 216.186.180.112:443"
+            ]
         },
         {
             "issuer": {
@@ -7287,14 +7295,6 @@
                     "y": "nOkShRZU4BheXkoxYMsXr4I7_7wLJGAKqyF_SBYA0CE"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "errors": []
         },
         {
@@ -8142,6 +8142,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "errors": []
         },
         {
@@ -9250,10 +9258,26 @@
                 "iss": "https://epic-fhir-prd.upmc.com/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "University of Pittsburgh Medical Center (UPMC)"
             },
-            "keys": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 90000ms"
-            ]
+            "keys": [
+                {
+                    "x": "CYuBPgiP1ILvF7BoSuvGwymdzLhW2hD8lCZilC7hFg0",
+                    "y": "1gy11quqQ07FyEVRWHJt7PXt5-DZ5ko8tHRZv81pTIU",
+                    "kid": "4jzUyIF5gJ_IbzzkJ0c8S1iBJ5aTLoSEt9FQ4ZMiu94",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": []
         },
         {
             "issuer": {

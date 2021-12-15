@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2021-12-15 12:31:45",
+    "auditTime": "2021-12-15 21:29:42",
     "issuerCount": 442,
     "issuersWithErrors": [
         {
@@ -61,48 +61,12 @@
         },
         {
             "issuer": {
-                "iss": "https://skphr.prd.telushealthspace.com",
-                "name": "eHealth Saskatchewan"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": [
-                "RequestError: connect ECONNRESET 216.168.147.90:443"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://moc.beaumont.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Beaumont Health"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "4096",
-                "compression": "NONE"
-            },
-            "errors": [
-                "RequestError: connect ECONNRESET 162.82.212.27:443"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epic-fhir-prd.upmc.com/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "University of Pittsburgh Medical Center (UPMC)"
+                "iss": "https://soap.uhcs.org/IC-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "University Health Care System"
             },
             "keys": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 90000ms"
+                "RequestError: connect ECONNREFUSED 216.186.180.112:443"
             ]
         },
         {
@@ -182,8 +146,15 @@
         "Cedars-Sinai Health System",
         "Lakeland Regional Health"
     ],
-    "previousAuditTime": "2021-12-14 12:31:39",
-    "newIssuerCount": 4,
+    "previousAuditTime": "2021-12-15 12:31:45",
+    "newIssuerCount": 0,
     "deletedIssuerCount": 0,
-    "removedKids": []
+    "removedKids": [
+        {
+            "iss": "https://soap.uhcs.org/IC-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "m_Iqa--J0odnT7cyJiObD1px1jxmm0x5v00ETHXM1VM"
+            ]
+        }
+    ]
 }
