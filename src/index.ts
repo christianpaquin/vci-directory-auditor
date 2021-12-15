@@ -63,7 +63,8 @@ async function fetchDirectory(directoryUrl: string) : Promise<DirectoryLog> {
         Promise.reject("Can't parse issuer directory");
     }
 
-    const issuerLogInfo = issuers.participating_issuers.map(async (issuer): Promise<IssuerLogInfo> => {
+    const issuerLogInfoArray: IssuerLogInfo[] = [];
+    for (const issuer of issuers.participating_issuers) {
         const jwkURL = issuer.iss + '/.well-known/jwks.json';
         const issuerLogInfo: IssuerLogInfo = {
             issuer: issuer,
@@ -72,8 +73,7 @@ async function fetchDirectory(directoryUrl: string) : Promise<DirectoryLog> {
             errors: []
         }
         try {
-            // TODO: investigate timeout problem: many JWK sets failed to download with a 5 sec timeout, seems surprising
-            const response = await got(jwkURL, { timeout:90000 });
+            const response = await got(jwkURL, { timeout:5000 });
             if (!response) {
                 throw "Can't reach JWK URL";
             }
@@ -93,18 +93,13 @@ async function fetchDirectory(directoryUrl: string) : Promise<DirectoryLog> {
         } catch (err) {
             issuerLogInfo.errors?.push((err as Error).toString());
         }
-        return issuerLogInfo;        
-    });
+        issuerLogInfoArray.push(issuerLogInfo);
+    }
 
     const directoryLog: DirectoryLog = {
         directory: directoryUrl,
         time: date.format(currentTime, 'YYYY-MM-DD HH:mm:ss'),
-        issuerInfo: []    
-    }
-    try {
-        directoryLog.issuerInfo = await Promise.all(issuerLogInfo);
-    } catch(err) {
-        Promise.reject(err);
+        issuerInfo: issuerLogInfoArray
     }
 
     return directoryLog;
@@ -191,6 +186,7 @@ void (async () => {
         else {
             // fetch a fresh copy of the directory
             directoryLog = await fetchDirectory(options.directory);
+            console.log("retrieved directoryLog size: " + directoryLog.issuerInfo.length);
             fs.writeFileSync(options.outlog, JSON.stringify(directoryLog, null, 4));
             console.log(`Directory log written to ${options.outlog}`);
         }
