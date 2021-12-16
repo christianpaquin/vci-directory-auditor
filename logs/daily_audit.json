@@ -1,8 +1,26 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2021-12-15 12:31:45",
+    "auditTime": "2021-12-16 12:32:05",
     "issuerCount": 442,
     "issuersWithErrors": [
+        {
+            "issuer": {
+                "iss": "https://proxy.lvh.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Lehigh Valley Health Network"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "HTTPError: Response code 400 (An error occurred while executing the command: USER-NOT-AUTHORIZED.)"
+            ]
+        },
         {
             "issuer": {
                 "iss": "https://s.bilh.org/healthcard/issuer",
@@ -61,8 +79,20 @@
         },
         {
             "issuer": {
-                "iss": "https://skphr.prd.telushealthspace.com",
-                "name": "eHealth Saskatchewan"
+                "iss": "https://fhir.promedica.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "ProMedica",
+                "website": "https://www.promedica.org/"
+            },
+            "keys": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicprdproxy.nch.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Northwest Community Hospital",
+                "website": "https://www.nch.org/"
             },
             "keys": [],
             "tlsDetails": {
@@ -74,25 +104,7 @@
                 "compression": "NONE"
             },
             "errors": [
-                "RequestError: connect ECONNRESET 216.168.147.90:443"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://moc.beaumont.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Beaumont Health"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "4096",
-                "compression": "NONE"
-            },
-            "errors": [
-                "RequestError: connect ECONNRESET 162.82.212.27:443"
+                "HTTPError: Response code 403 (Forbidden)"
             ]
         },
         {
@@ -102,7 +114,7 @@
             },
             "keys": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 90000ms"
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -182,8 +194,33 @@
         "Cedars-Sinai Health System",
         "Lakeland Regional Health"
     ],
-    "previousAuditTime": "2021-12-14 12:31:39",
-    "newIssuerCount": 4,
+    "previousAuditTime": "2021-12-15 21:29:42",
+    "newIssuerCount": 0,
     "deletedIssuerCount": 0,
-    "removedKids": []
+    "removedKids": [
+        {
+            "iss": "https://proxy.lvh.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "JxvB22At6mPxk8vL_pig6W8BLYOIWsAxGIJ0F10tSUU"
+            ]
+        },
+        {
+            "iss": "https://fhir.promedica.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "uPWKKpoWI3OIa11UbV9xdoRHdf5ZsYsAyvczK79L3RE"
+            ]
+        },
+        {
+            "iss": "https://epicprdproxy.nch.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "UjF5uQPh6HUHhByMFl-Fx_4H26-xSi2gb7n2wcgbjYw"
+            ]
+        },
+        {
+            "iss": "https://epic-fhir-prd.upmc.com/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "4jzUyIF5gJ_IbzzkJ0c8S1iBJ5aTLoSEt9FQ4ZMiu94"
+            ]
+        }
+    ]
 }
