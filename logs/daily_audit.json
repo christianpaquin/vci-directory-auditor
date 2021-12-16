@@ -1,8 +1,26 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2021-12-15 21:29:42",
+    "auditTime": "2021-12-16 12:32:05",
     "issuerCount": 442,
     "issuersWithErrors": [
+        {
+            "issuer": {
+                "iss": "https://proxy.lvh.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Lehigh Valley Health Network"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "HTTPError: Response code 400 (An error occurred while executing the command: USER-NOT-AUTHORIZED.)"
+            ]
+        },
         {
             "issuer": {
                 "iss": "https://s.bilh.org/healthcard/issuer",
@@ -61,12 +79,42 @@
         },
         {
             "issuer": {
-                "iss": "https://soap.uhcs.org/IC-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "University Health Care System"
+                "iss": "https://fhir.promedica.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "ProMedica",
+                "website": "https://www.promedica.org/"
             },
             "keys": [],
             "errors": [
-                "RequestError: connect ECONNREFUSED 216.186.180.112:443"
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicprdproxy.nch.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Northwest Community Hospital",
+                "website": "https://www.nch.org/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": [
+                "HTTPError: Response code 403 (Forbidden)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epic-fhir-prd.upmc.com/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "University of Pittsburgh Medical Center (UPMC)"
+            },
+            "keys": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -146,14 +194,32 @@
         "Cedars-Sinai Health System",
         "Lakeland Regional Health"
     ],
-    "previousAuditTime": "2021-12-15 12:31:45",
+    "previousAuditTime": "2021-12-15 21:29:42",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://soap.uhcs.org/IC-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://proxy.lvh.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "m_Iqa--J0odnT7cyJiObD1px1jxmm0x5v00ETHXM1VM"
+                "JxvB22At6mPxk8vL_pig6W8BLYOIWsAxGIJ0F10tSUU"
+            ]
+        },
+        {
+            "iss": "https://fhir.promedica.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "uPWKKpoWI3OIa11UbV9xdoRHdf5ZsYsAyvczK79L3RE"
+            ]
+        },
+        {
+            "iss": "https://epicprdproxy.nch.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "UjF5uQPh6HUHhByMFl-Fx_4H26-xSi2gb7n2wcgbjYw"
+            ]
+        },
+        {
+            "iss": "https://epic-fhir-prd.upmc.com/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "4jzUyIF5gJ_IbzzkJ0c8S1iBJ5aTLoSEt9FQ4ZMiu94"
             ]
         }
     ]

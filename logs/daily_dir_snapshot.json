@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2021-12-15 21:29:42",
+    "time": "2021-12-16 12:32:05",
     "issuerInfo": [
         {
             "issuer": {
@@ -138,17 +138,7 @@
                 "iss": "https://proxy.lvh.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Lehigh Valley Health Network"
             },
-            "keys": [
-                {
-                    "x": "5bENEsVP0Ky72spvsc55slYd_B4IlPMVfwnGdrBSXVA",
-                    "y": "uKN9It1PEBu6kES6hQW-eazvQpYEqgSPVQoyouDcwHQ",
-                    "kid": "JxvB22At6mPxk8vL_pig6W8BLYOIWsAxGIJ0F10tSUU",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -157,7 +147,9 @@
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
-            "errors": []
+            "errors": [
+                "HTTPError: Response code 400 (An error occurred while executing the command: USER-NOT-AUTHORIZED.)"
+            ]
         },
         {
             "issuer": {
@@ -3978,14 +3970,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "errors": []
         },
         {
@@ -4006,14 +3990,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "errors": []
         },
         {
@@ -5915,14 +5891,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "errors": []
         },
         {
@@ -7221,10 +7189,26 @@
                 "iss": "https://soap.uhcs.org/IC-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "University Health Care System"
             },
-            "keys": [],
-            "errors": [
-                "RequestError: connect ECONNREFUSED 216.186.180.112:443"
-            ]
+            "keys": [
+                {
+                    "x": "aOxEqNnR-C6boWr8xf6_mMLp2sNjGYPX_K6Oi_VCkGA",
+                    "y": "pJfGGA8nxvktLL-aOjaQCaSdT1LOiHvKaaDTGtlR0_w",
+                    "kid": "m_Iqa--J0odnT7cyJiObD1px1jxmm0x5v00ETHXM1VM",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "errors": []
         },
         {
             "issuer": {
@@ -7295,6 +7279,14 @@
                     "y": "nOkShRZU4BheXkoxYMsXr4I7_7wLJGAKqyF_SBYA0CE"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "errors": []
         },
         {
@@ -7820,26 +7812,10 @@
                 "name": "ProMedica",
                 "website": "https://www.promedica.org/"
             },
-            "keys": [
-                {
-                    "x": "Hty2sTB8Apkrr-Zvi7nuchk-U9dey3nS5wZxxsP6ZeY",
-                    "y": "3zXcnWpnWc6jJEvVUuHph2SZ4h7KSJm8HSnL3HoFAuk",
-                    "kid": "uPWKKpoWI3OIa11UbV9xdoRHdf5ZsYsAyvczK79L3RE",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-521, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": []
+            "keys": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -8131,17 +8107,7 @@
                 "name": "Northwest Community Hospital",
                 "website": "https://www.nch.org/"
             },
-            "keys": [
-                {
-                    "x": "iWC7qOI1vDoWSeyYFBFpD2hefM3qPHcZOjAOW17bQ80",
-                    "y": "9tRTdAEwDIPZZaoIHfU1nDd1IAGd-n-F5U4B2DYaWxw",
-                    "kid": "UjF5uQPh6HUHhByMFl-Fx_4H26-xSi2gb7n2wcgbjYw",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
@@ -8150,7 +8116,9 @@
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
-            "errors": []
+            "errors": [
+                "HTTPError: Response code 403 (Forbidden)"
+            ]
         },
         {
             "issuer": {
@@ -9258,26 +9226,10 @@
                 "iss": "https://epic-fhir-prd.upmc.com/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "University of Pittsburgh Medical Center (UPMC)"
             },
-            "keys": [
-                {
-                    "x": "CYuBPgiP1ILvF7BoSuvGwymdzLhW2hD8lCZilC7hFg0",
-                    "y": "1gy11quqQ07FyEVRWHJt7PXt5-DZ5ko8tHRZv81pTIU",
-                    "kid": "4jzUyIF5gJ_IbzzkJ0c8S1iBJ5aTLoSEt9FQ4ZMiu94",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "errors": []
+            "keys": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -10052,7 +10004,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
+                "kexAlg": "ECDH, P-521, 521 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
