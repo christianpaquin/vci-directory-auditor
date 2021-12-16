@@ -4,6 +4,14 @@
 
 import { JWK } from "node-jose";
 
+export interface IssuerKey {
+    kty: string,
+    kid: string,
+    use: string,
+    alg: string,
+    crlVersion: number
+}
+
 // issuer info in the directory
 export interface TrustedIssuer {
     iss: string,
@@ -26,14 +34,23 @@ export interface TlsDetails {
     compression: string | undefined
 }
 
+export interface CRL {
+    kid: string,
+    method: string,
+    ctr: number,
+    rids: string[]
+}
+
 // issuer log info
 export interface IssuerLogInfo {
     // the issuer info
     issuer: TrustedIssuer,
     // the issuer's JWK set
-    keys: JWK.Key[],
+    keys: IssuerKey[],
     // the issuer's default TLS session details
     tlsDetails: TlsDetails | undefined,
+    // the issuer's cert revocation lists (CRLs)
+    crls?: CRL[],
     // errors while retrieving the issuer JWK set, if any
     errors?: string[]
 }

@@ -1,20 +1,18 @@
 // Audit script for the VCI issuers directory
 
 import { Command } from 'commander';
-import { JWK } from "node-jose";
 import got from 'got';
 import fs from 'fs';
 import path from 'path';
 import date from 'date-and-time';
 import Url from 'url-parse';
-import { AuditLog, DirectoryLog, IssuerKids, IssuerLogInfo, TrustedIssuers } from './interfaces';
+import { AuditLog, CRL, DirectoryLog, IssuerKey, IssuerKids, IssuerLogInfo, TrustedIssuers } from './interfaces';
 import { auditTlsDetails, getDefaultTlsDetails } from './bcp195';
 
 const VCI_ISSUERS_DIR_URL = "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json";
 
-
 interface KeySet {
-    keys : JWK.Key[]
+    keys : IssuerKey[]
 }
 
 interface Options {
@@ -24,6 +22,7 @@ interface Options {
     auditlog: string;
     directory: string;
     test: boolean;
+    verbose: boolean;
 }
 
 //
@@ -36,6 +35,7 @@ program.option('-p, --previous <previous>', 'directory log file from a previous 
 program.option('-a, --auditlog <auditlog>', 'output audit file on the directory');
 program.option('-d, --directory <directory>', 'URL of the directory to audit; uses the VCI one by default');
 program.option('-t, --test', 'test mode');
+program.option('-v, --verbose', 'verbose mode');
 program.parse(process.argv);
 const currentTime = new Date();
 
@@ -52,7 +52,7 @@ if (!options.auditlog) {
 }
 
 // download the specified directory
-async function fetchDirectory(directoryUrl: string) : Promise<DirectoryLog> {
+async function fetchDirectory(directoryUrl: string, verbose: boolean = false) : Promise<DirectoryLog> {
     const response = await got(directoryUrl, { timeout: 5000 });
     if (!response) {
         Promise.reject("Can't connect to directory");
@@ -70,18 +70,28 @@ async function fetchDirectory(directoryUrl: string) : Promise<DirectoryLog> {
             issuer: issuer,
             keys: [],
             tlsDetails: undefined,
+            crls: [],
             errors: []
         }
+        const requestedOrigin = 'https://example.org'; // request bogus origin to test CORS response
         try {
-            const response = await got(jwkURL, { timeout:5000 });
+            if (verbose) console.log("fetching jwks at " + jwkURL);
+            const response = await got(jwkURL, { headers: { Origin: requestedOrigin }, timeout:5000 });
             if (!response) {
-                throw "Can't reach JWK URL";
+                throw "Can't reach JWK set URL: " + jwkURL;
+            }
+            const acaoHeader = response.headers['access-control-allow-origin'];
+            let errors = "";
+            if (!acaoHeader) {
+                issuerLogInfo.errors?.push("Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header");
+            } else if (acaoHeader !== '*' && acaoHeader !== requestedOrigin) {
+                issuerLogInfo.errors?.push(`Issuer key endpoint's CORS 'access-control-allow-origin' header ${acaoHeader} does not match the requested origin`);
             }
             const keySet = JSON.parse(response.body) as KeySet;
             if (!keySet) {
-                throw "Failed to parse JSON KeySet schema";
+                issuerLogInfo.errors?.push("Failed to parse JSON KeySet schema");
             }
-            issuerLogInfo.keys = keySet.keys;
+            // TODO: try to import keys
         } catch (err) {
             issuerLogInfo.errors?.push((err as Error).toString());
         }
@@ -92,6 +102,25 @@ async function fetchDirectory(directoryUrl: string) : Promise<DirectoryLog> {
             }
         } catch (err) {
             issuerLogInfo.errors?.push((err as Error).toString());
+        }
+        for (const key of issuerLogInfo.keys) {
+            if (key.crlVersion) {
+                try {
+                    const crlURL = `${issuer.iss}/.well-known/crl/${key.kid}.json`;
+                    if (verbose) console.log("fetching CRL at " + crlURL);
+                    const response = await got(crlURL, { timeout:5000 });
+                    if (!response) {
+                        throw "Can't reach CRL at " + crlURL;
+                    }
+                    const crl = JSON.parse(response.body) as CRL;
+                    if (!crl) {
+                        throw "Can't parse CRL at " + crlURL;
+                    }
+                    issuerLogInfo.crls?.push(crl);
+                } catch (err) {
+                    issuerLogInfo.errors?.push((err as Error).toString());
+                }
+            }
         }
         issuerLogInfoArray.push(issuerLogInfo);
     }
@@ -185,8 +214,7 @@ void (async () => {
         }
         else {
             // fetch a fresh copy of the directory
-            directoryLog = await fetchDirectory(options.directory);
-            console.log("retrieved directoryLog size: " + directoryLog.issuerInfo.length);
+            directoryLog = await fetchDirectory(options.directory, options.verbose);
             fs.writeFileSync(options.outlog, JSON.stringify(directoryLog, null, 4));
             console.log(`Directory log written to ${options.outlog}`);
         }
