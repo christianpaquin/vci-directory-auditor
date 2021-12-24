@@ -1,7 +1,7 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2021-12-23 12:33:04",
-    "issuerCount": 453,
+    "auditTime": "2021-12-24 12:32:31",
+    "issuerCount": 458,
     "issuersWithErrors": [
         {
             "issuer": {
@@ -19,7 +19,6 @@
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
         },
@@ -139,6 +138,40 @@
         },
         {
             "issuer": {
+                "iss": "https://webproxy.mynovant.org/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Novant Health",
+                "website": "https://www.novanthealth.org/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicrpprd.inova.org/fhirrp/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Inova Health System"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epic-fhir-prd.upmc.com/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "University of Pittsburgh Medical Center (UPMC)"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://credenciales.cescodigital.pr.gov",
                 "name": "Government of Puerto Rico"
             },
@@ -219,9 +252,17 @@
                 "name": "Albertsons Companies"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "HTTPError: Response code 500 (Internal Server Error)"
             ]
         }
     ],
@@ -244,8 +285,8 @@
         "Cedars-Sinai Health System",
         "Lakeland Regional Health"
     ],
-    "previousAuditTime": "2021-12-22 12:32:59",
-    "newIssuerCount": 0,
+    "previousAuditTime": "2021-12-23 12:33:04",
+    "newIssuerCount": 5,
     "deletedIssuerCount": 0,
     "removedKids": []
 }
