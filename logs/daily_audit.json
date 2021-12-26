@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2021-12-25 12:31:04",
+    "auditTime": "2021-12-26 12:31:29",
     "issuerCount": 458,
     "issuersWithErrors": [
         {
@@ -120,8 +120,9 @@
         },
         {
             "issuer": {
-                "iss": "https://cdphe.colorado.gov",
-                "name": "State of Colorado"
+                "iss": "https://epicprdproxy.nch.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Northwest Community Hospital",
+                "website": "https://www.nch.org/"
             },
             "keys": [],
             "tlsDetails": {
@@ -134,7 +135,19 @@
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 404 (Not Found)"
+                "HTTPError: Response code 403 (Forbidden)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://webproxy.mynovant.org/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Novant Health",
+                "website": "https://www.novanthealth.org/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -274,7 +287,7 @@
         "Cedars-Sinai Health System",
         "Lakeland Regional Health"
     ],
-    "previousAuditTime": "2021-12-24 12:32:31",
+    "previousAuditTime": "2021-12-25 12:31:04",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": []
