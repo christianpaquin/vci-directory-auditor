@@ -81,6 +81,8 @@ export interface AuditLog {
     previousAuditTime?: string,
     // count of issuers present in the directory
     issuerCount: number,
+    // count of issuers with CRLs
+    issuerWithCRLCount: number,
     // count of new issuers since previous audit (if available)
     newIssuerCount?: number,
     // count of new issuers since previous audit (if available)

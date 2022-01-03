@@ -81,7 +81,6 @@ async function fetchDirectory(directoryUrl: string, verbose: boolean = false) : 
                 throw "Can't reach JWK set URL: " + jwkURL;
             }
             const acaoHeader = response.headers['access-control-allow-origin'];
-            let errors = "";
             if (!acaoHeader) {
                 issuerLogInfo.errors?.push("Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header");
             } else if (acaoHeader !== '*' && acaoHeader !== requestedOrigin) {
@@ -160,6 +159,7 @@ function audit(isTest: boolean, currentLog: DirectoryLog, previousLog: Directory
         auditTime: currentLog.time,
         issuerCount: currentLog.issuerInfo.length,
         issuersWithErrors: currentLog.issuerInfo.filter(info => info.errors != undefined && info.errors.length > 0),
+        issuerWithCRLCount: currentLog.issuerInfo.filter(info => info.crls != undefined && info.crls.length > 0).length,
         duplicatedKids: getDuplicates(currentLog.issuerInfo.flatMap(info => info.keys.map(key => key.kid))),
         duplicatedIss: getDuplicates(currentIss),
         duplicatedNames: getDuplicates(currentLog.issuerInfo.map(info => info.issuer.name))
