@@ -124,7 +124,7 @@ async function fetchDirectory(directoryUrl: string, verbose: boolean = false) : 
             }
         }
         issuerLogInfoArray.push(issuerLogInfo);
-        process.stdout.write("."); // print progress marker
+        process.stdout.write("."); // print progress marker (without newline, unlike console.log)
     }
 
     const directoryLog: DirectoryLog = {
