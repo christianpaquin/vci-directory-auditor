@@ -64,6 +64,7 @@ async function fetchDirectory(directoryUrl: string, verbose: boolean = false) : 
     }
 
     const issuerLogInfoArray: IssuerLogInfo[] = [];
+    console.log("Directory count: " + issuers.participating_issuers.length);
     for (const issuer of issuers.participating_issuers) {
         const jwkURL = issuer.iss + '/.well-known/jwks.json';
         const issuerLogInfo: IssuerLogInfo = {
@@ -90,7 +91,8 @@ async function fetchDirectory(directoryUrl: string, verbose: boolean = false) : 
             if (!keySet) {
                 issuerLogInfo.errors?.push("Failed to parse JSON KeySet schema");
             }
-            // TODO: try to import keys
+            // TODO: try to import keys to check for failures
+            issuerLogInfo.keys = keySet.keys;
         } catch (err) {
             issuerLogInfo.errors?.push((err as Error).toString());
         }
@@ -122,6 +124,7 @@ async function fetchDirectory(directoryUrl: string, verbose: boolean = false) : 
             }
         }
         issuerLogInfoArray.push(issuerLogInfo);
+        process.stdout.write("."); // print progress marker
     }
 
     const directoryLog: DirectoryLog = {
