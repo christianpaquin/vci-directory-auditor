@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-01-11 12:32:47",
+    "auditTime": "2022-01-12 04:02:55",
     "issuerCount": 463,
     "issuersWithErrors": [
         {
@@ -8,7 +8,17 @@
                 "iss": "https://s.bilh.org/healthcard/issuer",
                 "name": "Beth Israel Lahey Health"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "use": "sig",
+                    "crv": "P-256",
+                    "kid": "Xsgwl-UeD61MtPj6wT4_6SasuHOdgGJ9oLVp2S5rTg0",
+                    "x": "HBdp5tF7PrXwUQS5_hEfWMi3FTDER3NNkMIgKzjo82k",
+                    "y": "jLuqUhw4t6qAJScteDHxBoJHrLBWFryseUStatPbeyM",
+                    "alg": "ES256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "AES256-SHA",
@@ -19,7 +29,6 @@
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
         },
@@ -28,7 +37,17 @@
                 "iss": "https://apps.vdh.virginia.gov/credentials",
                 "name": "Virginia Department of Health"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "use": "sig",
+                    "crv": "P-256",
+                    "kid": "sy5Q85VbiH4jNee-IpFkQvMxlVAhZ_poLMPLHiDF_8I",
+                    "x": "UDYtkThsYIdMuzC9AJi0CDNwwmSGt8Z75BBl9DbLXn0",
+                    "y": "xWNNHxwz0RtTgTlBom3X8xFP6U5e92KYGZIBI2SYImA",
+                    "alg": "ES256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "AES128-SHA256",
@@ -44,13 +63,22 @@
         },
         {
             "issuer": {
-                "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Baptist Health"
+                "iss": "https://ep-rpfg.rivhs.com/Interconnect-FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Riverside Health System",
+                "website": "https://www.riversideonline.com/"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "HTTPError: Response code 400 (An error occurred while executing the command: USER-NOT-AUTHORIZED.)"
             ]
         },
         {
@@ -58,7 +86,17 @@
                 "iss": "https://www.riteaid.com",
                 "name": "Rite Aid Pharmacy"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "use": "sig",
+                    "crv": "P-256",
+                    "kid": "vqHxrsBwtWp2-NS2APN4m8aGjnaec8_juc9C4wFw9hI",
+                    "x": "ZPd2kv2pFikTwMncw7kCYMR2fFCgBP3Yhgr14zwHYHw",
+                    "y": "vXLauyc-pWUrpcvxigdP70fZgjJQAA98_qpT6LIO07o",
+                    "alg": "ES256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -77,7 +115,25 @@
                 "iss": "https://reports.bioreference.com/fhir",
                 "name": "BioReference Laboratories"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "keyId": "s0wu-YvqbODey4KSi8UwuKySHTPavApAXI069Xwm7tA",
+                    "kid": "s0wu-YvqbODey4KSi8UwuKySHTPavApAXI069Xwm7tA",
+                    "kty": "EC",
+                    "use": "sig",
+                    "x": "hQ2GGM7O_DTJWAtVCW2cmbhTU1RD6VlpPqVH0mAcwZs",
+                    "x5c": [
+                        "MIIFnjCCBSSgAwIBAgIQC1ji6hZ7piW8sEPMYxNfQzAKBggqhkjOPQQDAzBWMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMTAwLgYDVQQDEydEaWdpQ2VydCBUTFMgSHlicmlkIEVDQyBTSEEzODQgMjAyMCBDQTEwHhcNMjEwNzI4MDAwMDAwWhcNMjIwNzI4MjM1OTU5WjCBkDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCk5ldyBKZXJzZXkxFTATBgNVBAcTDEVsbXdvb2QgUGFyazEpMCcGA1UEChMgQmlvLVJlZmVyZW5jZSBMYWJvcmF0b3JpZXMsIEluYy4xKjAoBgNVBAMTIXNtYXJ0aGVhbHRoY2FyZHMuYmlvcmVmZXJlbmNlLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABIUNhhjOzvw0yVgLVQltnJm4U1NUQ+lZaT6lR9JgHMGb57te8k7lzzFhjvLN8qafc62Yd7sIRe7ZYjRcxnhucvOjggOXMIIDkzAfBgNVHSMEGDAWgBQKvAgpF4ylOW16Ds4zxy6z7fvDejAdBgNVHQ4EFgQUZFJhKeH3MpRF2gZ90zkK3PCAewEwLAYDVR0RBCUwI4Ihc21hcnRoZWFsdGhjYXJkcy5iaW9yZWZlcmVuY2UuY29tMA4GA1UdDwEB/wQEAwIHgDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwgZsGA1UdHwSBkzCBkDBGoESgQoZAaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0VExTSHlicmlkRUNDU0hBMzg0MjAyMENBMS0xLmNybDBGoESgQoZAaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0VExTSHlicmlkRUNDU0hBMzg0MjAyMENBMS0xLmNybDA+BgNVHSAENzA1MDMGBmeBDAECAjApMCcGCCsGAQUFBwIBFhtodHRwOi8vd3d3LmRpZ2ljZXJ0LmNvbS9DUFMwgYUGCCsGAQUFBwEBBHkwdzAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuZGlnaWNlcnQuY29tME8GCCsGAQUFBzAChkNodHRwOi8vY2FjZXJ0cy5kaWdpY2VydC5jb20vRGlnaUNlcnRUTFNIeWJyaWRFQ0NTSEEzODQyMDIwQ0ExLTEuY3J0MAwGA1UdEwEB/wQCMAAwggF+BgorBgEEAdZ5AgQCBIIBbgSCAWoBaAB3AEalVet1+pEgMLWiiWn0830RLEF0vv1JuIWr8vxw/m1HAAABeu271h4AAAQDAEgwRgIhAKluJx7zI48HAZ/st2hqLw960+ImS09qTSLLvJfsGxk6AiEAqLZ0mpQYmt8rkDSZZ50Qu9kE0RJBH05V7dWwZB7SQ1QAdgBByMqx3yJGShDGoToJQodeTjGLGwPr60vHaPCQYpYG9gAAAXrtu9YPAAAEAwBHMEUCIQCXThTdoIX2DGBSQrxZfEoXF3/HMDgUNeschH0/ug4DbQIgD/Zt//wwy4sdQZKI7455dL8oq6MKALZx2yCj2ht3aK4AdQDfpV6raIJPH2yt7rhfTj5a6s2iEqRqXo47EsAgRFwqcwAAAXrtu9YsAAAEAwBGMEQCICkUWrrhpG0vTfZM3eaLxCh5uB6zphiHj/TvyWCdVXCTAiBuNjEjFqWGcPsks6qhimj7aHQa48W9qpedUff1CjdXOTAKBggqhkjOPQQDAwNoADBlAjEA1z/KNgM/wdmJ09ByD4r2bK2rFJbgqcy4qDoJymB29SMOMvW4TbEIo7fP/mj2ZxFVAjAjoS5a2C2B6zP1/1EFRCZPT6M5tOhDoG/cJiDoC54Sn8uWtYXGvkx9W6OO4SgDynY="
+                    ],
+                    "x5t": "b3OWZBU4fbg2WPtsTgm9UwxhhEs",
+                    "x5tS256": null,
+                    "y": "57te8k7lzzFhjvLN8qafc62Yd7sIRe7ZYjRcxnhucvM",
+                    "keySize": 256,
+                    "hasPrivateKey": false
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_128_GCM_SHA256",
@@ -96,7 +152,17 @@
                 "iss": "https://fhir.memorialcare.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "MemorialCare"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "tAuoSlAGwYHqEDdM4pJa82XSuzg9MUJeAGEgrSBCTds",
+                    "y": "-mHADQ4bpUJxb93xIiSQMOlUciWG7zWqrjVw08CCWOg",
+                    "kid": "B4WoNT47ey18FBjci1Pu7_UJB5BujROioiTkiBR3tS0",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
@@ -115,7 +181,17 @@
                 "iss": "https://epicproxy.et1127.epichosted.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "United Health Services"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "vzuCvPQFhjFIEJVjsf1aLzWm0kUby-PfYcHlPc4tn0M",
+                    "y": "_iyzBLy69fhEps56N_UyaKZ5WIL0GMtbzPoXK8g8TFM",
+                    "kid": "8fh6q6S2ASUK1AD9uz5FtPxNsxoMJsor8iMrE8puvho",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -131,22 +207,26 @@
         },
         {
             "issuer": {
-                "iss": "https://epicprdproxy.nch.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Northwest Community Hospital",
-                "website": "https://www.nch.org/"
+                "iss": "https://api.ccf.org/mu/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Cleveland Clinic",
+                "website": "https://my.clevelandclinic.org/"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 403 (Forbidden)"
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://webproxy.mynovant.org/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Novant Health",
+                "website": "https://www.novanthealth.org/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -165,7 +245,17 @@
                 "iss": "https://credenciales.cescodigital.pr.gov",
                 "name": "Government of Puerto Rico"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "use": "sig",
+                    "crv": "P-256",
+                    "kid": "UI3Q5YHNlnwRPBmtxclGYkpuyT6pqzIWakoo_CHtkeg",
+                    "x": "wYk4MsE4ce6EUSTZDuGG5SUT83Kmzf1ENPVvGKWRDzU",
+                    "y": "VJDZcss_rfMdvPIokztTlanSwqZSfPCE0GkWbNEJR0E",
+                    "alg": "ES256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -184,7 +274,17 @@
                 "iss": "https://api.cvshealth.com/smarthealth/v1/card",
                 "name": "CVS Health"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "kid": "afXT8j9iwJJ7IRP24ZUKPhbkga79MfqPreO2DlK0sLA",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "6lylD6yXNiue2_-kfe1kAxX2wbhY-d_lWrEV8ttO0K0",
+                    "y": "XDeVwjljswv3KHmZo752sY4OZ7SVJQLjaKH4gIpXDd4"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -203,7 +303,17 @@
                 "iss": "https://www.cedars-sinai.org",
                 "name": "Cedars-Sinai Health System"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "crv": "P-256",
+                    "x": "7Rlsuv_eFpdNQToBT7Q4H5ChQMQ333Hmv7V-t6qBFCs",
+                    "y": "VjpJjYwehcCb8Hg_DJloA-X9A7r4rC8KNfgQ4SkmnJ8",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "kid": "KBBgSdgGdb2_Nqufjj09pcISTziLYhj9meR19MmKLDk"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
@@ -222,7 +332,17 @@
                 "iss": "https://pvc.cloud.forces.gc.ca",
                 "name": "Government of Canada - Gouvernement du Canada"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "kid": "PieNn3ty3quAW_G_TUMwJEUaeh_QORyjlHfKwQ--CxM",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "5vlkZqxjyld5h8McxU7PgOKGv1ReS3cQ6XUg-pORR3k",
+                    "y": "ebHsDHNw0LBOlfkSaPNwSLEOQxki6S-g5T2gLU3myHw"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -254,29 +374,30 @@
             "errors": [
                 "HTTPError: Response code 500 (Internal Server Error)"
             ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epicsoap.bmctotalcare.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Summit Health"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 404 (Not Found)"
-            ]
         }
     ],
     "issuerWithCRLCount": 0,
-    "duplicatedKids": [],
+    "duplicatedKids": [
+        "nQM-36EWDZU5kLoCoeOvshvT2P9JUyc8Do6yWRhNokg",
+        "N2maG8qOhITe_zyPqcrCa6LT_mW18ZtFPy09cGAB24w",
+        "q59IjbeGtaRpuHvdRuU9UxpNvzpQHCLcRXVD7rM563I",
+        "SPWZW51rFOoPACYISQNT37M4zY4c9hzxw2f66OrHIbY",
+        "348jzyKWtD8225Duqr6zJHqw-Jc0jlXm_pCWq6Nw_1c",
+        "wdqzOShT_Gnt8uP5fYzHKAxp0eWweAk5zpoEvaI_VmU",
+        "3Ujv5kjdbTwbZAfjC5OrWCHDnJtENU3sTckG-vmZzHw",
+        "g1ot2FJmActNYkz-MRXX4Vq5Vk9oPf6aIRPgYvI-l2g",
+        "JGu1o4nn0XCXg9zJ4HqhQ3z9DphFMruWQ2_47C9Ozog",
+        "zswRh4FtXw_oC8R_unDMagTyHSdUjoFZadoGgIvEgO0",
+        "uBrPkpHPRwoB-QEe8VML32s0zq0g_p3FI6m891ztMWY",
+        "ni-iRbTdShFjSgtDNAcq2m1vYwMtYg0MbcRnaAUvxaA",
+        "AVJpN_VVlyCtb7SQG9ddP8T3D9ZWNZLMWhDSUVEMFHw",
+        "KGRVZgLMuFYQE28ZpW3xkQu0J2cxCwu1xXBE95XkjtA",
+        "1cbWQj6OEipUmkMhXGpgGPSf83uWS4ew4bJPpkbcong",
+        "r6TOQW6N9Twi0iPMoZLygAKX80fCeZAduGCeghxft0Q",
+        "bRi8F_YcgjcfiBFxyNv6zO1mUSomobp4APHA6uabYKw",
+        "IVzjSimVvH8ZyQ3AJEjI8LXm5HfrdrDYuEmG0QcXzOI",
+        "KBBgSdgGdb2_Nqufjj09pcISTziLYhj9meR19MmKLDk"
+    ],
     "duplicatedIss": [],
     "duplicatedNames": [
         "UC Health (San Diego / Irvine / Riverside) and Affiliates",
@@ -295,8 +416,8 @@
         "Cedars-Sinai Health System",
         "Lakeland Regional Health"
     ],
-    "previousAuditTime": "2022-01-10 12:33:44",
-    "newIssuerCount": 1,
+    "previousAuditTime": "2022-01-11 12:32:47",
+    "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": []
 }
