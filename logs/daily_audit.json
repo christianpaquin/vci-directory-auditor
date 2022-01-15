@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-01-14 12:33:09",
+    "auditTime": "2022-01-15 12:32:22",
     "issuerCount": 469,
     "issuersWithErrors": [
         {
@@ -29,7 +29,6 @@
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
         },
@@ -188,6 +187,29 @@
         },
         {
             "issuer": {
+                "iss": "https://webproxy.mynovant.org/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Novant Health",
+                "website": "https://www.novanthealth.org/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epic-fhir-prd.upmc.com/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "University of Pittsburgh Medical Center (UPMC)"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://credenciales.cescodigital.pr.gov",
                 "name": "Government of Puerto Rico"
             },
@@ -213,6 +235,46 @@
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://pmh-vmhaiku-01.pmh.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Parkland Health",
+                "website": "https://www.parklandhospital.com/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 404 (Not Found)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicsoapproxyprd.mountsinai.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Mount Sinai Health System",
+                "website": "https://www.mountsinai.org/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-521, 521 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 401 (Unauthorized)"
             ]
         },
         {
@@ -320,6 +382,25 @@
             "errors": [
                 "HTTPError: Response code 500 (Internal Server Error)"
             ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicsoap.bmctotalcare.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Summit Health"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 404 (Not Found)"
+            ]
         }
     ],
     "issuerWithCRLCount": 0,
@@ -362,8 +443,39 @@
         "Cedars-Sinai Health System",
         "Lakeland Regional Health"
     ],
-    "previousAuditTime": "2022-01-13 12:33:59",
+    "previousAuditTime": "2022-01-14 12:33:09",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
-    "removedKids": []
+    "removedKids": [
+        {
+            "iss": "https://webproxy.mynovant.org/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "LscjYTUMp733zsMu6D6tGCmvR7Rk4rTO7FV5w9r4e8E"
+            ]
+        },
+        {
+            "iss": "https://epic-fhir-prd.upmc.com/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "4jzUyIF5gJ_IbzzkJ0c8S1iBJ5aTLoSEt9FQ4ZMiu94"
+            ]
+        },
+        {
+            "iss": "https://pmh-vmhaiku-01.pmh.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "n2GS2CfMT1xmI7GTkSxkBkNSoXDYRjo2iXr5KReDF60"
+            ]
+        },
+        {
+            "iss": "https://epicsoapproxyprd.mountsinai.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "Xj10Ipktlk0ewRMVfYVv_VRNaBnossIv4oSRBesySKw"
+            ]
+        },
+        {
+            "iss": "https://epicsoap.bmctotalcare.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "t8qXEf0fKebVbXI8AwjqHRiDwF8FtatVyPA9wstzhqs"
+            ]
+        }
+    ]
 }
