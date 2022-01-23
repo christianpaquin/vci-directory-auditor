@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2022-01-22 12:28:44",
+    "time": "2022-01-23 12:29:35",
     "issuerInfo": [
         {
             "issuer": {
@@ -3990,14 +3990,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "DHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "DH, 2048 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -4110,7 +4102,6 @@
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
         },
@@ -4131,6 +4122,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -4152,6 +4151,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -6119,6 +6126,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -8110,11 +8125,27 @@
                 "name": "ProMedica",
                 "website": "https://www.promedica.org/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "Hty2sTB8Apkrr-Zvi7nuchk-U9dey3nS5wZxxsP6ZeY",
+                    "y": "3zXcnWpnWc6jJEvVUuHph2SZ4h7KSJm8HSnL3HoFAuk",
+                    "kid": "uPWKKpoWI3OIa11UbV9xdoRHdf5ZsYsAyvczK79L3RE",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-521, 521 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -8417,7 +8448,17 @@
                 "name": "Northwest Community Hospital",
                 "website": "https://www.nch.org/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "iWC7qOI1vDoWSeyYFBFpD2hefM3qPHcZOjAOW17bQ80",
+                    "y": "9tRTdAEwDIPZZaoIHfU1nDd1IAGd-n-F5U4B2DYaWxw",
+                    "kid": "UjF5uQPh6HUHhByMFl-Fx_4H26-xSi2gb7n2wcgbjYw",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
@@ -8427,9 +8468,7 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "HTTPError: Response code 403 (Forbidden)"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -9596,11 +9635,27 @@
                 "iss": "https://epic-fhir-prd.upmc.com/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "University of Pittsburgh Medical Center (UPMC)"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "CYuBPgiP1ILvF7BoSuvGwymdzLhW2hD8lCZilC7hFg0",
+                    "y": "1gy11quqQ07FyEVRWHJt7PXt5-DZ5ko8tHRZv81pTIU",
+                    "kid": "4jzUyIF5gJ_IbzzkJ0c8S1iBJ5aTLoSEt9FQ4ZMiu94",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -10254,7 +10309,17 @@
                 "name": "Parkland Health",
                 "website": "https://www.parklandhospital.com/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "sIBDr692jxOjhMVPMB2us3mmJtxoLPOJ2Xf6Ft0waKs",
+                    "y": "S2Bnlc08xJ0eZ6nvShazfO1F1hBGRF9WzI2uPFmF78w",
+                    "kid": "n2GS2CfMT1xmI7GTkSxkBkNSoXDYRjo2iXr5KReDF60",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -10264,9 +10329,7 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "HTTPError: Response code 404 (Not Found)"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -10414,14 +10477,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -12909,7 +12964,17 @@
                 "iss": "https://epicsoap.bmctotalcare.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Summit Health"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "fejvo_gUVg_Siajp3ycYcp6E_pAgc0D3pX-1PfL6QKs",
+                    "y": "jUka2oVJTpCfRr4egTz-BICUgN8F-3BzeUBb2-j_ay8",
+                    "kid": "t8qXEf0fKebVbXI8AwjqHRiDwF8FtatVyPA9wstzhqs",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
@@ -12919,9 +12984,7 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "HTTPError: Response code 404 (Not Found)"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -12985,7 +13048,17 @@
                 "name": "Lahey Health",
                 "website": "https://www.lahey.org/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "fINgSvlfOnQ7wnNOCzXoU-6_BeA-ll8hTYJqZfgsJw4",
+                    "y": "DbzM-Ev7ROWo3-QwTYmE-FUE3EyC24_UP3zaAtYnUSI",
+                    "kid": "sD58-y5XzRBuAYTrnM5nS-UATnz-svgmrg9k5_HIrFM",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
@@ -12995,9 +13068,7 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
+            "errors": []
         },
         {
             "issuer": {
