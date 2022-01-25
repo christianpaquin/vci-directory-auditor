@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2022-01-24 12:30:05",
+    "time": "2022-01-25 12:30:46",
     "issuerInfo": [
         {
             "issuer": {
@@ -184,8 +184,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-384, 384 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -8076,7 +8076,8 @@
                     "alg": "ES256",
                     "crv": "P-256",
                     "x": "9B8CKA868OKjH3ydtM1jw2ax-wo0qCHP3qDR3b9jilY",
-                    "y": "pEudYHfIMz20vz-WNZargtgDDXj6GQeN410x8u2xjQ0"
+                    "y": "pEudYHfIMz20vz-WNZargtgDDXj6GQeN410x8u2xjQ0",
+                    "crlVersion": 2
                 }
             ],
             "tlsDetails": {
@@ -8087,7 +8088,14 @@
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
-            "crls": [],
+            "crls": [
+                {
+                    "kid": "sZ5ca2a73SgPl7aC9v4PyA4cR5zk9A6BhHX8I2CVNwM",
+                    "method": "rid",
+                    "ctr": 2,
+                    "rids": []
+                }
+            ],
             "errors": []
         },
         {
@@ -8451,6 +8459,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -9183,11 +9199,27 @@
                 "name": "Novant Health",
                 "website": "https://www.novanthealth.org/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "RwQD66A1lYQrXG8P9wyS1jY7N8EDGtjyd-Pr_OkDRFM",
+                    "y": "u_yR5xJqB6UIu4L2P8ivcs0y1G2GV2n2MJxNDtFrjIA",
+                    "kid": "LscjYTUMp733zsMu6D6tGCmvR7Rk4rTO7FV5w9r4e8E",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-384, 384 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "4096",
+                "compression": "NONE"
+            },
             "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -10261,17 +10293,7 @@
                 "name": "Parkland Health",
                 "website": "https://www.parklandhospital.com/"
             },
-            "keys": [
-                {
-                    "x": "sIBDr692jxOjhMVPMB2us3mmJtxoLPOJ2Xf6Ft0waKs",
-                    "y": "S2Bnlc08xJ0eZ6nvShazfO1F1hBGRF9WzI2uPFmF78w",
-                    "kid": "n2GS2CfMT1xmI7GTkSxkBkNSoXDYRjo2iXr5KReDF60",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -10281,7 +10303,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "HTTPError: Response code 404 (Not Found)"
+            ]
         },
         {
             "issuer": {
@@ -10404,7 +10428,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-521, 521 bits",
+                "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -12325,14 +12349,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -13255,6 +13271,66 @@
                 "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://epicsoap.wellstar.org/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Wellstar",
+                "website": "https://www.wellstar.org/"
+            },
+            "keys": [
+                {
+                    "x": "7mWji24Frfq5yIQ12l0oXPiWc9PYVdZeWhc0A175sZY",
+                    "y": "3e0FUoVWLeEPqbEbxyEsvqZRr3yNExD0CZuWi_2-BUs",
+                    "kid": "9cJjNUd_mdaZMqe4Q4BblQYvi2vbpXM9NQp7U6P0qvg",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-521, 521 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://smart.medconciergela.com/api/ISSUER",
+                "name": "Med Concierge LA"
+            },
+            "keys": [
+                {
+                    "kty": "EC",
+                    "kid": "dKEeeC7VTe912gisnMXHxBCd3iFRuDHj76tWtb3uaBc",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "x5c": [
+                        "MIICDDCCAZGgAwIBAgIUTCbHhG0WFmYIvZX0z0Vyxz33GiMwCgYIKoZIzj0EAwMwJzElMCMGA1UEAwwcU01BUlQgSGVhbHRoIENhcmQgRXhhbXBsZSBDQTAeFw0yMjAxMDkxNjE3NDRaFw0yMzAxMDkxNjE3NDRaMCsxKTAnBgNVBAMMIFNNQVJUIEhlYWx0aCBDYXJkIEV4YW1wbGUgSXNzdWVyMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEidIg3O8E2QN054L6XZ5lYlB+i2p7WMeOQ0H4SvQqFHfAvGgmEZHvUwFeTw0Wt2j9c1zerIwPhOHUOS/Q7nVQsaOBljCBkzAJBgNVHRMEAjAAMAsGA1UdDwQEAwIHgDA5BgNVHREEMjAwhi5odHRwczovL3NwZWMuc21hcnRoZWFsdGguY2FyZHMvZXhhbXBsZXMvaXNzdWVyMB0GA1UdDgQWBBQCGNfdIX0wvXhdOmSyVPRzBF9ugzAfBgNVHSMEGDAWgBQkxujqHScqAJRPf+GM/2rQVH4dJDAKBggqhkjOPQQDAwNpADBmAjEA7vgAY0AZfHNP7KJP3sx2qPx1J9u+mtY8o2/9cekggwyTYb/z+Ap8CASzAeZGRIA+AjEA7dYNVqBAUn86b65XSpT2k3O6Y89qhLUZJDzZ2sO1alZe9vauCbPs7fiV76xvcYG5",
+                        "MIICBjCCAWigAwIBAgIUB8PK5Gw3Eo3hHnALheiHTKaZe3IwCgYIKoZIzj0EAwQwLDEqMCgGA1UEAwwhU01BUlQgSGVhbHRoIENhcmQgRXhhbXBsZSBSb290IENBMB4XDTIyMDEwOTE2MTc0NFoXDTI3MDEwODE2MTc0NFowJzElMCMGA1UEAwwcU01BUlQgSGVhbHRoIENhcmQgRXhhbXBsZSBDQTB2MBAGByqGSM49AgEGBSuBBAAiA2IABO+TD1bDfEGmmWXFOIa9RJ+EkbIk+NzHsDMlLx6M+Vk7ySD6WbaUsAPQZGWz6njJpipMGfOMPuilxWb/AQg6tGmVrFUi1MpYDMQEoniPpLHoDubcMAKL2bjP2ERD5d36/qNQME4wDAYDVR0TBAUwAwEB/zAdBgNVHQ4EFgQUJMbo6h0nKgCUT3/hjP9q0FR+HSQwHwYDVR0jBBgwFoAUWQk0yLfH2+i9dPk555mOHLm5se4wCgYIKoZIzj0EAwQDgYsAMIGHAkFL0BkKZyOH4GzS1WyfRRchUMgW0Cd1yS3SwQeFAnVbhej/XzqeTUlL5z/VQaz73sbHsG192FLpcOxg0eE9jea2OgJCAS+7ke+ay1KXi6bP1yRMPVF5qLUuWVoFVvw/G6kE2UvJq3UlL/RhZI7sAQ71iykfTH2z3p4xm2Nf6HY9pQFd+JJl",
+                        "MIICMTCCAZOgAwIBAgIUfYReZLA7EUyHTfS5/9zh+HbunEcwCgYIKoZIzj0EAwQwLDEqMCgGA1UEAwwhU01BUlQgSGVhbHRoIENhcmQgRXhhbXBsZSBSb290IENBMB4XDTIyMDEwOTE2MTc0NFoXDTMyMDEwNzE2MTc0NFowLDEqMCgGA1UEAwwhU01BUlQgSGVhbHRoIENhcmQgRXhhbXBsZSBSb290IENBMIGbMBAGByqGSM49AgEGBSuBBAAjA4GGAAQAtQymTv4y9s11elOQEjmEPSLs5mtlhF9EegGPFc5M4GWrPGV2KTIdZKpBxkJRzMCBfg5nvp1u5gStD9LraqMA6yAAT0g+H387wiYbZHcSJNG17vwzCCOD6BBAQJw+GwYy3W7ib2x6HnQ/hg5xEtWidlRGFdVRjFkSIKNcNPy00sYiqOyjUDBOMAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFFkJNMi3x9vovXT5OeeZjhy5ubHuMB8GA1UdIwQYMBaAFFkJNMi3x9vovXT5OeeZjhy5ubHuMAoGCCqGSM49BAMEA4GLADCBhwJCATm4K6GyAN2KCh/e6dtuU5MCy7iKLpbw25p3VjWyhZNiCDJtEmJIPM+N4MKTdo2ygOWKt2Q0xctUKTHAH8C3QyhwAkF6XQulw2CJQwUoOqwdmC8VSOxmbEbh/Incs9NA7a6WH99yMfdQsukp1Tc8t9XJp5Xk7xwyP6PRmp/z0p5cNJj0EA=="
+                    ],
+                    "crv": "P-256",
+                    "x": "idIg3O8E2QN054L6XZ5lYlB-i2p7WMeOQ0H4SvQqFHc",
+                    "y": "wLxoJhGR71MBXk8NFrdo_XNc3qyMD4Th1Dkv0O51ULE"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "ECDSA",
+                "pubKeySize": "256",
                 "compression": "NONE"
             },
             "crls": [],
