@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2022-01-26 12:29:21",
+    "time": "2022-01-27 12:30:17",
     "issuerInfo": [
         {
             "issuer": {
@@ -184,8 +184,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-384, 384 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -4110,7 +4110,6 @@
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
         },
@@ -4131,14 +4130,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -4160,14 +4151,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -5632,11 +5615,27 @@
                 "name": "Spectrum Health Lakeland",
                 "website": "https://www.spectrumhealthlakeland.org/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "kzKZlSATF1RojFRSVcAl7nz2wKs8zFJaiJARkbhx8Lw",
+                    "y": "18MYATs8ivZSUejOcPrVm1pcr6aq9YHmbUXam8F88fo",
+                    "kid": "MP4R9FJRtzIt2Cqlvz2WfPbBXr24gxu_Z01GLB8N1uM",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
-            "errors": [
-                "RequestError: connect ECONNREFUSED 12.70.122.163:443"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -5726,17 +5725,7 @@
                 "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Baptist Health"
             },
-            "keys": [
-                {
-                    "x": "hA1cB_UjKPGaLnIm9mlJ0wLrK6g5QCd_eae2UKFRvpw",
-                    "y": "o1SsIsu0ZWeSsGkyxR6it-8MdJRny_deosxdrm1a3FI",
-                    "kid": "2Y6IshBllIuZBWuUMPeefWvqSHynjSDrmXHpOKo9JnU",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
@@ -5746,7 +5735,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "HTTPError: Response code 401 (Unauthorized)"
+            ]
         },
         {
             "issuer": {
@@ -7113,17 +7104,7 @@
                 "name": "Pediatric Physicians' Organization at Children's",
                 "website": "https://www.ppochildrens.org/locate-a-practice/"
             },
-            "keys": [
-                {
-                    "x": "u7ozGoonz2GLJo5SsVLALgXftsxtsSl-InYNDGf8keM",
-                    "y": "yUVIUqNuIyryNnpDdm3xL0GJhEYn7shm852_wCc4TTA",
-                    "kid": "Yn044PCWeQk1-SmxXjVHxjFtS2PxfJfoAy5J9gm1IVc",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -7133,7 +7114,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "HTTPError: Response code 403 (Forbidden)"
+            ]
         },
         {
             "issuer": {
@@ -8147,6 +8130,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-521, 521 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -8462,6 +8453,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -8552,7 +8551,8 @@
         {
             "issuer": {
                 "iss": "https://smarthealthcard.iisregistry.net/newmexico/issuer",
-                "name": "NM Department of Health"
+                "name": "NM Department of Health",
+                "website": "http://vaxviewnm.org/"
             },
             "keys": [
                 {
@@ -9630,27 +9630,11 @@
                 "iss": "https://epic-fhir-prd.upmc.com/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "University of Pittsburgh Medical Center (UPMC)"
             },
-            "keys": [
-                {
-                    "x": "CYuBPgiP1ILvF7BoSuvGwymdzLhW2hD8lCZilC7hFg0",
-                    "y": "1gy11quqQ07FyEVRWHJt7PXt5-DZ5ko8tHRZv81pTIU",
-                    "kid": "4jzUyIF5gJ_IbzzkJ0c8S1iBJ5aTLoSEt9FQ4ZMiu94",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -10304,7 +10288,17 @@
                 "name": "Parkland Health",
                 "website": "https://www.parklandhospital.com/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "sIBDr692jxOjhMVPMB2us3mmJtxoLPOJ2Xf6Ft0waKs",
+                    "y": "S2Bnlc08xJ0eZ6nvShazfO1F1hBGRF9WzI2uPFmF78w",
+                    "kid": "n2GS2CfMT1xmI7GTkSxkBkNSoXDYRjo2iXr5KReDF60",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -10314,9 +10308,7 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "HTTPError: Response code 404 (Not Found)"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -10902,8 +10894,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-384, 384 bits",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -10954,6 +10946,14 @@
                     "alg": "ES256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_128_GCM_SHA256",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -11987,7 +11987,7 @@
         {
             "issuer": {
                 "iss": "https://arrprod.midmichigan.net/ProdFHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "MidMichigan"
+                "name": "MyMichigan Health"
             },
             "keys": [
                 {
@@ -12322,6 +12322,14 @@
                 "name": "Albertsons Companies"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "HTTPError: Response code 500 (Internal Server Error)"
@@ -13359,6 +13367,117 @@
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
                 "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://eiclbext.nmhs.net/interconnect-fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "North Mississippi Health Services",
+                "website": "https://www.nmhs.net/"
+            },
+            "keys": [
+                {
+                    "x": "kQTbLtyT10gZtlIcdY7LHaa3xmhqU-YMjrAq1_21vYs",
+                    "y": "933eUq-cEGNVACfgpKe-dN2vomMkqUOM-OgrlpSjDaI",
+                    "kid": "k2MRYPPAREjXU9EsaiJyDhQIWmBOF3YhGtjdrmvWyz4",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-SHA",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://prodrx919.martinhealth.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Cleveland Clinic Martin Health"
+            },
+            "keys": [
+                {
+                    "x": "HJU_iYN_KHdMrjS7lrFIaWn0ksNfH4-LvjXoyBvNhx0",
+                    "y": "0hW0hj6H4xjPVKOYJnB6Buu1GPDkmXqPZUOOuOZO64E",
+                    "kid": "doDvNi6442LAkrO01bJ1LkNHLglZ5RpwGN2ElruZJyE",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-521, 521 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://soapprod.multicare.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "MultiCare",
+                "website": "https://www.multicare.org/"
+            },
+            "keys": [
+                {
+                    "x": "QJbHZjCywamTVhSHqI3O1BwoQRRRnYmsYwFbKsvV3rM",
+                    "y": "PE1dR1QA5m1Vk_G_IY3d5AYRsPgjVAUi9G5OP281GK0",
+                    "kid": "kNi-D9BUk1ZhU1HjMqAanP-_ZfkeUiyrTw6wa0cPP4o",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "DHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "DH, 2048 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://sfd.stanfordmed.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Stanford Health Care",
+                "website": "https://stanfordhealthcare.org/"
+            },
+            "keys": [
+                {
+                    "x": "u5hhTfIxnGf97XvEWO5_RGVx_fpAFIuDT_zlgJkG3kY",
+                    "y": "SFmGS52BGQ1HLWwoqy0k5FZt5owtxJ6zpAoDOT_Y0hI",
+                    "kid": "KmRsCPEpR5Z_SD5LKJ6a25hwZeEYHp6pRpZ7M1SC550",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-521, 521 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
