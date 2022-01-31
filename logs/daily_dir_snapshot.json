@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2022-01-30 12:28:17",
+    "time": "2022-01-31 12:29:32",
     "issuerInfo": [
         {
             "issuer": {
@@ -4130,14 +4130,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -4159,14 +4151,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -6326,7 +6310,7 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-SHA",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
                 "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
@@ -8472,11 +8456,27 @@
                 "name": "Northwest Community Hospital",
                 "website": "https://www.nch.org/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "iWC7qOI1vDoWSeyYFBFpD2hefM3qPHcZOjAOW17bQ80",
+                    "y": "9tRTdAEwDIPZZaoIHfU1nDd1IAGd-n-F5U4B2DYaWxw",
+                    "kid": "UjF5uQPh6HUHhByMFl-Fx_4H26-xSi2gb7n2wcgbjYw",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
-            "errors": [
-                "HTTPError: Response code 403 (Forbidden)"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -10099,6 +10099,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -10445,7 +10453,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-521, 521 bits",
+                "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -12336,9 +12344,17 @@
                 "name": "Albertsons Companies"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "HTTPError: Response code 500 (Internal Server Error)"
             ]
         },
         {
@@ -12358,6 +12374,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -12754,7 +12778,138 @@
                 "iss": "https://pvcprod.gov.pe.ca",
                 "name": "Government of Prince Edward Island"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "kid": "Z8YjtXO3hGPpbDR9wMcrifbcL-PswLyMFhEJGSn1yC0",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "oxD89LV7Y_GBRei7wNmKLYdo-25ujdI74OdC9NkQlyQ",
+                    "y": "NNY2ntabDPKk_5fnjpRyxkre34Ru7NzrFgcWgRKb2I8",
+                    "date": 1630513678410
+                },
+                {
+                    "kty": "EC",
+                    "kid": "uXqBkl4jkadfFUtcrkeVtXRaCCy-nNHA1aD6nKb0OJ4",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "YwKKFnC2hgQHZVsqKUz9oDwjF0FvCrYIKicT9HpwuLQ",
+                    "y": "9WuBIW9S5eXKRhkFW2LvcVsgFGgOURlMIU1i_syhbyg",
+                    "date": 1630517153168
+                },
+                {
+                    "kty": "EC",
+                    "kid": "rDW5Ssu6mvGAnouM1oaeiDh06OdTePgH9ZwC1MbwAoY",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "M6tuTL6MBUHZNfzGUTivBcpGXord54xHiKVL3XIOLM0",
+                    "y": "fgSw0roeZpXgYLHhfSz-W_XWMZu-RqbR7my-_d9Vvl8",
+                    "date": 1630517520701
+                },
+                {
+                    "kty": "EC",
+                    "kid": "AWbze1dsT_69BBvlCv8g8rzUAyIBM3q6OT7zMQxBWVU",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "nbI9SWaXfrEnbxG36Q8EWkl-sKNirCAlGqpseG1BERA",
+                    "y": "ogVD4hZwgT30g-h6UKZBTMIbYeg6u4W7TI7mzvp1Fy8",
+                    "date": 1630600429633
+                },
+                {
+                    "kty": "EC",
+                    "kid": "icKN8sxNH2ijHGcmqCOWHKziRPd25BoENF5Z0dVrkaI",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "AjAdLBY7cpq5m3Eq5MTtENvs5TuBPbyqRcNa5hTxgq8",
+                    "y": "MKxRT1jZpZpLjx9cefytBiE5s18M-jSAmMNYmldGjbE",
+                    "date": 1630613433678
+                },
+                {
+                    "kty": "EC",
+                    "kid": "SkSCQeF4JDcLSShAM5wejAAdB8rIT3X9-EH8rLNk0fY",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "5pwa78_VUGsxRK0lP_PODB2wBofjlxcaFl6r0N1-ODE",
+                    "y": "oV2yJ0qVZG5INljTl5AUbU1uMxlVFS-BhNC12LzdHN0",
+                    "date": 1630613435615
+                },
+                {
+                    "kty": "EC",
+                    "kid": "L0ACjkybPcCgJOrMywfz3gJGDeEvxkUSa2j9Pbhjwz8",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "CTa6_OO8QKrrlNXjXAbDc0rnvPRGo5UpfmGnuCrWiPw",
+                    "y": "UXbNAiw7sSImEvOwWH1NytR8MXSaXCb6sWR9z4fTA_M",
+                    "date": 1630613436458
+                },
+                {
+                    "kty": "EC",
+                    "kid": "pCmOvJBUfo30WuG9UVlDCOvyBhPScLU2_CrAGy9A4Q8",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "kvwC_MYV8lBVfeamcGj5XXV944VwhSJZ_rBKD0Hcn_s",
+                    "y": "UR8MzZCVIArauwJ-OODIbim0HLRbCFkDPXNjPsoRmfM",
+                    "date": 1630613437404
+                },
+                {
+                    "kty": "EC",
+                    "kid": "gzeRVlR44Ia5cL67gN-6HhWsBikN_ZodlGAeGLv_HsI",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "QmZMR0zgMTKLgqSKUeOfV10moL5nLcjfeUIO3Ns1u0M",
+                    "y": "FP8vGUU-wAkqUd07o5q2tdakV5rJ6hg2cT0bgunW9kU",
+                    "date": 1630613438138
+                },
+                {
+                    "kty": "EC",
+                    "kid": "D86U5NZ_OusITiBEqmgW2gRUAw1vhcbRtHujJ4wPx7w",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "J24rRVpojPItd1Wda4ZkIc6gooPEDzlstiSQMqHaURA",
+                    "y": "X5jqWz8RY6Zkc6Ib6WNnnkAJHwt1C-PmtELC2c13hyQ",
+                    "date": 1630613469805
+                },
+                {
+                    "kty": "EC",
+                    "kid": "JMCyyrr9wjXT5FY8rx6Jiel4DCfXS0ZDQPUuGdv4P1k",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "fY8esOCER1T-68OIvXtizxtXVC7KT9qsztZQhll3UJk",
+                    "y": "6J1DpZVjPGEQG9EApygaM0ZkfQOLRAWuN_YB3BT93DU",
+                    "date": 1631122847087
+                },
+                {
+                    "kty": "EC",
+                    "kid": "B5zoHRXFX54o1XgT9IbQLEqTc1GK4SEJg9vjd-K4n3o",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "Ze3--8ERukpW9nMd317lQJ_97qg5q7BEqFMoJmGj59s",
+                    "y": "H36ot9jzPKpPVa4aHka7SXnPOTjEBdtZRZ4wN-OUHQw",
+                    "date": 1631207785437
+                },
+                {
+                    "kty": "EC",
+                    "kid": "cZxJnAOT6390E103SoaVyX2RNJenO46qyBcceU4A8go",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "KhqF3iMvKDeiarW85OFrKstJWK5maNEi1H6JttLfky8",
+                    "y": "RWUlC2s1aEdminnoqyMxtyU4fVlsDLJt36feT0qsJmU",
+                    "date": 1634299350636
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -12764,9 +12919,7 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -12828,17 +12981,7 @@
                 "iss": "https://epicsoap.bmctotalcare.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Summit Health"
             },
-            "keys": [
-                {
-                    "x": "fejvo_gUVg_Siajp3ycYcp6E_pAgc0D3pX-1PfL6QKs",
-                    "y": "jUka2oVJTpCfRr4egTz-BICUgN8F-3BzeUBb2-j_ay8",
-                    "kid": "t8qXEf0fKebVbXI8AwjqHRiDwF8FtatVyPA9wstzhqs",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
@@ -12848,7 +12991,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "HTTPError: Response code 404 (Not Found)"
+            ]
         },
         {
             "issuer": {
