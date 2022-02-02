@@ -1,7 +1,7 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-02-01 12:30:18",
-    "issuerCount": 481,
+    "auditTime": "2022-02-02 12:29:43",
+    "issuerCount": 483,
     "issuersWithErrors": [
         {
             "issuer": {
@@ -29,6 +29,7 @@
             },
             "crls": [],
             "errors": [
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
         },
@@ -54,6 +55,35 @@
                 "kexAlg": "RSA",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://eparp.sbch.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Cottage Health"
+            },
+            "keys": [
+                {
+                    "x": "O0pkVo-oPhGPJRY92E9mFnkCzIEQsj76kGwWqicjMXo",
+                    "y": "-LzlOFRX_WBKZlgX7YaMqoozgYEU_haEZG2JlsMh1sY",
+                    "kid": "0alAE8pL4m9xnAAm5xm9QKZSnLPSZKzqZOWFltMDvLM",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "AES128-SHA256",
+                "kexAlg": "RSA",
+                "authAlg": "RSA",
+                "pubKeySize": "4096",
                 "compression": "NONE"
             },
             "crls": [],
@@ -207,18 +237,6 @@
         },
         {
             "issuer": {
-                "iss": "https://epicprdproxy.nch.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Northwest Community Hospital",
-                "website": "https://www.nch.org/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 403 (Forbidden)"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://credenciales.cescodigital.pr.gov",
                 "name": "Government of Puerto Rico"
             },
@@ -244,6 +262,26 @@
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://pmh-vmhaiku-01.pmh.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Parkland Health",
+                "website": "https://www.parklandhospital.com/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 404 (Not Found)"
             ]
         },
         {
@@ -378,14 +416,6 @@
                 "name": "Albertsons Companies"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
                 "HTTPError: Response code 500 (Internal Server Error)"
@@ -451,26 +481,14 @@
         "Cedars-Sinai Health System",
         "Lakeland Regional Health"
     ],
-    "previousAuditTime": "2022-01-31 12:29:32",
-    "newIssuerCount": 0,
+    "previousAuditTime": "2022-02-01 12:30:18",
+    "newIssuerCount": 2,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://fhir.chppoc.org/Fhir-External/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://pmh-vmhaiku-01.pmh.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "Yn044PCWeQk1-SmxXjVHxjFtS2PxfJfoAy5J9gm1IVc"
-            ]
-        },
-        {
-            "iss": "https://epicprdproxy.nch.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "UjF5uQPh6HUHhByMFl-Fx_4H26-xSi2gb7n2wcgbjYw"
-            ]
-        },
-        {
-            "iss": "https://health.ri.gov/sh.cards/production",
-            "kids": [
-                "4miDO1rSeIyIF8xRD_oJHpy-6oDzh8plSSmTNeDDBSg"
+                "n2GS2CfMT1xmI7GTkSxkBkNSoXDYRjo2iXr5KReDF60"
             ]
         }
     ]

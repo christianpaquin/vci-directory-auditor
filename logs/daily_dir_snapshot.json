@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2022-02-01 12:30:18",
+    "time": "2022-02-02 12:29:43",
     "issuerInfo": [
         {
             "issuer": {
@@ -4110,6 +4110,7 @@
             },
             "crls": [],
             "errors": [
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
         },
@@ -4130,14 +4131,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -4159,14 +4152,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -5532,14 +5517,16 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "DHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "DH, 2048 bits",
+                "cipher": "AES128-SHA256",
+                "kexAlg": "RSA",
                 "authAlg": "RSA",
                 "pubKeySize": "4096",
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
+            ]
         },
         {
             "issuer": {
@@ -8456,11 +8443,27 @@
                 "name": "Northwest Community Hospital",
                 "website": "https://www.nch.org/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "iWC7qOI1vDoWSeyYFBFpD2hefM3qPHcZOjAOW17bQ80",
+                    "y": "9tRTdAEwDIPZZaoIHfU1nDd1IAGd-n-F5U4B2DYaWxw",
+                    "kid": "UjF5uQPh6HUHhByMFl-Fx_4H26-xSi2gb7n2wcgbjYw",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
-            "errors": [
-                "HTTPError: Response code 403 (Forbidden)"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -9398,6 +9401,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -10294,17 +10305,7 @@
                 "name": "Parkland Health",
                 "website": "https://www.parklandhospital.com/"
             },
-            "keys": [
-                {
-                    "x": "sIBDr692jxOjhMVPMB2us3mmJtxoLPOJ2Xf6Ft0waKs",
-                    "y": "S2Bnlc08xJ0eZ6nvShazfO1F1hBGRF9WzI2uPFmF78w",
-                    "kid": "n2GS2CfMT1xmI7GTkSxkBkNSoXDYRjo2iXr5KReDF60",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -10314,7 +10315,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "HTTPError: Response code 404 (Not Found)"
+            ]
         },
         {
             "issuer": {
@@ -10900,8 +10903,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-384, 384 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -12315,14 +12318,6 @@
                 "name": "Albertsons Companies"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
                 "HTTPError: Response code 500 (Internal Server Error)"
@@ -12345,6 +12340,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -13501,6 +13504,62 @@
                     "x": "cZ7sRv99RGCFvvHk1avdVkiz_3FLVKmaP_GJ2r98QEY",
                     "y": "GXN443VhANh16-D_839KYJOxiNvXXC4ctk6Rh29v7rs",
                     "kid": "X53dodl3nyr7HRw_6mnk06j7V-aYYZPkk2Bb7jpgUQU",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://mobile.adventhealth.com/oauth2-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "AdventHealth",
+                "website": "https://www.adventhealth.com/"
+            },
+            "keys": [
+                {
+                    "x": "5gfz58Le5frt4roZUzw3YoObIfnnlnwqBqhnNTjkl6k",
+                    "y": "swavamD005wdKXg5emnSWKfNn_pwef9yhJtDAEnJnGE",
+                    "kid": "NIYjamR_uv5paKe7T9kn4mueOQFx2WlSaNSZzwIUILA",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://epicproxy.et1013.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Hill Physicians Medical Group",
+                "website": "https://www.hillphysicians.com/"
+            },
+            "keys": [
+                {
+                    "x": "IYzpgCfdiTd8yaVOI09sBf0ZBrXR0IJ6sLl-SDN9iGk",
+                    "y": "QPA5t1lQKm-H4oa5TzzDNPGE9Wk44p8zqG5YLVWzZOU",
+                    "kid": "-dznmcx21Vu7QQkxz4u4ki-d7XyuBj2Q7_KBdoBGuLE",
                     "use": "sig",
                     "kty": "EC",
                     "alg": "ES256",
