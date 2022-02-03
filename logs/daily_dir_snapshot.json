@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2022-02-02 12:29:43",
+    "time": "2022-02-03 12:30:35",
     "issuerInfo": [
         {
             "issuer": {
@@ -4110,7 +4110,6 @@
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
         },
@@ -4131,6 +4130,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -4152,6 +4159,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -5517,16 +5532,14 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "AES128-SHA256",
-                "kexAlg": "RSA",
+                "cipher": "DHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "DH, 2048 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "4096",
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -5726,27 +5739,11 @@
                 "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Baptist Health"
             },
-            "keys": [
-                {
-                    "x": "hA1cB_UjKPGaLnIm9mlJ0wLrK6g5QCd_eae2UKFRvpw",
-                    "y": "o1SsIsu0ZWeSsGkyxR6it-8MdJRny_deosxdrm1a3FI",
-                    "kid": "2Y6IshBllIuZBWuUMPeefWvqSHynjSDrmXHpOKo9JnU",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -6313,7 +6310,7 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-SHA",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
                 "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
@@ -7113,7 +7110,17 @@
                 "name": "Pediatric Physicians' Organization at Children's",
                 "website": "https://www.ppochildrens.org/locate-a-practice/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "u7ozGoonz2GLJo5SsVLALgXftsxtsSl-InYNDGf8keM",
+                    "y": "yUVIUqNuIyryNnpDdm3xL0GJhEYn7shm852_wCc4TTA",
+                    "kid": "Yn044PCWeQk1-SmxXjVHxjFtS2PxfJfoAy5J9gm1IVc",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -7123,9 +7130,7 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "HTTPError: Response code 403 (Forbidden)"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -8091,7 +8096,9 @@
                     "rids": []
                 }
             ],
-            "errors": []
+            "errors": [
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
+            ]
         },
         {
             "issuer": {
@@ -8139,6 +8146,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-521, 521 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -9631,27 +9646,11 @@
                 "iss": "https://epic-fhir-prd.upmc.com/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "University of Pittsburgh Medical Center (UPMC)"
             },
-            "keys": [
-                {
-                    "x": "CYuBPgiP1ILvF7BoSuvGwymdzLhW2hD8lCZilC7hFg0",
-                    "y": "1gy11quqQ07FyEVRWHJt7PXt5-DZ5ko8tHRZv81pTIU",
-                    "kid": "4jzUyIF5gJ_IbzzkJ0c8S1iBJ5aTLoSEt9FQ4ZMiu94",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -10305,7 +10304,17 @@
                 "name": "Parkland Health",
                 "website": "https://www.parklandhospital.com/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "sIBDr692jxOjhMVPMB2us3mmJtxoLPOJ2Xf6Ft0waKs",
+                    "y": "S2Bnlc08xJ0eZ6nvShazfO1F1hBGRF9WzI2uPFmF78w",
+                    "kid": "n2GS2CfMT1xmI7GTkSxkBkNSoXDYRjo2iXr5KReDF60",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -10315,9 +10324,7 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "HTTPError: Response code 404 (Not Found)"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -10440,7 +10447,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-521, 521 bits",
+                "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -10903,8 +10910,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-384, 384 bits",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -12317,11 +12324,27 @@
                 "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/albertsons",
                 "name": "Albertsons Companies"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "crv": "P-256",
+                    "x": "hAquHSvYXEiv2j1RMbdMJPxFuMHC5FsOhC4CKIwzOyc",
+                    "y": "K5ymtq1kxxk7L3jDfCQfBi9AKj9sd1LM3ZEEAYiUS00",
+                    "kid": "1p9_rBI8H8aqf__KqNUWMiRtLQvM1GkBvax_Bsrk0jU",
+                    "use": "sig",
+                    "alg": "ES256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
-            "errors": [
-                "HTTPError: Response code 500 (Internal Server Error)"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -12340,14 +12363,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -12371,7 +12386,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
+                "kexAlg": "ECDH, P-521, 521 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -12744,138 +12759,7 @@
                 "iss": "https://pvcprod.gov.pe.ca",
                 "name": "Government of Prince Edward Island"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "kid": "Z8YjtXO3hGPpbDR9wMcrifbcL-PswLyMFhEJGSn1yC0",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "oxD89LV7Y_GBRei7wNmKLYdo-25ujdI74OdC9NkQlyQ",
-                    "y": "NNY2ntabDPKk_5fnjpRyxkre34Ru7NzrFgcWgRKb2I8",
-                    "date": 1630513678410
-                },
-                {
-                    "kty": "EC",
-                    "kid": "uXqBkl4jkadfFUtcrkeVtXRaCCy-nNHA1aD6nKb0OJ4",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "YwKKFnC2hgQHZVsqKUz9oDwjF0FvCrYIKicT9HpwuLQ",
-                    "y": "9WuBIW9S5eXKRhkFW2LvcVsgFGgOURlMIU1i_syhbyg",
-                    "date": 1630517153168
-                },
-                {
-                    "kty": "EC",
-                    "kid": "rDW5Ssu6mvGAnouM1oaeiDh06OdTePgH9ZwC1MbwAoY",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "M6tuTL6MBUHZNfzGUTivBcpGXord54xHiKVL3XIOLM0",
-                    "y": "fgSw0roeZpXgYLHhfSz-W_XWMZu-RqbR7my-_d9Vvl8",
-                    "date": 1630517520701
-                },
-                {
-                    "kty": "EC",
-                    "kid": "AWbze1dsT_69BBvlCv8g8rzUAyIBM3q6OT7zMQxBWVU",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "nbI9SWaXfrEnbxG36Q8EWkl-sKNirCAlGqpseG1BERA",
-                    "y": "ogVD4hZwgT30g-h6UKZBTMIbYeg6u4W7TI7mzvp1Fy8",
-                    "date": 1630600429633
-                },
-                {
-                    "kty": "EC",
-                    "kid": "icKN8sxNH2ijHGcmqCOWHKziRPd25BoENF5Z0dVrkaI",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "AjAdLBY7cpq5m3Eq5MTtENvs5TuBPbyqRcNa5hTxgq8",
-                    "y": "MKxRT1jZpZpLjx9cefytBiE5s18M-jSAmMNYmldGjbE",
-                    "date": 1630613433678
-                },
-                {
-                    "kty": "EC",
-                    "kid": "SkSCQeF4JDcLSShAM5wejAAdB8rIT3X9-EH8rLNk0fY",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "5pwa78_VUGsxRK0lP_PODB2wBofjlxcaFl6r0N1-ODE",
-                    "y": "oV2yJ0qVZG5INljTl5AUbU1uMxlVFS-BhNC12LzdHN0",
-                    "date": 1630613435615
-                },
-                {
-                    "kty": "EC",
-                    "kid": "L0ACjkybPcCgJOrMywfz3gJGDeEvxkUSa2j9Pbhjwz8",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "CTa6_OO8QKrrlNXjXAbDc0rnvPRGo5UpfmGnuCrWiPw",
-                    "y": "UXbNAiw7sSImEvOwWH1NytR8MXSaXCb6sWR9z4fTA_M",
-                    "date": 1630613436458
-                },
-                {
-                    "kty": "EC",
-                    "kid": "pCmOvJBUfo30WuG9UVlDCOvyBhPScLU2_CrAGy9A4Q8",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "kvwC_MYV8lBVfeamcGj5XXV944VwhSJZ_rBKD0Hcn_s",
-                    "y": "UR8MzZCVIArauwJ-OODIbim0HLRbCFkDPXNjPsoRmfM",
-                    "date": 1630613437404
-                },
-                {
-                    "kty": "EC",
-                    "kid": "gzeRVlR44Ia5cL67gN-6HhWsBikN_ZodlGAeGLv_HsI",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "QmZMR0zgMTKLgqSKUeOfV10moL5nLcjfeUIO3Ns1u0M",
-                    "y": "FP8vGUU-wAkqUd07o5q2tdakV5rJ6hg2cT0bgunW9kU",
-                    "date": 1630613438138
-                },
-                {
-                    "kty": "EC",
-                    "kid": "D86U5NZ_OusITiBEqmgW2gRUAw1vhcbRtHujJ4wPx7w",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "J24rRVpojPItd1Wda4ZkIc6gooPEDzlstiSQMqHaURA",
-                    "y": "X5jqWz8RY6Zkc6Ib6WNnnkAJHwt1C-PmtELC2c13hyQ",
-                    "date": 1630613469805
-                },
-                {
-                    "kty": "EC",
-                    "kid": "JMCyyrr9wjXT5FY8rx6Jiel4DCfXS0ZDQPUuGdv4P1k",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "fY8esOCER1T-68OIvXtizxtXVC7KT9qsztZQhll3UJk",
-                    "y": "6J1DpZVjPGEQG9EApygaM0ZkfQOLRAWuN_YB3BT93DU",
-                    "date": 1631122847087
-                },
-                {
-                    "kty": "EC",
-                    "kid": "B5zoHRXFX54o1XgT9IbQLEqTc1GK4SEJg9vjd-K4n3o",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "Ze3--8ERukpW9nMd317lQJ_97qg5q7BEqFMoJmGj59s",
-                    "y": "H36ot9jzPKpPVa4aHka7SXnPOTjEBdtZRZ4wN-OUHQw",
-                    "date": 1631207785437
-                },
-                {
-                    "kty": "EC",
-                    "kid": "cZxJnAOT6390E103SoaVyX2RNJenO46qyBcceU4A8go",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "KhqF3iMvKDeiarW85OFrKstJWK5maNEi1H6JttLfky8",
-                    "y": "RWUlC2s1aEdminnoqyMxtyU4fVlsDLJt36feT0qsJmU",
-                    "date": 1634299350636
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -12885,7 +12769,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -12947,7 +12833,17 @@
                 "iss": "https://epicsoap.bmctotalcare.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Summit Health"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "fejvo_gUVg_Siajp3ycYcp6E_pAgc0D3pX-1PfL6QKs",
+                    "y": "jUka2oVJTpCfRr4egTz-BICUgN8F-3BzeUBb2-j_ay8",
+                    "kid": "t8qXEf0fKebVbXI8AwjqHRiDwF8FtatVyPA9wstzhqs",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
@@ -12957,9 +12853,7 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "HTTPError: Response code 404 (Not Found)"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -13571,6 +13465,61 @@
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
                 "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://hkc.nationwidechildrens.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Nationwide Children’s Hospital",
+                "website": "https://www.nationwidechildrens.org/"
+            },
+            "keys": [
+                {
+                    "x": "i-xeS2HFpZlUUbNQCoo7-P_qOjnS54mWXiraitJ_ifQ",
+                    "y": "_v3Ghw8G4N2Tg_-eik2G9f32E8wSes9oQYZLEDY-9oM",
+                    "kid": "e09rUHZUE_9ZfduHpQktUv7sOsk_ayGeVAdiIkmIaAQ",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_CHACHA20_POLY1305_SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://cookicfg.cookchildrens.org/CookFHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Cook Children’s"
+            },
+            "keys": [
+                {
+                    "x": "BzgCNmB9myhdJZ1jEo2sGwsYe0164W1gP2WIwYXl8Qk",
+                    "y": "qyfh1m7y_CZJ_sbIvMDWyS4--lMaQU7nTxXmaM9Pam8",
+                    "kid": "pyimkiqzNnxaHuVOntfWNfZdxcGHZXgJuUB0mRlqq5o",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
