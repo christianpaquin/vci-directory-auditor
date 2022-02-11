@@ -38,6 +38,7 @@ program.option('-t, --test', 'test mode');
 program.option('-v, --verbose', 'verbose mode');
 program.parse(process.argv);
 const currentTime = new Date();
+const outputUTC = true;
 
 // process options
 const options = program.opts() as Options;
@@ -45,10 +46,10 @@ if (!options.directory) {
     options.directory = VCI_ISSUERS_DIR_URL;
 }
 if (!options.outlog) {
-    options.outlog = path.join('logs', `directory_log_${date.format(currentTime, 'YYYY-MM-DD-HHmmss')}.json`);
+    options.outlog = path.join('logs', `directory_log_${date.format(currentTime, 'YYYY-MM-DD-HHmmss', outputUTC)}.json`);
 }
 if (!options.auditlog) {
-    options.auditlog = path.join('logs', `audit_log_${date.format(currentTime, 'YYYY-MM-DD-HHmmss')}.json`);
+    options.auditlog = path.join('logs', `audit_log_${date.format(currentTime, 'YYYY-MM-DD-HHmmss', outputUTC)}.json`);
 }
 
 // download the specified directory
@@ -129,7 +130,7 @@ async function fetchDirectory(directoryUrl: string, verbose: boolean = false) : 
 
     const directoryLog: DirectoryLog = {
         directory: directoryUrl,
-        time: date.format(currentTime, 'YYYY-MM-DD HH:mm:ss'),
+        time: date.format(currentTime, 'YYYY-MM-DDTHH:mm:ss', outputUTC).concat('Z'),
         issuerInfo: issuerLogInfoArray
     }
 
