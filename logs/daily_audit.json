@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-02-26T12:29:46Z",
+    "auditTime": "2022-02-27T12:30:01Z",
     "issuerCount": 522,
     "issuersWithErrors": [
         {
@@ -235,6 +235,25 @@
         },
         {
             "issuer": {
+                "iss": "https://prodsoap1.tgh.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Tampa General Hospital and University of South Florida"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "DHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "DH, 2048 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 503 (Service Unavailable)"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://credenciales.cescodigital.pr.gov",
                 "name": "Government of Puerto Rico"
             },
@@ -360,17 +379,6 @@
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
-                "name": "KMART PHARMACY"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
         }
     ],
     "issuerWithCRLCount": 1,
@@ -420,14 +428,14 @@
         "State of Louisiana",
         "Washington State Department of Health"
     ],
-    "previousAuditTime": "2022-02-25T12:31:08Z",
+    "previousAuditTime": "2022-02-26T12:29:46Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
+            "iss": "https://prodsoap1.tgh.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "U_C_KSRk6GRqOuT-tTTVid-zHxihv7fRdyuvNQPeBvM"
+                "DodINAnbnH8FXWBUhBvdUIZrHqJiPZeeStyxpnNYlJ4"
             ]
         }
     ]
