@@ -1,6 +1,6 @@
 # vci-directory-auditor
 
-WORK-IN-PROGRESS!
+**NOTE: This is an prototype project. Latest version of the auditing tools have been integrated into the [VCI directory](https://github.com/the-commons-project/vci-directory/) (see [here](https://github.com/the-commons-project/vci-directory/tree/main/scripts/vci-directory-auditor)).**
 
 Audit tool for the [VCI directory](https://github.com/the-commons-project/vci-directory/).
 
