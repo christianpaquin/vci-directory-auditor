@@ -1,5 +1,8 @@
 name: VCI directory snapshot sign action
 on:
+  push:
+    branches:
+      - main
   schedule:
       - cron: '0/5 * * * *'
 jobs:
