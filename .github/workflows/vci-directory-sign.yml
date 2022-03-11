@@ -15,7 +15,7 @@ jobs:
         env:
           PRIVATE_SIG_KEY_PWD: ${{ secrets.PRIVATE_SIG_KEY_PWD }}
         run: |
-          openssl dgst -sha512 -sign private/vci_snapshot.key -out logs/vci_snapshot.sig -passin pass:"$env:SUPER_SECRET" logs/daily_dir_snapshot.json
+          openssl dgst -sha512 -sign private/vci_snapshot.key -out logs/vci_snapshot.sig -passin env:PRIVATE_SIG_KEY_PWD logs/daily_dir_snapshot.json
       - uses: actions/upload-artifact@v2
         with:
           name: save-sig-file
