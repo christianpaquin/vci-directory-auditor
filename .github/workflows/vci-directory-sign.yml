@@ -1,7 +1,7 @@
 name: VCI directory snapshot sign action
 on:
   schedule:
-      - cron: '/5 * * * *'
+      - cron: '0/5 * * * *'
 jobs:
   vci-directory-audit:
     runs-on: ubuntu-latest
@@ -17,4 +17,3 @@ jobs:
         with:
           name: save-sig-file
           path: logs/vci_snapshot.sig
-          
