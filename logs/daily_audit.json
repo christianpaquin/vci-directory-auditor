@@ -1,7 +1,7 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-03-11T12:32:40Z",
-    "issuerCount": 538,
+    "auditTime": "2022-03-11T21:38:12Z",
+    "issuerCount": 540,
     "issuersWithErrors": [
         {
             "issuer": {
@@ -140,17 +140,6 @@
         },
         {
             "issuer": {
-                "iss": "https://epic-arr.pinnaclehealth.org/PRD-FHIR-ARR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "UPMC Central PA"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epicproxy.et1127.epichosted.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "United Health Services"
             },
@@ -180,18 +169,6 @@
         },
         {
             "issuer": {
-                "iss": "https://webproxy.mynovant.org/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Novant Health",
-                "website": "https://www.novanthealth.org/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epic-fhir-prd.upmc.com/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "University of Pittsburgh Medical Center (UPMC)"
             },
@@ -217,7 +194,7 @@
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 503 (Service Unavailable)"
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -349,9 +326,9 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/harps+pharmacy",
-                "name": "Harps Pharmacy",
-                "website": "https://www.harpsfood.com/Pages/19653/COVID-19%20Vaccination%20Information"
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
+                "name": "Hartig Drug Co",
+                "website": "https://www.hartigdrug.com/covidvaccine"
             },
             "keys": [],
             "crls": [],
@@ -366,6 +343,14 @@
                 "website": "https://clinic.meijer.com/"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 5000ms"
@@ -422,26 +407,14 @@
         "Genesis Healthcare System",
         "MyHealthHome"
     ],
-    "previousAuditTime": "2022-03-10T12:33:24Z",
+    "previousAuditTime": "2022-03-11T12:32:40Z",
     "newIssuerCount": 2,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://epic-arr.pinnaclehealth.org/PRD-FHIR-ARR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
             "kids": [
-                "Pjy4Qg73qkUFnK7pU02Od1c8szuA3Sf9MBqkW1_WeOA"
-            ]
-        },
-        {
-            "iss": "https://webproxy.mynovant.org/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "LscjYTUMp733zsMu6D6tGCmvR7Rk4rTO7FV5w9r4e8E"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
-            "kids": [
-                "cmm6eWwLYLwRtBU69V-_jsUxfpVtPgrZshDbf5X4Z9k"
+                "85iFG1HeKPc-TFBQxy_U5eSDa3X_XUhDGRVp9h3eU_w"
             ]
         }
     ]
