@@ -14,8 +14,11 @@ jobs:
       - name: sign log
         env:
           PRIVATE_SIG_KEY_PWD: ${{ secrets.PRIVATE_SIG_KEY_PWD }}
+          PRIVATE_SIG_KEY: ${{ secrets.PRIVATE_SIG_KEY }}
         run: |
-          openssl dgst -sha512 -sign private/vci_snapshot.key -out logs/vci_snapshot.sig -passin env:PRIVATE_SIG_KEY_PWD logs/daily_dir_snapshot.json
+          echo "$PRIVATE_SIG_KEY" > private.pem
+          openssl dgst -sha512 -sign private.pem -out logs/vci_snapshot.sig -passin env:PRIVATE_SIG_KEY_PWD logs/daily_dir_snapshot.json
+          rm private.pem
       - name: verify log sig
         run: |
            openssl dgst -sha512 -verify  <(openssl x509 -in vci_snapshot.crt  -pubkey -noout) -signature logs/vci_snapshot.sig logs/daily_dir_snapshot.json
