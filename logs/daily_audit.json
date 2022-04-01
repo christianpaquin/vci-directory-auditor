@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-03-31T12:36:58Z",
+    "auditTime": "2022-04-01T12:40:18Z",
     "issuerCount": 550,
     "issuersWithErrors": [
         {
@@ -74,46 +74,6 @@
         },
         {
             "issuer": {
-                "iss": "https://eparp.sbch.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Cottage Health"
-            },
-            "keys": [
-                {
-                    "x": "O0pkVo-oPhGPJRY92E9mFnkCzIEQsj76kGwWqicjMXo",
-                    "y": "-LzlOFRX_WBKZlgX7YaMqoozgYEU_haEZG2JlsMh1sY",
-                    "kid": "0alAE8pL4m9xnAAm5xm9QKZSnLPSZKzqZOWFltMDvLM",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "AES128-SHA256",
-                "kexAlg": "RSA",
-                "authAlg": "RSA",
-                "pubKeySize": "4096",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Baptist Health"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://www.riteaid.com",
                 "name": "Rite Aid Pharmacy"
             },
@@ -139,25 +99,6 @@
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apiservices.sutterhealth.org/ifs/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Sutter Health"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 401 (Unauthorized)"
             ]
         },
         {
@@ -245,7 +186,7 @@
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 404 (Not Found)"
+                "HTTPError: Response code 503 (Service Unavailable)"
             ]
         },
         {
@@ -341,8 +282,7 @@
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
-                "SyntaxError: Unexpected token < in JSON at position 0"
+                "HTTPError: Response code 403 (Forbidden)"
             ]
         },
         {
@@ -405,8 +345,8 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
-                "name": "Giant Eagle Pharmacy"
+                "iss": "https://myepicapps.uihealthcare.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "University of Iowa and our Community Connect Hospitals and Clinics: Cass Health, ISH, JCHC, MMC, VBCH and WMC"
             },
             "keys": [],
             "tlsDetails": {
@@ -424,35 +364,18 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/harps+pharmacy",
-                "name": "Harps Pharmacy",
-                "website": "https://www.harpsfood.com/Pages/19653/COVID-19%20Vaccination%20Information"
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
+                "name": "Giant Eagle Pharmacy"
             },
             "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
-                "name": "Hartig Drug Co",
-                "website": "https://www.hartigdrug.com/covidvaccine"
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
             },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
-                "name": "Skripts",
-                "website": "https://www.skriptspharmacy.com/immunizations"
-            },
-            "keys": [],
             "crls": [],
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 5000ms"
@@ -539,50 +462,14 @@
         "Genesis Healthcare System",
         "MyHealthHome"
     ],
-    "previousAuditTime": "2022-03-29T12:37:21Z",
-    "newIssuerCount": 1,
-    "deletedIssuerCount": 1,
+    "previousAuditTime": "2022-03-31T12:36:58Z",
+    "newIssuerCount": 0,
+    "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://myepicapps.uihealthcare.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "2Y6IshBllIuZBWuUMPeefWvqSHynjSDrmXHpOKo9JnU"
-            ]
-        },
-        {
-            "iss": "https://apiservices.sutterhealth.org/ifs/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "rOF8imMZYLD-BGdFIDl7bexBgpODIYr5_yPi57eNrVs"
-            ]
-        },
-        {
-            "iss": "https://guam.mdcareclik.net/fhir",
-            "kids": [
-                "ReGMeHA-aOv_AcmDkzMr-71KiCcOU4F7ZO88CrWw6oY"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
-            "kids": [
-                "fM26plwst5o5yrC_rN6FVUtlmMr7nT4eLtgLJ6IfBTE"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/harps+pharmacy",
-            "kids": [
-                "4KHf7aJBy3mcDRm-Avfdch7Ps5qekl1FFGs4EQpDuo4"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
-            "kids": [
-                "85iFG1HeKPc-TFBQxy_U5eSDa3X_XUhDGRVp9h3eU_w"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
-            "kids": [
-                "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM"
+                "Y6mhj3wgC0EHH2aIx32rN3sgr2g4KWqnm9bceMWjiHg"
             ]
         }
     ]
