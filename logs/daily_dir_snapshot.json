@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2022-04-12T12:35:13Z",
+    "time": "2022-04-13T12:35:21Z",
     "issuerInfo": [
         {
             "issuer": {
@@ -3990,14 +3990,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "DHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "DH, 2048 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -6102,7 +6094,7 @@
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
                 "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA",
-                "pubKeySize": "2048",
+                "pubKeySize": "4096",
                 "compression": "NONE"
             },
             "crls": [],
@@ -6152,6 +6144,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -8076,7 +8076,7 @@
                     "crv": "P-256",
                     "x": "9B8CKA868OKjH3ydtM1jw2ax-wo0qCHP3qDR3b9jilY",
                     "y": "pEudYHfIMz20vz-WNZargtgDDXj6GQeN410x8u2xjQ0",
-                    "crlVersion": 22
+                    "crlVersion": 23
                 }
             ],
             "tlsDetails": {
@@ -8091,7 +8091,7 @@
                 {
                     "kid": "sZ5ca2a73SgPl7aC9v4PyA4cR5zk9A6BhHX8I2CVNwM",
                     "method": "rid",
-                    "ctr": 22,
+                    "ctr": 23,
                     "rids": [
                         "YheGzx4ezAE.1643950799",
                         "24YkDsjgGsg.1643950799",
@@ -8285,7 +8285,12 @@
                         "8t9a0kADIW4.1649476799",
                         "ZDotU6XepbA.1649476799",
                         "FkHFjImn7Qg.1649476799",
-                        "X6mXCbjSh_o.1649476799"
+                        "X6mXCbjSh_o.1649476799",
+                        "X7vVSr4bRUg.1649822399",
+                        "p8kmN3INiKs.1649822399",
+                        "PSBP8bob2I8.1649822399",
+                        "cEC-Mow9wQg.1649822399",
+                        "N5V8e-eN2FI.1649822399"
                     ]
                 }
             ],
@@ -8652,14 +8657,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -10038,14 +10035,6 @@
                 "name": "Tampa General Hospital and University of South Florida"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "DHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "DH, 2048 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
                 "RequestError: certificate has expired"
@@ -12017,6 +12006,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -14633,6 +14630,14 @@
                     "alg": "ES256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -14642,11 +14647,19 @@
                 "name": "Meijer",
                 "website": "https://clinic.meijer.com/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "crv": "P-256",
+                    "x": "4rGpwqa648ZOQ51AM8jvjXAWlhbOKQjhaL6PY8O-4kc",
+                    "y": "2bieuXyJYIUSgA9YFma8ogWSE4TK0lrssEg3NeTiisc",
+                    "kid": "cmm6eWwLYLwRtBU69V-_jsUxfpVtPgrZshDbf5X4Z9k",
+                    "use": "sig",
+                    "alg": "ES256"
+                }
+            ],
             "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
+            "errors": []
         },
         {
             "issuer": {
