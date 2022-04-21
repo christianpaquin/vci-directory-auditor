@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2022-04-20T12:40:07Z",
+    "time": "2022-04-21T12:37:25Z",
     "issuerInfo": [
         {
             "issuer": {
@@ -4130,14 +4130,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -4159,14 +4151,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -5397,17 +5381,7 @@
                 "iss": "https://eprescribe-p.medisys.org/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "MediSys Health Network"
             },
-            "keys": [
-                {
-                    "x": "YT5m8Me8jD8HMEvjiLvbXlqfCmHSNfjZaDPKYs0nbDw",
-                    "y": "h0R25HjsPPyyCCc4wB__weN1DJt_2VAskn3Xzv9HyxY",
-                    "kid": "WMxaRAjz9Btz_jovTycngKWT--J4dQMAtlXnDhZKBzs",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
@@ -5417,7 +5391,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -5548,16 +5524,14 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "AES128-SHA256",
-                "kexAlg": "RSA",
+                "cipher": "DHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "DH, 2048 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "4096",
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -8084,7 +8058,7 @@
                     "crv": "P-256",
                     "x": "9B8CKA868OKjH3ydtM1jw2ax-wo0qCHP3qDR3b9jilY",
                     "y": "pEudYHfIMz20vz-WNZargtgDDXj6GQeN410x8u2xjQ0",
-                    "crlVersion": 26
+                    "crlVersion": 29
                 }
             ],
             "tlsDetails": {
@@ -8099,7 +8073,7 @@
                 {
                     "kid": "sZ5ca2a73SgPl7aC9v4PyA4cR5zk9A6BhHX8I2CVNwM",
                     "method": "rid",
-                    "ctr": 26,
+                    "ctr": 29,
                     "rids": [
                         "YheGzx4ezAE.1643950799",
                         "24YkDsjgGsg.1643950799",
@@ -8147,10 +8121,8 @@
                         "CazV1YPi8IQ.1645505999",
                         "PAYlA30Pm6s.1645505999",
                         "S_8_8ThH0jM.1645505999",
-                        "Xdc2msRd-X4.1645505999",
                         "87VDKWRO1ZY.1645505999",
                         "m3w8iXJxvNU.1645505999",
-                        "G-yHvRmGk1I.1645505999",
                         "a57uo8nXYFw.1645505999",
                         "RWN7SFI0-4o.1645505999",
                         "TLJPjgRWiUQ.1645505999",
@@ -8308,7 +8280,23 @@
                         "vD9Zwi5dSug.1649995199",
                         "57rXslHSsck.1650427199",
                         "6i0cankwIMQ.1650427199",
-                        "dqkPJgyF4Wc.1650427199"
+                        "dqkPJgyF4Wc.1650427199",
+                        "iJnkUeLVdT0.1650513599",
+                        "D-GSFBc3wKI.1650513599",
+                        "G-yHvRmGk1I.1650513599",
+                        "nzNKFWWQKRI.1650513599",
+                        "GrnxJs9evkw.1650513599",
+                        "Xdc2msRd-X4.1650513599",
+                        "k9XQqRf2by8.1650513599",
+                        "AAIH8Cmamts.1650513599",
+                        "tCvdGDaw1bg.1650513599",
+                        "c-g8FgvYDZU.1650513599",
+                        "gBku7Kg7J5A.1650513599",
+                        "J_BsnVuYyNs.1650513599",
+                        "TBHW7pealOU.1650513599",
+                        "8RWrugZ-yqY.1650513599",
+                        "aZdbZ6Msgww.1650513599",
+                        "dn-mtqrqqFg.1650513599"
                     ]
                 }
             ],
@@ -8360,6 +8348,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-521, 521 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -9319,8 +9315,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "DHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "DH, 2048 bits",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-521, 521 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -9595,14 +9591,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -10646,7 +10634,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
+                "kexAlg": "ECDH, P-521, 521 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -12550,6 +12538,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -14624,27 +14620,11 @@
                 "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
                 "name": "KMART PHARMACY"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "crv": "P-256",
-                    "x": "vnz-riIGGnG5QXoN9hCRh7HiK0X-YWaduPOK82_qtq0",
-                    "y": "Aw6J9vSzG0w7UO6CaznTRvLndFnZ5RCjl3mK5H0497s",
-                    "kid": "U_C_KSRk6GRqOuT-tTTVid-zHxihv7fRdyuvNQPeBvM",
-                    "use": "sig",
-                    "alg": "ES256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -14690,14 +14670,6 @@
                     "alg": "ES256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -14830,14 +14802,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -15926,7 +15890,7 @@
             "keys": [
                 {
                     "alg": "ES256",
-                    "crlVersion": 1,
+                    "crlVersion": 5,
                     "crv": "P-256",
                     "kid": "TKPyzMtKh7WQaCzsw6rOK8ZUOZlND2VcBwhFIIcCqUE",
                     "kty": "EC",
@@ -15945,12 +15909,45 @@
             },
             "crls": [
                 {
-                    "ctr": 1,
+                    "ctr": 5,
                     "kid": "TKPyzMtKh7WQaCzsw6rOK8ZUOZlND2VcBwhFIIcCqUE",
                     "method": "rid",
-                    "rids": []
+                    "rids": [
+                        "pp9IIofaQ6aptStmCrOZXQ",
+                        "8dPgHYssT9m5BvaXlTm2Ig",
+                        "TMlCjyVIRfO94G5fA4Cn7A",
+                        "fSW6Z2NfR8yoeev7epv-KA"
+                    ]
                 }
             ],
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://www.hy-vee.com/my-pharmacy/static",
+                "name": "Hy-Vee",
+                "website": "https://www.hy-vee.com/"
+            },
+            "keys": [
+                {
+                    "kty": "EC",
+                    "kid": "C9m4nqmNWHe4eX_Dg_tyoLkMS-x3KvNfP0lMBx8Jd34",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "Ko1S6jIAuLNwF9k0duwZ8l5vsHQEEEE4rQRe66Cd8KI",
+                    "y": "RfqwZs6RHHYUXExuJp9VGMsB9cjWzb1wMrdbJCCyiEI"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "ECDSA",
+                "pubKeySize": "256",
+                "compression": "NONE"
+            },
+            "crls": [],
             "errors": []
         }
     ]
