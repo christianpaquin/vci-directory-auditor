@@ -1,7 +1,7 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-04-27T12:39:30Z",
-    "issuerCount": 560,
+    "auditTime": "2022-04-28T12:42:45Z",
+    "issuerCount": 561,
     "issuersWithErrors": [
         {
             "issuer": {
@@ -30,6 +30,17 @@
             "crls": [],
             "errors": [
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://unified-api.ucsf.edu/clinical/apex/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "UCSF Health"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -166,6 +177,14 @@
                 "name": "Tampa General Hospital and University of South Florida"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "DHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "DH, 2048 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "RequestError: certificate has expired"
@@ -349,28 +368,29 @@
         },
         {
             "issuer": {
-                "iss": "https://epicfhir.sentara.com/ARR-FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Sentara Healthcare",
-                "website": "https://www.sentara.com/"
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/harps+pharmacy",
+                "name": "Harps Pharmacy",
+                "website": "https://www.harpsfood.com/Pages/19653/COVID-19%20Vaccination%20Information"
             },
             "keys": [],
             "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_CHACHA20_POLY1305_SHA256",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA-PSS",
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
-                "RequestError: Hostname/IP does not match certificate's altnames: Host: epicfhir.sentara.com. is not in the cert's altnames: DNS:ohpp.interop.sentara.com, DNS:www.ohpp.interop.sentara.com"
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
-                "name": "Giant Eagle Pharmacy"
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
+                "name": "Meijer",
+                "website": "https://clinic.meijer.com/"
             },
             "keys": [],
             "crls": [],
@@ -385,22 +405,10 @@
                 "website": "https://www.yumaregional.org/Home"
             },
             "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://mychart.methodisthospitals.org/FHIR-ARR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Methodist Hospitals (IN)",
-                "website": "https://methodisthospitals.org/"
-            },
-            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
+                "kexAlg": "ECDH, P-384, 384 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -408,6 +416,17 @@
             "crls": [],
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://accusense.health",
+                "name": "AccuSense Health"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "RequestError: getaddrinfo ENOTFOUND accusense.health"
             ]
         }
     ],
@@ -459,26 +478,33 @@
         "Genesis Healthcare System",
         "MyHealthHome"
     ],
-    "previousAuditTime": "2022-04-26T12:41:36Z",
-    "newIssuerCount": 2,
+    "previousAuditTime": "2022-04-27T12:39:30Z",
+    "newIssuerCount": 1,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://epicfhir.sentara.com/ARR-FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://unified-api.ucsf.edu/clinical/apex/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "0_ZcobwGIYr7HFa8F1Y3nWbC63_d6MR880hNRB0mCzk"
+                "ZwFzkFHXRFwE_0Jy0oyINwNZg4yLPKk5DW96xDwjMEo"
             ]
         },
         {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/harps+pharmacy",
             "kids": [
-                "fM26plwst5o5yrC_rN6FVUtlmMr7nT4eLtgLJ6IfBTE"
+                "4KHf7aJBy3mcDRm-Avfdch7Ps5qekl1FFGs4EQpDuo4"
             ]
         },
         {
-            "iss": "https://mychart.methodisthospitals.org/FHIR-ARR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
             "kids": [
-                "IHtj6CeVxA-5qztmSUXjoTNr9uAyU1xnYDY_Iw06GPI"
+                "cmm6eWwLYLwRtBU69V-_jsUxfpVtPgrZshDbf5X4Z9k"
+            ]
+        },
+        {
+            "iss": "https://accusense.health",
+            "kids": [
+                "7eO92g4zGtvtUFxQw6OhzFGpc-ZNlcmOxVLtiJdJhC0",
+                "jt-XnLQ-PY3RfG2Sn7CaLNT7rzKkDWrniX2R06Vt5wE"
             ]
         }
     ]
