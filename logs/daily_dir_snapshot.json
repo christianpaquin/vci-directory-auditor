@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2022-05-03T12:44:21Z",
+    "time": "2022-05-04T12:44:26Z",
     "issuerInfo": [
         {
             "issuer": {
@@ -4130,6 +4130,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -4151,6 +4159,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -5505,8 +5521,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-384, 384 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -5532,14 +5548,16 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "DHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "DH, 2048 bits",
+                "cipher": "AES128-SHA256",
+                "kexAlg": "RSA",
                 "authAlg": "RSA",
                 "pubKeySize": "4096",
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
+            ]
         },
         {
             "issuer": {
@@ -5739,11 +5757,27 @@
                 "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Baptist Health"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "hA1cB_UjKPGaLnIm9mlJ0wLrK6g5QCd_eae2UKFRvpw",
+                    "y": "o1SsIsu0ZWeSsGkyxR6it-8MdJRny_deosxdrm1a3FI",
+                    "kid": "2Y6IshBllIuZBWuUMPeefWvqSHynjSDrmXHpOKo9JnU",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -5981,6 +6015,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "4096",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -6294,7 +6336,7 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-SHA",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
                 "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
@@ -7767,6 +7809,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_CHACHA20_POLY1305_SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -7963,6 +8013,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -8307,7 +8365,6 @@
                         "z2-XmE8UeeM.1651550399",
                         "Q9xrLsro_J4.1651550399",
                         "cJH1tWHv-Uc.1651550399",
-                        "4KcIPxKj_LE.1651550399",
                         "4PfZkdtN4co.1651550399",
                         "KyDJuhVltEg.1651550399"
                     ]
@@ -8361,14 +8418,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-521, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -8684,6 +8733,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -9320,8 +9377,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "DHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "DH, 2048 bits",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-521, 521 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -9390,27 +9447,11 @@
                 "name": "Novant Health",
                 "website": "https://www.novanthealth.org/"
             },
-            "keys": [
-                {
-                    "x": "RwQD66A1lYQrXG8P9wyS1jY7N8EDGtjyd-Pr_OkDRFM",
-                    "y": "u_yR5xJqB6UIu4L2P8ivcs0y1G2GV2n2MJxNDtFrjIA",
-                    "kid": "LscjYTUMp733zsMu6D6tGCmvR7Rk4rTO7FV5w9r4e8E",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-384, 384 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "4096",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -9596,6 +9637,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -10648,7 +10697,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
+                "kexAlg": "ECDH, P-521, 521 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -12598,14 +12647,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -12629,7 +12670,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-521, 521 bits",
+                "kexAlg": "ECDH, P-256, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -14691,14 +14732,6 @@
                     "alg": "ES256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -14708,27 +14741,11 @@
                 "name": "Meijer",
                 "website": "https://clinic.meijer.com/"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "crv": "P-256",
-                    "x": "4rGpwqa648ZOQ51AM8jvjXAWlhbOKQjhaL6PY8O-4kc",
-                    "y": "2bieuXyJYIUSgA9YFma8ogWSE4TK0lrssEg3NeTiisc",
-                    "kid": "cmm6eWwLYLwRtBU69V-_jsUxfpVtPgrZshDbf5X4Z9k",
-                    "use": "sig",
-                    "alg": "ES256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -14886,6 +14903,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -15085,11 +15110,27 @@
                 "name": "Yuma Regional Medical Center",
                 "website": "https://www.yumaregional.org/Home"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "aNy2ZfeGMDzhT1YWfkHbGklE7u5GYS_Uql-74HlcXDA",
+                    "y": "ujE0UrcsgeiipvsZM2EFlO1F4cTiozKTBUirHpIseI4",
+                    "kid": "teYn5RVZyzJOH0oWqb0hDiMyXEDjT2Ut5c5xigpXmrQ",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-384, 384 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -15362,17 +15403,7 @@
                 "name": "Methodist Hospitals (IN)",
                 "website": "https://methodisthospitals.org/"
             },
-            "keys": [
-                {
-                    "x": "F-AGqWq9JKAz6rcPXjztjQElXDZuhRJ7WUkoW7qrx1Y",
-                    "y": "bPkyWe4lt1tNCVnyeVmPmei5vJff_lZqd9sNaRTVW5g",
-                    "kid": "IHtj6CeVxA-5qztmSUXjoTNr9uAyU1xnYDY_Iw06GPI",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -15382,7 +15413,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -15958,7 +15991,7 @@
             "keys": [
                 {
                     "alg": "ES256",
-                    "crlVersion": 44,
+                    "crlVersion": 47,
                     "crv": "P-256",
                     "kid": "TKPyzMtKh7WQaCzsw6rOK8ZUOZlND2VcBwhFIIcCqUE",
                     "kty": "EC",
@@ -15977,53 +16010,56 @@
             },
             "crls": [
                 {
-                    "ctr": 44,
+                    "ctr": 47,
                     "kid": "TKPyzMtKh7WQaCzsw6rOK8ZUOZlND2VcBwhFIIcCqUE",
                     "method": "rid",
                     "rids": [
-                        "fSW6Z2NfR8yoeev7epv-KA",
-                        "8dPgHYssT9m5BvaXlTm2Ig",
-                        "TMlCjyVIRfO94G5fA4Cn7A",
                         "pp9IIofaQ6aptStmCrOZXQ",
-                        "GpXysSJ7S9ykVBsr2vwOSw",
-                        "qm23JyufSlKdUhN3hXxL9w",
                         "qQnbKcmqTB6LMFq62t7XSQ",
+                        "TMlCjyVIRfO94G5fA4Cn7A",
+                        "8dPgHYssT9m5BvaXlTm2Ig",
+                        "fSW6Z2NfR8yoeev7epv-KA",
+                        "qm23JyufSlKdUhN3hXxL9w",
+                        "GpXysSJ7S9ykVBsr2vwOSw",
                         "fQoddmBFQW6O0YBb_53eQg",
                         "CtUSbi0aSIOqBAoCxLKvcw",
-                        "xA6fOampRI6EbshZMGSvbQ",
-                        "o_X344wVSLKRRKvNoPBpVQ",
                         "4-TGEu0rQmm1S8gt2hTDwA",
                         "G-W-0_RjRN6ssEN2AJVxWQ",
                         "sNTQdOq5To-a2Z_aPhjVMw",
                         "wOYijr3FS22wd3xuMi4myg",
                         "NMXNuohgQNmtvDW-xCnRcQ",
+                        "xA6fOampRI6EbshZMGSvbQ",
+                        "o_X344wVSLKRRKvNoPBpVQ",
                         "KXzJw5UaR6mMl9oe1lW6jA",
-                        "6-Zuh-3iQdWGm1ZFEIjpog",
                         "BH-awAGaTq-K5zzN4st6EA",
+                        "6-Zuh-3iQdWGm1ZFEIjpog",
                         "SHGNyPy8Qnmceu9ja3nxdA",
-                        "qCx1w6fxS0-W87LwctZ63Q",
                         "Pm0yv9H6SAyuJLBLoZic6Q",
                         "OK_SsH-6QD2tYrWDuOJOPw",
+                        "qCx1w6fxS0-W87LwctZ63Q",
                         "saN0QoSBSe-zC9QqSTq9Qg",
                         "VwGltb10T6CkBNR9HHggTA",
                         "2k6BGJKgRMSpl8cOFTOZ3Q",
-                        "50Bj-G_iTJGBlBlqf66AUQ",
+                        "ivSRK2cKSUWzj7oB71KFKA",
                         "dkHFdSeIQ1SIz5hWrEFnNA",
                         "7Ez7xueATwSeICt8Pdm_YQ",
-                        "ivSRK2cKSUWzj7oB71KFKA",
                         "9yndpTWuQ_SZSZN8r618pA",
                         "tfhrFt7aSBqd-dJEi4LHag",
+                        "50Bj-G_iTJGBlBlqf66AUQ",
                         "SEFPNnRZRMGfrAucHV-3MA",
                         "rQvY5KBRSeOZyMi-GNIcWw",
                         "fBs8zh3LQK-hMpFfO1nE4Q",
-                        "W95UIoxDTTuT3B9ChfxcBw",
-                        "csDMIQ1MTsWEb5DE3w9bfg",
-                        "cujw9e2pQ_CKo7hEZA5tSQ",
                         "Atqb5-flRLWBMk0HpIFt_A",
-                        "rBubvRbeTiq63KVXiM7UUA",
+                        "cujw9e2pQ_CKo7hEZA5tSQ",
+                        "csDMIQ1MTsWEb5DE3w9bfg",
+                        "W95UIoxDTTuT3B9ChfxcBw",
                         "01hsiOTpT5uvam9RrGcFwQ",
+                        "rBubvRbeTiq63KVXiM7UUA",
+                        "11vdJcZnQT6FmR2m52xtSA",
                         "e22u6xCYRHmaBWfBnpLGag",
-                        "11vdJcZnQT6FmR2m52xtSA"
+                        "xZa3gXulSGugK5TI50sLXw",
+                        "qx1nP4SiTxWhl1KZQM5brw",
+                        "IhX6f2YfScShh1hWDQaGPQ"
                     ]
                 }
             ],
