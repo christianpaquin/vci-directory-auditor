@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2022-06-21T12:47:04Z",
+    "time": "2022-06-22T12:40:35Z",
     "issuerInfo": [
         {
             "issuer": {
@@ -4279,6 +4279,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -4300,6 +4308,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -6323,6 +6339,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -6485,8 +6509,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "DHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "DH, 2048 bits",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-521, 521 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -7805,6 +7829,14 @@
                     "y": "nOkShRZU4BheXkoxYMsXr4I7_7wLJGAKqyF_SBYA0CE"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -9005,11 +9037,27 @@
                 "name": "ProMedica",
                 "website": "https://mychart.promedica.org/MyChart/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "Hty2sTB8Apkrr-Zvi7nuchk-U9dey3nS5wZxxsP6ZeY",
+                    "y": "3zXcnWpnWc6jJEvVUuHph2SZ4h7KSJm8HSnL3HoFAuk",
+                    "kid": "uPWKKpoWI3OIa11UbV9xdoRHdf5ZsYsAyvczK79L3RE",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-521, 521 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -10243,14 +10291,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -10946,6 +10986,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -11811,6 +11859,15 @@
                     "e": "AQAB",
                     "kid": "b207c3df-c707-4dff-8001-f3a70f12e0cb",
                     "n": "hH-LR9PbzBTZs0t6hjbpZWa6U9x_HLoKNnElIS6RrZiZ35x2CwC7QUJ4lWr0GYajxmG88s0ko9-9g-v6uyrbF8Jbcma48KTbyvffQ3qvOujV6NP7NHgFkyqqxfNywwYLSTOc3bqX4m-siNEjefZlrk1mfUm7L8scxBfDVxJA1dJJ1AK-H_SDav6NZDl-I87y4Cg4_D5hoW8b5BjkFeSN15Qr_iryKfoL_u7eofRfQwF28CgYSxNKG4IjV1SM-YpSFbU86lWatL_pYucB63RVaV4OR8ZkIj01G-o9dEhY2TTEIyfxET3XQKd5Zj3__ruhGBZEjPsd5PJgmjt48UehDQ"
+                },
+                {
+                    "crv": "P-256",
+                    "x": "yXG6HMBHEgT-df4-mvTSyyV2vdHJLaf4pUV_fHR79Ng",
+                    "y": "7qknv5rwm0cBcETPS6W7v_M5g7zNScZlsJFL39VXg3E",
+                    "kty": "EC",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "kid": "Kt6Xmv-9dpM2mbpbzxTM0P3YGbAW-WIJD0EE3_ddH00"
                 }
             ],
             "tlsDetails": {
@@ -13309,14 +13366,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -15438,6 +15487,14 @@
                     "alg": "ES256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -15447,6 +15504,26 @@
                 "name": "Hartig Drug Co",
                 "website": "https://www.hartigdrug.com/covidvaccine"
             },
+            "keys": [
+                {
+                    "kty": "EC",
+                    "crv": "P-256",
+                    "x": "2DRkq2sHgzzLvLOx8kz_6LbihPoXWkGQbvajRgfeR0U",
+                    "y": "V1wBkYRvzUs83iOplhXjxBOJKl3C6dFPV0xbgCW0MQc",
+                    "kid": "85iFG1HeKPc-TFBQxy_U5eSDa3X_XUhDGRVp9h3eU_w",
+                    "use": "sig",
+                    "alg": "ES256"
+                }
+            ],
+            "crls": [],
+            "errors": []
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
+                "name": "KMART PHARMACY",
+                "website": "https://pharmacy.kmart.com/newrx-immunization"
+            },
             "keys": [],
             "crls": [],
             "errors": [
@@ -15455,59 +15532,15 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
-                "name": "KMART PHARMACY",
-                "website": "https://pharmacy.kmart.com/newrx-immunization"
-            },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "crv": "P-256",
-                    "x": "vnz-riIGGnG5QXoN9hCRh7HiK0X-YWaduPOK82_qtq0",
-                    "y": "Aw6J9vSzG0w7UO6CaznTRvLndFnZ5RCjl3mK5H0497s",
-                    "kid": "U_C_KSRk6GRqOuT-tTTVid-zHxihv7fRdyuvNQPeBvM",
-                    "use": "sig",
-                    "alg": "ES256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": []
-        },
-        {
-            "issuer": {
                 "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
                 "name": "Meijer",
                 "website": "https://clinic.meijer.com/"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "crv": "P-256",
-                    "x": "4rGpwqa648ZOQ51AM8jvjXAWlhbOKQjhaL6PY8O-4kc",
-                    "y": "2bieuXyJYIUSgA9YFma8ogWSE4TK0lrssEg3NeTiisc",
-                    "kid": "cmm6eWwLYLwRtBU69V-_jsUxfpVtPgrZshDbf5X4Z9k",
-                    "use": "sig",
-                    "alg": "ES256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -15515,17 +15548,7 @@
                 "name": "Pharmaca",
                 "website": "https://www.pharmacarx.com/"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "crv": "P-256",
-                    "x": "5oc8ywImdTcDeJHk_x2A7XQaXHgpOpHqGO7cFRLl5yU",
-                    "y": "hX9Rs7g47Dn04eezx_5RUQQ42bnuCH15LvJPV_VoUy0",
-                    "kid": "3Dtn69t66RKUD8y06Dgig0TIoyh1V1T3cW9Bkex2uQk",
-                    "use": "sig",
-                    "alg": "ES256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -15535,7 +15558,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -16356,17 +16381,7 @@
                 "name": "Trinity Health of New England",
                 "website": "https://www.trinityhealthofne.org/patient-portal/"
             },
-            "keys": [
-                {
-                    "x": "ptres2_msgV0PtPvOua-lwOijluLo2HIEE9v78H8lCA",
-                    "y": "Khdj4njGO5-qNjMstB5RRx7jGYTvasuLSVjR9halp1s",
-                    "kid": "UURmFWohkZz1reDW0M16e5MlnKNSIxsvYfRvKnGodLI",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
@@ -16376,7 +16391,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -16757,7 +16774,7 @@
             "keys": [
                 {
                     "alg": "ES256",
-                    "crlVersion": 250,
+                    "crlVersion": 252,
                     "crv": "P-256",
                     "kid": "TKPyzMtKh7WQaCzsw6rOK8ZUOZlND2VcBwhFIIcCqUE",
                     "kty": "EC",
@@ -16776,259 +16793,261 @@
             },
             "crls": [
                 {
-                    "ctr": 250,
+                    "ctr": 252,
                     "kid": "TKPyzMtKh7WQaCzsw6rOK8ZUOZlND2VcBwhFIIcCqUE",
                     "method": "rid",
                     "rids": [
-                        "8dPgHYssT9m5BvaXlTm2Ig",
-                        "pp9IIofaQ6aptStmCrOZXQ",
-                        "TMlCjyVIRfO94G5fA4Cn7A",
                         "fSW6Z2NfR8yoeev7epv-KA",
-                        "qQnbKcmqTB6LMFq62t7XSQ",
-                        "GpXysSJ7S9ykVBsr2vwOSw",
+                        "pp9IIofaQ6aptStmCrOZXQ",
+                        "8dPgHYssT9m5BvaXlTm2Ig",
+                        "TMlCjyVIRfO94G5fA4Cn7A",
                         "fQoddmBFQW6O0YBb_53eQg",
                         "qm23JyufSlKdUhN3hXxL9w",
-                        "xA6fOampRI6EbshZMGSvbQ",
-                        "6-Zuh-3iQdWGm1ZFEIjpog",
+                        "qQnbKcmqTB6LMFq62t7XSQ",
+                        "GpXysSJ7S9ykVBsr2vwOSw",
                         "G-W-0_RjRN6ssEN2AJVxWQ",
+                        "xA6fOampRI6EbshZMGSvbQ",
+                        "4-TGEu0rQmm1S8gt2hTDwA",
                         "sNTQdOq5To-a2Z_aPhjVMw",
-                        "wOYijr3FS22wd3xuMi4myg",
                         "NMXNuohgQNmtvDW-xCnRcQ",
+                        "o_X344wVSLKRRKvNoPBpVQ",
+                        "wOYijr3FS22wd3xuMi4myg",
+                        "OK_SsH-6QD2tYrWDuOJOPw",
+                        "6-Zuh-3iQdWGm1ZFEIjpog",
+                        "BH-awAGaTq-K5zzN4st6EA",
                         "CtUSbi0aSIOqBAoCxLKvcw",
                         "KXzJw5UaR6mMl9oe1lW6jA",
-                        "4-TGEu0rQmm1S8gt2hTDwA",
-                        "o_X344wVSLKRRKvNoPBpVQ",
-                        "saN0QoSBSe-zC9QqSTq9Qg",
-                        "BH-awAGaTq-K5zzN4st6EA",
-                        "OK_SsH-6QD2tYrWDuOJOPw",
                         "Pm0yv9H6SAyuJLBLoZic6Q",
-                        "SHGNyPy8Qnmceu9ja3nxdA",
-                        "qCx1w6fxS0-W87LwctZ63Q",
-                        "VwGltb10T6CkBNR9HHggTA",
                         "2k6BGJKgRMSpl8cOFTOZ3Q",
-                        "tfhrFt7aSBqd-dJEi4LHag",
+                        "qCx1w6fxS0-W87LwctZ63Q",
+                        "saN0QoSBSe-zC9QqSTq9Qg",
+                        "SHGNyPy8Qnmceu9ja3nxdA",
+                        "ivSRK2cKSUWzj7oB71KFKA",
+                        "VwGltb10T6CkBNR9HHggTA",
                         "dkHFdSeIQ1SIz5hWrEFnNA",
                         "7Ez7xueATwSeICt8Pdm_YQ",
-                        "ivSRK2cKSUWzj7oB71KFKA",
+                        "50Bj-G_iTJGBlBlqf66AUQ",
+                        "tfhrFt7aSBqd-dJEi4LHag",
                         "9yndpTWuQ_SZSZN8r618pA",
                         "SEFPNnRZRMGfrAucHV-3MA",
-                        "50Bj-G_iTJGBlBlqf66AUQ",
+                        "cujw9e2pQ_CKo7hEZA5tSQ",
                         "rQvY5KBRSeOZyMi-GNIcWw",
                         "fBs8zh3LQK-hMpFfO1nE4Q",
                         "csDMIQ1MTsWEb5DE3w9bfg",
-                        "rBubvRbeTiq63KVXiM7UUA",
-                        "cujw9e2pQ_CKo7hEZA5tSQ",
-                        "Atqb5-flRLWBMk0HpIFt_A",
-                        "W95UIoxDTTuT3B9ChfxcBw",
-                        "01hsiOTpT5uvam9RrGcFwQ",
-                        "D7snl-nzS_mZHdCXJ6VbGQ",
-                        "qx1nP4SiTxWhl1KZQM5brw",
-                        "xZa3gXulSGugK5TI50sLXw",
-                        "IhX6f2YfScShh1hWDQaGPQ",
-                        "mZrO9WAVR-y7QReA3Wugvw",
-                        "ywG3w5bNSLi_7XkQpxoUog",
                         "e22u6xCYRHmaBWfBnpLGag",
+                        "Atqb5-flRLWBMk0HpIFt_A",
+                        "01hsiOTpT5uvam9RrGcFwQ",
+                        "rBubvRbeTiq63KVXiM7UUA",
+                        "W95UIoxDTTuT3B9ChfxcBw",
                         "11vdJcZnQT6FmR2m52xtSA",
+                        "xZa3gXulSGugK5TI50sLXw",
+                        "qx1nP4SiTxWhl1KZQM5brw",
+                        "IhX6f2YfScShh1hWDQaGPQ",
                         "0gy5RKvuQUyQtMuZU46yOg",
-                        "Oez5cTifSayFJ_gYkec7iQ",
-                        "HY3jiWXhSsaEF0IYiNpwkw",
-                        "NZw07H4NTviQbQ159L31zQ",
+                        "mZrO9WAVR-y7QReA3Wugvw",
+                        "D7snl-nzS_mZHdCXJ6VbGQ",
+                        "ywG3w5bNSLi_7XkQpxoUog",
                         "pBhAj4G3Rnqa_4ePx9ae1A",
+                        "HY3jiWXhSsaEF0IYiNpwkw",
+                        "Oez5cTifSayFJ_gYkec7iQ",
+                        "NZw07H4NTviQbQ159L31zQ",
+                        "Q2g8JVgzT3GOM2Wvd7f2Fg",
                         "0Qd4OT0fSDiNVMW12O-wWg",
                         "EjsA5sPkR6aU1-P2XBVUhw",
-                        "Q2g8JVgzT3GOM2Wvd7f2Fg",
-                        "SI3LBoscTRujRTFrmSkF0A",
-                        "IvZProg3Qd2lRKdJxfyaZA",
-                        "bZCjodJSRPavu0I6kuAJtQ",
                         "wSsd1C3aTN-IHItmfYpTxQ",
-                        "dyi-gOIaSf2z8cpKJCrNpg",
-                        "-GyS6lhFTWOw_dJTDLaLUA",
+                        "IvZProg3Qd2lRKdJxfyaZA",
+                        "SI3LBoscTRujRTFrmSkF0A",
+                        "bZCjodJSRPavu0I6kuAJtQ",
                         "iUHRQ-izTryj-R2lc4vbbw",
+                        "-GyS6lhFTWOw_dJTDLaLUA",
                         "iBnyrEaPT7erGeUi3N1SIQ",
+                        "dyi-gOIaSf2z8cpKJCrNpg",
                         "NeFbIgd3T_K7Y4BogsqxWg",
-                        "ndIOh8rPQQSKbdFn5VenrA",
-                        "8m1yLj0bR3C_B1vuP0J8jQ",
-                        "rBbmC6EBT8mljlKrSfcCxg",
+                        "oX9VylIrTUyGHqwAjejOVw",
                         "yMz9K2LUQO2J9dntOaqgAA",
                         "fav1nN_GS46dNXnp2m0nLw",
-                        "oX9VylIrTUyGHqwAjejOVw",
-                        "p7GPKHaaTqOs899K0uzjtA",
-                        "NhxASrOjTTu9EM1bNDlxQw",
-                        "zjo2kP4-TE26xfN7UQHomw",
+                        "8m1yLj0bR3C_B1vuP0J8jQ",
                         "ihXC9WbBSeW5OqJMXZOurw",
-                        "HidS3M-WT0-hweAi5bPokQ",
-                        "EGd5oZIzTO2x_cpeIYiS-g",
-                        "mrxl9Oc4SoK_CYYdxUhuLQ",
+                        "zjo2kP4-TE26xfN7UQHomw",
+                        "rBbmC6EBT8mljlKrSfcCxg",
+                        "ndIOh8rPQQSKbdFn5VenrA",
+                        "NhxASrOjTTu9EM1bNDlxQw",
+                        "p7GPKHaaTqOs899K0uzjtA",
                         "yEEjhxE_Q--Bf3GSt3RhyQ",
-                        "MDi2QVcuRHekNcTqJf6wJQ",
-                        "Go4fC0uGTjub2hf7_F12PQ",
-                        "PoqHtcVCRmWcGjR4jf0m0A",
                         "LS6GHfMBQTqxauFSitbG4g",
+                        "MDi2QVcuRHekNcTqJf6wJQ",
+                        "mrxl9Oc4SoK_CYYdxUhuLQ",
+                        "HidS3M-WT0-hweAi5bPokQ",
+                        "Go4fC0uGTjub2hf7_F12PQ",
+                        "EGd5oZIzTO2x_cpeIYiS-g",
+                        "viE2lw-MSfutMddt8FJgrg",
                         "8K2eigKUTbaChaJQ2KdxvQ",
                         "ZxigD9_ORNeN25XqsNQEaA",
-                        "viE2lw-MSfutMddt8FJgrg",
-                        "Ly-nk3VIRlGEIIll93jlrQ",
-                        "fU_nPMLzQTeC3ZtFhVD5XQ",
                         "9bBnIFrBTPaUt58VvEb_RQ",
+                        "PoqHtcVCRmWcGjR4jf0m0A",
                         "CRYtEpr0TkeKgxqdtMxXGQ",
-                        "vtDy0ZQXRDmrakNHBYErfA",
-                        "vmNlaaR2QG-BycJEisEf9w",
-                        "E8WjylCLRumQb_iS2g9PXg",
                         "AxXJquzaRE6W1hgAUyXWIA",
-                        "Um7uxD-oTWizmPCAOZaqNQ",
-                        "KF2gQw8uSLigo-kaFEy5gw",
-                        "SORPrLiMQwOS-P0RiOgrDA",
-                        "EbD_x_uaRmaFDWfrRNROXw",
+                        "Ly-nk3VIRlGEIIll93jlrQ",
+                        "E8WjylCLRumQb_iS2g9PXg",
+                        "fU_nPMLzQTeC3ZtFhVD5XQ",
+                        "vmNlaaR2QG-BycJEisEf9w",
+                        "vtDy0ZQXRDmrakNHBYErfA",
                         "7YcLl2_0SGGMHeC7IY9GXQ",
+                        "EbD_x_uaRmaFDWfrRNROXw",
+                        "KF2gQw8uSLigo-kaFEy5gw",
                         "HhNgkKHfQ1iqm_vdFbtGBg",
+                        "SORPrLiMQwOS-P0RiOgrDA",
+                        "Um7uxD-oTWizmPCAOZaqNQ",
                         "5wB8DuXLTgG0iDtMqtX_FA",
-                        "ccb354rTQo2c67BOQDDRAQ",
                         "zuQ_b8feSkaNlL_UeBjR8Q",
-                        "j6f-K75XQ8CDdCFbvjy-Bg",
                         "BWUMJao5QmuuVUKhgAJJdA",
-                        "5T0fj50mSbSzT-b-ynT3ng",
+                        "j6f-K75XQ8CDdCFbvjy-Bg",
+                        "qNcMlNJ-TIqzyVYRfBkOTg",
                         "0WJZ9kwWTQqij6G3bPQyvg",
+                        "_05v-3viQvO3faCGSi3oUg",
+                        "5T0fj50mSbSzT-b-ynT3ng",
+                        "cOJFRuAJTuqQSKApKfQppA",
                         "o0iayECETOaTRgIdrbNjGQ",
                         "Y1Wig0kjSo2vt_eII2QgMQ",
-                        "_05v-3viQvO3faCGSi3oUg",
-                        "cOJFRuAJTuqQSKApKfQppA",
-                        "qNcMlNJ-TIqzyVYRfBkOTg",
+                        "ccb354rTQo2c67BOQDDRAQ",
                         "bWVVm-JvQ3i_x7RseK4ubA",
                         "Cm7hJOoKSceEb60CNa5kCw",
-                        "ODcjIonVQeyRSN7mIKVSaQ",
+                        "oVZS4vz6QUmc-dzpairKNw",
                         "m2vfr5HGTVWgraUdZ36kmw",
+                        "Fpxrdur5TB6i6zbdtOj12g",
                         "40vD_P-nSIOxJmWWEe0MwA",
                         "kUroSHirTGCVMX-OksOiuw",
-                        "KTsJxQb1Rtu8X4TgKSHpYw",
-                        "oVZS4vz6QUmc-dzpairKNw",
-                        "Fpxrdur5TB6i6zbdtOj12g",
                         "feMDGaShSz-l9-17aJREzQ",
-                        "JycFHtF_R-2W_Uudjza-ow",
+                        "KTsJxQb1Rtu8X4TgKSHpYw",
                         "KbFhGY0yQfaD7Yc0jB0eSg",
+                        "ODcjIonVQeyRSN7mIKVSaQ",
                         "JWQ_5_8bSymZAV-CA9J_4A",
-                        "eoRvJ_VgTJatVdGln9S5XA",
+                        "rQyxwCy3S2KRMZV9dPtVww",
+                        "JycFHtF_R-2W_Uudjza-ow",
                         "T1rnFBSYSBOP40QOJlg3qw",
                         "Aoqhg6wGRXu21MXGQlUAwQ",
-                        "E4ebv3ldQLe3L6BPXaQvkw",
+                        "eoRvJ_VgTJatVdGln9S5XA",
                         "qh-HKKBgTOyQ0CwT0eHzqA",
-                        "rQyxwCy3S2KRMZV9dPtVww",
-                        "0zRQbQw7SPiMIPiEm8HIGw",
-                        "YJq3gc_cR9aAmLZ11dh17A",
-                        "1ZXwdSuHTJ2vz58wtiIuHg",
-                        "n9r1HV8-Rh-fmlfjxh0nEQ",
-                        "UBMZzRN6SPKRamJoKxbt5Q",
-                        "Yr30tzpjSdqNKafKCV0Itg",
                         "4UKGfnAcSsWX-XWv5K-NQw",
+                        "E4ebv3ldQLe3L6BPXaQvkw",
+                        "1ZXwdSuHTJ2vz58wtiIuHg",
+                        "YJq3gc_cR9aAmLZ11dh17A",
+                        "n9r1HV8-Rh-fmlfjxh0nEQ",
                         "DkPanmqTQvygyNvYkj18Mg",
-                        "3YparpS6St28da4bmuT6tg",
-                        "EREXEgo8SRmbuEUfcdlyQg",
-                        "wWivYvFhTsG5AlANxnb7Yw",
-                        "hlrb-9ljTj6HXkXW-sxotA",
-                        "AXAFo0cAQSeIVdCruqmcJw",
+                        "UBMZzRN6SPKRamJoKxbt5Q",
+                        "0zRQbQw7SPiMIPiEm8HIGw",
+                        "Yr30tzpjSdqNKafKCV0Itg",
                         "qHkl_AZpR5y43CnoZoM0pw",
+                        "EREXEgo8SRmbuEUfcdlyQg",
+                        "hlrb-9ljTj6HXkXW-sxotA",
+                        "3YparpS6St28da4bmuT6tg",
+                        "wWivYvFhTsG5AlANxnb7Yw",
                         "V1CMKIYRQf-XnZ0yMMRoVA",
                         "ETiHTiJpQ3W619d1f4ZhkA",
                         "aGZd4BQXTTOcka64l0c6zg",
-                        "B6e1XsFJSqK-rvmj8V5eOA",
+                        "AXAFo0cAQSeIVdCruqmcJw",
                         "kvMpefyTSu6_DlO8xsZG_w",
-                        "9Jtt8OBvQDuRdQmHS3jMAA",
-                        "3iwowbnESKq9EFck8zefpA",
+                        "B6e1XsFJSqK-rvmj8V5eOA",
                         "LcAgKkNZTFO6hyKHbUTYXg",
+                        "3iwowbnESKq9EFck8zefpA",
+                        "9Jtt8OBvQDuRdQmHS3jMAA",
                         "zXf9etZbQiK6kNWoBO-Yzg",
-                        "YW1votijSryT-rcfye6AmA",
+                        "9yTGjb58QAm7Ck-BxiGDQg",
+                        "9xTDh0v7Tr22gMcagPFAKA",
                         "jTnbKq7YRAuV3uKSF16YYw",
                         "yT2-hqI3TK-bTPeiVhaz_Q",
-                        "9yTGjb58QAm7Ck-BxiGDQg",
                         "iAIzqVCDRZ2geyO7AvqEjQ",
-                        "tpVvlHA2SZepeojP0nY8Kg",
-                        "avk6CyJ9TcWvCTjZTjruTw",
-                        "9xTDh0v7Tr22gMcagPFAKA",
                         "l_xMyRrrRDulvcJ41f_uQQ",
-                        "E17gmvLHS4mhF9mhT2LXDw",
+                        "tpVvlHA2SZepeojP0nY8Kg",
+                        "YW1votijSryT-rcfye6AmA",
+                        "avk6CyJ9TcWvCTjZTjruTw",
                         "TL_CB8bLR9CQ7dJI3jH5Ew",
                         "ZPOlWX6GQM6GIIiaTY0lxg",
-                        "vaVVBQgpSKC3jq8iR46b9g",
                         "Z9J-C7t1S-6qvyMoP7_ITA",
+                        "vaVVBQgpSKC3jq8iR46b9g",
+                        "2Dfc2kRrQiiPqN5gzgOkZA",
                         "PnZehbddQKG4vcVQxbzBMA",
-                        "ErcMXABAQn--f5VB5Ji0WA",
                         "uBLiLiU4S02IcdzFJPA7fQ",
                         "404u52dYQzGF5vM75nZQaA",
-                        "1NMh9HWbQdOt1bBmAJbqvA",
-                        "BgZ85KFATv2AKMuGVMBgWQ",
-                        "GnoUZCVjQPKZY8hFGGRkWA",
-                        "lPw8ztm1TYyOURhduzxrVA",
+                        "E17gmvLHS4mhF9mhT2LXDw",
                         "EV4_poVrSYy71Xe3uw2kvg",
                         "MAclZ4ZtQD2Q6SG9Ylq2Ng",
-                        "2Dfc2kRrQiiPqN5gzgOkZA",
-                        "hXrlUFZCQEGQ8y3jDQCj1Q",
-                        "bZ2jZ9wLQ7mTo9NPJVS9Dg",
-                        "08IxVxvZRCyUZW8IZWNQAw",
-                        "_GFFaOjnSiWHy_YQqLjcLw",
-                        "hWMMvm1NR2at5ZChp_suWw",
-                        "i4VvLpnnQgmkelFs1ILUMQ",
-                        "7eF2c_05QUuxyb5aBbsnVg",
-                        "lIkwB5bnTYSPyhKF11gIVA",
-                        "98h473HzR1itROjO1-yVvA",
-                        "ZmsFgWhVT8aXoOky4r7HrA",
-                        "Vlvey_jDR6qgVt9DRCy0cQ",
+                        "1NMh9HWbQdOt1bBmAJbqvA",
                         "EjJzc7oYR96ApRKUj2fyBQ",
+                        "hXrlUFZCQEGQ8y3jDQCj1Q",
+                        "GnoUZCVjQPKZY8hFGGRkWA",
+                        "08IxVxvZRCyUZW8IZWNQAw",
+                        "98h473HzR1itROjO1-yVvA",
+                        "BgZ85KFATv2AKMuGVMBgWQ",
+                        "bZ2jZ9wLQ7mTo9NPJVS9Dg",
+                        "lPw8ztm1TYyOURhduzxrVA",
+                        "ErcMXABAQn--f5VB5Ji0WA",
+                        "hWMMvm1NR2at5ZChp_suWw",
+                        "_GFFaOjnSiWHy_YQqLjcLw",
+                        "7eF2c_05QUuxyb5aBbsnVg",
+                        "i4VvLpnnQgmkelFs1ILUMQ",
+                        "lIkwB5bnTYSPyhKF11gIVA",
+                        "Vlvey_jDR6qgVt9DRCy0cQ",
+                        "ZmsFgWhVT8aXoOky4r7HrA",
                         "YF9uLfP8QO23t_D4cCLY0w",
                         "x6obrgKMThGWx4AdwpN3zw",
                         "O2_cYl0eQTC4uwAtmgGBKw",
+                        "b4MINpUsS160ocDYzPFXCg",
                         "YgWvUkOQQs-CYkXcEhE6Kw",
-                        "WMkhWWNjTDqepIoD5wXqag",
                         "Zwysuy8HTUSPP5GP88MxUw",
+                        "YObV51ueRS2YYk0kXCeE5Q",
                         "JaTHRBaJSzqGSelZFOU7EA",
                         "TN1pTCLJTnyy4uCNGbACJg",
-                        "sPHTjuz2R9OlNC_SVeHGiw",
-                        "YObV51ueRS2YYk0kXCeE5Q",
-                        "b4MINpUsS160ocDYzPFXCg",
+                        "WMkhWWNjTDqepIoD5wXqag",
                         "778buMz9TResZCtPrbMwqg",
                         "-1rIS8jMTL-sKWoUYL6zBA",
+                        "sPHTjuz2R9OlNC_SVeHGiw",
                         "7JfCn-_GRz-XBxv4G6gDgw",
-                        "HUcdYHo0QDy8bAnOTFnZGQ",
+                        "J9NzjTY4QzCUAs0gmqkzDw",
                         "zCmVrfTiRxKoGUnLJMo5fw",
+                        "HUcdYHo0QDy8bAnOTFnZGQ",
+                        "6R8CEWW2QSy24VuGGtJIAg",
+                        "rYVbsraURvGK8YcFmHjOEw",
                         "g9yerJn_RTC3NHwkdYB2KQ",
                         "RFgO7nnBQhSsGivt7F-4fg",
                         "ir-IOaqIS2iPCdspJgMwOA",
-                        "6R8CEWW2QSy24VuGGtJIAg",
-                        "rYVbsraURvGK8YcFmHjOEw",
                         "dXWF2wXcSSGHGlXtUl_ssg",
-                        "J9NzjTY4QzCUAs0gmqkzDw",
                         "BnXYLaLFQzuX1SqQBVNYqQ",
                         "cEBQOAjAT82R2ewRvM_dbQ",
-                        "1A8j0RfJR3aVgr0Xi2fYyQ",
-                        "NT1Ao7fgTMqCFvYaNbsL8Q",
                         "WxEBE7PRTaO8kvI96Hg46g",
-                        "PrctgaLLSk2Wl61sJJ_9zg",
+                        "1A8j0RfJR3aVgr0Xi2fYyQ",
                         "OryKw5OxS06M-OsUOcIT9g",
                         "dBrbr6S3TgaxRRV8zjToUQ",
                         "6bncVXjPS02w2BqETzxhDg",
-                        "I5SuvarxQsWGVAHAhk8v3A",
+                        "L0wfxhTMRguI--DKdwMNQA",
                         "82X0hv6QSzWPK5IAGqnraw",
                         "M9n0kIdxRf60wNIEN0V6pg",
-                        "L0wfxhTMRguI--DKdwMNQA",
+                        "NT1Ao7fgTMqCFvYaNbsL8Q",
+                        "I5SuvarxQsWGVAHAhk8v3A",
+                        "PrctgaLLSk2Wl61sJJ_9zg",
+                        "anVNsXJ4RfyDGvkCB5OlRg",
                         "RXsjZUq_RMGR8iwiSv8V0A",
-                        "p6p6jnIiSnu2FctFWRUNiQ",
                         "j2EWy8d1QSC5z8Xjze0URQ",
+                        "ImrUBfXmQyKbQBI5qMl-EQ",
                         "Lc3HNUHpSy290x6Jkdh2Tw",
                         "IrxLc71DS2O3sEtz7fllVg",
+                        "P4sIPISBSmK7HcqZV2ORAA",
+                        "p6p6jnIiSnu2FctFWRUNiQ",
                         "-tvAvgeiQSCuxe-ibx2O-A",
                         "cuSsNtsQRKG2SWwuNIUDNw",
                         "pJbkoQkcRgiQCzdRyTkRtw",
-                        "anVNsXJ4RfyDGvkCB5OlRg",
-                        "ImrUBfXmQyKbQBI5qMl-EQ",
-                        "P4sIPISBSmK7HcqZV2ORAA",
-                        "0OI6UaGaSvaSYS_wq068qw",
                         "7dxRHV_1TP2B3TcwAQrQZA",
-                        "aVtaTbz8QwSOoosv2mTzEA",
                         "sqwhSmuKTuWQWCsTW15gAA",
-                        "a5uwY7LQTR2l9-axmC82Ug",
+                        "0OI6UaGaSvaSYS_wq068qw",
+                        "hHIjVu4FTNmN81AE-EfVMg",
                         "Z6EYCfk7RAWPNDWl1YJPmA",
                         "_oelFTlHRoqXRgnnFpl_9Q",
+                        "a5uwY7LQTR2l9-axmC82Ug",
                         "rteXZFBiRIicaEX1SGtE1g",
-                        "hHIjVu4FTNmN81AE-EfVMg",
-                        "Mq6u6RkzRb2t5E41DA6fhA"
+                        "Mq6u6RkzRb2t5E41DA6fhA",
+                        "aVtaTbz8QwSOoosv2mTzEA",
+                        "BKx-R2FaRTuEQjZrp-u9wQ",
+                        "EfNJabT3TRq-0BU-_QtvEQ"
                     ]
                 }
             ],
@@ -17303,6 +17322,14 @@
                     "alg": "ES256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
