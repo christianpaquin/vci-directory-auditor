@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-07-06T12:46:35Z",
+    "auditTime": "2022-07-07T12:43:18Z",
     "issuerCount": 580,
     "issuersWithErrors": [
         {
@@ -125,6 +125,26 @@
         },
         {
             "issuer": {
+                "iss": "https://api.utmsa.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "UT Health San Antonio",
+                "website": "https://mychart.utmedicinesa.com/mychart/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "4096",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://epicproxy.et1127.epichosted.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "United Health Services",
                 "website": "https://mychart.nyuhs.org/MyChart/"
@@ -151,18 +171,6 @@
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://webproxy.mynovant.org/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Novant Health",
-                "website": "https://www.novantmychart.org/mychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -348,6 +356,18 @@
         },
         {
             "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
+                "name": "Giant Eagle Pharmacy",
+                "website": "https://www.gianteagle.com/covidvaccine#electronic-record"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://rjhislandhealth.us-southeast-1.linodeobjects.com",
                 "name": "Royal Jubilee Hospital"
             },
@@ -416,12 +436,9 @@
         "bRi8F_YcgjcfiBFxyNv6zO1mUSomobp4APHA6uabYKw",
         "IVzjSimVvH8ZyQ3AJEjI8LXm5HfrdrDYuEmG0QcXzOI",
         "afXT8j9iwJJ7IRP24ZUKPhbkga79MfqPreO2DlK0sLA",
-        "KBBgSdgGdb2_Nqufjj09pcISTziLYhj9meR19MmKLDk",
-        "dKEeeC7VTe912gisnMXHxBCd3iFRuDHj76tWtb3uaBc"
+        "KBBgSdgGdb2_Nqufjj09pcISTziLYhj9meR19MmKLDk"
     ],
-    "duplicatedIss": [
-        "https://smart.medconciergela.com/api/ISSUER"
-    ],
+    "duplicatedIss": [],
     "duplicatedNames": [
         "UC Health (San Diego / Irvine / Riverside) and Affiliates",
         "Dignity Health",
@@ -440,21 +457,26 @@
         "CVS Health",
         "Cedars-Sinai Health System",
         "Lakeland Regional Health",
-        "Med Concierge LA",
         "CommonSpirit Health",
         "State of Louisiana",
         "Washington State Department of Health",
         "Genesis Healthcare System",
         "MyHealthHome"
     ],
-    "previousAuditTime": "2022-07-05T12:43:44Z",
-    "newIssuerCount": 0,
+    "previousAuditTime": "2022-07-06T12:46:35Z",
+    "newIssuerCount": 1,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://webproxy.mynovant.org/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://api.utmsa.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "LscjYTUMp733zsMu6D6tGCmvR7Rk4rTO7FV5w9r4e8E"
+                "0jzWwbsnyP2wrDPYMCe96n0DztcJBVZLNwAq0VghGG4"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
+            "kids": [
+                "fM26plwst5o5yrC_rN6FVUtlmMr7nT4eLtgLJ6IfBTE"
             ]
         }
     ]
