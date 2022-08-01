@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-07-31T12:37:43Z",
+    "auditTime": "2022-08-01T12:45:58Z",
     "issuerCount": 584,
     "issuersWithErrors": [
         {
@@ -30,19 +30,8 @@
             },
             "crls": [],
             "errors": [
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://unified-api.ucsf.edu/clinical/apex/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "UCSF Health",
-                "website": "https://www.ucsfhealth.org/mychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -137,6 +126,26 @@
         },
         {
             "issuer": {
+                "iss": "https://epic-arr.utmb.edu/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "University of Texas Medical Branch",
+                "website": "https://www.utmbhealth.com/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-521, 521 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 502 (Bad Gateway)"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://fhir.memorialcare.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "MemorialCare",
                 "website": "https://mymemorialcare.memorialcare.org/MyChart"
@@ -163,6 +172,38 @@
             "crls": [],
             "errors": [
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://webprd.ochin.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "OCHIN",
+                "website": "https://mychart.ochin.org/mychart/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: unable to verify the first certificate"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://webproxy.mynovant.org/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Novant Health",
+                "website": "https://www.novantmychart.org/mychart"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -444,14 +485,26 @@
         "Genesis Healthcare System",
         "MyHealthHome"
     ],
-    "previousAuditTime": "2022-07-30T12:35:01Z",
+    "previousAuditTime": "2022-07-31T12:37:43Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://unified-api.ucsf.edu/clinical/apex/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://epic-arr.utmb.edu/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "ZwFzkFHXRFwE_0Jy0oyINwNZg4yLPKk5DW96xDwjMEo"
+                "UwqgQQ5XiNYjrPXhb3R7g7icjJljvasf2FHyV6uahyY"
+            ]
+        },
+        {
+            "iss": "https://webprd.ochin.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "Arb29-Fsf_bSMgMURH8zVPieCYRF9C3qRduclItA6n8"
+            ]
+        },
+        {
+            "iss": "https://webproxy.mynovant.org/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "LscjYTUMp733zsMu6D6tGCmvR7Rk4rTO7FV5w9r4e8E"
             ]
         }
     ]
