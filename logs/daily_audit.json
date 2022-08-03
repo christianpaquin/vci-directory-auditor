@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-08-02T12:46:47Z",
+    "auditTime": "2022-08-03T12:44:30Z",
     "issuerCount": 584,
     "issuersWithErrors": [
         {
@@ -30,8 +30,19 @@
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://unified-api.ucsf.edu/clinical/apex/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "UCSF Health",
+                "website": "https://www.ucsfhealth.org/mychart"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -152,18 +163,6 @@
             "crls": [],
             "errors": [
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://fhir.promedica.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "ProMedica",
-                "website": "https://mychart.promedica.org/MyChart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -329,6 +328,56 @@
         },
         {
             "issuer": {
+                "iss": "https://pvcprod.gov.pe.ca",
+                "name": "Government of Prince Edward Island",
+                "website": "https://www.princeedwardisland.ca/en/information/health-and-wellness/covid-19-immunization-record"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://fhir.laheyhealth.org/proxy-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Lahey Health",
+                "website": "https://mylaheychart.org/MyChart"
+            },
+            "keys": [
+                {
+                    "x": "fINgSvlfOnQ7wnNOCzXoU-6_BeA-ll8hTYJqZfgsJw4",
+                    "y": "DbzM-Ev7ROWo3-QwTYmE-FUE3EyC24_UP3zaAtYnUSI",
+                    "kid": "sD58-y5XzRBuAYTrnM5nS-UATnz-svgmrg9k5_HIrFM",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_128_GCM_SHA256",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://rp.sleh.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "canonical_iss": "https://rpsouth.catholichealth.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "CommonSpirit Health",
@@ -350,9 +399,9 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
-                "name": "Hartig Drug Co",
-                "website": "https://www.hartigdrug.com/covidvaccine"
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
+                "name": "Giant Eagle Pharmacy",
+                "website": "https://www.gianteagle.com/covidvaccine#electronic-record"
             },
             "keys": [],
             "crls": [],
@@ -367,26 +416,6 @@
                 "website": "https://pharmacy.kmart.com/newrx-immunization"
             },
             "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
-                "name": "Meijer",
-                "website": "https://clinic.meijer.com/"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 5000ms"
@@ -439,6 +468,26 @@
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
             ]
+        },
+        {
+            "issuer": {
+                "iss": "https://rmgpxy.riverbendmedical.com/fhir_proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Riverbend Medical Group",
+                "website": "https://mychart.riverbendmedical.com/MyChart"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-521, 521 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: unable to verify the first certificate"
+            ]
         }
     ],
     "issuerWithCRLCount": 3,
@@ -489,32 +538,44 @@
         "Genesis Healthcare System",
         "MyHealthHome"
     ],
-    "previousAuditTime": "2022-08-01T12:45:58Z",
+    "previousAuditTime": "2022-08-02T12:46:47Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://fhir.promedica.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://unified-api.ucsf.edu/clinical/apex/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "uPWKKpoWI3OIa11UbV9xdoRHdf5ZsYsAyvczK79L3RE"
+                "ZwFzkFHXRFwE_0Jy0oyINwNZg4yLPKk5DW96xDwjMEo"
             ]
         },
         {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
+            "iss": "https://pvcprod.gov.pe.ca",
             "kids": [
-                "85iFG1HeKPc-TFBQxy_U5eSDa3X_XUhDGRVp9h3eU_w"
+                "Z8YjtXO3hGPpbDR9wMcrifbcL-PswLyMFhEJGSn1yC0",
+                "uXqBkl4jkadfFUtcrkeVtXRaCCy-nNHA1aD6nKb0OJ4",
+                "rDW5Ssu6mvGAnouM1oaeiDh06OdTePgH9ZwC1MbwAoY",
+                "AWbze1dsT_69BBvlCv8g8rzUAyIBM3q6OT7zMQxBWVU",
+                "icKN8sxNH2ijHGcmqCOWHKziRPd25BoENF5Z0dVrkaI",
+                "SkSCQeF4JDcLSShAM5wejAAdB8rIT3X9-EH8rLNk0fY",
+                "L0ACjkybPcCgJOrMywfz3gJGDeEvxkUSa2j9Pbhjwz8",
+                "pCmOvJBUfo30WuG9UVlDCOvyBhPScLU2_CrAGy9A4Q8",
+                "gzeRVlR44Ia5cL67gN-6HhWsBikN_ZodlGAeGLv_HsI",
+                "D86U5NZ_OusITiBEqmgW2gRUAw1vhcbRtHujJ4wPx7w",
+                "JMCyyrr9wjXT5FY8rx6Jiel4DCfXS0ZDQPUuGdv4P1k",
+                "B5zoHRXFX54o1XgT9IbQLEqTc1GK4SEJg9vjd-K4n3o",
+                "cZxJnAOT6390E103SoaVyX2RNJenO46qyBcceU4A8go"
             ]
         },
         {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
             "kids": [
-                "U_C_KSRk6GRqOuT-tTTVid-zHxihv7fRdyuvNQPeBvM"
+                "fM26plwst5o5yrC_rN6FVUtlmMr7nT4eLtgLJ6IfBTE"
             ]
         },
         {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
+            "iss": "https://rmgpxy.riverbendmedical.com/fhir_proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "cmm6eWwLYLwRtBU69V-_jsUxfpVtPgrZshDbf5X4Z9k"
+                "dQZ_K6uV_az63aAQ6XppHWi7sS_EQW5aENOwK4l946Q"
             ]
         }
     ]
