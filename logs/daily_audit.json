@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-08-05T12:43:00Z",
+    "auditTime": "2022-08-06T12:35:14Z",
     "issuerCount": 584,
     "issuersWithErrors": [
         {
@@ -30,6 +30,7 @@
             },
             "crls": [],
             "errors": [
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
         },
@@ -91,6 +92,26 @@
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://fhir.ssmhc.com/Fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "SSM Health",
+                "website": "https://mychart.ssmhc.com/mychart"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "4096",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: self signed certificate"
             ]
         },
         {
@@ -384,18 +405,14 @@
                 "website": "https://www.gianteagle.com/covidvaccine#electronic-record"
             },
             "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
-                "name": "KMART PHARMACY",
-                "website": "https://pharmacy.kmart.com/newrx-immunization"
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
             },
-            "keys": [],
             "crls": [],
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 5000ms"
@@ -471,22 +488,14 @@
         },
         {
             "issuer": {
-                "iss": "https://epicproxy.et1098.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Tanner Health System",
-                "website": "https://www.tannermychart.org"
+                "iss": "https://epx1.chsli.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Catholic Health",
+                "website": "https://www.chsli.org/catholic-health-mychart"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
-                "RequestError: unable to verify the first certificate"
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         }
     ],
@@ -538,32 +547,20 @@
         "Genesis Healthcare System",
         "MyHealthHome"
     ],
-    "previousAuditTime": "2022-08-04T12:42:15Z",
+    "previousAuditTime": "2022-08-05T12:43:00Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://webproxy.mynovant.org/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://fhir.ssmhc.com/Fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "LscjYTUMp733zsMu6D6tGCmvR7Rk4rTO7FV5w9r4e8E"
+                "fH8e2QLUAtpb4BV8RDgh5DxVOLxa8Bfq4acEo3sOjuc"
             ]
         },
         {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
+            "iss": "https://epx1.chsli.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "fM26plwst5o5yrC_rN6FVUtlmMr7nT4eLtgLJ6IfBTE"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
-            "kids": [
-                "U_C_KSRk6GRqOuT-tTTVid-zHxihv7fRdyuvNQPeBvM"
-            ]
-        },
-        {
-            "iss": "https://epicproxy.et1098.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "r50AoONSfsSfFy2bYhKGJqr4GzCyDXIK5XvYMhQoBrk"
+                "ALVEROpd2CNyaE4RcZgG6T9cM38Erfg8oSIgiK_JSVo"
             ]
         }
     ]
