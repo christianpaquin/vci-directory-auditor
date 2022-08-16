@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-08-15T12:44:31Z",
+    "auditTime": "2022-08-16T12:38:44Z",
     "issuerCount": 584,
     "issuersWithErrors": [
         {
@@ -156,9 +156,9 @@
         },
         {
             "issuer": {
-                "iss": "https://www.express-scripts.com/frontendservice/mobilepatient-proxy/1/shc",
-                "name": "Express Scripts",
-                "website": "https://www.express-scripts.com/login?routingPage=/frontend/consumer/%23/user/profile"
+                "iss": "https://webproxy.mynovant.org/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Novant Health",
+                "website": "https://www.novantmychart.org/mychart"
             },
             "keys": [],
             "crls": [],
@@ -380,9 +380,21 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/harps+pharmacy",
-                "name": "Harps Pharmacy",
-                "website": "https://www.harpsfood.com/Pages/19653/COVID-19%20Vaccination%20Information"
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
+                "name": "Hartig Drug Co",
+                "website": "https://www.hartigdrug.com/covidvaccine"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
+                "name": "KMART PHARMACY",
+                "website": "https://pharmacy.kmart.com/newrx-immunization"
             },
             "keys": [],
             "crls": [],
@@ -507,14 +519,26 @@
         "Genesis Healthcare System",
         "MyHealthHome"
     ],
-    "previousAuditTime": "2022-08-14T12:36:46Z",
+    "previousAuditTime": "2022-08-15T12:44:31Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://www.express-scripts.com/frontendservice/mobilepatient-proxy/1/shc",
+            "iss": "https://webproxy.mynovant.org/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "eOYMUyNJAF4a6iiPbwcOV2a3b6n_YjuKko-4mROkRYg"
+                "LscjYTUMp733zsMu6D6tGCmvR7Rk4rTO7FV5w9r4e8E"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
+            "kids": [
+                "85iFG1HeKPc-TFBQxy_U5eSDa3X_XUhDGRVp9h3eU_w"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
+            "kids": [
+                "U_C_KSRk6GRqOuT-tTTVid-zHxihv7fRdyuvNQPeBvM"
             ]
         }
     ]
