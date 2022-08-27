@@ -1,7 +1,7 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-08-26T12:42:10Z",
-    "issuerCount": 586,
+    "auditTime": "2022-08-27T12:40:41Z",
+    "issuerCount": 587,
     "issuersWithErrors": [
         {
             "issuer": {
@@ -30,20 +30,7 @@
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://ssproxy.osfhealthcare.org/fhir-proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "OSF HealthCare",
-                "website": "https://www.osfmychart.org/osfmychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -409,6 +396,26 @@
             "errors": [
                 "RequestError: unable to verify the first certificate"
             ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicaccess.templehealth.org/FhirProxyPrd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Temple Health",
+                "website": "https://www.templehealth.org/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 503 (Service Unavailable)"
+            ]
         }
     ],
     "issuerWithCRLCount": 3,
@@ -459,14 +466,14 @@
         "Genesis Healthcare System",
         "MyHealthHome"
     ],
-    "previousAuditTime": "2022-08-25T12:42:48Z",
-    "newIssuerCount": 0,
+    "previousAuditTime": "2022-08-26T12:42:10Z",
+    "newIssuerCount": 1,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://ssproxy.osfhealthcare.org/fhir-proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://epicaccess.templehealth.org/FhirProxyPrd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "ta3yKjoYleeW_c6DGd9Sg6QdgrgaQ7FGrlnwQRpZ1v8"
+                "_a-kB8nWodnqIgCflOUDxUORfUD1aoUR6Bey8-mHyek"
             ]
         }
     ]
