@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-09-05T12:42:51Z",
+    "auditTime": "2022-09-06T12:47:48Z",
     "issuerCount": 587,
     "issuersWithErrors": [
         {
@@ -30,20 +30,7 @@
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://unified-api.ucsf.edu/clinical/apex/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "UCSF Health",
-                "website": "https://www.ucsfhealth.org/mychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -134,6 +121,30 @@
             "crls": [],
             "errors": [
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://docket.care/ut",
+                "name": "State of Utah",
+                "website": "https://immunize.utah.gov/usiis/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://docket.care/nj",
+                "name": "State of New Jersey",
+                "website": "https://covid19.nj.gov/pages/vaxrecords"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -344,18 +355,6 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
-                "name": "Skripts",
-                "website": "https://www.skriptspharmacy.com/immunizations"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://rjhislandhealth.us-southeast-1.linodeobjects.com",
                 "name": "Royal Jubilee Hospital"
             },
@@ -441,6 +440,18 @@
             "errors": [
                 "RequestError: unable to verify the first certificate"
             ]
+        },
+        {
+            "issuer": {
+                "iss": "https://docket.care/id",
+                "name": "State of Idaho",
+                "website": "https://healthandwelfare.idaho.gov/covid-19-vaccination"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         }
     ],
     "issuerWithCRLCount": 3,
@@ -491,14 +502,26 @@
         "Genesis Healthcare System",
         "MyHealthHome"
     ],
-    "previousAuditTime": "2022-09-04T12:41:04Z",
+    "previousAuditTime": "2022-09-05T12:42:51Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://unified-api.ucsf.edu/clinical/apex/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://docket.care/ut",
             "kids": [
-                "ZwFzkFHXRFwE_0Jy0oyINwNZg4yLPKk5DW96xDwjMEo"
+                "sBHR4URZTz8cq2kIV_JhTXwicbqp1tHtodItRSx0O0Q"
+            ]
+        },
+        {
+            "iss": "https://docket.care/nj",
+            "kids": [
+                "HvlLNClY2JAEhIhsZZ_CfRaxF5jdooWgaKAbLajhv2I"
+            ]
+        },
+        {
+            "iss": "https://docket.care/id",
+            "kids": [
+                "4S5oS222XceZXz5ROPy8lyQhSIbPk4eTrMXXThyMGqA"
             ]
         }
     ]
