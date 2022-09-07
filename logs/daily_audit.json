@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-09-06T12:47:48Z",
+    "auditTime": "2022-09-07T12:47:37Z",
     "issuerCount": 587,
     "issuersWithErrors": [
         {
@@ -30,6 +30,7 @@
             },
             "crls": [],
             "errors": [
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
         },
@@ -61,6 +62,18 @@
             "crls": [],
             "errors": [
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Baptist Health",
+                "website": "https://mychart.baptist-health.org/mychart/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -121,30 +134,6 @@
             "crls": [],
             "errors": [
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://docket.care/ut",
-                "name": "State of Utah",
-                "website": "https://immunize.utah.gov/usiis/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://docket.care/nj",
-                "name": "State of New Jersey",
-                "website": "https://covid19.nj.gov/pages/vaxrecords"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -331,9 +320,9 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/harps+pharmacy",
-                "name": "Harps Pharmacy",
-                "website": "https://www.harpsfood.com/Pages/19653/COVID-19%20Vaccination%20Information"
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
+                "name": "Hartig Drug Co",
+                "website": "https://www.hartigdrug.com/covidvaccine"
             },
             "keys": [],
             "crls": [],
@@ -343,9 +332,9 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
-                "name": "Hartig Drug Co",
-                "website": "https://www.hartigdrug.com/covidvaccine"
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
+                "name": "KMART PHARMACY",
+                "website": "https://pharmacy.kmart.com/newrx-immunization"
             },
             "keys": [],
             "crls": [],
@@ -440,18 +429,6 @@
             "errors": [
                 "RequestError: unable to verify the first certificate"
             ]
-        },
-        {
-            "issuer": {
-                "iss": "https://docket.care/id",
-                "name": "State of Idaho",
-                "website": "https://healthandwelfare.idaho.gov/covid-19-vaccination"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
         }
     ],
     "issuerWithCRLCount": 3,
@@ -472,6 +449,13 @@
         "KGRVZgLMuFYQE28ZpW3xkQu0J2cxCwu1xXBE95XkjtA",
         "1cbWQj6OEipUmkMhXGpgGPSf83uWS4ew4bJPpkbcong",
         "r6TOQW6N9Twi0iPMoZLygAKX80fCeZAduGCeghxft0Q",
+        "wo2_PYrMPiKgdxp1bOZTk_wzwa4DkBFYcQDrZt-muWY",
+        "rNXvwaBEYRwtk2L091lX_LKYEmO-MyXKNC85IKO8u9c",
+        "a8QyErpkVPP7fp9hgy2hCEN4-8Tfj4eIXWGGyyqFjRM",
+        "__7c-ik-MpZuSZ6_ODZckR_FOOi2cN_2bn0s2FaqkpM",
+        "NdTA9DTXn_7fOnQXp0Lpqt_3qZu4W9VChV1FN_h3wH0",
+        "uGQkrVuVAZhysB0yD33u-i6xoTlw27F8_ENEjQPqGEw",
+        "9DN7I5pt-f_WlVi02Mr2R_1WnF6Dv9Va1ttS3mn56MU",
         "bRi8F_YcgjcfiBFxyNv6zO1mUSomobp4APHA6uabYKw",
         "IVzjSimVvH8ZyQ3AJEjI8LXm5HfrdrDYuEmG0QcXzOI",
         "afXT8j9iwJJ7IRP24ZUKPhbkga79MfqPreO2DlK0sLA",
@@ -502,26 +486,20 @@
         "Genesis Healthcare System",
         "MyHealthHome"
     ],
-    "previousAuditTime": "2022-09-05T12:42:51Z",
+    "previousAuditTime": "2022-09-06T12:47:48Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://docket.care/ut",
+            "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "sBHR4URZTz8cq2kIV_JhTXwicbqp1tHtodItRSx0O0Q"
+                "2Y6IshBllIuZBWuUMPeefWvqSHynjSDrmXHpOKo9JnU"
             ]
         },
         {
-            "iss": "https://docket.care/nj",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
             "kids": [
-                "HvlLNClY2JAEhIhsZZ_CfRaxF5jdooWgaKAbLajhv2I"
-            ]
-        },
-        {
-            "iss": "https://docket.care/id",
-            "kids": [
-                "4S5oS222XceZXz5ROPy8lyQhSIbPk4eTrMXXThyMGqA"
+                "U_C_KSRk6GRqOuT-tTTVid-zHxihv7fRdyuvNQPeBvM"
             ]
         }
     ]
