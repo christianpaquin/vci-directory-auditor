@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-09-09T12:47:44Z",
+    "auditTime": "2022-09-10T12:40:15Z",
     "issuerCount": 587,
     "issuersWithErrors": [
         {
@@ -30,6 +30,7 @@
             },
             "crls": [],
             "errors": [
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
         },
@@ -447,18 +448,6 @@
             "errors": [
                 "RequestError: unable to verify the first certificate"
             ]
-        },
-        {
-            "issuer": {
-                "iss": "https://dvc.mohw.gov.tw",
-                "name": "Taiwan",
-                "website": "https://www.mohw.gov.tw/mp-2.html"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
         }
     ],
     "issuerWithCRLCount": 3,
@@ -516,34 +505,8 @@
         "Genesis Healthcare System",
         "MyHealthHome"
     ],
-    "previousAuditTime": "2022-09-08T12:43:37Z",
+    "previousAuditTime": "2022-09-09T12:47:44Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
-    "removedKids": [
-        {
-            "iss": "https://fhir.mainehealth.org/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "PF3kEL6tpYRX7p09lFg-81_GEEFh4qUvnWby61I37wo"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
-            "kids": [
-                "85iFG1HeKPc-TFBQxy_U5eSDa3X_XUhDGRVp9h3eU_w"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
-            "kids": [
-                "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM"
-            ]
-        },
-        {
-            "iss": "https://dvc.mohw.gov.tw",
-            "kids": [
-                "e321KG2oVcL8QVUG59NKlgEg20kkJwiqpJ9jBvZdz-o",
-                "WouwNX4pUA1SBWVtJ4Wej6pY3KcwNCbC4amiB7VOO5o"
-            ]
-        }
-    ]
+    "removedKids": []
 }
