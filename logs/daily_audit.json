@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-09-15T12:53:00Z",
+    "auditTime": "2022-09-16T12:45:23Z",
     "issuerCount": 590,
     "issuersWithErrors": [
         {
@@ -187,6 +187,45 @@
         },
         {
             "issuer": {
+                "iss": "https://fhir.myeverettclinic.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Optum WA"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 503 (Service Unavailable)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://proxy.christushealth.org/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "CHRISTUS Health",
+                "website": "https://www.christushealth.org/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 503 (Service Unavailable)"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://api.cvshealth.com/smarthealth/v1/card",
                 "name": "CVS Health",
                 "website": "https://care.cvs.com/"
@@ -327,9 +366,9 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/harps+pharmacy",
-                "name": "Harps Pharmacy",
-                "website": "https://www.harpsfood.com/Pages/19653/COVID-19%20Vaccination%20Information"
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
+                "name": "Giant Eagle Pharmacy",
+                "website": "https://www.gianteagle.com/covidvaccine#electronic-record"
             },
             "keys": [],
             "crls": [],
@@ -504,20 +543,26 @@
         "Genesis Healthcare System",
         "MyHealthHome"
     ],
-    "previousAuditTime": "2022-09-14T12:49:43Z",
-    "newIssuerCount": 1,
+    "previousAuditTime": "2022-09-15T12:53:00Z",
+    "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
+            "iss": "https://fhir.myeverettclinic.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "85iFG1HeKPc-TFBQxy_U5eSDa3X_XUhDGRVp9h3eU_w"
+                "vyUQoeFh-ln_mkfsVzfFDpxeRHEFggmM-uudcb6iq_k"
             ]
         },
         {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
+            "iss": "https://proxy.christushealth.org/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM"
+                "Blu1I2q57VDnWIgc7-X7Y1md8jrFqIvhJiQ_xvQydfA"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
+            "kids": [
+                "fM26plwst5o5yrC_rN6FVUtlmMr7nT4eLtgLJ6IfBTE"
             ]
         }
     ]
