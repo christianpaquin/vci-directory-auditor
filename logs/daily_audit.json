@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-09-16T12:45:23Z",
+    "auditTime": "2022-09-17T12:40:29Z",
     "issuerCount": 590,
     "issuersWithErrors": [
         {
@@ -145,6 +145,30 @@
         },
         {
             "issuer": {
+                "iss": "https://docket.care/ut",
+                "name": "State of Utah",
+                "website": "https://immunize.utah.gov/usiis/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://docket.care/nj",
+                "name": "State of New Jersey",
+                "website": "https://covid19.nj.gov/pages/vaxrecords"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://prodsoap1.tgh.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Tampa General Hospital and University of South Florida",
                 "website": "https://mychart.tgh.org/mychart/"
@@ -183,25 +207,6 @@
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://fhir.myeverettclinic.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Optum WA"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 503 (Service Unavailable)"
             ]
         },
         {
@@ -366,9 +371,9 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
-                "name": "Giant Eagle Pharmacy",
-                "website": "https://www.gianteagle.com/covidvaccine#electronic-record"
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/harps+pharmacy",
+                "name": "Harps Pharmacy",
+                "website": "https://www.harpsfood.com/Pages/19653/COVID-19%20Vaccination%20Information"
             },
             "keys": [],
             "crls": [],
@@ -381,18 +386,6 @@
                 "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
                 "name": "Hartig Drug Co",
                 "website": "https://www.hartigdrug.com/covidvaccine"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
-                "name": "Skripts",
-                "website": "https://www.skriptspharmacy.com/immunizations"
             },
             "keys": [],
             "crls": [],
@@ -486,6 +479,30 @@
             "errors": [
                 "RequestError: unable to verify the first certificate"
             ]
+        },
+        {
+            "issuer": {
+                "iss": "https://docket.care/id",
+                "name": "State of Idaho",
+                "website": "https://healthandwelfare.idaho.gov/covid-19-vaccination"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://docket.care/ak",
+                "name": "State of Alaska",
+                "website": "https://health.alaska.gov/dph/Epi/iz/Pages/default.aspx"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         }
     ],
     "issuerWithCRLCount": 3,
@@ -543,26 +560,38 @@
         "Genesis Healthcare System",
         "MyHealthHome"
     ],
-    "previousAuditTime": "2022-09-15T12:53:00Z",
+    "previousAuditTime": "2022-09-16T12:45:23Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://fhir.myeverettclinic.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://docket.care/ut",
             "kids": [
-                "vyUQoeFh-ln_mkfsVzfFDpxeRHEFggmM-uudcb6iq_k"
+                "sBHR4URZTz8cq2kIV_JhTXwicbqp1tHtodItRSx0O0Q"
             ]
         },
         {
-            "iss": "https://proxy.christushealth.org/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://docket.care/nj",
             "kids": [
-                "Blu1I2q57VDnWIgc7-X7Y1md8jrFqIvhJiQ_xvQydfA"
+                "HvlLNClY2JAEhIhsZZ_CfRaxF5jdooWgaKAbLajhv2I"
             ]
         },
         {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/harps+pharmacy",
             "kids": [
-                "fM26plwst5o5yrC_rN6FVUtlmMr7nT4eLtgLJ6IfBTE"
+                "4KHf7aJBy3mcDRm-Avfdch7Ps5qekl1FFGs4EQpDuo4"
+            ]
+        },
+        {
+            "iss": "https://docket.care/id",
+            "kids": [
+                "4S5oS222XceZXz5ROPy8lyQhSIbPk4eTrMXXThyMGqA"
+            ]
+        },
+        {
+            "iss": "https://docket.care/ak",
+            "kids": [
+                "SYM1S7J-oUsFAlWk2Hh_JfDjT8W53HK8DGAAheuctzI"
             ]
         }
     ]
