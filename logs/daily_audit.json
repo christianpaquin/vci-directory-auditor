@@ -1,7 +1,7 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-10-05T12:54:57Z",
-    "issuerCount": 597,
+    "auditTime": "2022-10-06T12:53:05Z",
+    "issuerCount": 600,
     "issuersWithErrors": [
         {
             "issuer": {
@@ -60,19 +60,8 @@
             },
             "crls": [],
             "errors": [
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://unified-api.ucsf.edu/clinical/apex/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "UCSF Health",
-                "website": "https://www.ucsfhealth.org/mychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -177,6 +166,26 @@
         },
         {
             "issuer": {
+                "iss": "https://reports.bioreference.com/fhir",
+                "name": "BioReference Laboratories",
+                "website": "https://www.bioreference.com/patient-portal"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_128_GCM_SHA256",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 403 (Ip Forbidden)"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://fhir.memorialcare.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "MemorialCare",
                 "website": "https://mymemorialcare.memorialcare.org/MyChart"
@@ -203,26 +212,6 @@
             "crls": [],
             "errors": [
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epicsoap.nortonhealthcare.org/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Norton Healthcare",
-                "website": "https://mychart.nortonhealthcare.org/mychart"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 502 (Bad Gateway)"
             ]
         },
         {
@@ -487,7 +476,7 @@
             },
             "crls": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "HTTPError: Response code 503 (Service Unavailable)"
             ]
         },
         {
@@ -495,18 +484,6 @@
                 "iss": "https://rp.catholichealth.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "CommonSpirit Health",
                 "website": "https://www.commonspirit.org/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/harps+pharmacy",
-                "name": "Harps Pharmacy",
-                "website": "https://www.harpsfood.com/Pages/19653/COVID-19%20Vaccination%20Information"
             },
             "keys": [],
             "crls": [],
@@ -528,9 +505,9 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
-                "name": "Skripts",
-                "website": "https://www.skriptspharmacy.com/immunizations"
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
+                "name": "KMART PHARMACY",
+                "website": "https://pharmacy.kmart.com/newrx-immunization"
             },
             "keys": [],
             "crls": [],
@@ -627,14 +604,14 @@
         },
         {
             "issuer": {
-                "iss": "https://dvc.mohw.gov.tw",
-                "name": "Taiwan",
-                "website": "https://www.mohw.gov.tw/mp-2.html"
+                "iss": "https://epx1.chsli.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Catholic Health",
+                "website": "https://www.chsli.org/catholic-health-mychart"
             },
             "keys": [],
             "crls": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "HTTPError: Response code 502 (Bad Gateway)"
             ]
         }
     ],
@@ -694,21 +671,27 @@
         "Genesis Healthcare System",
         "MyHealthHome"
     ],
-    "previousAuditTime": "2022-10-04T12:55:49Z",
-    "newIssuerCount": 1,
+    "previousAuditTime": "2022-10-05T12:54:57Z",
+    "newIssuerCount": 3,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://epicsoap.nortonhealthcare.org/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://reports.bioreference.com/fhir",
             "kids": [
-                "tNI3nVmGXwOqB4B2wa8VpxzDi_tBQNINMKYbWKvWJ6s"
+                "s0wu-YvqbODey4KSi8UwuKySHTPavApAXI069Xwm7tA",
+                "TZdEEfZTAqk7IEqXQOS1L4YEiTZwQuQ16SfFhc0JcEQ"
             ]
         },
         {
-            "iss": "https://dvc.mohw.gov.tw",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
             "kids": [
-                "e321KG2oVcL8QVUG59NKlgEg20kkJwiqpJ9jBvZdz-o",
-                "WouwNX4pUA1SBWVtJ4Wej6pY3KcwNCbC4amiB7VOO5o"
+                "U_C_KSRk6GRqOuT-tTTVid-zHxihv7fRdyuvNQPeBvM"
+            ]
+        },
+        {
+            "iss": "https://epx1.chsli.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "ALVEROpd2CNyaE4RcZgG6T9cM38Erfg8oSIgiK_JSVo"
             ]
         }
     ]
