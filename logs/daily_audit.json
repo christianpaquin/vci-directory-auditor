@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-10-23T12:48:49Z",
+    "auditTime": "2022-10-24T12:55:43Z",
     "issuerCount": 604,
     "issuersWithErrors": [
         {
@@ -92,26 +92,6 @@
             "crls": [],
             "errors": [
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://webservices.hawaiipacifichealth.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Hawaii Pacific Health",
-                "website": "https://mychart.hawaiipacifichealth.org/web"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 404 (Not Found)"
             ]
         },
         {
@@ -552,26 +532,6 @@
         },
         {
             "issuer": {
-                "iss": "https://mychart.methodisthospitals.org/FHIR-ARR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Methodist Hospitals (IN)",
-                "website": "https://mychart.methodisthospitals.org/mychart"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "RequestError: read ECONNRESET"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://rmgpxy.riverbendmedical.com/fhir_proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Riverbend Medical Group",
                 "website": "https://mychart.riverbendmedical.com/MyChart"
@@ -588,18 +548,6 @@
             "crls": [],
             "errors": [
                 "RequestError: unable to verify the first certificate"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epx1.chsli.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Catholic Health",
-                "website": "https://www.chsli.org/catholic-health-mychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 502 (Bad Gateway)"
             ]
         }
     ],
@@ -659,33 +607,8 @@
         "Genesis Healthcare System",
         "MyHealthHome"
     ],
-    "previousAuditTime": "2022-10-22T12:47:35Z",
+    "previousAuditTime": "2022-10-23T12:48:49Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
-    "removedKids": [
-        {
-            "iss": "https://webservices.hawaiipacifichealth.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "tH7Y4mCBsxlPy0k60DzkkLaQ_2IHKgCDBhGwlYHi2Ok"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
-            "kids": [
-                "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM"
-            ]
-        },
-        {
-            "iss": "https://mychart.methodisthospitals.org/FHIR-ARR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "IHtj6CeVxA-5qztmSUXjoTNr9uAyU1xnYDY_Iw06GPI"
-            ]
-        },
-        {
-            "iss": "https://epx1.chsli.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "ALVEROpd2CNyaE4RcZgG6T9cM38Erfg8oSIgiK_JSVo"
-            ]
-        }
-    ]
+    "removedKids": []
 }
