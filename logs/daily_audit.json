@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-11-11T12:49:17Z",
+    "auditTime": "2022-11-12T12:38:12Z",
     "issuerCount": 615,
     "issuersWithErrors": [
         {
@@ -60,6 +60,7 @@
             },
             "crls": [],
             "errors": [
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
         },
@@ -195,19 +196,23 @@
         },
         {
             "issuer": {
-                "iss": "https://fhir.promedica.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "ProMedica",
-                "website": "https://mychart.promedica.org/MyChart/"
+                "iss": "https://docket.care/ut",
+                "name": "State of Utah",
+                "website": "https://immunize.utah.gov/usiis/"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, P-521, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://docket.care/nj",
+                "name": "State of New Jersey",
+                "website": "https://covid19.nj.gov/pages/vaxrecords"
             },
+            "keys": [],
             "crls": [],
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 5000ms"
@@ -438,18 +443,6 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/harps+pharmacy",
-                "name": "Harps Pharmacy",
-                "website": "https://www.harpsfood.com/Pages/19653/COVID-19%20Vaccination%20Information"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
                 "name": "Hartig Drug Co",
                 "website": "https://www.hartigdrug.com/covidvaccine"
@@ -462,9 +455,9 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
-                "name": "Skripts",
-                "website": "https://www.skriptspharmacy.com/immunizations"
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
+                "name": "KMART PHARMACY",
+                "website": "https://pharmacy.kmart.com/newrx-immunization"
             },
             "keys": [],
             "crls": [],
@@ -558,6 +551,62 @@
             "errors": [
                 "RequestError: unable to verify the first certificate"
             ]
+        },
+        {
+            "issuer": {
+                "iss": "https://docket.care/id",
+                "name": "State of Idaho",
+                "website": "https://healthandwelfare.idaho.gov/covid-19-vaccination"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://docket.care/ak",
+                "name": "State of Alaska",
+                "website": "https://health.alaska.gov/dph/Epi/iz/Pages/default.aspx"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://docket.care/wy",
+                "name": "State of Wyoming",
+                "website": "http://www.immunizewyoming.com"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicarr.rochesterregional.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Rochester Regional Health",
+                "website": "https://www.rochesterregional.org/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 404 (Not Found)"
+            ]
         }
     ],
     "issuerWithCRLCount": 3,
@@ -617,32 +666,50 @@
         "MyHealthHome",
         "HCA National"
     ],
-    "previousAuditTime": "2022-11-10T12:50:28Z",
+    "previousAuditTime": "2022-11-11T12:49:17Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://fhir.promedica.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://docket.care/ut",
             "kids": [
-                "uPWKKpoWI3OIa11UbV9xdoRHdf5ZsYsAyvczK79L3RE"
+                "sBHR4URZTz8cq2kIV_JhTXwicbqp1tHtodItRSx0O0Q"
             ]
         },
         {
-            "iss": "https://www.gov.nl.ca/covid-19/life-during-covid-19/vaccination-record/prod",
+            "iss": "https://docket.care/nj",
             "kids": [
-                "UboztS3pE1mr0dnG7Rv24kRNqlYbHrbxd-qBFerpZvI"
+                "HvlLNClY2JAEhIhsZZ_CfRaxF5jdooWgaKAbLajhv2I"
             ]
         },
         {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/harps+pharmacy",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
             "kids": [
-                "4KHf7aJBy3mcDRm-Avfdch7Ps5qekl1FFGs4EQpDuo4"
+                "U_C_KSRk6GRqOuT-tTTVid-zHxihv7fRdyuvNQPeBvM"
             ]
         },
         {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
+            "iss": "https://docket.care/id",
             "kids": [
-                "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM"
+                "4S5oS222XceZXz5ROPy8lyQhSIbPk4eTrMXXThyMGqA"
+            ]
+        },
+        {
+            "iss": "https://docket.care/ak",
+            "kids": [
+                "SYM1S7J-oUsFAlWk2Hh_JfDjT8W53HK8DGAAheuctzI"
+            ]
+        },
+        {
+            "iss": "https://docket.care/wy",
+            "kids": [
+                "jwqukbzQbN1RxccBTk5kcDeD6imAxn7EylrmnRw-Xnc"
+            ]
+        },
+        {
+            "iss": "https://epicarr.rochesterregional.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "D_s7dMJ2fJt7q6tGayd31v0yarYgdD8mWb_Euk8PxLQ"
             ]
         }
     ]
