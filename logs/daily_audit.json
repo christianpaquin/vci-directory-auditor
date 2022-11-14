@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-11-13T12:39:56Z",
+    "auditTime": "2022-11-14T12:51:30Z",
     "issuerCount": 615,
     "issuersWithErrors": [
         {
@@ -60,7 +60,6 @@
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
         },
@@ -166,6 +165,18 @@
         },
         {
             "issuer": {
+                "iss": "https://ssrx.ksnet.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Kelsey-Seybold Clinic",
+                "website": "https://www.mykelseyonline.com/MyChart/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://fhir.memorialcare.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "MemorialCare",
                 "website": "https://mymemorialcare.memorialcare.org/MyChart"
@@ -192,6 +203,38 @@
             "crls": [],
             "errors": [
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://fhir.promedica.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "ProMedica",
+                "website": "https://mychart.promedica.org/MyChart/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://cdphe.colorado.gov",
+                "name": "State of Colorado",
+                "website": "https://mycolorado.state.co.us/myvaccine-record"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_128_GCM_SHA256",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 403 (Forbidden)"
             ]
         },
         {
@@ -443,9 +486,21 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
-                "name": "Skripts",
-                "website": "https://www.skriptspharmacy.com/immunizations"
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
+                "name": "Meijer",
+                "website": "https://clinic.meijer.com/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://fhir.omhs.org/rp-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Owensboro Health",
+                "website": "https://mychart.omhs.org/mychart"
             },
             "keys": [],
             "crls": [],
@@ -542,22 +597,14 @@
         },
         {
             "issuer": {
-                "iss": "https://epicarr.rochesterregional.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Rochester Regional Health",
-                "website": "https://www.rochesterregional.org/"
+                "iss": "https://fhir.tmcaz.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Tucson Medical Center",
+                "website": "https://mychart.tmcaz.com/MyChart"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 404 (Not Found)"
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         }
     ],
@@ -618,14 +665,44 @@
         "MyHealthHome",
         "HCA National"
     ],
-    "previousAuditTime": "2022-11-12T12:38:12Z",
+    "previousAuditTime": "2022-11-13T12:39:56Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
+            "iss": "https://ssrx.ksnet.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM"
+                "c9kEQ5g4ncmCuRKm4AOOtknhTG_wHCGtOCp-eTL9atc"
+            ]
+        },
+        {
+            "iss": "https://fhir.promedica.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "uPWKKpoWI3OIa11UbV9xdoRHdf5ZsYsAyvczK79L3RE"
+            ]
+        },
+        {
+            "iss": "https://cdphe.colorado.gov",
+            "kids": [
+                "2mDaFWzZK1ACh7J9GKmeI5mvGuSidpSMFaEtEbMs2SM"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
+            "kids": [
+                "cmm6eWwLYLwRtBU69V-_jsUxfpVtPgrZshDbf5X4Z9k"
+            ]
+        },
+        {
+            "iss": "https://fhir.omhs.org/rp-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "M6-pmPcy46AynsAtYmyDCinqCsQomOALFc2sbrjOaiM"
+            ]
+        },
+        {
+            "iss": "https://fhir.tmcaz.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "ppnA6VBtBokd072FZXXFo8yCCo-_CRODMerPILOKiUI"
             ]
         }
     ]
