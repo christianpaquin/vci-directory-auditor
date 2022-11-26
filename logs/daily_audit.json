@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-11-25T12:37:42Z",
+    "auditTime": "2022-11-26T12:33:56Z",
     "issuerCount": 615,
     "issuersWithErrors": [
         {
@@ -31,18 +31,6 @@
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://cslinkmobile.csmc.edu/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Cedars-Sinai Medical Center",
-                "website": "https://mycslink.cedars-sinai.org/mycslink"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -359,17 +347,6 @@
         },
         {
             "issuer": {
-                "iss": "https://cslinkmobile.csmc.edu",
-                "name": "Cedars-Sinai Health System"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://travel.hawaii.gov",
                 "name": "State of Hawaii"
             },
@@ -403,10 +380,28 @@
                 "name": "Cedars-Sinai Health System",
                 "website": "https://www.cedars-sinai.org/mycslink.html"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "crv": "P-256",
+                    "x": "7Rlsuv_eFpdNQToBT7Q4H5ChQMQ333Hmv7V-t6qBFCs",
+                    "y": "VjpJjYwehcCb8Hg_DJloA-X9A7r4rC8KNfgQ4SkmnJ8",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "kid": "KBBgSdgGdb2_Nqufjj09pcISTziLYhj9meR19MmKLDk"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, P-256, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
             ]
         },
         {
@@ -474,9 +469,9 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
-                "name": "Hartig Drug Co",
-                "website": "https://www.hartigdrug.com/covidvaccine"
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
+                "name": "KMART PHARMACY",
+                "website": "https://pharmacy.kmart.com/newrx-immunization"
             },
             "keys": [],
             "crls": [],
@@ -619,7 +614,8 @@
         "9DN7I5pt-f_WlVi02Mr2R_1WnF6Dv9Va1ttS3mn56MU",
         "bRi8F_YcgjcfiBFxyNv6zO1mUSomobp4APHA6uabYKw",
         "IVzjSimVvH8ZyQ3AJEjI8LXm5HfrdrDYuEmG0QcXzOI",
-        "afXT8j9iwJJ7IRP24ZUKPhbkga79MfqPreO2DlK0sLA"
+        "afXT8j9iwJJ7IRP24ZUKPhbkga79MfqPreO2DlK0sLA",
+        "KBBgSdgGdb2_Nqufjj09pcISTziLYhj9meR19MmKLDk"
     ],
     "duplicatedIss": [],
     "duplicatedNames": [
@@ -648,38 +644,14 @@
         "MyHealthHome",
         "HCA National"
     ],
-    "previousAuditTime": "2022-11-24T12:39:16Z",
+    "previousAuditTime": "2022-11-25T12:37:42Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://cslinkmobile.csmc.edu/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
             "kids": [
-                "CqfJ_R5DTOoBzVdpTiTCiD9xLkho4lKY0nxJVqTP-mA"
-            ]
-        },
-        {
-            "iss": "https://cslinkmobile.csmc.edu",
-            "kids": [
-                "KBBgSdgGdb2_Nqufjj09pcISTziLYhj9meR19MmKLDk"
-            ]
-        },
-        {
-            "iss": "https://www.cedars-sinai.org",
-            "kids": [
-                "KBBgSdgGdb2_Nqufjj09pcISTziLYhj9meR19MmKLDk"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/harps+pharmacy",
-            "kids": [
-                "4KHf7aJBy3mcDRm-Avfdch7Ps5qekl1FFGs4EQpDuo4"
-            ]
-        },
-        {
-            "iss": "https://epicarr.rochesterregional.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "D_s7dMJ2fJt7q6tGayd31v0yarYgdD8mWb_Euk8PxLQ"
+                "U_C_KSRk6GRqOuT-tTTVid-zHxihv7fRdyuvNQPeBvM"
             ]
         }
     ]
