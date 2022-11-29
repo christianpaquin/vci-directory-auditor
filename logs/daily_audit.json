@@ -1,7 +1,7 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-11-28T12:37:27Z",
-    "issuerCount": 615,
+    "auditTime": "2022-11-29T12:37:37Z",
+    "issuerCount": 617,
     "issuersWithErrors": [
         {
             "issuer": {
@@ -161,26 +161,6 @@
             "crls": [],
             "errors": [
                 "HTTPError: Response code 403 (Ip Forbidden)"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://mepic.hackensackumc.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Hackensack Meridian Health",
-                "website": "https://mychart.hmhn.org/mychart/"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, P-256, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 503 (Service Unavailable)"
             ]
         },
         {
@@ -577,26 +557,6 @@
             "errors": [
                 "RequestError: unable to verify the first certificate"
             ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epicarr.rochesterregional.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Rochester Regional Health",
-                "website": "https://www.rochesterregional.org/"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 404 (Not Found)"
-            ]
         }
     ],
     "issuerWithCRLCount": 3,
@@ -654,17 +614,11 @@
         "Washington State Department of Health",
         "Genesis Healthcare System",
         "MyHealthHome",
-        "HCA National"
+        "HCA National",
+        "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2022-11-27T12:34:19Z",
-    "newIssuerCount": 0,
+    "previousAuditTime": "2022-11-28T12:37:27Z",
+    "newIssuerCount": 2,
     "deletedIssuerCount": 0,
-    "removedKids": [
-        {
-            "iss": "https://epicarr.rochesterregional.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "D_s7dMJ2fJt7q6tGayd31v0yarYgdD8mWb_Euk8PxLQ"
-            ]
-        }
-    ]
+    "removedKids": []
 }
