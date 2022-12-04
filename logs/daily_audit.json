@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-12-03T12:32:14Z",
+    "auditTime": "2022-12-04T12:33:54Z",
     "issuerCount": 617,
     "issuersWithErrors": [
         {
@@ -28,6 +28,28 @@
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
+            "crls": [],
+            "errors": [
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://s.bilh.org/healthcard/issuer",
+                "name": "Beth Israel Lahey Health",
+                "website": "https://www.bilh.org/patient-portal"
+            },
+            "keys": [
+                {
+                    "kty": "EC",
+                    "use": "sig",
+                    "crv": "P-256",
+                    "kid": "Xsgwl-UeD61MtPj6wT4_6SasuHOdgGJ9oLVp2S5rTg0",
+                    "x": "HBdp5tF7PrXwUQS5_hEfWMi3FTDER3NNkMIgKzjo82k",
+                    "y": "jLuqUhw4t6qAJScteDHxBoJHrLBWFryseUStatPbeyM",
+                    "alg": "ES256"
+                }
+            ],
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
@@ -348,18 +370,6 @@
         },
         {
             "issuer": {
-                "iss": "https://epicpproxy.southcoast.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Southcoast Health",
-                "website": "https://mychart.southcoast.org/MyChart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://rp.sleh.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "canonical_iss": "https://rpsouth.catholichealth.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "CommonSpirit Health",
@@ -369,6 +379,42 @@
             "crls": [],
             "errors": [
                 "HTTPError: Response code 503 (Service Unavailable)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/costco",
+                "name": "Costco",
+                "website": "https://www.costco.com/covid-vaccine.html"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/food+city",
+                "name": "Food City",
+                "website": "https://www.foodcity.com/content/48/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/fruth",
+                "name": "Fruth",
+                "website": "https://fruthpharmacy.com/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -424,18 +470,6 @@
                 "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
                 "name": "Meijer",
                 "website": "https://clinic.meijer.com/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
-                "name": "Pharmaca",
-                "website": "https://www.pharmacarx.com/"
             },
             "keys": [],
             "crls": [],
@@ -509,14 +543,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
@@ -544,22 +570,34 @@
         },
         {
             "issuer": {
-                "iss": "https://epicarr.rochesterregional.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Rochester Regional Health",
-                "website": "https://www.rochesterregional.org/"
+                "iss": "https://epicproxy.et1131.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Orlando Health and Bayfront Health St. Petersburg",
+                "website": "https://www.orlandohealth.com/patient-portal"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://appprd.childrensdayton.org/interconnect-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Dayton Children’s Hospital",
+                "website": "https://mykidschart.childrensdayton.org/mychart/Authentication/Login?"
             },
             "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "X25519, 253 bits",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 404 (Not Found)"
+                "HTTPError: Response code 404 (Resource not available)"
             ]
         }
     ],
@@ -621,14 +659,38 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2022-12-02T12:34:33Z",
+    "previousAuditTime": "2022-12-03T12:32:14Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://epicpproxy.southcoast.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/costco",
             "kids": [
-                "DHtX6zT15GJvXLQFAt8mCTyYJySL1cucMcJ0RizKDnI"
+                "iar5H2E9onFnrYwYHUhDRqtZVgic_DEO9MwCI7MHnR4"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/food+city",
+            "kids": [
+                "oQFm6GrUDhVeubMDMmq0CM6dimFpvkYwWApQtEhk1hI"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/fruth",
+            "kids": [
+                "BCP1AWL6exueHVfIMeS2xADaXQy6pa-O2lWEL2JQJdc"
+            ]
+        },
+        {
+            "iss": "https://epicproxy.et1131.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "fcrZ56NMlidKduAwvKCvd3aspoK0x-YHf0_v_jEwzsM"
+            ]
+        },
+        {
+            "iss": "https://appprd.childrensdayton.org/interconnect-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "NbIxdaroYhTu23PTcrVJWturNwugXfzFpLywAsugvhY"
             ]
         }
     ]
