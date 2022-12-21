@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-12-20T12:33:42Z",
+    "auditTime": "2022-12-21T12:33:53Z",
     "issuerCount": 622,
     "issuersWithErrors": [
         {
@@ -28,6 +28,28 @@
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
+            "crls": [],
+            "errors": [
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://s.bilh.org/healthcard/issuer",
+                "name": "Beth Israel Lahey Health",
+                "website": "https://www.bilh.org/patient-portal"
+            },
+            "keys": [
+                {
+                    "kty": "EC",
+                    "use": "sig",
+                    "crv": "P-256",
+                    "kid": "Xsgwl-UeD61MtPj6wT4_6SasuHOdgGJ9oLVp2S5rTg0",
+                    "x": "HBdp5tF7PrXwUQS5_hEfWMi3FTDER3NNkMIgKzjo82k",
+                    "y": "jLuqUhw4t6qAJScteDHxBoJHrLBWFryseUStatPbeyM",
+                    "alg": "ES256"
+                }
+            ],
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
@@ -95,26 +117,6 @@
         },
         {
             "issuer": {
-                "iss": "https://skphr.prd.telushealthspace.com",
-                "name": "eHealth Saskatchewan",
-                "website": "https://www.ehealthsask.ca/MySaskHealthRecord/MySaskHealthRecord/Pages/default.aspx"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epicprisfd01.wpahs.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Allegheny Health Network",
                 "website": "https://mychart.ahn.org/MyChart"
@@ -131,25 +133,6 @@
             "crls": [],
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epicproxy.et1038.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "EPIC Management"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 503 (Service Unavailable)"
             ]
         },
         {
@@ -174,9 +157,9 @@
         },
         {
             "issuer": {
-                "iss": "https://www.express-scripts.com/frontendservice/mobilepatient-proxy/1/shc",
-                "name": "Express Scripts",
-                "website": "https://www.express-scripts.com/login?routingPage=/frontend/consumer/%23/user/profile"
+                "iss": "https://epicproxy.et1082.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "San Francisco Department of Public Health",
+                "website": "https://mychart.sfdph.org/MyChart"
             },
             "keys": [],
             "tlsDetails": {
@@ -282,7 +265,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "RequestError: unable to verify the first certificate"
             ]
         },
         {
@@ -460,57 +443,9 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
-                "name": "Hartig Drug Co",
-                "website": "https://www.hartigdrug.com/covidvaccine"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
-                "name": "KMART PHARMACY",
-                "website": "https://pharmacy.kmart.com/newrx-immunization"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
-                "name": "Meijer",
-                "website": "https://clinic.meijer.com/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
-                "name": "Pharmaca",
-                "website": "https://www.pharmacarx.com/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
-                "name": "Skripts",
-                "website": "https://www.skriptspharmacy.com/immunizations"
+                "iss": "https://fhir.omhs.org/rp-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Owensboro Health",
+                "website": "https://mychart.omhs.org/mychart"
             },
             "keys": [],
             "crls": [],
@@ -587,22 +522,22 @@
         },
         {
             "issuer": {
-                "iss": "https://rmgpxy.riverbendmedical.com/fhir_proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Riverbend Medical Group",
-                "website": "https://mychart.riverbendmedical.com/MyChart"
+                "iss": "https://epicarr.rochesterregional.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Rochester Regional Health",
+                "website": "https://www.rochesterregional.org/"
             },
             "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "X25519, 253 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
-                "RequestError: unable to verify the first certificate"
+                "HTTPError: Response code 404 (Not Found)"
             ]
         }
     ],
@@ -666,32 +601,26 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2022-12-19T12:34:04Z",
+    "previousAuditTime": "2022-12-20T12:33:42Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://skphr.prd.telushealthspace.com",
+            "iss": "https://epicproxy.et1082.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "xOqUO82bEz8APn_5wohZZvSK4Ui6pqWdSAv5BEhkes0"
+                "SvP1FzmaBl52-Ty6dl80yEk6LH41plr_lKWzOoGbj-4"
             ]
         },
         {
-            "iss": "https://epicproxy.et1038.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://fhir.omhs.org/rp-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "08IMBTeXJ7px5KXBRgJK_qm3QU3eD1VR8mClLsi_Sck"
+                "M6-pmPcy46AynsAtYmyDCinqCsQomOALFc2sbrjOaiM"
             ]
         },
         {
-            "iss": "https://www.express-scripts.com/frontendservice/mobilepatient-proxy/1/shc",
+            "iss": "https://epicarr.rochesterregional.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "eOYMUyNJAF4a6iiPbwcOV2a3b6n_YjuKko-4mROkRYg"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
-            "kids": [
-                "3Dtn69t66RKUD8y06Dgig0TIoyh1V1T3cW9Bkex2uQk"
+                "D_s7dMJ2fJt7q6tGayd31v0yarYgdD8mWb_Euk8PxLQ"
             ]
         }
     ]
