@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2022-12-29T12:32:11Z",
+    "auditTime": "2022-12-30T12:31:03Z",
     "issuerCount": 622,
     "issuersWithErrors": [
         {
@@ -410,6 +410,26 @@
         },
         {
             "issuer": {
+                "iss": "https://ebmobile14.ebnhc.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "East Boston Neighborhood Health Center",
+                "website": "https://mychart.ebnhc.org/mychart"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://rp.sleh.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "canonical_iss": "https://rpsouth.catholichealth.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "CommonSpirit Health",
@@ -475,17 +495,29 @@
                     "crv": "P-256"
                 }
             ],
+            "crls": [],
+            "errors": [
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicarr.rochesterregional.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Rochester Regional Health",
+                "website": "https://www.rochesterregional.org/"
+            },
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "X25519, 253 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
+                "HTTPError: Response code 404 (Not Found)"
             ]
         }
     ],
@@ -549,8 +581,21 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2022-12-28T12:32:18Z",
+    "previousAuditTime": "2022-12-29T12:32:11Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
-    "removedKids": []
+    "removedKids": [
+        {
+            "iss": "https://ebmobile14.ebnhc.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "OxiC0eIyFZe_j-3L3yr_ZOLaXc-VKbLjLtTqp5ShGL0"
+            ]
+        },
+        {
+            "iss": "https://epicarr.rochesterregional.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "D_s7dMJ2fJt7q6tGayd31v0yarYgdD8mWb_Euk8PxLQ"
+            ]
+        }
+    ]
 }
