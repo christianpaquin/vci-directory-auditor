@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-01-01T12:32:03Z",
+    "auditTime": "2023-01-02T12:34:10Z",
     "issuerCount": 622,
     "issuersWithErrors": [
         {
@@ -117,6 +117,26 @@
         },
         {
             "issuer": {
+                "iss": "https://skphr.prd.telushealthspace.com",
+                "name": "eHealth Saskatchewan",
+                "website": "https://www.ehealthsask.ca/MySaskHealthRecord/MySaskHealthRecord/Pages/default.aspx"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://epicprisfd01.wpahs.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Allegheny Health Network",
                 "website": "https://mychart.ahn.org/MyChart"
@@ -126,6 +146,25 @@
                 "version": "TLSv1.2",
                 "cipher": "DHE-RSA-AES256-GCM-SHA384",
                 "kexAlg": "DH, 2048 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicproxy.et1038.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "EPIC Management"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -597,26 +636,20 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2022-12-31T12:30:18Z",
+    "previousAuditTime": "2023-01-01T12:32:03Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://ssrx.ksnet.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://skphr.prd.telushealthspace.com",
             "kids": [
-                "c9kEQ5g4ncmCuRKm4AOOtknhTG_wHCGtOCp-eTL9atc"
+                "xOqUO82bEz8APn_5wohZZvSK4Ui6pqWdSAv5BEhkes0"
             ]
         },
         {
-            "iss": "https://fhir.omhs.org/rp-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://epicproxy.et1038.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "M6-pmPcy46AynsAtYmyDCinqCsQomOALFc2sbrjOaiM"
-            ]
-        },
-        {
-            "iss": "https://fhir.tmcaz.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "ppnA6VBtBokd072FZXXFo8yCCo-_CRODMerPILOKiUI"
+                "08IMBTeXJ7px5KXBRgJK_qm3QU3eD1VR8mClLsi_Sck"
             ]
         }
     ]
