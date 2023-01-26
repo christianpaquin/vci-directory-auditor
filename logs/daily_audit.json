@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-01-25T12:35:44Z",
+    "auditTime": "2023-01-26T12:36:17Z",
     "issuerCount": 622,
     "issuersWithErrors": [
         {
@@ -156,6 +156,18 @@
         },
         {
             "issuer": {
+                "iss": "https://ssrx.ksnet.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Kelsey-Seybold Clinic",
+                "website": "https://www.mykelseyonline.com/MyChart/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://ehrmobile.monument.health/interconnect-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Monument Health",
                 "website": "https://mychart.regionalhealth.org/MyChart/"
@@ -182,26 +194,6 @@
             "crls": [],
             "errors": [
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://fhir.archildrens.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Arkansas Children's",
-                "website": "https://mychart.archildrens.org/mychart/"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "DHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "DH, 2048 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 404 (Not Found)"
             ]
         },
         {
@@ -441,6 +433,18 @@
         },
         {
             "issuer": {
+                "iss": "https://rp.catholichealth.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "CommonSpirit Health",
+                "website": "https://www.commonspirit.org/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 502 (Bad Gateway)"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://rjhislandhealth.us-southeast-1.linodeobjects.com",
                 "name": "Royal Jubilee Hospital"
             },
@@ -485,6 +489,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
@@ -492,9 +504,9 @@
         },
         {
             "issuer": {
-                "iss": "https://soap.bassett.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Bassett Healthcare Network",
-                "website": "https://www.bassett.org/"
+                "iss": "https://fhir.tmcaz.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Tucson Medical Center",
+                "website": "https://mychart.tmcaz.com/MyChart"
             },
             "keys": [],
             "crls": [],
@@ -562,14 +574,26 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-01-24T12:35:39Z",
+    "previousAuditTime": "2023-01-25T12:35:44Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://soap.bassett.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://ssrx.ksnet.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "-IgAJf77qAqSQGRHMXqAik9MDgFc2jk3JiLZQpuSQ2A"
+                "c9kEQ5g4ncmCuRKm4AOOtknhTG_wHCGtOCp-eTL9atc"
+            ]
+        },
+        {
+            "iss": "https://rp.catholichealth.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "S1Jwo6u3CruACCe8P-l-97WhmNC3TGgp3LKvq4ry5vo"
+            ]
+        },
+        {
+            "iss": "https://fhir.tmcaz.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "ppnA6VBtBokd072FZXXFo8yCCo-_CRODMerPILOKiUI"
             ]
         }
     ]
