@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-02-08T12:35:00Z",
+    "auditTime": "2023-02-09T12:37:22Z",
     "issuerCount": 624,
     "issuersWithErrors": [
         {
@@ -28,6 +28,28 @@
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
+            "crls": [],
+            "errors": [
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://s.bilh.org/healthcard/issuer",
+                "name": "Beth Israel Lahey Health",
+                "website": "https://www.bilh.org/patient-portal"
+            },
+            "keys": [
+                {
+                    "kty": "EC",
+                    "use": "sig",
+                    "crv": "P-256",
+                    "kid": "Xsgwl-UeD61MtPj6wT4_6SasuHOdgGJ9oLVp2S5rTg0",
+                    "x": "HBdp5tF7PrXwUQS5_hEfWMi3FTDER3NNkMIgKzjo82k",
+                    "y": "jLuqUhw4t6qAJScteDHxBoJHrLBWFryseUStatPbeyM",
+                    "alg": "ES256"
+                }
+            ],
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
@@ -116,18 +138,6 @@
         },
         {
             "issuer": {
-                "iss": "https://rx.premierhealthpartners.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Premier Health",
-                "website": "https://mychart.premierhealthpartners.org/mychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://reports.bioreference.com/fhir",
                 "name": "BioReference Laboratories",
                 "website": "https://www.bioreference.com/patient-portal"
@@ -172,18 +182,6 @@
                 "iss": "https://ssrx.ksnet.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Kelsey-Seybold Clinic",
                 "website": "https://www.mykelseyonline.com/MyChart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://immunizationcard.manitoba.ca/api/national",
-                "name": "Government of Manitoba",
-                "website": "https://manitoba.ca/covid19/vaccine/immunizationrecord/residents.html#immunization-cards"
             },
             "keys": [],
             "crls": [],
@@ -281,6 +279,18 @@
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://edhwebportal.hitchcock.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Dartmouth-Hitchcock Health",
+                "website": "https://www.mydh.org/portal/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -437,6 +447,26 @@
         },
         {
             "issuer": {
+                "iss": "https://epicproxy.et1153.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "New Jersey Urology",
+                "website": "https://njurology.com/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://epicweb.challiance.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Cambridge Health Alliance",
                 "website": "https://mychart.challiance.org/mychart",
@@ -515,6 +545,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
@@ -594,38 +632,20 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-02-07T12:35:34Z",
+    "previousAuditTime": "2023-02-08T12:35:00Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://rx.premierhealthpartners.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://edhwebportal.hitchcock.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "wUYJ0KAnztzNRyPbado8p27SoMTi8eFCO_4e58RCjkM"
+                "z6FF4HeX1EdoV8suJV4RtcYq98-RGaqHyPIq2GBUqss"
             ]
         },
         {
-            "iss": "https://ssrx.ksnet.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://epicproxy.et1153.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "c9kEQ5g4ncmCuRKm4AOOtknhTG_wHCGtOCp-eTL9atc"
-            ]
-        },
-        {
-            "iss": "https://immunizationcard.manitoba.ca/api/national",
-            "kids": [
-                "YnYeVk1pCtYvnmOytVTq09igCGdu_SyJM2Wn29AV7AQ"
-            ]
-        },
-        {
-            "iss": "https://arrprod.midmichigan.net/ProdFHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "C4gsPIcSVZ-SMZVuVCF4S62asmtGi0BOXzHI4Qfrp1g"
-            ]
-        },
-        {
-            "iss": "https://fhir.tmcaz.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "ppnA6VBtBokd072FZXXFo8yCCo-_CRODMerPILOKiUI"
+                "-_uyYYwS3b8zJnU0OFgEhXpUgdSFzp51kJjo8K-g-Sk"
             ]
         }
     ]
