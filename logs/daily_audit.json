@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-02-11T12:32:09Z",
+    "auditTime": "2023-02-12T12:32:56Z",
     "issuerCount": 625,
     "issuersWithErrors": [
         {
@@ -28,28 +28,6 @@
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
-            "crls": [],
-            "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://s.bilh.org/healthcard/issuer",
-                "name": "Beth Israel Lahey Health",
-                "website": "https://www.bilh.org/patient-portal"
-            },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "use": "sig",
-                    "crv": "P-256",
-                    "kid": "Xsgwl-UeD61MtPj6wT4_6SasuHOdgGJ9oLVp2S5rTg0",
-                    "x": "HBdp5tF7PrXwUQS5_hEfWMi3FTDER3NNkMIgKzjo82k",
-                    "y": "jLuqUhw4t6qAJScteDHxBoJHrLBWFryseUStatPbeyM",
-                    "alg": "ES256"
-                }
-            ],
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
@@ -158,6 +136,26 @@
         },
         {
             "issuer": {
+                "iss": "https://epicsoap.carle.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Carle Foundation Hospital",
+                "website": "https://www.mycarle.com/MyChart"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 503 (Service Unavailable)"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://reports.bioreference.com/fhir",
                 "name": "BioReference Laboratories",
                 "website": "https://www.bioreference.com/patient-portal"
@@ -215,18 +213,6 @@
             "crls": [],
             "errors": [
                 "HTTPError: Response code 404 (Not Found)"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://ssrx.ksnet.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Kelsey-Seybold Clinic",
-                "website": "https://www.mykelseyonline.com/MyChart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -463,18 +449,6 @@
         },
         {
             "issuer": {
-                "iss": "https://arrprod.midmichigan.net/ProdFHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "MyMichigan Health",
-                "website": "https://www.midmichigan.org/mychart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epicweb.challiance.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Cambridge Health Alliance",
                 "website": "https://mychart.challiance.org/mychart",
@@ -496,26 +470,6 @@
         },
         {
             "issuer": {
-                "iss": "https://soapprod.multicare.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "MultiCare",
-                "website": "https://mychart.multicare.org/mymulticare"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "DHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "DH, 2048 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://rp.sleh.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "canonical_iss": "https://rpsouth.catholichealth.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "CommonSpirit Health",
@@ -525,6 +479,54 @@
             "crls": [],
             "errors": [
                 "HTTPError: Response code 503 (Service Unavailable)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
+                "name": "KMART PHARMACY",
+                "website": "https://pharmacy.kmart.com/newrx-immunization"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
+                "name": "Meijer",
+                "website": "https://clinic.meijer.com/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
+                "name": "Pharmaca",
+                "website": "https://www.pharmacarx.com/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
+                "name": "Skripts",
+                "website": "https://www.skriptspharmacy.com/immunizations"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -573,29 +575,9 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://fhir.tmcaz.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Tucson Medical Center",
-                "website": "https://mychart.tmcaz.com/MyChart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         }
     ],
@@ -660,26 +642,38 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-02-10T12:34:34Z",
+    "previousAuditTime": "2023-02-11T12:32:09Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://webservices.hawaiipacifichealth.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://epicsoap.carle.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "tH7Y4mCBsxlPy0k60DzkkLaQ_2IHKgCDBhGwlYHi2Ok"
+                "k1KgH1uFX92OrEYgyKHlrfBvdUNt8uaiXSUuCex_W1M"
             ]
         },
         {
-            "iss": "https://mobileprod.arcmd.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
             "kids": [
-                "sBU-IwhRjb9FeJRb-Trv6VRzF-dOOIeZsUeayinVGTE"
+                "U_C_KSRk6GRqOuT-tTTVid-zHxihv7fRdyuvNQPeBvM"
             ]
         },
         {
-            "iss": "https://soapprod.multicare.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
             "kids": [
-                "kNi-D9BUk1ZhU1HjMqAanP-_ZfkeUiyrTw6wa0cPP4o"
+                "cmm6eWwLYLwRtBU69V-_jsUxfpVtPgrZshDbf5X4Z9k"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
+            "kids": [
+                "3Dtn69t66RKUD8y06Dgig0TIoyh1V1T3cW9Bkex2uQk"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
+            "kids": [
+                "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM"
             ]
         }
     ]
