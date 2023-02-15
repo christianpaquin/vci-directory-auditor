@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-02-14T12:38:21Z",
+    "auditTime": "2023-02-15T12:36:51Z",
     "issuerCount": 625,
     "issuersWithErrors": [
         {
@@ -194,37 +194,29 @@
                 "website": "https://mychart.austinregionalclinic.com/mychart/"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 404 (Not Found)"
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
             "issuer": {
-                "iss": "https://soapprod.hattiesburgclinic.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Hattiesburg Clinic and Forrest Health",
-                "website": "https://iris.hattiesburgclinic.com/iris"
+                "iss": "https://epicproxy.et1082.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "San Francisco Department of Public Health",
+                "website": "https://mychart.sfdph.org/MyChart"
             },
             "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 404 (Not Found)"
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -495,54 +487,6 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
-                "name": "KMART PHARMACY",
-                "website": "https://pharmacy.kmart.com/newrx-immunization"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
-                "name": "Meijer",
-                "website": "https://clinic.meijer.com/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
-                "name": "Pharmaca",
-                "website": "https://www.pharmacarx.com/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
-                "name": "Skripts",
-                "website": "https://www.skriptspharmacy.com/immunizations"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://rjhislandhealth.us-southeast-1.linodeobjects.com",
                 "name": "Royal Jubilee Hospital"
             },
@@ -654,45 +598,14 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-02-13T12:36:05Z",
+    "previousAuditTime": "2023-02-14T12:38:21Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://s.bilh.org/healthcard/issuer",
+            "iss": "https://epicproxy.et1082.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "Xsgwl-UeD61MtPj6wT4_6SasuHOdgGJ9oLVp2S5rTg0"
-            ]
-        },
-        {
-            "iss": "https://soapprod.hattiesburgclinic.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "Mfn5L3WBRV1T4KcjpYuNBwjuF8g7KtNLalYO-KlI2Ws",
-                "GACNzwRcDYM2QYg7JZs-0MNr3zwuGP6buRsZZalT0uU"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
-            "kids": [
-                "U_C_KSRk6GRqOuT-tTTVid-zHxihv7fRdyuvNQPeBvM"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
-            "kids": [
-                "cmm6eWwLYLwRtBU69V-_jsUxfpVtPgrZshDbf5X4Z9k"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
-            "kids": [
-                "3Dtn69t66RKUD8y06Dgig0TIoyh1V1T3cW9Bkex2uQk"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
-            "kids": [
-                "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM"
+                "SvP1FzmaBl52-Ty6dl80yEk6LH41plr_lKWzOoGbj-4"
             ]
         }
     ]
