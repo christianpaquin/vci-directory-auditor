@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-03-17T12:34:37Z",
+    "auditTime": "2023-03-18T12:31:59Z",
     "issuerCount": 628,
     "issuersWithErrors": [
         {
@@ -303,18 +303,6 @@
         },
         {
             "issuer": {
-                "iss": "https://edhwebportal.hitchcock.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Dartmouth-Hitchcock Health",
-                "website": "https://www.mydh.org/portal/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://proxy.christushealth.org/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "canonical_iss": "https://proxy.christushealth.org/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "CHRISTUS Health",
@@ -445,6 +433,53 @@
         },
         {
             "issuer": {
+                "iss": "https://health.ri.gov/sh.cards/production",
+                "name": "The State of Rhode Island",
+                "website": "https://covid.ri.gov/covid-19-prevention/401health-app"
+            },
+            "keys": [
+                {
+                    "kty": "EC",
+                    "kid": "4miDO1rSeIyIF8xRD_oJHpy-6oDzh8plSSmTNeDDBSg",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "x5c": [
+                        "MIICBDCCAYmgAwIBAgIUEdBEW1MXXCvKpvzaqLLL1b/eGpEwCgYIKoZIzj0EAwMwIzEhMB8GA1UEAwwYU01BUlRIZWFsdGhDYXJkRXhhbXBsZUNBMB4XDTIxMTExNzIxMzk0OVoXDTIyMTExNzIxMzk0OVowJzElMCMGA1UEAwwcU01BUlRIZWFsdGhDYXJkRXhhbXBsZUlzc3VlcjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABLrKjBk1yC8FWMa8SE+ci7+8EN+9aft+u7kIg2c2DsF3Ew+er8BHFMXmlaadweyV55oH9wdHKbzFP0MRSM5FgdOjgZYwgZMwCQYDVR0TBAIwADALBgNVHQ8EBAMCB4AwOQYDVR0RBDIwMIYuaHR0cHM6Ly9zcGVjLnNtYXJ0aGVhbHRoLmNhcmRzL2V4YW1wbGVzL2lzc3VlcjAdBgNVHQ4EFgQUCWanP6/afYevoJDMshPNb3lXIfEwHwYDVR0jBBgwFoAUUGyJW6zgK8oBbuXHlxvW4pqzOMYwCgYIKoZIzj0EAwMDaQAwZgIxALc/cA+IuS0irUD/x8FF4xvfjy2WMpaZupPn9EPxHTssrREzNZzpwHH/6MzgxtilTQIxAPk+H5cUfuG8vyPZiunx06PwJ/vz0XuGAeYE+k8Wxu5KXuttgvSeYUNLoS678OaH1Q==",
+                        "MIIB/TCCAV+gAwIBAgIUSTOkc1QHC+jwmi3+1STv5JqSci8wCgYIKoZIzj0EAwQwJzElMCMGA1UEAwwcU01BUlRIZWFsdGhDYXJkRXhhbXBsZVJvb3RDQTAeFw0yMTExMTcyMTM5NDlaFw0yNjExMTYyMTM5NDlaMCMxITAfBgNVBAMMGFNNQVJUSGVhbHRoQ2FyZEV4YW1wbGVDQTB2MBAGByqGSM49AgEGBSuBBAAiA2IABJ+x7VdHhBHv60+l4agblnhgkL0SfSrYm93oepPNKZB9kYg/qLs1V4NyHDWXJPQvxbTFu/L/gMnfTP7cYbd5hqquxZtXSFdYgY3n7osHFLyGL5yOnGAb0VBx0JyHCc7rkqNQME4wDAYDVR0TBAUwAwEB/zAdBgNVHQ4EFgQUUGyJW6zgK8oBbuXHlxvW4pqzOMYwHwYDVR0jBBgwFoAUGW7h56vbq38t5WvheXE40E58tugwCgYIKoZIzj0EAwQDgYsAMIGHAkIBuRNr/EQ0rnWRzJCeHacKHLASfoOFd6fY4L/aHMBoMIw9jZCcmWKaVU4dI1wx6Q+M4S2YLHa5XU1ICtGH5eB6xJgCQWcWq7EVjvCaDmCIq0JQNlN8c+hvRc7uNnODv9Dg2PfYfsrFbhl/lwfjPiv7OY8Rh4DhyOcbCj3UWP0OmkND9AJx",
+                        "MIICJzCCAYmgAwIBAgIUXD4KN+St8TZGhCV9dK5KCbbuSM4wCgYIKoZIzj0EAwQwJzElMCMGA1UEAwwcU01BUlRIZWFsdGhDYXJkRXhhbXBsZVJvb3RDQTAeFw0yMTExMTcyMTM5NDlaFw0zMTExMTUyMTM5NDlaMCcxJTAjBgNVBAMMHFNNQVJUSGVhbHRoQ2FyZEV4YW1wbGVSb290Q0EwgZswEAYHKoZIzj0CAQYFK4EEACMDgYYABAGVb1zOKLCbiDY69cYLpFEzWWbx4a28c2aeQVM4ysjAZ0NBq9pxvudxOX2B/07O4OWWHciaCy5CidBA9NrE10WlywDKm7PBEUUPJPL7e7zY7mlgu4S5pgFIAxAcGHdthGLKawbadaK664RSL7z/Wr8UwNYN9pzZEN1vAqVaXdbIGM5zGKNQME4wDAYDVR0TBAUwAwEB/zAdBgNVHQ4EFgQUGW7h56vbq38t5WvheXE40E58tugwHwYDVR0jBBgwFoAUGW7h56vbq38t5WvheXE40E58tugwCgYIKoZIzj0EAwQDgYsAMIGHAkFpEhA4Z+zjAgJ42+aq8gsJQLoR9X6pB0VZ7pk6Gsn/3tkcsGnpnqeAhxBZ69qMJ1I5dnu/MrI+TAZuW6vSb3p9HwJCALT46K1ZSBmTy4iX6+PeCAVfTBzZTQ/agm7MiM1QOU/+NeywC+CWw7cKBqLKv+lXPedXNfzp9lsmUX15dQ9mpFxe"
+                    ],
+                    "crv": "P-256",
+                    "x": "usqMGTXILwVYxrxIT5yLv7wQ371p-367uQiDZzYOwXc",
+                    "y": "Ew-er8BHFMXmlaadweyV55oH9wdHKbzFP0MRSM5FgdM"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "4096",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "Issuer key endpoint's CORS 'access-control-allow-origin' header *, origin-list does not match the requested origin"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/albertsons",
+                "name": "Albertsons Companies",
+                "website": "https://www.albertsons.com/pharmacy/covid-19.html"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 503 (Service Unavailable)"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://epicweb.challiance.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Cambridge Health Alliance",
                 "website": "https://mychart.challiance.org/mychart",
@@ -470,6 +505,150 @@
                 "canonical_iss": "https://rpsouth.catholichealth.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "CommonSpirit Health",
                 "website": "https://www.commonspirit.org/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 503 (Service Unavailable)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/big+y+foods+inc",
+                "name": "Big Y Foods Inc",
+                "website": "https://www.bigy.com/Pharmacy/covid19-vaccine-faq"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 503 (Service Unavailable)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/bismarck",
+                "name": "Bismarck",
+                "website": "https://www.bismarckpharmacy.com/immunizations"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 503 (Service Unavailable)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/costco",
+                "name": "Costco",
+                "website": "https://www.costco.com/covid-vaccine.html"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/food+city",
+                "name": "Food City",
+                "website": "https://www.foodcity.com/content/48/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 503 (Service Unavailable)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/fruth",
+                "name": "Fruth",
+                "website": "https://fruthpharmacy.com/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 503 (Service Unavailable)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
+                "name": "Giant Eagle Pharmacy",
+                "website": "https://www.gianteagle.com/covidvaccine#electronic-record"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 503 (Service Unavailable)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/harps+pharmacy",
+                "name": "Harps Pharmacy",
+                "website": "https://www.harpsfood.com/Pages/19653/COVID-19%20Vaccination%20Information"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 503 (Service Unavailable)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
+                "name": "Hartig Drug Co",
+                "website": "https://www.hartigdrug.com/covidvaccine"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 503 (Service Unavailable)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
+                "name": "KMART PHARMACY",
+                "website": "https://pharmacy.kmart.com/newrx-immunization"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 503 (Service Unavailable)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
+                "name": "Meijer",
+                "website": "https://clinic.meijer.com/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 503 (Service Unavailable)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
+                "name": "Pharmaca",
+                "website": "https://www.pharmacarx.com/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
+                "name": "Skripts",
+                "website": "https://www.skriptspharmacy.com/immunizations"
             },
             "keys": [],
             "crls": [],
@@ -598,14 +777,87 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-03-16T12:36:07Z",
+    "previousAuditTime": "2023-03-17T12:34:37Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://edhwebportal.hitchcock.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/albertsons",
             "kids": [
-                "z6FF4HeX1EdoV8suJV4RtcYq98-RGaqHyPIq2GBUqss"
+                "1p9_rBI8H8aqf__KqNUWMiRtLQvM1GkBvax_Bsrk0jU",
+                "xnCajRsQcyGf-c1NAQIAHcc94XwqcFZgV5ALF_d5HJ8"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/big+y+foods+inc",
+            "kids": [
+                "xn5B6z7CrZz0oOYGtG5ahFnhRkJwSZ1vChGBPnMu4ec"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/bismarck",
+            "kids": [
+                "xnVccS4IgeMWvI0Y8kWWRDpXdvbaGp-__F7Gx1mEqB0"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/costco",
+            "kids": [
+                "iar5H2E9onFnrYwYHUhDRqtZVgic_DEO9MwCI7MHnR4"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/food+city",
+            "kids": [
+                "oQFm6GrUDhVeubMDMmq0CM6dimFpvkYwWApQtEhk1hI"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/fruth",
+            "kids": [
+                "BCP1AWL6exueHVfIMeS2xADaXQy6pa-O2lWEL2JQJdc"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
+            "kids": [
+                "fM26plwst5o5yrC_rN6FVUtlmMr7nT4eLtgLJ6IfBTE"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/harps+pharmacy",
+            "kids": [
+                "4KHf7aJBy3mcDRm-Avfdch7Ps5qekl1FFGs4EQpDuo4"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
+            "kids": [
+                "85iFG1HeKPc-TFBQxy_U5eSDa3X_XUhDGRVp9h3eU_w"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
+            "kids": [
+                "U_C_KSRk6GRqOuT-tTTVid-zHxihv7fRdyuvNQPeBvM"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
+            "kids": [
+                "cmm6eWwLYLwRtBU69V-_jsUxfpVtPgrZshDbf5X4Z9k"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
+            "kids": [
+                "3Dtn69t66RKUD8y06Dgig0TIoyh1V1T3cW9Bkex2uQk"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
+            "kids": [
+                "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM"
             ]
         }
     ]
