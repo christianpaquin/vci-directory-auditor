@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-04-08T12:29:08Z",
+    "auditTime": "2023-04-09T12:29:24Z",
     "issuerCount": 630,
     "issuersWithErrors": [
         {
@@ -43,36 +43,6 @@
             "crls": [],
             "errors": [
                 "RequestError: unable to verify the first certificate"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epicservicegw.froedtert.com/FHIRproxyPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Froedtert Health",
-                "website": "https://id.my.froedtert.com/"
-            },
-            "keys": [
-                {
-                    "x": "jILeOpGHqyaUJ0bcIBbzKwbu-jIHKKFx1Drfk621wdg",
-                    "y": "jmTJSzvMvlrCREePv_T_XlSAIa4K3wquAlfOT9wMDp0",
-                    "kid": "Csx3qVWGVN55khs60Uu__EV93pYnz0eRAx0fhoTod7k",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "AES256-SHA",
-                "kexAlg": "RSA",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
         },
         {
@@ -344,6 +314,18 @@
         },
         {
             "issuer": {
+                "iss": "https://edhwebportal.hitchcock.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Dartmouth-Hitchcock Health",
+                "website": "https://www.mydh.org/portal/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://proxy.christushealth.org/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "canonical_iss": "https://proxy.christushealth.org/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "CHRISTUS Health",
@@ -594,26 +576,6 @@
         },
         {
             "issuer": {
-                "iss": "https://www.testdirectly.com/KeyPublisher/0000500020/SHC",
-                "name": "Laborant LLC",
-                "website": "https://arcpointlabs.com/coral-springs/covid-testing-options/"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 500 (Internal Server Error)"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://ssbdiagnosticshc.com",
                 "name": "SSB Diagnostic",
                 "website": "https://covid19testhawaii.com"
@@ -697,14 +659,14 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-04-07T12:30:46Z",
+    "previousAuditTime": "2023-04-08T12:29:08Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://www.testdirectly.com/KeyPublisher/0000500020/SHC",
+            "iss": "https://edhwebportal.hitchcock.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "766pfdc-NKZLQSbZv5qSoWH7vQfDwfCwEWJrj-kkoSE"
+                "z6FF4HeX1EdoV8suJV4RtcYq98-RGaqHyPIq2GBUqss"
             ]
         }
     ]
