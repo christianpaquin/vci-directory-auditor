@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-04-10T12:31:16Z",
+    "auditTime": "2023-04-11T12:32:33Z",
     "issuerCount": 630,
     "issuersWithErrors": [
         {
@@ -73,18 +73,6 @@
             "crls": [],
             "errors": [
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Baptist Health",
-                "website": "https://mychart.baptist-health.org/mychart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -326,6 +314,18 @@
         },
         {
             "issuer": {
+                "iss": "https://edhwebportal.hitchcock.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Dartmouth-Hitchcock Health",
+                "website": "https://www.mydh.org/portal/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://proxy.christushealth.org/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "canonical_iss": "https://proxy.christushealth.org/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "CHRISTUS Health",
@@ -547,10 +547,28 @@
                 "iss": "https://accusense.health",
                 "name": "AccuSense Health"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "kty": "EC",
+                    "use": "sig",
+                    "x": "xuMliF6-Fg2z9UArySyujpwaPJjW3CaDP0LnSejz9xM",
+                    "y": "Ivzr29WCUekUKbWa_02aFsJax9ElsYzlchYzgVgKqqU",
+                    "kid": "b-Qi4HoCM8n_zR_lUJwnfqaYhsO5OptvQqwS5d74CZs"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_128_GCM_SHA256",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
-                "RequestError: getaddrinfo ENOTFOUND accusense.health"
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
             ]
         },
         {
@@ -592,18 +610,6 @@
             "crls": [],
             "errors": [
                 "RequestError: certificate has expired"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://soap.bassett.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Bassett Healthcare Network",
-                "website": "https://www.bassett.org/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         }
     ],
@@ -671,20 +677,14 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-04-09T12:29:24Z",
+    "previousAuditTime": "2023-04-10T12:31:16Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://edhwebportal.hitchcock.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "2Y6IshBllIuZBWuUMPeefWvqSHynjSDrmXHpOKo9JnU"
-            ]
-        },
-        {
-            "iss": "https://soap.bassett.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "-IgAJf77qAqSQGRHMXqAik9MDgFc2jk3JiLZQpuSQ2A"
+                "z6FF4HeX1EdoV8suJV4RtcYq98-RGaqHyPIq2GBUqss"
             ]
         }
     ]
