@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-05-12T12:30:42Z",
+    "auditTime": "2023-05-13T12:28:30Z",
     "issuerCount": 630,
     "issuersWithErrors": [
         {
@@ -308,6 +308,18 @@
         },
         {
             "issuer": {
+                "iss": "https://edhwebportal.hitchcock.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Dartmouth-Hitchcock Health",
+                "website": "https://www.mydh.org/portal/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://proxy.christushealth.org/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "canonical_iss": "https://proxy.christushealth.org/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "CHRISTUS Health",
@@ -569,6 +581,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
@@ -700,8 +720,15 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-05-11T12:32:23Z",
+    "previousAuditTime": "2023-05-12T12:30:42Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
-    "removedKids": []
+    "removedKids": [
+        {
+            "iss": "https://edhwebportal.hitchcock.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "z6FF4HeX1EdoV8suJV4RtcYq98-RGaqHyPIq2GBUqss"
+            ]
+        }
+    ]
 }
