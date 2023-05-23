@@ -1,7 +1,7 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-05-22T12:31:48Z",
-    "issuerCount": 630,
+    "auditTime": "2023-05-23T12:31:44Z",
+    "issuerCount": 631,
     "issuersWithErrors": [
         {
             "issuer": {
@@ -43,36 +43,6 @@
             "crls": [],
             "errors": [
                 "RequestError: unable to verify the first certificate"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epicservicegw.froedtert.com/FHIRproxyPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Froedtert Health",
-                "website": "https://id.my.froedtert.com/"
-            },
-            "keys": [
-                {
-                    "x": "jILeOpGHqyaUJ0bcIBbzKwbu-jIHKKFx1Drfk621wdg",
-                    "y": "jmTJSzvMvlrCREePv_T_XlSAIa4K3wquAlfOT9wMDp0",
-                    "kid": "Csx3qVWGVN55khs60Uu__EV93pYnz0eRAx0fhoTod7k",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "AES256-SHA",
-                "kexAlg": "RSA",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
         },
         {
@@ -507,50 +477,14 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
-                "name": "KMART PHARMACY",
-                "website": "https://pharmacy.kmart.com/newrx-immunization"
+                "iss": "https://fhir.omhs.org/rp-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Owensboro Health",
+                "website": "https://mychart.omhs.org/mychart"
             },
             "keys": [],
             "crls": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
-                "name": "Meijer",
-                "website": "https://clinic.meijer.com/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
-                "name": "Pharmaca",
-                "website": "https://www.pharmacarx.com/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
-                "name": "Skripts",
-                "website": "https://www.skriptspharmacy.com/immunizations"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "RequestError: unable to verify the first certificate"
             ]
         },
         {
@@ -778,32 +712,14 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-05-21T12:28:55Z",
-    "newIssuerCount": 0,
+    "previousAuditTime": "2023-05-22T12:31:48Z",
+    "newIssuerCount": 1,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
+            "iss": "https://fhir.omhs.org/rp-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "U_C_KSRk6GRqOuT-tTTVid-zHxihv7fRdyuvNQPeBvM"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
-            "kids": [
-                "cmm6eWwLYLwRtBU69V-_jsUxfpVtPgrZshDbf5X4Z9k"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
-            "kids": [
-                "3Dtn69t66RKUD8y06Dgig0TIoyh1V1T3cW9Bkex2uQk"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
-            "kids": [
-                "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM"
+                "M6-pmPcy46AynsAtYmyDCinqCsQomOALFc2sbrjOaiM"
             ]
         }
     ]
