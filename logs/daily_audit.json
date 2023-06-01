@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-05-31T12:33:05Z",
+    "auditTime": "2023-06-01T12:33:30Z",
     "issuerCount": 631,
     "issuersWithErrors": [
         {
@@ -488,6 +488,18 @@
         },
         {
             "issuer": {
+                "iss": "https://rp.chihealth.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "CommonSpirit Health",
+                "website": "https://www.commonspirit.org/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://epicarr.optum.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "OptumCare National"
             },
@@ -554,18 +566,6 @@
             "crls": [],
             "errors": [
                 "RequestError: certificate has expired"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://appprd.childrensdayton.org/interconnect-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Dayton Children’s Hospital",
-                "website": "https://mykidschart.childrensdayton.org/mychart/Authentication/Login?"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -653,20 +653,14 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-05-30T12:34:20Z",
+    "previousAuditTime": "2023-05-31T12:33:05Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://dashboard.au.accredify.io/shc/4cyte",
+            "iss": "https://rp.chihealth.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "gxCrgSDvnnFkfMhl75mkk_J8u8c3GdofDTE7KJT5ahM"
-            ]
-        },
-        {
-            "iss": "https://appprd.childrensdayton.org/interconnect-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "NbIxdaroYhTu23PTcrVJWturNwugXfzFpLywAsugvhY"
+                "wiq4O75EhQcxyeUL4uGCrG_foq6rqZN13HRD-RnF4RU"
             ]
         }
     ]
