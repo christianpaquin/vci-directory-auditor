@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-06-01T12:33:30Z",
+    "auditTime": "2023-06-02T12:33:26Z",
     "issuerCount": 631,
     "issuersWithErrors": [
         {
@@ -67,7 +67,7 @@
                 "cipher": "AES256-SHA",
                 "kexAlg": "RSA",
                 "authAlg": "RSA",
-                "pubKeySize": "2048",
+                "pubKeySize": "4096",
                 "compression": "NONE"
             },
             "crls": [],
@@ -488,18 +488,6 @@
         },
         {
             "issuer": {
-                "iss": "https://rp.chihealth.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "CommonSpirit Health",
-                "website": "https://www.commonspirit.org/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epicarr.optum.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "OptumCare National"
             },
@@ -653,15 +641,8 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-05-31T12:33:05Z",
+    "previousAuditTime": "2023-06-01T12:33:30Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
-    "removedKids": [
-        {
-            "iss": "https://rp.chihealth.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "wiq4O75EhQcxyeUL4uGCrG_foq6rqZN13HRD-RnF4RU"
-            ]
-        }
-    ]
+    "removedKids": []
 }
