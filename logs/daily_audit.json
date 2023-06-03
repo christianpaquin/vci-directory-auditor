@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-06-02T12:33:26Z",
+    "auditTime": "2023-06-03T12:30:01Z",
     "issuerCount": 631,
     "issuersWithErrors": [
         {
@@ -43,6 +43,48 @@
             "crls": [],
             "errors": [
                 "RequestError: unable to verify the first certificate"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://unified-api.ucsf.edu/clinical/apex/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "UCSF Health",
+                "website": "https://www.ucsfhealth.org/mychart"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicservicegw.froedtert.com/FHIRproxyPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Froedtert Health",
+                "website": "https://id.my.froedtert.com/"
+            },
+            "keys": [
+                {
+                    "x": "jILeOpGHqyaUJ0bcIBbzKwbu-jIHKKFx1Drfk621wdg",
+                    "y": "jmTJSzvMvlrCREePv_T_XlSAIa4K3wquAlfOT9wMDp0",
+                    "kid": "Csx3qVWGVN55khs60Uu__EV93pYnz0eRAx0fhoTod7k",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "AES256-SHA",
+                "kexAlg": "RSA",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
         },
         {
@@ -445,6 +487,18 @@
         },
         {
             "issuer": {
+                "iss": "https://pvcprod.gov.pe.ca",
+                "name": "Government of Prince Edward Island",
+                "website": "https://www.princeedwardisland.ca/en/information/health-and-wellness/covid-19-immunization-record"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://prodrx919.martinhealth.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Cleveland Clinic Martin Health",
                 "website": "https://mychart.clevelandclinic.org"
@@ -484,6 +538,18 @@
             "crls": [],
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://surescripts.gmh.edu/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Grady Health",
+                "website": "https://mychart.gradyhealth.org/mychart"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "RequestError: getaddrinfo ENOTFOUND surescripts.gmh.edu"
             ]
         },
         {
@@ -641,8 +707,39 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-06-01T12:33:30Z",
+    "previousAuditTime": "2023-06-02T12:33:26Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
-    "removedKids": []
+    "removedKids": [
+        {
+            "iss": "https://unified-api.ucsf.edu/clinical/apex/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "ZwFzkFHXRFwE_0Jy0oyINwNZg4yLPKk5DW96xDwjMEo"
+            ]
+        },
+        {
+            "iss": "https://pvcprod.gov.pe.ca",
+            "kids": [
+                "Z8YjtXO3hGPpbDR9wMcrifbcL-PswLyMFhEJGSn1yC0",
+                "uXqBkl4jkadfFUtcrkeVtXRaCCy-nNHA1aD6nKb0OJ4",
+                "rDW5Ssu6mvGAnouM1oaeiDh06OdTePgH9ZwC1MbwAoY",
+                "AWbze1dsT_69BBvlCv8g8rzUAyIBM3q6OT7zMQxBWVU",
+                "icKN8sxNH2ijHGcmqCOWHKziRPd25BoENF5Z0dVrkaI",
+                "SkSCQeF4JDcLSShAM5wejAAdB8rIT3X9-EH8rLNk0fY",
+                "L0ACjkybPcCgJOrMywfz3gJGDeEvxkUSa2j9Pbhjwz8",
+                "pCmOvJBUfo30WuG9UVlDCOvyBhPScLU2_CrAGy9A4Q8",
+                "gzeRVlR44Ia5cL67gN-6HhWsBikN_ZodlGAeGLv_HsI",
+                "D86U5NZ_OusITiBEqmgW2gRUAw1vhcbRtHujJ4wPx7w",
+                "JMCyyrr9wjXT5FY8rx6Jiel4DCfXS0ZDQPUuGdv4P1k",
+                "B5zoHRXFX54o1XgT9IbQLEqTc1GK4SEJg9vjd-K4n3o",
+                "cZxJnAOT6390E103SoaVyX2RNJenO46qyBcceU4A8go"
+            ]
+        },
+        {
+            "iss": "https://surescripts.gmh.edu/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "xoPJCz5NyVXywn4RILWgkMpwVVXs8Dj1bjYap3kyPVw"
+            ]
+        }
+    ]
 }
