@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-06-14T12:32:55Z",
+    "auditTime": "2023-06-15T12:32:29Z",
     "issuerCount": 631,
     "issuersWithErrors": [
         {
@@ -31,18 +31,6 @@
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://cslinkmobile.csmc.edu/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Cedars-Sinai Medical Center",
-                "website": "https://mycslink.cedars-sinai.org/mycslink"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -359,17 +347,6 @@
         },
         {
             "issuer": {
-                "iss": "https://cslinkmobile.csmc.edu",
-                "name": "Cedars-Sinai Health System"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://travel.hawaii.gov",
                 "name": "State of Hawaii"
             },
@@ -516,26 +493,6 @@
         },
         {
             "issuer": {
-                "iss": "https://epicpproxy.southcoast.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Southcoast Health",
-                "website": "https://mychart.southcoast.org/MyChart/"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "RequestError: read ECONNRESET"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://prodrx919.martinhealth.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Cleveland Clinic Martin Health",
                 "website": "https://mychart.clevelandclinic.org"
@@ -579,6 +536,30 @@
         },
         {
             "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
+                "name": "Pharmaca",
+                "website": "https://www.pharmacarx.com/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
+                "name": "Skripts",
+                "website": "https://www.skriptspharmacy.com/immunizations"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://epicarr.optum.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "OptumCare National"
             },
@@ -593,14 +574,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
@@ -696,7 +669,8 @@
         "0jzWwbsnyP2wrDPYMCe96n0DztcJBVZLNwAq0VghGG4",
         "bRi8F_YcgjcfiBFxyNv6zO1mUSomobp4APHA6uabYKw",
         "IVzjSimVvH8ZyQ3AJEjI8LXm5HfrdrDYuEmG0QcXzOI",
-        "afXT8j9iwJJ7IRP24ZUKPhbkga79MfqPreO2DlK0sLA"
+        "afXT8j9iwJJ7IRP24ZUKPhbkga79MfqPreO2DlK0sLA",
+        "KBBgSdgGdb2_Nqufjj09pcISTziLYhj9meR19MmKLDk"
     ],
     "duplicatedIss": [],
     "duplicatedNames": [
@@ -731,32 +705,20 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-06-13T12:32:35Z",
+    "previousAuditTime": "2023-06-14T12:32:55Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://cslinkmobile.csmc.edu/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
             "kids": [
-                "CqfJ_R5DTOoBzVdpTiTCiD9xLkho4lKY0nxJVqTP-mA"
+                "3Dtn69t66RKUD8y06Dgig0TIoyh1V1T3cW9Bkex2uQk"
             ]
         },
         {
-            "iss": "https://ovc-api.optum.com/imm/ocm/issuer",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
             "kids": [
-                "F8F5TxPt4A1jBA5ytKc-bKw8C4bG6BL_qh0mzKQ6QVA"
-            ]
-        },
-        {
-            "iss": "https://cslinkmobile.csmc.edu",
-            "kids": [
-                "KBBgSdgGdb2_Nqufjj09pcISTziLYhj9meR19MmKLDk"
-            ]
-        },
-        {
-            "iss": "https://epicpproxy.southcoast.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "DHtX6zT15GJvXLQFAt8mCTyYJySL1cucMcJ0RizKDnI"
+                "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM"
             ]
         }
     ]
