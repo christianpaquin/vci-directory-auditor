@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-06-15T12:32:29Z",
+    "auditTime": "2023-06-16T12:32:28Z",
     "issuerCount": 631,
     "issuersWithErrors": [
         {
@@ -607,17 +607,9 @@
                 "website": "https://covid19testhawaii.com"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-ECDSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "ECDSA",
-                "pubKeySize": "256",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
-                "RequestError: certificate has expired"
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -705,21 +697,8 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-06-14T12:32:55Z",
+    "previousAuditTime": "2023-06-15T12:32:29Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
-    "removedKids": [
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
-            "kids": [
-                "3Dtn69t66RKUD8y06Dgig0TIoyh1V1T3cW9Bkex2uQk"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
-            "kids": [
-                "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM"
-            ]
-        }
-    ]
+    "removedKids": []
 }
