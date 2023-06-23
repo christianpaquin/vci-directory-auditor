@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-06-22T12:33:17Z",
+    "auditTime": "2023-06-23T12:36:16Z",
     "issuerCount": 631,
     "issuersWithErrors": [
         {
@@ -43,6 +43,18 @@
             "crls": [],
             "errors": [
                 "RequestError: unable to verify the first certificate"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://unified-api.ucsf.edu/clinical/apex/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "UCSF Health",
+                "website": "https://www.ucsfhealth.org/mychart"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -181,6 +193,36 @@
         },
         {
             "issuer": {
+                "iss": "https://epicicfore.quadmedical.com/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "QuadMed",
+                "website": "https://mychart.myquadmedical.com/MyChart"
+            },
+            "keys": [
+                {
+                    "x": "_XW5C-WE2kMmNXg_nFyVtjBvVC3se1hZF8ktCId0hmk",
+                    "y": "QQk9hZsFW_yOS4Afa9D7SAZgRABOxAWZbMXL5sO17T8",
+                    "kid": "Ea430PzFJWqjaVTzIhOd697rB8xEbwaAsb7plntfv6U",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://mepic.hackensackumc.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "canonical_iss": "https://mepic.hmhn.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Hackensack Meridian Health",
@@ -190,6 +232,26 @@
             "crls": [],
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://mobileprod.arcmd.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Austin Regional Clinic",
+                "website": "https://mychart.austinregionalclinic.com/mychart/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: unable to verify the first certificate"
             ]
         },
         {
@@ -481,14 +543,22 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/albertsons",
-                "name": "Albertsons Companies",
-                "website": "https://www.albertsons.com/pharmacy/covid-19.html"
+                "iss": "https://arrprod.midmichigan.net/ProdFHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "MyMichigan Health",
+                "website": "https://www.midmichigan.org/mychart/"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 500 (Internal Server Error)"
+                "HTTPError: Response code 503 (Service Unavailable)"
             ]
         },
         {
@@ -568,90 +638,6 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/big+y+foods+inc",
-                "name": "Big Y Foods Inc",
-                "website": "https://www.bigy.com/Pharmacy/covid19-vaccine-faq"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 500 (Internal Server Error)"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/bismarck",
-                "name": "Bismarck",
-                "website": "https://www.bismarckpharmacy.com/immunizations"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 500 (Internal Server Error)"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/costco",
-                "name": "Costco",
-                "website": "https://www.costco.com/covid-vaccine.html"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/food+city",
-                "name": "Food City",
-                "website": "https://www.foodcity.com/content/48/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/fruth",
-                "name": "Fruth",
-                "website": "https://fruthpharmacy.com/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
-                "name": "Giant Eagle Pharmacy",
-                "website": "https://www.gianteagle.com/covidvaccine#electronic-record"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/harps+pharmacy",
-                "name": "Harps Pharmacy",
-                "website": "https://www.harpsfood.com/Pages/19653/COVID-19%20Vaccination%20Information"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
                 "name": "Hartig Drug Co",
                 "website": "https://www.hartigdrug.com/covidvaccine"
@@ -667,42 +653,6 @@
                 "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
                 "name": "KMART PHARMACY",
                 "website": "https://pharmacy.kmart.com/newrx-immunization"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
-                "name": "Meijer",
-                "website": "https://clinic.meijer.com/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
-                "name": "Pharmaca",
-                "website": "https://www.pharmacarx.com/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
-                "name": "Skripts",
-                "website": "https://www.skriptspharmacy.com/immunizations"
             },
             "keys": [],
             "crls": [],
@@ -857,75 +807,26 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-06-21T12:32:45Z",
+    "previousAuditTime": "2023-06-22T12:33:17Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/albertsons",
+            "iss": "https://unified-api.ucsf.edu/clinical/apex/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "1p9_rBI8H8aqf__KqNUWMiRtLQvM1GkBvax_Bsrk0jU",
-                "xnCajRsQcyGf-c1NAQIAHcc94XwqcFZgV5ALF_d5HJ8"
+                "ZwFzkFHXRFwE_0Jy0oyINwNZg4yLPKk5DW96xDwjMEo"
             ]
         },
         {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/big+y+foods+inc",
+            "iss": "https://mobileprod.arcmd.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "xn5B6z7CrZz0oOYGtG5ahFnhRkJwSZ1vChGBPnMu4ec"
+                "sBU-IwhRjb9FeJRb-Trv6VRzF-dOOIeZsUeayinVGTE"
             ]
         },
         {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/bismarck",
+            "iss": "https://arrprod.midmichigan.net/ProdFHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "xnVccS4IgeMWvI0Y8kWWRDpXdvbaGp-__F7Gx1mEqB0"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/costco",
-            "kids": [
-                "iar5H2E9onFnrYwYHUhDRqtZVgic_DEO9MwCI7MHnR4"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/food+city",
-            "kids": [
-                "oQFm6GrUDhVeubMDMmq0CM6dimFpvkYwWApQtEhk1hI"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/fruth",
-            "kids": [
-                "BCP1AWL6exueHVfIMeS2xADaXQy6pa-O2lWEL2JQJdc"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
-            "kids": [
-                "fM26plwst5o5yrC_rN6FVUtlmMr7nT4eLtgLJ6IfBTE"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/harps+pharmacy",
-            "kids": [
-                "4KHf7aJBy3mcDRm-Avfdch7Ps5qekl1FFGs4EQpDuo4"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
-            "kids": [
-                "85iFG1HeKPc-TFBQxy_U5eSDa3X_XUhDGRVp9h3eU_w"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
-            "kids": [
-                "cmm6eWwLYLwRtBU69V-_jsUxfpVtPgrZshDbf5X4Z9k"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
-            "kids": [
-                "3Dtn69t66RKUD8y06Dgig0TIoyh1V1T3cW9Bkex2uQk"
+                "C4gsPIcSVZ-SMZVuVCF4S62asmtGi0BOXzHI4Qfrp1g"
             ]
         }
     ]
