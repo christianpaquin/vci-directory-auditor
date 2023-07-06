@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-07-05T12:40:29Z",
+    "auditTime": "2023-07-06T12:39:33Z",
     "issuerCount": 631,
     "issuersWithErrors": [
         {
@@ -43,6 +43,26 @@
             "crls": [],
             "errors": [
                 "RequestError: unable to verify the first certificate"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://pvc.service.yukon.ca/issuer",
+                "name": "Government of Yukon",
+                "website": "https://yukon.ca/en/vaccine-proof"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -214,26 +234,6 @@
         },
         {
             "issuer": {
-                "iss": "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Mass General Brigham",
-                "website": "https://patientgateway.massgeneralbrigham.org/mychart-prd"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 401 (Unauthorized)"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epicsoap.nortonhealthcare.org/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Norton Healthcare",
                 "website": "https://mychart.nortonhealthcare.org/mychart"
@@ -312,18 +312,6 @@
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://edhwebportal.hitchcock.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Dartmouth-Hitchcock Health",
-                "website": "https://www.mydh.org/portal/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -588,6 +576,42 @@
         },
         {
             "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
+                "name": "Meijer",
+                "website": "https://clinic.meijer.com/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
+                "name": "Pharmaca",
+                "website": "https://www.pharmacarx.com/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
+                "name": "Skripts",
+                "website": "https://www.skriptspharmacy.com/immunizations"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://epicarr.optum.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "OptumCare National"
             },
@@ -733,14 +757,35 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-07-04T12:38:43Z",
+    "previousAuditTime": "2023-07-05T12:40:29Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://edhwebportal.hitchcock.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://pvc.service.yukon.ca/issuer",
             "kids": [
-                "z6FF4HeX1EdoV8suJV4RtcYq98-RGaqHyPIq2GBUqss"
+                "UnHGY-iyCIr__dzyqcxUiApMwU9lfeXnzT2i5Eo7TvE",
+                "5xg8uSlGi4aHdSG4KG9R8auOmKh5VS38Ao44KmYMHgo",
+                "QN9XZf6C--UcWGVuZGS5nbAUv6ZV-rV_ESrtsBhkoKw",
+                "LF4I5vj9mSzx7W7XlbCaEs8UuY0USX3lVUXHY3b8tRg"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
+            "kids": [
+                "cmm6eWwLYLwRtBU69V-_jsUxfpVtPgrZshDbf5X4Z9k"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
+            "kids": [
+                "3Dtn69t66RKUD8y06Dgig0TIoyh1V1T3cW9Bkex2uQk"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
+            "kids": [
+                "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM"
             ]
         }
     ]
