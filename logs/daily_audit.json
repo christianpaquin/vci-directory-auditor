@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-07-17T12:39:00Z",
+    "auditTime": "2023-07-18T12:34:41Z",
     "issuerCount": 631,
     "issuersWithErrors": [
         {
@@ -600,6 +600,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
@@ -651,6 +659,18 @@
                 "iss": "https://ssbdiagnosticshc.com",
                 "name": "SSB Diagnostic",
                 "website": "https://covid19testhawaii.com"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://dvc.mohw.gov.tw",
+                "name": "Taiwan",
+                "website": "https://www.mohw.gov.tw/mp-2.html"
             },
             "keys": [],
             "crls": [],
@@ -743,8 +763,16 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-07-16T12:33:03Z",
+    "previousAuditTime": "2023-07-17T12:39:00Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
-    "removedKids": []
+    "removedKids": [
+        {
+            "iss": "https://dvc.mohw.gov.tw",
+            "kids": [
+                "e321KG2oVcL8QVUG59NKlgEg20kkJwiqpJ9jBvZdz-o",
+                "WouwNX4pUA1SBWVtJ4Wej6pY3KcwNCbC4amiB7VOO5o"
+            ]
+        }
+    ]
 }
