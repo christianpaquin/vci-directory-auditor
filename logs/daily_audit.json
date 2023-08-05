@@ -1,7 +1,7 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-08-04T12:30:42Z",
-    "issuerCount": 631,
+    "auditTime": "2023-08-05T12:28:15Z",
+    "issuerCount": 632,
     "issuersWithErrors": [
         {
             "issuer": {
@@ -241,6 +241,26 @@
         },
         {
             "issuer": {
+                "iss": "https://www.hss.gov.nt.ca/covax",
+                "name": "Government of the Northwest Territories",
+                "website": "https://www.hss.gov.nt.ca/en/services/covid-19/request-electronic-proof-vaccination"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: unable to verify the first certificate"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://mepic.hackensackumc.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "canonical_iss": "https://mepic.hmhn.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Hackensack Meridian Health",
@@ -261,8 +281,8 @@
             "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -608,42 +628,6 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
-                "name": "Meijer",
-                "website": "https://clinic.meijer.com/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
-                "name": "Pharmaca",
-                "website": "https://www.pharmacarx.com/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
-                "name": "Skripts",
-                "website": "https://www.skriptspharmacy.com/immunizations"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epicarr.optum.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "OptumCare National"
             },
@@ -717,7 +701,7 @@
             ]
         }
     ],
-    "issuerWithCRLCount": 3,
+    "issuerWithCRLCount": 2,
     "duplicatedKids": [
         "nQM-36EWDZU5kLoCoeOvshvT2P9JUyc8Do6yWRhNokg",
         "N2maG8qOhITe_zyPqcrCa6LT_mW18ZtFPy09cGAB24w",
@@ -781,14 +765,15 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-08-03T12:32:36Z",
-    "newIssuerCount": 0,
+    "previousAuditTime": "2023-08-04T12:30:42Z",
+    "newIssuerCount": 1,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
+            "iss": "https://www.hss.gov.nt.ca/covax",
             "kids": [
-                "3Dtn69t66RKUD8y06Dgig0TIoyh1V1T3cW9Bkex2uQk"
+                "8C-9TNgyGuOqc-3FXyNRq6m5U9S1wyhCS1TvpgjzkoU",
+                "AQlUbxO9XumTe_MC4BO5SVlYZFj9NRRBDcNYKyjk7tw"
             ]
         }
     ]
