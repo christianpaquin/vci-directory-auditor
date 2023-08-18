@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-08-17T12:29:08Z",
+    "auditTime": "2023-08-18T12:28:50Z",
     "issuerCount": 633,
     "issuersWithErrors": [
         {
@@ -294,6 +294,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
@@ -321,8 +329,8 @@
             "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -714,6 +722,18 @@
         },
         {
             "issuer": {
+                "iss": "https://dvc.mohw.gov.tw",
+                "name": "Taiwan",
+                "website": "https://www.mohw.gov.tw/mp-2.html"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://emed.com",
                 "name": "eMed",
                 "website": "https://www.emed.com/support"
@@ -797,14 +817,15 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-08-16T12:29:26Z",
-    "newIssuerCount": 1,
+    "previousAuditTime": "2023-08-17T12:29:08Z",
+    "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://erx.aspirus.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://dvc.mohw.gov.tw",
             "kids": [
-                "8wr-HDQqc2uqz_TgQAjati-OD41IpgJqGJDXd2CaSbg"
+                "e321KG2oVcL8QVUG59NKlgEg20kkJwiqpJ9jBvZdz-o",
+                "WouwNX4pUA1SBWVtJ4Wej6pY3KcwNCbC4amiB7VOO5o"
             ]
         }
     ]
