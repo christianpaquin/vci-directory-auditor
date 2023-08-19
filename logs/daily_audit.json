@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-08-18T12:28:50Z",
+    "auditTime": "2023-08-19T12:26:22Z",
     "issuerCount": 633,
     "issuersWithErrors": [
         {
@@ -337,7 +337,19 @@
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 409 (Conflict)"
+                "HTTPError: Response code 409 (Public access is not permitted on this storage account.)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicmobile.corp.saint-lukes.org/FHIRPROXY/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Saint Luke's Health System KC",
+                "website": "https://mysaintlukes.corp.saint-lukes.org/MyChartPRD"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -569,6 +581,38 @@
         },
         {
             "issuer": {
+                "iss": "https://arr.mysrhs.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Singing River Health System",
+                "website": "https://mychart.mysrhs.com/mychart"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicapp.mylrh.org/OAuth2/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Lakeland Regional Health",
+                "website": "https://www.mylrh.org/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://epicweb.challiance.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Cambridge Health Alliance",
                 "website": "https://mychart.challiance.org/mychart",
@@ -608,7 +652,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "RequestError: getaddrinfo ENOTFOUND epicproxy.et0946.epichosted.com"
             ]
         },
         {
@@ -817,15 +861,26 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-08-17T12:29:08Z",
+    "previousAuditTime": "2023-08-18T12:28:50Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://dvc.mohw.gov.tw",
+            "iss": "https://epicmobile.corp.saint-lukes.org/FHIRPROXY/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "e321KG2oVcL8QVUG59NKlgEg20kkJwiqpJ9jBvZdz-o",
-                "WouwNX4pUA1SBWVtJ4Wej6pY3KcwNCbC4amiB7VOO5o"
+                "QF4owq0tMZAMYoMJWpLosERtLrzVtKL-lIzvTFY332g"
+            ]
+        },
+        {
+            "iss": "https://arr.mysrhs.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "0PNSpYFAFnDHRb_G4FD8g5opxY0VwhgbOovYMkldhgg"
+            ]
+        },
+        {
+            "iss": "https://epicapp.mylrh.org/OAuth2/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "h_Z1WIF7m6_q59f7JiB1_q2-rRhr8uGlJiiBBzGlXUY"
             ]
         }
     ]
