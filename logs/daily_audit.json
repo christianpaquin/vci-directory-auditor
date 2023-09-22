@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-09-21T12:31:56Z",
+    "auditTime": "2023-09-22T12:30:28Z",
     "issuerCount": 633,
     "issuersWithErrors": [
         {
@@ -83,6 +83,26 @@
         },
         {
             "issuer": {
+                "iss": "https://mychart.uchealth.org",
+                "name": "UCHealth",
+                "website": "https://my.uchealth.com/myuchealth"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "4096",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 403 (Forbidden)"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://s.bilh.org/healthcard/issuer",
                 "name": "Beth Israel Lahey Health",
                 "website": "https://www.bilh.org/patient-portal"
@@ -143,26 +163,6 @@
             "crls": [],
             "errors": [
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://webservices.hawaiipacifichealth.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Hawaii Pacific Health",
-                "website": "https://mychart.hawaiipacifichealth.org/web"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 404 (Not Found)"
             ]
         },
         {
@@ -320,6 +320,26 @@
             "crls": [],
             "errors": [
                 "HTTPError: Response code 500 (Internal Server Error)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicproxy.et1085.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "UI Health",
+                "website": "https://mychart.uillinois.edu/MyChart"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 401 (Unauthorized)"
             ]
         },
         {
@@ -597,15 +617,15 @@
         },
         {
             "issuer": {
-                "iss": "https://epicsoap.wellstar.org/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Wellstar",
-                "website": "https://mychart.wellstar.org/MyChart"
+                "iss": "https://fhir.clinical.bcm.edu/stage1fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Baylor Medicine",
+                "website": "https://mychart.bcm.edu/MyChartPRD/"
             },
             "keys": [
                 {
-                    "x": "7mWji24Frfq5yIQ12l0oXPiWc9PYVdZeWhc0A175sZY",
-                    "y": "3e0FUoVWLeEPqbEbxyEsvqZRr3yNExD0CZuWi_2-BUs",
-                    "kid": "9cJjNUd_mdaZMqe4Q4BblQYvi2vbpXM9NQp7U6P0qvg",
+                    "x": "igBizDjpvWGQAHlcRPbiMWlISAfr4DDgZQJFs50_2bY",
+                    "y": "ErQ_uKDeMKicTAPrencwmEOqAvXZllY2w4zRCKUrvaU",
+                    "kid": "-h7TjqJB9Sn2yp2e9wO-Pf6YibiRGKjceNHgLGBvaM8",
                     "use": "sig",
                     "kty": "EC",
                     "alg": "ES256",
@@ -614,15 +634,15 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "AES256-GCM-SHA384",
-                "kexAlg": "RSA",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
-                "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
             ]
         },
         {
@@ -682,18 +702,6 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
-                "name": "Hartig Drug Co",
-                "website": "https://www.hartigdrug.com/covidvaccine"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
                 "name": "Meijer",
                 "website": "https://clinic.meijer.com/"
@@ -706,9 +714,9 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
-                "name": "Skripts",
-                "website": "https://www.skriptspharmacy.com/immunizations"
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
+                "name": "Pharmaca",
+                "website": "https://www.pharmacarx.com/"
             },
             "keys": [],
             "crls": [],
@@ -915,26 +923,26 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-09-20T12:31:29Z",
+    "previousAuditTime": "2023-09-21T12:31:56Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://webservices.hawaiipacifichealth.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://mychart.uchealth.org",
             "kids": [
-                "tH7Y4mCBsxlPy0k60DzkkLaQ_2IHKgCDBhGwlYHi2Ok"
+                "lJy0tb3fWq3xdiws7bCxz1goyxTu22xHc2TrXB8UERQ"
             ]
         },
         {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
+            "iss": "https://epicproxy.et1085.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "85iFG1HeKPc-TFBQxy_U5eSDa3X_XUhDGRVp9h3eU_w"
+                "i29n9wbau7IMZb0R6Zsk99aLyej7Zd7Ll5qc8GFqlW8"
             ]
         },
         {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
             "kids": [
-                "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM"
+                "3Dtn69t66RKUD8y06Dgig0TIoyh1V1T3cW9Bkex2uQk"
             ]
         }
     ]
