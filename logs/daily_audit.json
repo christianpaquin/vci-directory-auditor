@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-09-26T12:32:04Z",
+    "auditTime": "2023-09-27T12:31:58Z",
     "issuerCount": 634,
     "issuersWithErrors": [
         {
@@ -83,26 +83,6 @@
         },
         {
             "issuer": {
-                "iss": "https://mychart.uchealth.org",
-                "name": "UCHealth",
-                "website": "https://my.uchealth.com/myuchealth"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "4096",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 403 (Forbidden)"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://s.bilh.org/healthcard/issuer",
                 "name": "Beth Israel Lahey Health",
                 "website": "https://www.bilh.org/patient-portal"
@@ -163,6 +143,18 @@
             "crls": [],
             "errors": [
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Baptist Health",
+                "website": "https://mychart.baptist-health.org/mychart/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -291,8 +283,8 @@
             "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -300,18 +292,6 @@
             "crls": [],
             "errors": [
                 "HTTPError: Response code 409 (Public access is not permitted on this storage account.)"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epicmobile.ohsu.edu/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Oregon Health & Science University",
-                "website": "https://mychartweb.ohsu.edu/mychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -505,8 +485,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -655,6 +635,30 @@
                 "canonical_iss": "https://rpsouth.catholichealth.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "CommonSpirit Health",
                 "website": "https://www.commonspirit.org/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
+                "name": "Giant Eagle Pharmacy",
+                "website": "https://www.gianteagle.com/covidvaccine#electronic-record"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
+                "name": "Meijer",
+                "website": "https://clinic.meijer.com/"
             },
             "keys": [],
             "crls": [],
@@ -846,26 +850,26 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-09-25T12:32:13Z",
-    "newIssuerCount": 1,
+    "previousAuditTime": "2023-09-26T12:32:04Z",
+    "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://mychart.uchealth.org",
+            "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "lJy0tb3fWq3xdiws7bCxz1goyxTu22xHc2TrXB8UERQ"
+                "2Y6IshBllIuZBWuUMPeefWvqSHynjSDrmXHpOKo9JnU"
             ]
         },
         {
-            "iss": "https://epicmobile.ohsu.edu/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
             "kids": [
-                "GF4J7iNjERUsXgF7d3PTiHZMNMldLKLk4SP50qkJX-8"
+                "fM26plwst5o5yrC_rN6FVUtlmMr7nT4eLtgLJ6IfBTE"
             ]
         },
         {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
             "kids": [
-                "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM"
+                "cmm6eWwLYLwRtBU69V-_jsUxfpVtPgrZshDbf5X4Z9k"
             ]
         }
     ]
