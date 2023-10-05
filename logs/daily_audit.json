@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-10-04T12:33:01Z",
+    "auditTime": "2023-10-05T12:33:19Z",
     "issuerCount": 634,
     "issuersWithErrors": [
         {
@@ -83,6 +83,26 @@
         },
         {
             "issuer": {
+                "iss": "https://mychart.uchealth.org",
+                "name": "UCHealth",
+                "website": "https://my.uchealth.com/myuchealth"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "4096",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 403 (Forbidden)"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://s.bilh.org/healthcard/issuer",
                 "name": "Beth Israel Lahey Health",
                 "website": "https://www.bilh.org/patient-portal"
@@ -113,6 +133,36 @@
             "crls": [],
             "errors": [
                 "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epic-soap.uchealth.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "UC Health (Cincinnati)",
+                "website": "https://my.uchealth.com/myuchealth"
+            },
+            "keys": [
+                {
+                    "x": "g_mOZz1Y2rHUVxjQKgEIpLYmWUeslTzzSMrioQOK2nM",
+                    "y": "PlmcCSgAUd706JI2GgjR3xRsKLIkcKZH3gQ2Qf_1SzY",
+                    "kid": "9V8aPz56KLm_uGwAKOmnboo7EWZiQOO_Lfoc2zAe61A",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "AES256-SHA",
+                "kexAlg": "RSA",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
         },
         {
@@ -241,8 +291,8 @@
             "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -455,8 +505,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -613,6 +663,66 @@
                 "canonical_iss": "https://rpsouth.catholichealth.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "CommonSpirit Health",
                 "website": "https://www.commonspirit.org/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/harps+pharmacy",
+                "name": "Harps Pharmacy",
+                "website": "https://www.harpsfood.com/Pages/19653/COVID-19%20Vaccination%20Information"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
+                "name": "Hartig Drug Co",
+                "website": "https://www.hartigdrug.com/covidvaccine"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
+                "name": "KMART PHARMACY",
+                "website": "https://pharmacy.kmart.com/newrx-immunization"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
+                "name": "Meijer",
+                "website": "https://clinic.meijer.com/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
+                "name": "Skripts",
+                "website": "https://www.skriptspharmacy.com/immunizations"
             },
             "keys": [],
             "crls": [],
@@ -792,8 +902,45 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-10-03T12:32:03Z",
+    "previousAuditTime": "2023-10-04T12:33:01Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
-    "removedKids": []
+    "removedKids": [
+        {
+            "iss": "https://mychart.uchealth.org",
+            "kids": [
+                "lJy0tb3fWq3xdiws7bCxz1goyxTu22xHc2TrXB8UERQ"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/harps+pharmacy",
+            "kids": [
+                "4KHf7aJBy3mcDRm-Avfdch7Ps5qekl1FFGs4EQpDuo4"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
+            "kids": [
+                "85iFG1HeKPc-TFBQxy_U5eSDa3X_XUhDGRVp9h3eU_w"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
+            "kids": [
+                "U_C_KSRk6GRqOuT-tTTVid-zHxihv7fRdyuvNQPeBvM"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
+            "kids": [
+                "cmm6eWwLYLwRtBU69V-_jsUxfpVtPgrZshDbf5X4Z9k"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
+            "kids": [
+                "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM"
+            ]
+        }
+    ]
 }
