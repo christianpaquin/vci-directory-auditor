@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-10-28T12:27:44Z",
+    "auditTime": "2023-10-29T12:28:10Z",
     "issuerCount": 635,
     "issuersWithErrors": [
         {
@@ -292,14 +292,14 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 409 (Conflict)"
+                "HTTPError: Response code 409 (Public access is not permitted on this storage account.)"
             ]
         },
         {
@@ -506,7 +506,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -569,6 +569,18 @@
             "crls": [],
             "errors": [
                 "Issuer key endpoint's CORS 'access-control-allow-origin' header *, origin-list does not match the requested origin"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicprdproxy.crh.org/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Columbus Regional Health",
+                "website": "https://mychart.crh.org/mychart/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -874,8 +886,15 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-10-27T12:30:08Z",
+    "previousAuditTime": "2023-10-28T12:27:44Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
-    "removedKids": []
+    "removedKids": [
+        {
+            "iss": "https://epicprdproxy.crh.org/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "BbtbEKjD-fOvxZuzjaZqGsU5o8zhgRRPMzrQI4aD56M"
+            ]
+        }
+    ]
 }
