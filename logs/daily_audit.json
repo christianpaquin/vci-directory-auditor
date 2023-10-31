@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-10-30T12:31:20Z",
+    "auditTime": "2023-10-31T12:30:44Z",
     "issuerCount": 635,
     "issuersWithErrors": [
         {
@@ -167,18 +167,6 @@
         },
         {
             "issuer": {
-                "iss": "https://mhssp.mhs.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Memorial Healthcare System",
-                "website": "https://mychart.mhs.net/mychart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://www.riteaid.com",
                 "name": "Rite Aid Pharmacy",
                 "website": "https://www.riteaid.com/pharmacy/vaccination-digital-proof"
@@ -283,18 +271,6 @@
         },
         {
             "issuer": {
-                "iss": "https://eportal.gbmc.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Greater Baltimore Medical Center",
-                "website": "https://eportal.gbmc.org/MyChart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "RequestError: getaddrinfo ENOTFOUND eportal.gbmc.org"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://mepic.hackensackumc.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "canonical_iss": "https://mepic.hmhn.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Hackensack Meridian Health",
@@ -328,26 +304,6 @@
         },
         {
             "issuer": {
-                "iss": "https://fhir.samhealth.org/fhir-arr/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Samaritan Health Services",
-                "website": "https://mychart.samhealth.org/MyChart"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://www.gov.nl.ca/covid-19/life-during-covid-19/vaccination-record/prod",
                 "name": "Government of Newfoundland and Labrador",
                 "website": "https://www.gov.nl.ca/covid-19/life-during-covid-19/vaccination-record/citizens/"
@@ -376,18 +332,6 @@
             "crls": [],
             "errors": [
                 "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://meritus-rev-prd.meritushealth.com/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Meritus Health",
-                "website": "https://mychart.meritushealth.com/meritus"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "RequestError: getaddrinfo EAI_AGAIN meritus-rev-prd.meritushealth.com"
             ]
         },
         {
@@ -661,18 +605,6 @@
         },
         {
             "issuer": {
-                "iss": "https://epicsoap.altru.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Altru Health System",
-                "website": "https://mychart.altru.org"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "RequestError: getaddrinfo EAI_AGAIN epicsoap.altru.org"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epicproxy.et0946.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Palos Health",
                 "website": "https://mychart.paloshealth.com/MyChart/"
@@ -776,6 +708,18 @@
         },
         {
             "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
+                "name": "Skripts",
+                "website": "https://www.skriptspharmacy.com/immunizations"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://epicarr.optum.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "OptumCare National"
             },
@@ -790,6 +734,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
@@ -879,6 +831,36 @@
             "errors": [
                 "HTTPError: Response code 404 (Not Found)"
             ]
+        },
+        {
+            "issuer": {
+                "iss": "https://fhir.dchstx.org/FHIR-External/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Driscoll Children’s Hospital",
+                "website": "https://mychart.dchstx.org/MyChart/Authentication/Login?"
+            },
+            "keys": [
+                {
+                    "x": "AKT0TvVHpYpNN3NhWz5yeP9cJ1YC6tYVwXPG4qhf1uQ",
+                    "y": "rko4yxzV6AkZ1ZuCxVFPsC6y3jli0LJeu4A56bhAxBk",
+                    "kid": "nCwM-Wnp2Om2Whzqfbenxp67FnraMzPLqmTAzGfYpJM",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
+            ]
         }
     ],
     "issuerWithCRLCount": 2,
@@ -946,50 +928,14 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-10-29T12:28:10Z",
+    "previousAuditTime": "2023-10-30T12:31:20Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://mhssp.mhs.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
             "kids": [
-                "jGSgVTJh5uLgH2gR5llGJcDE90PfREMqJ55GWOHqoVk"
-            ]
-        },
-        {
-            "iss": "https://eportal.gbmc.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "ak85WGwxd-AkBcKjRTTZacNr7uB_M0sZFt2jwPRpjfo"
-            ]
-        },
-        {
-            "iss": "https://fhir.samhealth.org/fhir-arr/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "g3e0Mc14ryLe1pHUHkPwFMQRFRy5JeYXooUwECYo7kg"
-            ]
-        },
-        {
-            "iss": "https://meritus-rev-prd.meritushealth.com/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "9AZ_jHkghUOcDDBeYSrc1JAMQSoF9MAS-nEIF6s4svc"
-            ]
-        },
-        {
-            "iss": "https://epicsoap.altru.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "MkUUbJzyTQj9fBXTebebVgAi7aLeInB3BoWhybAbi9w"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
-            "kids": [
-                "U_C_KSRk6GRqOuT-tTTVid-zHxihv7fRdyuvNQPeBvM"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
-            "kids": [
-                "cmm6eWwLYLwRtBU69V-_jsUxfpVtPgrZshDbf5X4Z9k"
+                "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM"
             ]
         }
     ]
