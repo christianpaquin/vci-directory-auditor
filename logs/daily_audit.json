@@ -1,7 +1,7 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-11-22T12:32:36Z",
-    "issuerCount": 635,
+    "auditTime": "2023-11-23T12:32:30Z",
+    "issuerCount": 634,
     "issuersWithErrors": [
         {
             "issuer": {
@@ -83,26 +83,6 @@
         },
         {
             "issuer": {
-                "iss": "https://mychart.uchealth.org",
-                "name": "UCHealth",
-                "website": "https://my.uchealth.com/myuchealth"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "4096",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 403 (Forbidden)"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://s.bilh.org/healthcard/issuer",
                 "name": "Beth Israel Lahey Health",
                 "website": "https://www.bilh.org/patient-portal"
@@ -163,26 +143,6 @@
             "crls": [],
             "errors": [
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://pvc.service.yukon.ca/issuer",
-                "name": "Government of Yukon",
-                "website": "https://yukon.ca/en/vaccine-proof"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "RequestError: certificate has expired"
             ]
         },
         {
@@ -312,7 +272,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -372,8 +332,8 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
                 "kexAlg": "ECDH, secp521r1, 521 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
@@ -403,18 +363,6 @@
             "crls": [],
             "errors": [
                 "HTTPError: Response code 503 (Service Unavailable)"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://rproxy.novohtg.com/OAUTHPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "NOVO Health Technology Group",
-                "website": "https://novohealth.com/patient-app/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -692,9 +640,33 @@
         },
         {
             "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
+                "name": "Meijer",
+                "website": "https://clinic.meijer.com/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
                 "name": "Pharmaca",
                 "website": "https://www.pharmacarx.com/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
+                "name": "Skripts",
+                "website": "https://www.skriptspharmacy.com/immunizations"
             },
             "keys": [],
             "crls": [],
@@ -718,6 +690,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
@@ -887,6 +867,18 @@
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
             ]
+        },
+        {
+            "issuer": {
+                "iss": "https://www.mypruitthealth.com/api/api/Vaccination/shc",
+                "name": "PruittHealth",
+                "website": "https://www.pruitthealth.com/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         }
     ],
     "issuerWithCRLCount": 2,
@@ -954,24 +946,26 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-11-21T12:33:01Z",
+    "previousAuditTime": "2023-11-22T12:32:36Z",
     "newIssuerCount": 0,
-    "deletedIssuerCount": 0,
+    "deletedIssuerCount": 1,
     "removedKids": [
         {
-            "iss": "https://mychart.uchealth.org",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
             "kids": [
-                "lJy0tb3fWq3xdiws7bCxz1goyxTu22xHc2TrXB8UERQ"
+                "cmm6eWwLYLwRtBU69V-_jsUxfpVtPgrZshDbf5X4Z9k"
             ]
         },
         {
-            "iss": "https://pvc.service.yukon.ca/issuer",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
             "kids": [
-                "UnHGY-iyCIr__dzyqcxUiApMwU9lfeXnzT2i5Eo7TvE",
-                "5xg8uSlGi4aHdSG4KG9R8auOmKh5VS38Ao44KmYMHgo",
-                "QN9XZf6C--UcWGVuZGS5nbAUv6ZV-rV_ESrtsBhkoKw",
-                "LF4I5vj9mSzx7W7XlbCaEs8UuY0USX3lVUXHY3b8tRg",
-                "oUamA58kt4bF2XQx0BSXcgwGWt3oWC66WFheXDJX4XM"
+                "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM"
+            ]
+        },
+        {
+            "iss": "https://www.mypruitthealth.com/api/api/Vaccination/shc",
+            "kids": [
+                "35iLwiFy_yB7mTxH2IpdSA94Z0mbo2PB5xqoo02BFhU"
             ]
         }
     ]

@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2023-11-22T12:32:36Z",
+    "time": "2023-11-23T12:32:30Z",
     "issuerInfo": [
         {
             "issuer": {
@@ -254,7 +254,17 @@
                 "name": "UCHealth",
                 "website": "https://my.uchealth.com/myuchealth"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "crv": "P-256",
+                    "kty": "EC",
+                    "x": "xn4u3l6l1U3JMkwh8d8p03Qz3dg5adMToIMlvb3UnZU",
+                    "y": "y-QXzAqkdbbLjVVIrgl-63uUkSWWde58YE7RpCo5sWs",
+                    "alg": "ES256",
+                    "use": "sig",
+                    "kid": "lJy0tb3fWq3xdiws7bCxz1goyxTu22xHc2TrXB8UERQ"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -264,9 +274,7 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "HTTPError: Response code 403 (Forbidden)"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -5459,6 +5467,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -6584,19 +6600,93 @@
                 "name": "Government of Yukon",
                 "website": "https://yukon.ca/en/vaccine-proof"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "kid": "UnHGY-iyCIr__dzyqcxUiApMwU9lfeXnzT2i5Eo7TvE",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "x5c": [
+                        "MIICGTCCAZ6gAwIBAgIJALC8NylJvTNbMAoGCCqGSM49BAMDMDMxMTAvBgNVBAMMKEdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgQ0EwHhcNMjEwODI4MjM1NzQyWhcNMjIwODI4MjM1NzQyWjA3MTUwMwYDVQQDDCxHb3Zlcm5tZW50IG9mIFl1a29uIFNNQVJUIEhlYWx0aCBDYXJkIElzc3VlcjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABMAnk/a3S2E6TiudjitPqEW8A8W5YyXTYg7sT7D7f9YKIgFPi1OrHtJWJGwPMvlueeHmULUKEpScgpQtoHNjX+SjgZYwgZMwCQYDVR0TBAIwADALBgNVHQ8EBAMCB4AwOQYDVR0RBDIwMIYuaHR0cHM6Ly9zcGVjLnNtYXJ0aGVhbHRoLmNhcmRzL2V4YW1wbGVzL2lzc3VlcjAdBgNVHQ4EFgQUitSA1n/iAP1N2FYJwvvM624tgaUwHwYDVR0jBBgwFoAU5wzUU8M7Lqq4yxgxB2Yfc8neS6UwCgYIKoZIzj0EAwMDaQAwZgIxAMznKWBgcaCywPLb2/XxRaG6rnrcF5Si3JXAxi9z9PLapjjFXnn01PihQ8uf6jGM1AIxAK2ySU71gTqXbriCMq0ALOcLW0zmzcaLLEAmq5kR6iunRZNFp1v4MQxLUno5qsm2Rg==",
+                        "MIICEzCCAXWgAwIBAgIJALQZZWjfw5NnMAoGCCqGSM49BAMEMDgxNjA0BgNVBAMMLUdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgUm9vdCBDQTAeFw0yMTA4MjQyMTM0MDRaFw0yNjA4MjMyMTM0MDRaMDMxMTAvBgNVBAMMKEdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgQ0EwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAAS3TOjxd26WFX4RPaTnWcpw7/ZsfBb/+s/I7Gt+9GAsmZKjvZUDOf9Dc1ARkPh76BaE+ABzZ83LcmDqMhYdHbZXB6hOvVTmqYjtnQIovFK8irY1MsmWPfq4BW7QN6B6aKCjUDBOMAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFOcM1FPDOy6quMsYMQdmH3PJ3kulMB8GA1UdIwQYMBaAFAbK320153UDRVQ30TnWECrILX8KMAoGCCqGSM49BAMEA4GLADCBhwJCAPvYBOO/NVZaglYiW35+z8UvhEadsCWfAknIdJBYkKdNQWQ0ktqS7+ctqBEVCUQng2IROSG4BnJrs7H7+1G4wgZnAkEQ+HuRcVUmiicTkPDlbwZHtoDEc1fv3TvNG9h+Qp5WvfLivz7BrFHt11ByuTCxEn7juv3B1JhpyPVZKTnQ+Nefpw==",
+                        "MIICPTCCAaCgAwIBAgIJAOuKKbelzgyxMAoGCCqGSM49BAMEMDgxNjA0BgNVBAMMLUdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgUm9vdCBDQTAeFw0yMTA4MjQyMTM0MDRaFw0zMTA4MjIyMTM0MDRaMDgxNjA0BgNVBAMMLUdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgUm9vdCBDQTCBmzAQBgcqhkjOPQIBBgUrgQQAIwOBhgAEAIQ94p9+W9Iszm7Nizv/NHnLKGM624IEdsJUs9MrTjCBNUsuRJNa+F99tTjTqP5u1ocbGVxSrfRxlc8Fv1fGROi5AB2c4iA+fOT55iX1TQbguCsv0YobG2YOCwHPIwcFfUm4bxTLnLjky5i7wYWPMlwj+JFmzuUkaPxFY8pdZnyMxoaSo1AwTjAMBgNVHRMEBTADAQH/MB0GA1UdDgQWBBQGyt9tNed1A0VUN9E51hAqyC1/CjAfBgNVHSMEGDAWgBQGyt9tNed1A0VUN9E51hAqyC1/CjAKBggqhkjOPQQDBAOBigAwgYYCQVSvLDHcrHXqLntgB4rXgMr7lgZ/wVBqYlzhrD8SXNNvGM8lu9KV3sWHV7n3eyyqnOR/etyb52zoKe6NBkBG+AsbAkFaxXyuwweeZHAJ379aIlKJJ2EySEOY9Bo6j+6DYd69V+lFQtNQithatUS06xLXgcXD8TF6ZcoALiP3oOwF17xHDA=="
+                    ],
+                    "crv": "P-256",
+                    "x": "wCeT9rdLYTpOK52OK0-oRbwDxbljJdNiDuxPsPt_1go",
+                    "y": "IgFPi1OrHtJWJGwPMvlueeHmULUKEpScgpQtoHNjX-Q",
+                    "ctr": 1
+                },
+                {
+                    "kty": "EC",
+                    "kid": "5xg8uSlGi4aHdSG4KG9R8auOmKh5VS38Ao44KmYMHgo",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "x5c": [
+                        "MIICGDCCAZ6gAwIBAgIJALC8NylJvTNcMAoGCCqGSM49BAMDMDMxMTAvBgNVBAMMKEdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgQ0EwHhcNMjIwNDA2MjMwNDI2WhcNMjMwNDA2MjMwNDI2WjA3MTUwMwYDVQQDDCxHb3Zlcm5tZW50IG9mIFl1a29uIFNNQVJUIEhlYWx0aCBDYXJkIElzc3VlcjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABDFrLGyDkXDdu3m1r3gkUozQVBmSsse8CVRR9h6m/PYDtNyo1Q62wzEzUlk4rxkw1f/Yay4wbpbaxQiUTDQAIrejgZYwgZMwCQYDVR0TBAIwADALBgNVHQ8EBAMCB4AwOQYDVR0RBDIwMIYuaHR0cHM6Ly9zcGVjLnNtYXJ0aGVhbHRoLmNhcmRzL2V4YW1wbGVzL2lzc3VlcjAdBgNVHQ4EFgQUxl1mbwJOmZOwQi7yNhktIT4JhAIwHwYDVR0jBBgwFoAU5wzUU8M7Lqq4yxgxB2Yfc8neS6UwCgYIKoZIzj0EAwMDaAAwZQIxAK3LJabh0qo3Se/OgD0G0UIgAqZmqv3rU3bGUU59WXxcAP7B5oV30z3o/pjvFIHlrAIwezgBEt8W669tmwo+qdIN9nyL1etWzgkMXKLpnTK1CmgLU3FJBJQVJqzwmtQfPBn1",
+                        "MIICEzCCAXWgAwIBAgIJALQZZWjfw5NnMAoGCCqGSM49BAMEMDgxNjA0BgNVBAMMLUdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgUm9vdCBDQTAeFw0yMTA4MjQyMTM0MDRaFw0yNjA4MjMyMTM0MDRaMDMxMTAvBgNVBAMMKEdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgQ0EwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAAS3TOjxd26WFX4RPaTnWcpw7/ZsfBb/+s/I7Gt+9GAsmZKjvZUDOf9Dc1ARkPh76BaE+ABzZ83LcmDqMhYdHbZXB6hOvVTmqYjtnQIovFK8irY1MsmWPfq4BW7QN6B6aKCjUDBOMAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFOcM1FPDOy6quMsYMQdmH3PJ3kulMB8GA1UdIwQYMBaAFAbK320153UDRVQ30TnWECrILX8KMAoGCCqGSM49BAMEA4GLADCBhwJCAPvYBOO/NVZaglYiW35+z8UvhEadsCWfAknIdJBYkKdNQWQ0ktqS7+ctqBEVCUQng2IROSG4BnJrs7H7+1G4wgZnAkEQ+HuRcVUmiicTkPDlbwZHtoDEc1fv3TvNG9h+Qp5WvfLivz7BrFHt11ByuTCxEn7juv3B1JhpyPVZKTnQ+Nefpw==",
+                        "MIICPTCCAaCgAwIBAgIJAOuKKbelzgyxMAoGCCqGSM49BAMEMDgxNjA0BgNVBAMMLUdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgUm9vdCBDQTAeFw0yMTA4MjQyMTM0MDRaFw0zMTA4MjIyMTM0MDRaMDgxNjA0BgNVBAMMLUdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgUm9vdCBDQTCBmzAQBgcqhkjOPQIBBgUrgQQAIwOBhgAEAIQ94p9+W9Iszm7Nizv/NHnLKGM624IEdsJUs9MrTjCBNUsuRJNa+F99tTjTqP5u1ocbGVxSrfRxlc8Fv1fGROi5AB2c4iA+fOT55iX1TQbguCsv0YobG2YOCwHPIwcFfUm4bxTLnLjky5i7wYWPMlwj+JFmzuUkaPxFY8pdZnyMxoaSo1AwTjAMBgNVHRMEBTADAQH/MB0GA1UdDgQWBBQGyt9tNed1A0VUN9E51hAqyC1/CjAfBgNVHSMEGDAWgBQGyt9tNed1A0VUN9E51hAqyC1/CjAKBggqhkjOPQQDBAOBigAwgYYCQVSvLDHcrHXqLntgB4rXgMr7lgZ/wVBqYlzhrD8SXNNvGM8lu9KV3sWHV7n3eyyqnOR/etyb52zoKe6NBkBG+AsbAkFaxXyuwweeZHAJ379aIlKJJ2EySEOY9Bo6j+6DYd69V+lFQtNQithatUS06xLXgcXD8TF6ZcoALiP3oOwF17xHDA=="
+                    ],
+                    "crv": "P-256",
+                    "x": "MWssbIORcN27ebWveCRSjNBUGZKyx7wJVFH2Hqb89gM",
+                    "y": "tNyo1Q62wzEzUlk4rxkw1f_Yay4wbpbaxQiUTDQAIrc",
+                    "ctr": 1
+                },
+                {
+                    "kty": "EC",
+                    "kid": "QN9XZf6C--UcWGVuZGS5nbAUv6ZV-rV_ESrtsBhkoKw",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "x5c": [
+                        "MIICFzCCAZ6gAwIBAgIJALC8NylJvTNeMAoGCCqGSM49BAMDMDMxMTAvBgNVBAMMKEdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgQ0EwHhcNMjIwODE3MjEzNjAwWhcNMjMwODE3MjEzNjAwWjA3MTUwMwYDVQQDDCxHb3Zlcm5tZW50IG9mIFl1a29uIFNNQVJUIEhlYWx0aCBDYXJkIElzc3VlcjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABOy8aDWQS8UrJ78elE8pHVt+qbUf+2Lk2nSgTd2S1fhfxziHuD0kJOa8uHs3zKs2xmO8j6AsQvc1qG0M1FPgl7ajgZYwgZMwCQYDVR0TBAIwADALBgNVHQ8EBAMCB4AwOQYDVR0RBDIwMIYuaHR0cHM6Ly9zcGVjLnNtYXJ0aGVhbHRoLmNhcmRzL2V4YW1wbGVzL2lzc3VlcjAdBgNVHQ4EFgQUk3TCpinlew6zQTQcBk6oiDK87IswHwYDVR0jBBgwFoAU5wzUU8M7Lqq4yxgxB2Yfc8neS6UwCgYIKoZIzj0EAwMDZwAwZAIweN2R2bw9j3IvaRYxduAfouYv67jfJaHkyxzqrw9JAJsi+tdLykRpbpQ59lekSNyUAjBsDFKjKlKGLtc5zMEiVKrFGbdukQVMxNx6Syvp6mxXVdorhZvanFOmfsbuSP8L3wA=",
+                        "MIICEzCCAXWgAwIBAgIJALQZZWjfw5NnMAoGCCqGSM49BAMEMDgxNjA0BgNVBAMMLUdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgUm9vdCBDQTAeFw0yMTA4MjQyMTM0MDRaFw0yNjA4MjMyMTM0MDRaMDMxMTAvBgNVBAMMKEdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgQ0EwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAAS3TOjxd26WFX4RPaTnWcpw7/ZsfBb/+s/I7Gt+9GAsmZKjvZUDOf9Dc1ARkPh76BaE+ABzZ83LcmDqMhYdHbZXB6hOvVTmqYjtnQIovFK8irY1MsmWPfq4BW7QN6B6aKCjUDBOMAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFOcM1FPDOy6quMsYMQdmH3PJ3kulMB8GA1UdIwQYMBaAFAbK320153UDRVQ30TnWECrILX8KMAoGCCqGSM49BAMEA4GLADCBhwJCAPvYBOO/NVZaglYiW35+z8UvhEadsCWfAknIdJBYkKdNQWQ0ktqS7+ctqBEVCUQng2IROSG4BnJrs7H7+1G4wgZnAkEQ+HuRcVUmiicTkPDlbwZHtoDEc1fv3TvNG9h+Qp5WvfLivz7BrFHt11ByuTCxEn7juv3B1JhpyPVZKTnQ+Nefpw==",
+                        "MIICPTCCAaCgAwIBAgIJAOuKKbelzgyxMAoGCCqGSM49BAMEMDgxNjA0BgNVBAMMLUdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgUm9vdCBDQTAeFw0yMTA4MjQyMTM0MDRaFw0zMTA4MjIyMTM0MDRaMDgxNjA0BgNVBAMMLUdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgUm9vdCBDQTCBmzAQBgcqhkjOPQIBBgUrgQQAIwOBhgAEAIQ94p9+W9Iszm7Nizv/NHnLKGM624IEdsJUs9MrTjCBNUsuRJNa+F99tTjTqP5u1ocbGVxSrfRxlc8Fv1fGROi5AB2c4iA+fOT55iX1TQbguCsv0YobG2YOCwHPIwcFfUm4bxTLnLjky5i7wYWPMlwj+JFmzuUkaPxFY8pdZnyMxoaSo1AwTjAMBgNVHRMEBTADAQH/MB0GA1UdDgQWBBQGyt9tNed1A0VUN9E51hAqyC1/CjAfBgNVHSMEGDAWgBQGyt9tNed1A0VUN9E51hAqyC1/CjAKBggqhkjOPQQDBAOBigAwgYYCQVSvLDHcrHXqLntgB4rXgMr7lgZ/wVBqYlzhrD8SXNNvGM8lu9KV3sWHV7n3eyyqnOR/etyb52zoKe6NBkBG+AsbAkFaxXyuwweeZHAJ379aIlKJJ2EySEOY9Bo6j+6DYd69V+lFQtNQithatUS06xLXgcXD8TF6ZcoALiP3oOwF17xHDA=="
+                    ],
+                    "crv": "P-256",
+                    "x": "7LxoNZBLxSsnvx6UTykdW36ptR_7YuTadKBN3ZLV-F8",
+                    "y": "xziHuD0kJOa8uHs3zKs2xmO8j6AsQvc1qG0M1FPgl7Y",
+                    "ctr": 1
+                },
+                {
+                    "kty": "EC",
+                    "kid": "LF4I5vj9mSzx7W7XlbCaEs8UuY0USX3lVUXHY3b8tRg",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "x5c": [
+                        "MIICGDCCAZ6gAwIBAgIJALC8NylJvTNfMAoGCCqGSM49BAMDMDMxMTAvBgNVBAMMKEdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgQ0EwHhcNMjMwNDA1MTczMjI4WhcNMjQwNDA0MTczMjI4WjA3MTUwMwYDVQQDDCxHb3Zlcm5tZW50IG9mIFl1a29uIFNNQVJUIEhlYWx0aCBDYXJkIElzc3VlcjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABPFxvq7DUaV1DhdTG35IcmrzrBrU9ujqe8eYVPKX8S3TUQyFCktr1Ec9+YhuSeaLX0jHaBgw61k8U5gV4UXHXCejgZYwgZMwCQYDVR0TBAIwADALBgNVHQ8EBAMCB4AwOQYDVR0RBDIwMIYuaHR0cHM6Ly9zcGVjLnNtYXJ0aGVhbHRoLmNhcmRzL2V4YW1wbGVzL2lzc3VlcjAdBgNVHQ4EFgQU8Bh9m2mY0eZWH/m+qXVi6QFvUj0wHwYDVR0jBBgwFoAU5wzUU8M7Lqq4yxgxB2Yfc8neS6UwCgYIKoZIzj0EAwMDaAAwZQIxAOZaoaNcYWj5fmnFWaz49WZfyrUH42pOB2H3v/UDtyijJh/I90QbRA92t/KHb74twQIwS/+pkU1XKkNqyM/AcxQryzQnvnWEC81ZcT5XGaf7RktUWbv/lo9xVT6UvD+5vIq9",
+                        "MIICEzCCAXWgAwIBAgIJALQZZWjfw5NnMAoGCCqGSM49BAMEMDgxNjA0BgNVBAMMLUdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgUm9vdCBDQTAeFw0yMTA4MjQyMTM0MDRaFw0yNjA4MjMyMTM0MDRaMDMxMTAvBgNVBAMMKEdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgQ0EwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAAS3TOjxd26WFX4RPaTnWcpw7/ZsfBb/+s/I7Gt+9GAsmZKjvZUDOf9Dc1ARkPh76BaE+ABzZ83LcmDqMhYdHbZXB6hOvVTmqYjtnQIovFK8irY1MsmWPfq4BW7QN6B6aKCjUDBOMAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFOcM1FPDOy6quMsYMQdmH3PJ3kulMB8GA1UdIwQYMBaAFAbK320153UDRVQ30TnWECrILX8KMAoGCCqGSM49BAMEA4GLADCBhwJCAPvYBOO/NVZaglYiW35+z8UvhEadsCWfAknIdJBYkKdNQWQ0ktqS7+ctqBEVCUQng2IROSG4BnJrs7H7+1G4wgZnAkEQ+HuRcVUmiicTkPDlbwZHtoDEc1fv3TvNG9h+Qp5WvfLivz7BrFHt11ByuTCxEn7juv3B1JhpyPVZKTnQ+Nefpw==",
+                        "MIICPTCCAaCgAwIBAgIJAOuKKbelzgyxMAoGCCqGSM49BAMEMDgxNjA0BgNVBAMMLUdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgUm9vdCBDQTAeFw0yMTA4MjQyMTM0MDRaFw0zMTA4MjIyMTM0MDRaMDgxNjA0BgNVBAMMLUdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgUm9vdCBDQTCBmzAQBgcqhkjOPQIBBgUrgQQAIwOBhgAEAIQ94p9+W9Iszm7Nizv/NHnLKGM624IEdsJUs9MrTjCBNUsuRJNa+F99tTjTqP5u1ocbGVxSrfRxlc8Fv1fGROi5AB2c4iA+fOT55iX1TQbguCsv0YobG2YOCwHPIwcFfUm4bxTLnLjky5i7wYWPMlwj+JFmzuUkaPxFY8pdZnyMxoaSo1AwTjAMBgNVHRMEBTADAQH/MB0GA1UdDgQWBBQGyt9tNed1A0VUN9E51hAqyC1/CjAfBgNVHSMEGDAWgBQGyt9tNed1A0VUN9E51hAqyC1/CjAKBggqhkjOPQQDBAOBigAwgYYCQVSvLDHcrHXqLntgB4rXgMr7lgZ/wVBqYlzhrD8SXNNvGM8lu9KV3sWHV7n3eyyqnOR/etyb52zoKe6NBkBG+AsbAkFaxXyuwweeZHAJ379aIlKJJ2EySEOY9Bo6j+6DYd69V+lFQtNQithatUS06xLXgcXD8TF6ZcoALiP3oOwF17xHDA=="
+                    ],
+                    "crv": "P-256",
+                    "x": "8XG-rsNRpXUOF1MbfkhyavOsGtT26Op7x5hU8pfxLdM",
+                    "y": "UQyFCktr1Ec9-YhuSeaLX0jHaBgw61k8U5gV4UXHXCc",
+                    "ctr": 1
+                },
+                {
+                    "kty": "EC",
+                    "kid": "oUamA58kt4bF2XQx0BSXcgwGWt3oWC66WFheXDJX4XM",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "x5c": [
+                        "MIICFzCCAZ6gAwIBAgIJALC8NylJvTNhMAoGCCqGSM49BAMDMDMxMTAvBgNVBAMMKEdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgQ0EwHhcNMjMwODIyMjA1NjE5WhcNMjQwODIxMjA1NjE5WjA3MTUwMwYDVQQDDCxHb3Zlcm5tZW50IG9mIFl1a29uIFNNQVJUIEhlYWx0aCBDYXJkIElzc3VlcjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABPpGxz+SbABfweb/+OIw97x6hSD9wx5zCCWt85TE05UsIOV9hSm/ACbhUZXHm46vW3YvQ1KFDowG09JNf1fVE8ejgZYwgZMwCQYDVR0TBAIwADALBgNVHQ8EBAMCB4AwOQYDVR0RBDIwMIYuaHR0cHM6Ly9zcGVjLnNtYXJ0aGVhbHRoLmNhcmRzL2V4YW1wbGVzL2lzc3VlcjAdBgNVHQ4EFgQUuPthc4fdukAOr3QwoitusHiEEFkwHwYDVR0jBBgwFoAU5wzUU8M7Lqq4yxgxB2Yfc8neS6UwCgYIKoZIzj0EAwMDZwAwZAIwEsg3pFTNxpnIn/1prQnMadZxaB4WTLqNQCxU4DpOH59vahNZP7bkIdhE0gGZiuHpAjBDl65x2PT9a2RKKs2z0tF9qseJ5otp3ddnpoLQHaNQLj4vhFATm5EwZJr/XDD2TuQ=",
+                        "MIICEzCCAXWgAwIBAgIJALQZZWjfw5NnMAoGCCqGSM49BAMEMDgxNjA0BgNVBAMMLUdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgUm9vdCBDQTAeFw0yMTA4MjQyMTM0MDRaFw0yNjA4MjMyMTM0MDRaMDMxMTAvBgNVBAMMKEdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgQ0EwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAAS3TOjxd26WFX4RPaTnWcpw7/ZsfBb/+s/I7Gt+9GAsmZKjvZUDOf9Dc1ARkPh76BaE+ABzZ83LcmDqMhYdHbZXB6hOvVTmqYjtnQIovFK8irY1MsmWPfq4BW7QN6B6aKCjUDBOMAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFOcM1FPDOy6quMsYMQdmH3PJ3kulMB8GA1UdIwQYMBaAFAbK320153UDRVQ30TnWECrILX8KMAoGCCqGSM49BAMEA4GLADCBhwJCAPvYBOO/NVZaglYiW35+z8UvhEadsCWfAknIdJBYkKdNQWQ0ktqS7+ctqBEVCUQng2IROSG4BnJrs7H7+1G4wgZnAkEQ+HuRcVUmiicTkPDlbwZHtoDEc1fv3TvNG9h+Qp5WvfLivz7BrFHt11ByuTCxEn7juv3B1JhpyPVZKTnQ+Nefpw==",
+                        "MIICPTCCAaCgAwIBAgIJAOuKKbelzgyxMAoGCCqGSM49BAMEMDgxNjA0BgNVBAMMLUdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgUm9vdCBDQTAeFw0yMTA4MjQyMTM0MDRaFw0zMTA4MjIyMTM0MDRaMDgxNjA0BgNVBAMMLUdvdmVybm1lbnQgb2YgWXVrb24gU01BUlQgSGVhbHRoIENhcmQgUm9vdCBDQTCBmzAQBgcqhkjOPQIBBgUrgQQAIwOBhgAEAIQ94p9+W9Iszm7Nizv/NHnLKGM624IEdsJUs9MrTjCBNUsuRJNa+F99tTjTqP5u1ocbGVxSrfRxlc8Fv1fGROi5AB2c4iA+fOT55iX1TQbguCsv0YobG2YOCwHPIwcFfUm4bxTLnLjky5i7wYWPMlwj+JFmzuUkaPxFY8pdZnyMxoaSo1AwTjAMBgNVHRMEBTADAQH/MB0GA1UdDgQWBBQGyt9tNed1A0VUN9E51hAqyC1/CjAfBgNVHSMEGDAWgBQGyt9tNed1A0VUN9E51hAqyC1/CjAKBggqhkjOPQQDBAOBigAwgYYCQVSvLDHcrHXqLntgB4rXgMr7lgZ/wVBqYlzhrD8SXNNvGM8lu9KV3sWHV7n3eyyqnOR/etyb52zoKe6NBkBG+AsbAkFaxXyuwweeZHAJ379aIlKJJ2EySEOY9Bo6j+6DYd69V+lFQtNQithatUS06xLXgcXD8TF6ZcoALiP3oOwF17xHDA=="
+                    ],
+                    "crv": "P-256",
+                    "x": "-kbHP5JsAF_B5v_44jD3vHqFIP3DHnMIJa3zlMTTlSw",
+                    "y": "IOV9hSm_ACbhUZXHm46vW3YvQ1KFDowG09JNf1fVE8c",
+                    "ctr": 1
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
                 "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "RequestError: certificate has expired"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -7286,14 +7376,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -7671,6 +7753,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -8603,7 +8693,7 @@
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
                 "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "RSA",
+                "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
@@ -8801,7 +8891,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -9382,7 +9472,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "4096",
                 "compression": "NONE"
@@ -9668,14 +9758,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -10640,14 +10722,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -11378,7 +11452,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -11629,8 +11703,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "cipher": "DHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "DH, 2048 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -12249,7 +12323,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -12724,8 +12798,8 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
                 "kexAlg": "ECDH, secp521r1, 521 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
@@ -12978,7 +13052,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -13266,18 +13340,6 @@
             },
             "crls": [],
             "errors": []
-        },
-        {
-            "issuer": {
-                "iss": "https://rproxy.novohtg.com/OAUTHPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "NOVO Health Technology Group",
-                "website": "https://novohealth.com/patient-app/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
         },
         {
             "issuer": {
@@ -15525,6 +15587,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -17225,19 +17295,11 @@
                 "name": "Meijer",
                 "website": "https://clinic.meijer.com/"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "crv": "P-256",
-                    "x": "4rGpwqa648ZOQ51AM8jvjXAWlhbOKQjhaL6PY8O-4kc",
-                    "y": "2bieuXyJYIUSgA9YFma8ogWSE4TK0lrssEg3NeTiisc",
-                    "kid": "cmm6eWwLYLwRtBU69V-_jsUxfpVtPgrZshDbf5X4Z9k",
-                    "use": "sig",
-                    "alg": "ES256"
-                }
-            ],
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -17257,19 +17319,11 @@
                 "name": "Skripts",
                 "website": "https://www.skriptspharmacy.com/immunizations"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "crv": "P-256",
-                    "x": "4Oqpp8MbWLjn1vtNIQ4-t6phpguPubaNfpBW3P5SmaQ",
-                    "y": "FaRtKLd60fjiBQeBC0jaxcuP6kBSHsKmxcS4MSnSHug",
-                    "kid": "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM",
-                    "use": "sig",
-                    "alg": "ES256"
-                }
-            ],
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -17372,6 +17426,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -17642,14 +17704,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -17871,6 +17925,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
@@ -19237,14 +19299,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -20280,27 +20334,11 @@
                 "name": "PruittHealth",
                 "website": "https://www.pruitthealth.com/"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "kid": "35iLwiFy_yB7mTxH2IpdSA94Z0mbo2PB5xqoo02BFhU",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "6vZdLi5mX2BE4kzIb24o20g8OU1PXjspUcxOqR7RNS0",
-                    "y": "e9gPEpmg8H26r-VNxzMXOP4iLaNpsFFvRGs-KIRuxVc"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
