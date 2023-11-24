@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-11-23T12:32:30Z",
+    "auditTime": "2023-11-24T12:30:52Z",
     "issuerCount": 634,
     "issuersWithErrors": [
         {
@@ -272,7 +272,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -332,8 +332,8 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
                 "kexAlg": "ECDH, secp521r1, 521 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
@@ -690,14 +690,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
@@ -867,18 +859,6 @@
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
             ]
-        },
-        {
-            "issuer": {
-                "iss": "https://www.mypruitthealth.com/api/api/Vaccination/shc",
-                "name": "PruittHealth",
-                "website": "https://www.pruitthealth.com/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
         }
     ],
     "issuerWithCRLCount": 2,
@@ -946,27 +926,8 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-11-22T12:32:36Z",
+    "previousAuditTime": "2023-11-23T12:32:30Z",
     "newIssuerCount": 0,
-    "deletedIssuerCount": 1,
-    "removedKids": [
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
-            "kids": [
-                "cmm6eWwLYLwRtBU69V-_jsUxfpVtPgrZshDbf5X4Z9k"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
-            "kids": [
-                "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM"
-            ]
-        },
-        {
-            "iss": "https://www.mypruitthealth.com/api/api/Vaccination/shc",
-            "kids": [
-                "35iLwiFy_yB7mTxH2IpdSA94Z0mbo2PB5xqoo02BFhU"
-            ]
-        }
-    ]
+    "deletedIssuerCount": 0,
+    "removedKids": []
 }
