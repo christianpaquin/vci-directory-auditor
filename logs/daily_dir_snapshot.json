@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2023-11-25T12:28:49Z",
+    "time": "2023-11-26T12:28:48Z",
     "issuerInfo": [
         {
             "issuer": {
@@ -254,17 +254,7 @@
                 "name": "UCHealth",
                 "website": "https://my.uchealth.com/myuchealth"
             },
-            "keys": [
-                {
-                    "crv": "P-256",
-                    "kty": "EC",
-                    "x": "xn4u3l6l1U3JMkwh8d8p03Qz3dg5adMToIMlvb3UnZU",
-                    "y": "y-QXzAqkdbbLjVVIrgl-63uUkSWWde58YE7RpCo5sWs",
-                    "alg": "ES256",
-                    "use": "sig",
-                    "kid": "lJy0tb3fWq3xdiws7bCxz1goyxTu22xHc2TrXB8UERQ"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -274,7 +264,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "HTTPError: Response code 403 (Forbidden)"
+            ]
         },
         {
             "issuer": {
@@ -7753,6 +7745,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -8359,9 +8359,9 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -8883,14 +8883,14 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 409 (Public access is not permitted on this storage account.)"
+                "HTTPError: Response code 409 (Conflict)"
             ]
         },
         {
@@ -9202,8 +9202,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -9464,7 +9464,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "4096",
                 "compression": "NONE"
@@ -9750,14 +9750,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -9866,7 +9858,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -11058,6 +11050,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -11313,7 +11313,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -11452,7 +11452,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -12323,7 +12323,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -12558,7 +12558,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -12667,6 +12667,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -13297,7 +13305,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -13985,7 +13993,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -14013,7 +14021,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -15139,6 +15147,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -15553,14 +15569,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -17141,11 +17149,19 @@
                 "name": "Food City",
                 "website": "https://www.foodcity.com/content/48/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "crv": "P-256",
+                    "x": "BawYE_RuWZmlsL3enKKLmC0UHRLWFQB1zWt-jhpyquw",
+                    "y": "DVb7WsAIl1p0cCA-XGov9ga7ZyjpUtzfyRAm1SR-qyI",
+                    "kid": "oQFm6GrUDhVeubMDMmq0CM6dimFpvkYwWApQtEhk1hI",
+                    "use": "sig",
+                    "alg": "ES256"
+                }
+            ],
             "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -17173,11 +17189,19 @@
                 "name": "Giant Eagle Pharmacy",
                 "website": "https://www.gianteagle.com/covidvaccine#electronic-record"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "crv": "P-256",
+                    "x": "-QUS_j6Ks7tTL1IyCmkKkHeI-IW55BgRD5JJ6NDKbL0",
+                    "y": "iz2BwmfltxYBrETZ70pkRWfdGbPCcynrMMgNEIZ02Pc",
+                    "kid": "fM26plwst5o5yrC_rN6FVUtlmMr7nT4eLtgLJ6IfBTE",
+                    "use": "sig",
+                    "alg": "ES256"
+                }
+            ],
             "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -17205,11 +17229,19 @@
                 "name": "Hartig Drug Co",
                 "website": "https://www.hartigdrug.com/covidvaccine"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "crv": "P-256",
+                    "x": "2DRkq2sHgzzLvLOx8kz_6LbihPoXWkGQbvajRgfeR0U",
+                    "y": "V1wBkYRvzUs83iOplhXjxBOJKl3C6dFPV0xbgCW0MQc",
+                    "kid": "85iFG1HeKPc-TFBQxy_U5eSDa3X_XUhDGRVp9h3eU_w",
+                    "use": "sig",
+                    "alg": "ES256"
+                }
+            ],
             "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -17217,11 +17249,19 @@
                 "name": "KMART PHARMACY",
                 "website": "https://pharmacy.kmart.com/newrx-immunization"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "crv": "P-256",
+                    "x": "vnz-riIGGnG5QXoN9hCRh7HiK0X-YWaduPOK82_qtq0",
+                    "y": "Aw6J9vSzG0w7UO6CaznTRvLndFnZ5RCjl3mK5H0497s",
+                    "kid": "U_C_KSRk6GRqOuT-tTTVid-zHxihv7fRdyuvNQPeBvM",
+                    "use": "sig",
+                    "alg": "ES256"
+                }
+            ],
             "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -17249,19 +17289,11 @@
                 "name": "Pharmaca",
                 "website": "https://www.pharmacarx.com/"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "crv": "P-256",
-                    "x": "5oc8ywImdTcDeJHk_x2A7XQaXHgpOpHqGO7cFRLl5yU",
-                    "y": "hX9Rs7g47Dn04eezx_5RUQQ42bnuCH15LvJPV_VoUy0",
-                    "kid": "3Dtn69t66RKUD8y06Dgig0TIoyh1V1T3cW9Bkex2uQk",
-                    "use": "sig",
-                    "alg": "ES256"
-                }
-            ],
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -17654,14 +17686,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -18510,14 +18534,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },

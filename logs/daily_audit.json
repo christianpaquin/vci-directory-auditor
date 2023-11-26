@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-11-25T12:28:49Z",
+    "auditTime": "2023-11-26T12:28:48Z",
     "issuerCount": 634,
     "issuersWithErrors": [
         {
@@ -79,6 +79,26 @@
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://mychart.uchealth.org",
+                "name": "UCHealth",
+                "website": "https://my.uchealth.com/myuchealth"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "4096",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 403 (Forbidden)"
             ]
         },
         {
@@ -272,14 +292,14 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 409 (Public access is not permitted on this storage account.)"
+                "HTTPError: Response code 409 (Conflict)"
             ]
         },
         {
@@ -464,7 +484,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -641,45 +661,9 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/food+city",
-                "name": "Food City",
-                "website": "https://www.foodcity.com/content/48/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
-                "name": "Giant Eagle Pharmacy",
-                "website": "https://www.gianteagle.com/covidvaccine#electronic-record"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
-                "name": "Hartig Drug Co",
-                "website": "https://www.hartigdrug.com/covidvaccine"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
-                "name": "KMART PHARMACY",
-                "website": "https://pharmacy.kmart.com/newrx-immunization"
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
+                "name": "Pharmaca",
+                "website": "https://www.pharmacarx.com/"
             },
             "keys": [],
             "crls": [],
@@ -959,44 +943,20 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-11-24T12:30:52Z",
+    "previousAuditTime": "2023-11-25T12:28:49Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://travel.hawaii.gov",
+            "iss": "https://mychart.uchealth.org",
             "kids": [
-                "Qxzp3u4Z6iafzbz-6oNnzobPG8HUr0Jry38M3nuV5A8"
+                "lJy0tb3fWq3xdiws7bCxz1goyxTu22xHc2TrXB8UERQ"
             ]
         },
         {
-            "iss": "https://epicproxy.ardenthealth.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
             "kids": [
-                "wuB7cm9AqlvPyAD6o8b5blCTGfeAG3dPn31scDbYM-8"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/food+city",
-            "kids": [
-                "oQFm6GrUDhVeubMDMmq0CM6dimFpvkYwWApQtEhk1hI"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/giant+eagle+pharmacy",
-            "kids": [
-                "fM26plwst5o5yrC_rN6FVUtlmMr7nT4eLtgLJ6IfBTE"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
-            "kids": [
-                "85iFG1HeKPc-TFBQxy_U5eSDa3X_XUhDGRVp9h3eU_w"
-            ]
-        },
-        {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
-            "kids": [
-                "U_C_KSRk6GRqOuT-tTTVid-zHxihv7fRdyuvNQPeBvM"
+                "3Dtn69t66RKUD8y06Dgig0TIoyh1V1T3cW9Bkex2uQk"
             ]
         }
     ]
