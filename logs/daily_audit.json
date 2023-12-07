@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2023-12-06T12:32:07Z",
+    "auditTime": "2023-12-07T12:32:08Z",
     "issuerCount": 634,
     "issuersWithErrors": [
         {
@@ -300,14 +300,14 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 409 (Public access is not permitted on this storage account.)"
+                "HTTPError: Response code 409 (Conflict)"
             ]
         },
         {
@@ -380,14 +380,6 @@
                 "website": "https://www.christushealth.org/"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
                 "HTTPError: Response code 503 (Service Unavailable)"
@@ -448,17 +440,7 @@
                 "name": "Cedars-Sinai Health System",
                 "website": "https://www.cedars-sinai.org/mycslink.html"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "crv": "P-256",
-                    "x": "7Rlsuv_eFpdNQToBT7Q4H5ChQMQ333Hmv7V-t6qBFCs",
-                    "y": "VjpJjYwehcCb8Hg_DJloA-X9A7r4rC8KNfgQ4SkmnJ8",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "kid": "KBBgSdgGdb2_Nqufjj09pcISTziLYhj9meR19MmKLDk"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
@@ -469,7 +451,7 @@
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
+                "HTTPError: Response code 404 (Not Found)"
             ]
         },
         {
@@ -492,7 +474,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -660,6 +642,30 @@
                 "canonical_iss": "https://rpsouth.catholichealth.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "CommonSpirit Health",
                 "website": "https://www.commonspirit.org/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
+                "name": "Pharmaca",
+                "website": "https://www.pharmacarx.com/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
+                "name": "Skripts",
+                "website": "https://www.skriptspharmacy.com/immunizations"
             },
             "keys": [],
             "crls": [],
@@ -883,8 +889,7 @@
         "0jzWwbsnyP2wrDPYMCe96n0DztcJBVZLNwAq0VghGG4",
         "bRi8F_YcgjcfiBFxyNv6zO1mUSomobp4APHA6uabYKw",
         "IVzjSimVvH8ZyQ3AJEjI8LXm5HfrdrDYuEmG0QcXzOI",
-        "afXT8j9iwJJ7IRP24ZUKPhbkga79MfqPreO2DlK0sLA",
-        "KBBgSdgGdb2_Nqufjj09pcISTziLYhj9meR19MmKLDk"
+        "afXT8j9iwJJ7IRP24ZUKPhbkga79MfqPreO2DlK0sLA"
     ],
     "duplicatedIss": [],
     "duplicatedNames": [
@@ -919,14 +924,26 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2023-12-05T12:31:53Z",
+    "previousAuditTime": "2023-12-06T12:32:07Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://epicproxy.et1058.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://www.cedars-sinai.org",
             "kids": [
-                "pDblG-nQwG009yiXj26Iu0mf18owsmMthrknKXcjKAw"
+                "KBBgSdgGdb2_Nqufjj09pcISTziLYhj9meR19MmKLDk"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
+            "kids": [
+                "3Dtn69t66RKUD8y06Dgig0TIoyh1V1T3cW9Bkex2uQk"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
+            "kids": [
+                "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM"
             ]
         }
     ]
