@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2024-01-15T12:32:18Z",
+    "auditTime": "2024-01-16T12:32:26Z",
     "issuerCount": 634,
     "issuersWithErrors": [
         {
@@ -151,6 +151,18 @@
             "crls": [],
             "errors": [
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apps.vdh.virginia.gov/credentials",
+                "name": "Virginia Department of Health",
+                "website": "https://vase.vdh.virginia.gov/vacapps/f?p=545:1"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "RequestError: connect ECONNREFUSED 166.67.194.228:443"
             ]
         },
         {
@@ -310,7 +322,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -709,9 +721,9 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
-                "name": "KMART PHARMACY",
-                "website": "https://pharmacy.kmart.com/newrx-immunization"
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
+                "name": "Hartig Drug Co",
+                "website": "https://www.hartigdrug.com/covidvaccine"
             },
             "keys": [],
             "crls": [],
@@ -721,9 +733,21 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
-                "name": "Skripts",
-                "website": "https://www.skriptspharmacy.com/immunizations"
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
+                "name": "Meijer",
+                "website": "https://clinic.meijer.com/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
+                "name": "Pharmaca",
+                "website": "https://www.pharmacarx.com/"
             },
             "keys": [],
             "crls": [],
@@ -747,14 +771,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
@@ -909,26 +925,6 @@
         },
         {
             "issuer": {
-                "iss": "https://epicrp-prd.eushc.org/OAUTH2-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Emory Healthcare",
-                "website": "https://www.emoryhealthcare.org"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 503 (Service Unavailable)"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://emed.com",
                 "name": "eMed",
                 "website": "https://www.emed.com/support"
@@ -975,26 +971,6 @@
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://www.mypruitthealth.com/api/api/Vaccination/shc",
-                "name": "PruittHealth",
-                "website": "https://www.pruitthealth.com/"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "RequestError: certificate has expired"
             ]
         }
     ],
@@ -1063,20 +1039,32 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2024-01-14T12:29:10Z",
+    "previousAuditTime": "2024-01-15T12:32:18Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/kmart+pharmacy",
+            "iss": "https://apps.vdh.virginia.gov/credentials",
             "kids": [
-                "U_C_KSRk6GRqOuT-tTTVid-zHxihv7fRdyuvNQPeBvM"
+                "sy5Q85VbiH4jNee-IpFkQvMxlVAhZ_poLMPLHiDF_8I"
             ]
         },
         {
-            "iss": "https://epicrp-prd.eushc.org/OAUTH2-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/hartig+drug+co",
             "kids": [
-                "2knCJErzIirepPhDkFlIHeLNXyVlh8msd7G-D-kxCmk"
+                "85iFG1HeKPc-TFBQxy_U5eSDa3X_XUhDGRVp9h3eU_w"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/meijer",
+            "kids": [
+                "cmm6eWwLYLwRtBU69V-_jsUxfpVtPgrZshDbf5X4Z9k"
+            ]
+        },
+        {
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
+            "kids": [
+                "3Dtn69t66RKUD8y06Dgig0TIoyh1V1T3cW9Bkex2uQk"
             ]
         }
     ]
