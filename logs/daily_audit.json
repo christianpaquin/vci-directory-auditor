@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2024-02-10T12:27:07Z",
+    "auditTime": "2024-02-11T12:26:35Z",
     "issuerCount": 634,
     "issuersWithErrors": [
         {
@@ -79,18 +79,6 @@
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://s.bilh.org/healthcard/issuer",
-                "name": "Beth Israel Lahey Health",
-                "website": "https://www.bilh.org/patient-portal"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -240,6 +228,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
@@ -334,26 +330,6 @@
         },
         {
             "issuer": {
-                "iss": "https://epicprod-mobile.parkview.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Parkview Health",
-                "website": "https://mychart.parkview.com/MyChart/"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 503 (Service Unavailable)"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epiclbsprxyprodpass.houstonmethodist.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Houston Methodist",
                 "website": "https://mychart.houstonmethodist.org/mychart-prod/"
@@ -380,6 +356,26 @@
             "crls": [],
             "errors": [
                 "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://webproxy.mynovant.org/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Novant Health",
+                "website": "https://www.novantmychart.org/mychart"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "4096",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -584,7 +580,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -725,26 +721,6 @@
         },
         {
             "issuer": {
-                "iss": "https://soapprod.multicare.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "MultiCare",
-                "website": "https://mychart.multicare.org/mymulticare"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "DHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "DH, 2048 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://api.vaulthealth.com/smart",
                 "name": "Vault Health",
                 "website": "https://www.vaulthealth.com/"
@@ -770,9 +746,9 @@
         },
         {
             "issuer": {
-                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/pharmaca",
-                "name": "Pharmaca",
-                "website": "https://www.pharmacarx.com/"
+                "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
+                "name": "Skripts",
+                "website": "https://www.skriptspharmacy.com/immunizations"
             },
             "keys": [],
             "crls": [],
@@ -1044,26 +1020,20 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2024-02-09T12:27:59Z",
+    "previousAuditTime": "2024-02-10T12:27:07Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://s.bilh.org/healthcard/issuer",
+            "iss": "https://webproxy.mynovant.org/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "Xsgwl-UeD61MtPj6wT4_6SasuHOdgGJ9oLVp2S5rTg0"
+                "LscjYTUMp733zsMu6D6tGCmvR7Rk4rTO7FV5w9r4e8E"
             ]
         },
         {
-            "iss": "https://epicprod-mobile.parkview.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/skripts",
             "kids": [
-                "xIrGFClJQVdfunSra9MznzB00uXFuHU28HMOXPoctrk"
-            ]
-        },
-        {
-            "iss": "https://soapprod.multicare.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "kNi-D9BUk1ZhU1HjMqAanP-_ZfkeUiyrTw6wa0cPP4o"
+                "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM"
             ]
         }
     ]

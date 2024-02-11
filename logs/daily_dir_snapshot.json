@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2024-02-10T12:27:07Z",
+    "time": "2024-02-11T12:26:35Z",
     "issuerInfo": [
         {
             "issuer": {
@@ -5467,14 +5467,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -5521,11 +5513,19 @@
                 "name": "Beth Israel Lahey Health",
                 "website": "https://www.bilh.org/patient-portal"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "use": "sig",
+                    "crv": "P-256",
+                    "kid": "Xsgwl-UeD61MtPj6wT4_6SasuHOdgGJ9oLVp2S5rTg0",
+                    "x": "HBdp5tF7PrXwUQS5_hEfWMi3FTDER3NNkMIgKzjo82k",
+                    "y": "jLuqUhw4t6qAJScteDHxBoJHrLBWFryseUStatPbeyM",
+                    "alg": "ES256"
+                }
+            ],
             "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -5546,7 +5546,7 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.3",
-                "cipher": "TLS_CHACHA20_POLY1305_SHA256",
+                "cipher": "TLS_AES_256_GCM_SHA384",
                 "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
@@ -6912,7 +6912,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -7565,14 +7565,6 @@
                     "alg": "ES256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -7761,6 +7753,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
@@ -8369,9 +8369,9 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -8695,7 +8695,7 @@
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
                 "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "RSA",
+                "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
@@ -8937,7 +8937,17 @@
                 "name": "Parkview Health",
                 "website": "https://mychart.parkview.com/MyChart/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "Rur_CZ5mkt7xbJgGFO5JARqWfigulmVLECY1AAUn2YQ",
+                    "y": "IROjlhGD-zKMe4YScE8SQhYlCwvl6Q1IJmd2_f_beAg",
+                    "kid": "xIrGFClJQVdfunSra9MznzB00uXFuHU28HMOXPoctrk",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -8947,9 +8957,7 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "HTTPError: Response code 503 (Service Unavailable)"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -9466,7 +9474,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "4096",
                 "compression": "NONE"
@@ -9752,14 +9760,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -11032,6 +11032,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -11315,7 +11323,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -11456,7 +11464,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -11770,17 +11778,7 @@
                 "name": "Novant Health",
                 "website": "https://www.novantmychart.org/mychart"
             },
-            "keys": [
-                {
-                    "x": "RwQD66A1lYQrXG8P9wyS1jY7N8EDGtjyd-Pr_OkDRFM",
-                    "y": "u_yR5xJqB6UIu4L2P8ivcs0y1G2GV2n2MJxNDtFrjIA",
-                    "kid": "LscjYTUMp733zsMu6D6tGCmvR7Rk4rTO7FV5w9r4e8E",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -11790,7 +11788,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -11978,10 +11978,10 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA-PSS",
+                "version": "TLSv1.2",
+                "cipher": "DHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "DH, 2048 bits",
+                "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
@@ -12336,7 +12336,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -12563,7 +12563,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -13057,7 +13057,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -14007,7 +14007,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -14035,7 +14035,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -15599,6 +15599,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -16234,8 +16242,8 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
                 "kexAlg": "ECDH, secp521r1, 521 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
@@ -16308,7 +16316,17 @@
                 "name": "MultiCare",
                 "website": "https://mychart.multicare.org/mymulticare"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "QJbHZjCywamTVhSHqI3O1BwoQRRRnYmsYwFbKsvV3rM",
+                    "y": "PE1dR1QA5m1Vk_G_IY3d5AYRsPgjVAUi9G5OP281GK0",
+                    "kid": "kNi-D9BUk1ZhU1HjMqAanP-_ZfkeUiyrTw6wa0cPP4o",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "DHE-RSA-AES256-GCM-SHA384",
@@ -16318,9 +16336,7 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -17311,11 +17327,19 @@
                 "name": "Pharmaca",
                 "website": "https://www.pharmacarx.com/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "crv": "P-256",
+                    "x": "5oc8ywImdTcDeJHk_x2A7XQaXHgpOpHqGO7cFRLl5yU",
+                    "y": "hX9Rs7g47Dn04eezx_5RUQQ42bnuCH15LvJPV_VoUy0",
+                    "kid": "3Dtn69t66RKUD8y06Dgig0TIoyh1V1T3cW9Bkex2uQk",
+                    "use": "sig",
+                    "alg": "ES256"
+                }
+            ],
             "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -17323,19 +17347,11 @@
                 "name": "Skripts",
                 "website": "https://www.skriptspharmacy.com/immunizations"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "crv": "P-256",
-                    "x": "4Oqpp8MbWLjn1vtNIQ4-t6phpguPubaNfpBW3P5SmaQ",
-                    "y": "FaRtKLd60fjiBQeBC0jaxcuP6kBSHsKmxcS4MSnSHug",
-                    "kid": "Rzl1pLWRH1SI-ybhG9EpVbUaKQNBF0Sv2jR6Vk3XiYM",
-                    "use": "sig",
-                    "alg": "ES256"
-                }
-            ],
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -17438,14 +17454,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -18564,14 +18572,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -20217,8 +20217,8 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
                 "kexAlg": "ECDH, secp521r1, 521 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
