@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2024-02-23T12:28:26Z",
+    "auditTime": "2024-02-24T12:26:20Z",
     "issuerCount": 633,
     "issuersWithErrors": [
         {
@@ -306,7 +306,17 @@
                 "name": "Houston Methodist",
                 "website": "https://mychart.houstonmethodist.org/mychart-prod/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "eVXPEAN8cSBXkLkDZjYummMTu6QVY2Yy85F2wCala40",
+                    "y": "2M7ZLV2U3wA-8GCV-0rzk9f6EVsjfwJJjRBmiu7g4hg",
+                    "kid": "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -317,7 +327,7 @@
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 500 (Internal Server Error)"
+                "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin"
             ]
         },
         {
@@ -615,6 +625,26 @@
         },
         {
             "issuer": {
+                "iss": "https://eiclbext.nmhs.net/interconnect-fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "North Mississippi Health Services",
+                "website": "https://www.myconnection.org/mychart"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-SHA",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 503 (Service Unavailable)"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://api.vaulthealth.com/smart",
                 "name": "Vault Health",
                 "website": "https://www.vaulthealth.com/"
@@ -798,14 +828,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
@@ -905,7 +927,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: Client network socket disconnected before secure TLS connection was established"
+                "RequestError: read ECONNRESET"
             ]
         },
         {
@@ -936,6 +958,26 @@
             "crls": [],
             "errors": [
                 "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://retailepicfhir-uat.cvshealth.com/FhirProxyTST/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "CVS Health",
+                "website": "https://care.cvs.com/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 503 (Service Unavailable)"
             ]
         },
         {
@@ -1053,14 +1095,20 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2024-02-22T12:28:23Z",
-    "newIssuerCount": 2,
-    "deletedIssuerCount": 3,
+    "previousAuditTime": "2024-02-23T12:28:26Z",
+    "newIssuerCount": 0,
+    "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://epiclbsprxyprodpass.houstonmethodist.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://eiclbext.nmhs.net/interconnect-fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4"
+                "k2MRYPPAREjXU9EsaiJyDhQIWmBOF3YhGtjdrmvWyz4"
+            ]
+        },
+        {
+            "iss": "https://retailepicfhir-uat.cvshealth.com/FhirProxyTST/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "R6-vROogzwE51ZIHxRl7tp8SSRoAfMcGeOoF_G2VGlo"
             ]
         }
     ]
