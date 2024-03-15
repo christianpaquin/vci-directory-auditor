@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2024-03-14T12:30:08Z",
+    "auditTime": "2024-03-15T12:28:36Z",
     "issuerCount": 633,
     "issuersWithErrors": [
         {
@@ -320,14 +320,14 @@
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 409 (Public access is not permitted on this storage account.)"
+                "HTTPError: Response code 409 (Conflict)"
             ]
         },
         {
@@ -532,7 +532,7 @@
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -838,6 +838,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
@@ -972,30 +980,9 @@
         },
         {
             "issuer": {
-                "iss": "https://memorialhealthfhirprd.app.medcity.net/fhir-proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "HCA National"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://stdavidsfhirprd.app.medcity.net/fhir-proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "HCA National"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://mountainstarhealthfhirprd.app.medcity.net/fhir-proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "HCA National"
+                "iss": "https://epicaccess.templehealth.org/FhirProxyPrd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Temple Health",
+                "website": "https://www.templehealth.org/"
             },
             "keys": [],
             "crls": [],
@@ -1118,26 +1105,14 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2024-03-13T12:29:26Z",
+    "previousAuditTime": "2024-03-14T12:30:08Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://memorialhealthfhirprd.app.medcity.net/fhir-proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://epicaccess.templehealth.org/FhirProxyPrd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "hhenlBjTHf2GM-UDt5jor8HWbWFBt4gM4W1sB22mHwo"
-            ]
-        },
-        {
-            "iss": "https://stdavidsfhirprd.app.medcity.net/fhir-proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "VsvOU5i9muXim8MpvCRrCYmVg7xkR6o5lmk-rI-H6iM"
-            ]
-        },
-        {
-            "iss": "https://mountainstarhealthfhirprd.app.medcity.net/fhir-proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "ykrKegqiOHXxxwWxbQZctLATYpcMn1pYT53TJNrxnk0"
+                "_a-kB8nWodnqIgCflOUDxUORfUD1aoUR6Bey8-mHyek"
             ]
         }
     ]
