@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2024-04-02T12:30:42Z",
+    "auditTime": "2024-04-03T12:29:40Z",
     "issuerCount": 633,
     "issuersWithErrors": [
         {
@@ -79,6 +79,18 @@
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://s.bilh.org/healthcard/issuer",
+                "name": "Beth Israel Lahey Health",
+                "website": "https://www.bilh.org/patient-portal"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -298,7 +310,7 @@
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -500,7 +512,7 @@
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -1053,39 +1065,6 @@
         },
         {
             "issuer": {
-                "iss": "https://memorialhealthfhirprd.app.medcity.net/fhir-proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "HCA National"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://stdavidsfhirprd.app.medcity.net/fhir-proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "HCA National"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://mountainstarhealthfhirprd.app.medcity.net/fhir-proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "HCA National"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://emed.com",
                 "name": "eMed",
                 "website": "https://www.emed.com/support"
@@ -1143,7 +1122,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140304555132800:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139629550974848:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         }
     ],
@@ -1211,14 +1190,14 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2024-04-01T12:31:58Z",
+    "previousAuditTime": "2024-04-02T12:30:42Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://epiclbsprxyprodpass.houstonmethodist.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://s.bilh.org/healthcard/issuer",
             "kids": [
-                "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4"
+                "Xsgwl-UeD61MtPj6wT4_6SasuHOdgGJ9oLVp2S5rTg0"
             ]
         }
     ]
