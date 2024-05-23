@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2024-05-22T12:33:17Z",
+    "auditTime": "2024-05-23T12:32:07Z",
     "issuerCount": 634,
     "issuersWithErrors": [
         {
@@ -193,6 +193,36 @@
         },
         {
             "issuer": {
+                "iss": "https://epic-p-foreground.centura.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Centura Health",
+                "website": "https://epic.mycenturahealth.org/MCH"
+            },
+            "keys": [
+                {
+                    "x": "6d7SxS1r53Mg1ZssKe3ynBRRC857rk1DIPurzo6fkAw",
+                    "y": "_mkhZbSpNjrpVjgMR8xYmTdcPIZ9Yi1NaGcrMpu207s",
+                    "kid": "wCHGZVtkE3-PTtQasc41UDVYhjdoizeDKvCndmAbw3o",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://ovc-api.optum.com/imm/ocm/issuer",
                 "name": "United Healthcare Services, Inc.",
                 "website": "https://www.uhc.com/sign-in"
@@ -209,28 +239,6 @@
             "crls": [],
             "errors": [
                 "RequestError: self signed certificate"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epic-rproxyprod.coh.org/Interconnect-FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "City of Hope",
-                "website": "https://www.mycityofhope.org/Mychart"
-            },
-            "keys": [
-                {
-                    "x": "r04UjbsubxTv6O6rrSYlnTUruTCTGyGCT6BwWWSk2v0",
-                    "y": "NP8-VmViY18YtwaybDZT1zo07XTkL7IrVlOCrfB-QcI",
-                    "kid": "_BD2QNwCaZlx_EHUYL_Q2CmG0Wl7X329LpIifdFKdjs",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "crls": [],
-            "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
             ]
         },
         {
@@ -430,6 +438,26 @@
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://geisapi.geisinger.edu/FHIR_PROD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Geisinger",
+                "website": "https://www.geisinger.org/mygeisinger"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -717,6 +745,18 @@
         },
         {
             "issuer": {
+                "iss": "https://rp.catholichealth.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "CommonSpirit Health",
+                "website": "https://www.commonspirit.org/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/big+y+foods+inc",
                 "name": "Big Y Foods Inc",
                 "website": "https://www.bigy.com/Pharmacy/covid19-vaccine-faq"
@@ -971,6 +1011,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
@@ -1038,7 +1086,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: Client network socket disconnected before secure TLS connection was established"
+                "RequestError: read ECONNRESET"
             ]
         },
         {
@@ -1069,6 +1117,18 @@
             "crls": [],
             "errors": [
                 "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://interconnect.azacp.com/interconnect-oauth2-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Arizona Community Physicians",
+                "website": "https://www.azacp.com/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 503 (Service Unavailable)"
             ]
         },
         {
@@ -1160,7 +1220,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140527634950016:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140291468941184:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         }
     ],
@@ -1228,8 +1288,27 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2024-05-21T12:32:31Z",
+    "previousAuditTime": "2024-05-22T12:33:17Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
-    "removedKids": []
+    "removedKids": [
+        {
+            "iss": "https://geisapi.geisinger.edu/FHIR_PROD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "Y8bKrcMW947XRkPl-LdWVdNvL20Iq5lMVAQ17BEj4d4"
+            ]
+        },
+        {
+            "iss": "https://rp.catholichealth.net/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "S1Jwo6u3CruACCe8P-l-97WhmNC3TGgp3LKvq4ry5vo"
+            ]
+        },
+        {
+            "iss": "https://interconnect.azacp.com/interconnect-oauth2-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "ggBXefAONrttYisHELbcrv6YKWXsSDLZA02rA_6KCMs"
+            ]
+        }
+    ]
 }
