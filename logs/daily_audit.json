@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2024-07-03T12:34:42Z",
+    "auditTime": "2024-07-04T12:33:59Z",
     "issuerCount": 634,
     "issuersWithErrors": [
         {
@@ -344,17 +344,7 @@
                 "name": "Houston Methodist",
                 "website": "https://mychart.houstonmethodist.org/mychart-prod/"
             },
-            "keys": [
-                {
-                    "x": "eVXPEAN8cSBXkLkDZjYummMTu6QVY2Yy85F2wCala40",
-                    "y": "2M7ZLV2U3wA-8GCV-0rzk9f6EVsjfwJJjRBmiu7g4hg",
-                    "kid": "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -365,7 +355,7 @@
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin"
+                "HTTPError: Response code 500 (Internal Server Error)"
             ]
         },
         {
@@ -1094,7 +1084,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: read ECONNRESET"
+                "RequestError: Client network socket disconnected before secure TLS connection was established"
             ]
         },
         {
@@ -1216,19 +1206,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139765746255744:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://immunize.nyc/shc/mvr",
-                "name": "New York City - Citywide Immunization Registry (CIR)",
-                "website": "https://myvaccinerecord.cityofnewyork.us/myrecord/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "RequestError: write EPROTO 140221541373824:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         }
     ],
@@ -1296,15 +1274,14 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2024-07-02T12:32:52Z",
+    "previousAuditTime": "2024-07-03T12:34:42Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://immunize.nyc/shc/mvr",
+            "iss": "https://epiclbsprxyprodpass.houstonmethodist.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "gNbWIX0XIlp8ucum_CkAdNeLqVvVuVmqYWUcYPE3m0A",
-                "lAAXKRJHkpSpHk8IV1cryAtJA0ET7eTzNScUE7j_tEM"
+                "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4"
             ]
         }
     ]
