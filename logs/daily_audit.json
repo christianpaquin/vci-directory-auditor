@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2024-09-06T12:36:55Z",
+    "auditTime": "2024-09-07T12:34:16Z",
     "issuerCount": 634,
     "issuersWithErrors": [
         {
@@ -193,6 +193,26 @@
         },
         {
             "issuer": {
+                "iss": "https://webservices.hawaiipacifichealth.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Hawaii Pacific Health",
+                "website": "https://mychart.hawaiipacifichealth.org/web"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 404 (Not Found)"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://www.riteaid.com",
                 "name": "Rite Aid Pharmacy",
                 "website": "https://www.riteaid.com/pharmacy/vaccination-digital-proof"
@@ -289,6 +309,26 @@
         },
         {
             "issuer": {
+                "iss": "https://EpicIntprxyPRD.swmed.edu/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "University of Texas Southwestern Medical Center",
+                "website": "https://www.utsouthwestern.edu/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "4096",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 401 (Unauthorized)"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://reports.bioreference.com/fhir",
                 "name": "BioReference Laboratories",
                 "website": "https://www.bioreference.com/patient-portal"
@@ -304,7 +344,7 @@
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 403 (Ip Forbidden)"
+                "RequestError: certificate has expired"
             ]
         },
         {
@@ -487,7 +527,7 @@
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 500 (Internal Server Error)"
+                "HTTPError: Response code 401 (Unauthorized)"
             ]
         },
         {
@@ -720,7 +760,7 @@
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 403 (Forbidden)"
+                "HTTPError: Response code 404 (Not Found)"
             ]
         },
         {
@@ -756,6 +796,25 @@
             "crls": [],
             "errors": [
                 "Issuer key endpoint's CORS 'access-control-allow-origin' header *, origin-list does not match the requested origin"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicproxy.ardenthealth.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Ardent sm Affiliates and Community Connect Practices"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "4096",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 401 (Unauthorized)"
             ]
         },
         {
@@ -1397,7 +1456,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140210233128832:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140255307630464:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         }
     ],
@@ -1465,14 +1524,26 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2024-09-05T12:38:06Z",
+    "previousAuditTime": "2024-09-06T12:36:55Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://fhir.hurleymc.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://webservices.hawaiipacifichealth.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "afuyuVS8pziO1xq0DfZ9NYDzSy5dyyHw3LK-r1idZSg"
+                "tH7Y4mCBsxlPy0k60DzkkLaQ_2IHKgCDBhGwlYHi2Ok"
+            ]
+        },
+        {
+            "iss": "https://EpicIntprxyPRD.swmed.edu/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "X0n3H1Zf0Q0EKrY1ehuLMmuJ0ysWnkXPXNty_4_fl-U"
+            ]
+        },
+        {
+            "iss": "https://epicproxy.ardenthealth.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "wuB7cm9AqlvPyAD6o8b5blCTGfeAG3dPn31scDbYM-8"
             ]
         }
     ]
