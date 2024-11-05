@@ -22,7 +22,7 @@ jobs:
       - name: verify log sig
         run: |
            openssl dgst -sha512 -verify  <(openssl x509 -in vci_snapshot.crt  -pubkey -noout) -signature logs/vci_snapshot.sig logs/daily_dir_snapshot.json
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           name: save-sig-file
           path: logs/vci_snapshot.sig
