@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2024-11-06T12:39:38Z",
+    "auditTime": "2024-11-07T12:38:29Z",
     "issuerCount": 635,
     "issuersWithErrors": [
         {
@@ -198,18 +198,6 @@
             "crls": [],
             "errors": [
                 "HTTPError: Response code 403 (Forbidden)"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Baptist Health",
-                "website": "https://mychart.baptist-health.org/mychart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -442,7 +430,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140694887970688:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139745796605824:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -452,14 +440,6 @@
                 "website": "https://www.gov.nl.ca/covid-19/life-during-covid-19/vaccination-record/citizens/"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
                 "HTTPError: Response code 500 (Internal Server Error)"
@@ -566,7 +546,7 @@
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 503 (Service Unavailable)"
+                "RequestError: read ECONNRESET"
             ]
         },
         {
@@ -1423,7 +1403,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140694887970688:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139745796605824:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         }
     ],
@@ -1491,66 +1471,8 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2024-09-08T12:35:05Z",
-    "newIssuerCount": 1,
+    "previousAuditTime": "2024-11-06T12:39:38Z",
+    "newIssuerCount": 0,
     "deletedIssuerCount": 0,
-    "removedKids": [
-        {
-            "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "2Y6IshBllIuZBWuUMPeefWvqSHynjSDrmXHpOKo9JnU"
-            ]
-        },
-        {
-            "iss": "https://epiclbsprxyprodpass.houstonmethodist.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4"
-            ]
-        },
-        {
-            "iss": "https://sclprdproxy.sclhs.net/FHIRPRD-2017/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "KBah6YdfLp3Y4ckJnLjRRUJIhnHRtzIFkJhAscuWzJY"
-            ]
-        },
-        {
-            "iss": "https://fhir.mah.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "-MhcwalYrsFlCdSkM02QaT-av4I8YgZAavGw5R4VGdw"
-            ]
-        },
-        {
-            "iss": "https://s3.us-east-2.amazonaws.com/shc.vaccine.cookcountyil.gov",
-            "kids": [
-                "AUS1FwINnQiHFkT1S0NIoReaxz6CAoEoOIg7QpwuKhE",
-                "D0VRkhXEq80D7sfWeqDfJ0E4QbKhJPc8v0UlWV1Ef7U",
-                "uY3K-Hn_UKOQJM2S_6jZYa3ZpZWGrwAJGPrMWuQrD8Q",
-                "iy4q5Hxj7Gx5ambJY4mdLrIhgG6R_4vEX5lCmW1Tl-Q",
-                "EgULK0aHMEYrZGejnLP2s3LpDIhzdF9GmO15hrqtP2s",
-                "MeB5Xl54rMTHgfAblHFhJR-WZ95McrrtnbgbnlBE1mA",
-                "FiQcwskJsU4jKq50IORlrplJe6Cj9EyfsWldvzNGHkM",
-                "_EKTZCsgEqwR1R3oVaib1O9_R0KWehcROkU1aA883OE",
-                "YwCqpnQduymRrY9cvCVY9JR2AUS3WvvDOo0iWLRdwO8"
-            ]
-        },
-        {
-            "iss": "https://epicproxy.bhsala.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "JYaFsJ6ltkJVsolJUds8mxxMQLfYR6RrfoMR_U-mdPE"
-            ]
-        },
-        {
-            "iss": "https://external.fastmed.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "zWvWe-FEE5LXNs8BHbL3cMpu9vqvMz5yla9M9rFUjyY"
-            ]
-        },
-        {
-            "iss": "https://api.kroger.com/healthwellness/v1/smartcard",
-            "kids": [
-                "6D-6sCTvV2W7km7l-QOr-y5nj_me_ftIpclsxHBmvDE",
-                "kSkuBfLcOxfDGo8ZGzJh0GO3SP3wT6uT8ya62NMuYGk"
-            ]
-        }
-    ]
+    "removedKids": []
 }
