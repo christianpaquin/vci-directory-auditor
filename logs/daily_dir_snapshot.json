@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2024-11-10T12:35:31Z",
+    "time": "2024-11-11T12:39:42Z",
     "issuerInfo": [
         {
             "issuer": {
@@ -6687,8 +6687,8 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
                 "kexAlg": "ECDH, secp521r1, 521 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
@@ -6857,7 +6857,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -8042,8 +8042,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "DHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "DH, 2048 bits",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -8312,9 +8312,9 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -11313,9 +11313,9 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -11416,7 +11416,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139829617088384:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139631031265152:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -15740,50 +15740,7 @@
                 "name": "Government of Japan",
                 "website": "https://www.mhlw.go.jp/stf/covid-19/certificate.html"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "kid": "f1vhQP9oOZkityrguynQqB4aVh8u9xcf3wm4AFF4aVw",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "x5c": [
-                        "MIIByjCCAXGgAwIBAgIJAPZFN9WW4voaMAoGCCqGSM49BAMDMCIxIDAeBgNVBAMMF3ZjLnZycy5kaWdpdGFsLmdvLmpwIENBMB4XDTIxMTEyNTEyNTUxNloXDTIyMTEyNTEyNTUxNlowJjEkMCIGA1UEAwwbdmMudnJzLmRpZ2l0YWwuZ28uanAgSXNzdWVyMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEViKBgZ0f3pQKv+tSz653HUtIzCS8TVSNu1Hwi0tKpSnTXXvtqkpcfYeAZ+SfvVk8SWNaTRDZ9wTNjb9c58v9l6OBizCBiDAJBgNVHRMEAjAAMAsGA1UdDwQEAwIHgDAdBgNVHQ4EFgQUiIXKUyT93YdyqsIjE8i5I1z8w0IwHwYDVR0jBBgwFoAU0cYt0sPpuIDBt7a9PD3qs9mOu7EwLgYDVR0RBCcwJYYjaHR0cHM6Ly92Yy52cnMuZGlnaXRhbC5nby5qcC9pc3N1ZXIwCgYIKoZIzj0EAwMDRwAwRAIgEwVdLdbPqMYqEsVltnsm3bI/Z6eibgMwYaNVZiu0r2sCIFebHk1i6ghWOQn+Q0+t5F77fasgJ3Oc6NWx9I8AWjRM",
-                        "MIIBkDCCATagAwIBAgIJAOECTZDa4MA7MAoGCCqGSM49BAMEMCcxJTAjBgNVBAMMHHZjLnZycy5kaWdpdGFsLmdvLmpwIFJvb3QgQ0EwHhcNMjExMTI1MTI1NTEzWhcNMjYxMTI0MTI1NTEzWjAiMSAwHgYDVQQDDBd2Yy52cnMuZGlnaXRhbC5nby5qcCBDQTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABEL3S0yNIJ8EuxgiaHEvsjGWd60P0BBKUfVUVSxpVyGsnXwuzkS7OPGG/DT60m5XTvKT125MRuZoS/sajPBcg2KjUDBOMAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFNHGLdLD6biAwbe2vTw96rPZjruxMB8GA1UdIwQYMBaAFPKN8VogQyX0IuxEi7jBB5gUnFinMAoGCCqGSM49BAMEA0gAMEUCIQCcq3H/pRMRkUmpWUDsggQXJAjLB/AutlHQigEBsVx0sgIgfVyc0L1cbRaDmdCQ3CGd994rRuwlQI0/cJCIv5LeI3g=",
-                        "MIIBlTCCATugAwIBAgIJANt2MZrWChe2MAoGCCqGSM49BAMEMCcxJTAjBgNVBAMMHHZjLnZycy5kaWdpdGFsLmdvLmpwIFJvb3QgQ0EwHhcNMjExMTI1MTI1NDUzWhcNMzExMTIzMTI1NDUzWjAnMSUwIwYDVQQDDBx2Yy52cnMuZGlnaXRhbC5nby5qcCBSb290IENBMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEilfgw+JIG8TOliOLe7jufm2m0+HqL4t5nvBdQj3UMgh8jjl6VoVKKwcj3T1DWFinm6sCTWYUrPSXWcvOq64GbKNQME4wDAYDVR0TBAUwAwEB/zAdBgNVHQ4EFgQU8o3xWiBDJfQi7ESLuMEHmBScWKcwHwYDVR0jBBgwFoAU8o3xWiBDJfQi7ESLuMEHmBScWKcwCgYIKoZIzj0EAwQDSAAwRQIgQWnKyVhaKpu1WcXP49s9inaa5mnWgV/pCW31h/NIJnwCIQDSIHvGUuPwK+ofYqLJGo99hhwhfkIBWhvSo0vr5IGesg=="
-                    ],
-                    "crv": "P-256",
-                    "x": "ViKBgZ0f3pQKv-tSz653HUtIzCS8TVSNu1Hwi0tKpSk",
-                    "y": "01177apKXH2HgGfkn71ZPEljWk0Q2fcEzY2_XOfL_Zc"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "5fGcRveDtGxLX2q_CjXLUOITyAR5KuVNsfe9TkjE86k",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "x5c": [
-                        "MIIByzCCAXGgAwIBAgIJAPZFN9WW4vocMAoGCCqGSM49BAMDMCIxIDAeBgNVBAMMF3ZjLnZycy5kaWdpdGFsLmdvLmpwIENBMB4XDTIyMTAwNjA2MzU1M1oXDTIzMTIzMTA2MzU1M1owJjEkMCIGA1UEAwwbdmMudnJzLmRpZ2l0YWwuZ28uanAgSXNzdWVyMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEMFzLPQDWyrJgioCAc3Agake1GNt7SPulfbOydJG2I7jTpjzc5c2PVXmYiAFQYGkyuwm+TjSegAC7zorVotXtSqOBizCBiDAJBgNVHRMEAjAAMAsGA1UdDwQEAwIHgDAdBgNVHQ4EFgQU9K/DJIIekbNV+TBatIPYPgHLo84wHwYDVR0jBBgwFoAU0cYt0sPpuIDBt7a9PD3qs9mOu7EwLgYDVR0RBCcwJYYjaHR0cHM6Ly92Yy52cnMuZGlnaXRhbC5nby5qcC9pc3N1ZXIwCgYIKoZIzj0EAwMDSAAwRQIgDDOnvuHUa7s6o+EKLfqQw8wr6MhWoA0QhiduFA652dYCIQCb7Bfr/lIQc/VhpQcLUd7hloqChXm0m3tsgXYEogLxMw==",
-                        "MIIBkDCCATagAwIBAgIJAOECTZDa4MA7MAoGCCqGSM49BAMEMCcxJTAjBgNVBAMMHHZjLnZycy5kaWdpdGFsLmdvLmpwIFJvb3QgQ0EwHhcNMjExMTI1MTI1NTEzWhcNMjYxMTI0MTI1NTEzWjAiMSAwHgYDVQQDDBd2Yy52cnMuZGlnaXRhbC5nby5qcCBDQTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABEL3S0yNIJ8EuxgiaHEvsjGWd60P0BBKUfVUVSxpVyGsnXwuzkS7OPGG/DT60m5XTvKT125MRuZoS/sajPBcg2KjUDBOMAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFNHGLdLD6biAwbe2vTw96rPZjruxMB8GA1UdIwQYMBaAFPKN8VogQyX0IuxEi7jBB5gUnFinMAoGCCqGSM49BAMEA0gAMEUCIQCcq3H/pRMRkUmpWUDsggQXJAjLB/AutlHQigEBsVx0sgIgfVyc0L1cbRaDmdCQ3CGd994rRuwlQI0/cJCIv5LeI3g=",
-                        "MIIBlTCCATugAwIBAgIJANt2MZrWChe2MAoGCCqGSM49BAMEMCcxJTAjBgNVBAMMHHZjLnZycy5kaWdpdGFsLmdvLmpwIFJvb3QgQ0EwHhcNMjExMTI1MTI1NDUzWhcNMzExMTIzMTI1NDUzWjAnMSUwIwYDVQQDDBx2Yy52cnMuZGlnaXRhbC5nby5qcCBSb290IENBMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEilfgw+JIG8TOliOLe7jufm2m0+HqL4t5nvBdQj3UMgh8jjl6VoVKKwcj3T1DWFinm6sCTWYUrPSXWcvOq64GbKNQME4wDAYDVR0TBAUwAwEB/zAdBgNVHQ4EFgQU8o3xWiBDJfQi7ESLuMEHmBScWKcwHwYDVR0jBBgwFoAU8o3xWiBDJfQi7ESLuMEHmBScWKcwCgYIKoZIzj0EAwQDSAAwRQIgQWnKyVhaKpu1WcXP49s9inaa5mnWgV/pCW31h/NIJnwCIQDSIHvGUuPwK+ofYqLJGo99hhwhfkIBWhvSo0vr5IGesg=="
-                    ],
-                    "crv": "P-256",
-                    "x": "MFzLPQDWyrJgioCAc3Agake1GNt7SPulfbOydJG2I7g",
-                    "y": "06Y83OXNj1V5mIgBUGBpMrsJvk40noAAu86K1aLV7Uo"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "zAa3HKmmj-gAlTasE5Wc_7PAvY9hR_8La5XVr60E41w",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "x5c": [
-                        "MIIByzCCAXGgAwIBAgIJAPZFN9WW4vofMAoGCCqGSM49BAMDMCIxIDAeBgNVBAMMF3ZjLnZycy5kaWdpdGFsLmdvLmpwIENBMB4XDTIzMTEwNzA2MzUwMFoXDTI0MTIzMTA2MzUwMFowJjEkMCIGA1UEAwwbdmMudnJzLmRpZ2l0YWwuZ28uanAgSXNzdWVyMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEdRi8CdaGq2Yn9CrHJzJgv59grO2thSOBFaMeLMYnWM4Gz7PNrNjgx8pNY78PjF/3eU2LEl6rNvlEuLJv5iYRV6OBizCBiDAJBgNVHRMEAjAAMAsGA1UdDwQEAwIHgDAdBgNVHQ4EFgQUwA4eU4ozIAqLGDyVKtGZjXJBDGMwHwYDVR0jBBgwFoAU0cYt0sPpuIDBt7a9PD3qs9mOu7EwLgYDVR0RBCcwJYYjaHR0cHM6Ly92Yy52cnMuZGlnaXRhbC5nby5qcC9pc3N1ZXIwCgYIKoZIzj0EAwMDSAAwRQIhAMvpfC3vq89W37RsQbKmyDgGpdzgcD9Z2buZjNa0zeyTAiBtMIO0j+rQ4C4B9aIgNwgAa6xt3LJg1XjI/FT/6KTOdA==",
-                        "MIIBkDCCATagAwIBAgIJAOECTZDa4MA7MAoGCCqGSM49BAMEMCcxJTAjBgNVBAMMHHZjLnZycy5kaWdpdGFsLmdvLmpwIFJvb3QgQ0EwHhcNMjExMTI1MTI1NTEzWhcNMjYxMTI0MTI1NTEzWjAiMSAwHgYDVQQDDBd2Yy52cnMuZGlnaXRhbC5nby5qcCBDQTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABEL3S0yNIJ8EuxgiaHEvsjGWd60P0BBKUfVUVSxpVyGsnXwuzkS7OPGG/DT60m5XTvKT125MRuZoS/sajPBcg2KjUDBOMAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFNHGLdLD6biAwbe2vTw96rPZjruxMB8GA1UdIwQYMBaAFPKN8VogQyX0IuxEi7jBB5gUnFinMAoGCCqGSM49BAMEA0gAMEUCIQCcq3H/pRMRkUmpWUDsggQXJAjLB/AutlHQigEBsVx0sgIgfVyc0L1cbRaDmdCQ3CGd994rRuwlQI0/cJCIv5LeI3g=",
-                        "MIIBlTCCATugAwIBAgIJANt2MZrWChe2MAoGCCqGSM49BAMEMCcxJTAjBgNVBAMMHHZjLnZycy5kaWdpdGFsLmdvLmpwIFJvb3QgQ0EwHhcNMjExMTI1MTI1NDUzWhcNMzExMTIzMTI1NDUzWjAnMSUwIwYDVQQDDBx2Yy52cnMuZGlnaXRhbC5nby5qcCBSb290IENBMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEilfgw+JIG8TOliOLe7jufm2m0+HqL4t5nvBdQj3UMgh8jjl6VoVKKwcj3T1DWFinm6sCTWYUrPSXWcvOq64GbKNQME4wDAYDVR0TBAUwAwEB/zAdBgNVHQ4EFgQU8o3xWiBDJfQi7ESLuMEHmBScWKcwHwYDVR0jBBgwFoAU8o3xWiBDJfQi7ESLuMEHmBScWKcwCgYIKoZIzj0EAwQDSAAwRQIgQWnKyVhaKpu1WcXP49s9inaa5mnWgV/pCW31h/NIJnwCIQDSIHvGUuPwK+ofYqLJGo99hhwhfkIBWhvSo0vr5IGesg=="
-                    ],
-                    "crv": "P-256",
-                    "x": "dRi8CdaGq2Yn9CrHJzJgv59grO2thSOBFaMeLMYnWM4",
-                    "y": "Bs-zzazY4MfKTWO_D4xf93lNixJeqzb5RLiyb-YmEVc"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_128_GCM_SHA256",
@@ -15793,7 +15750,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "RequestError: Hostname/IP does not match certificate's altnames: Host: vc.vrs.digital.go.jp. is not in the cert's altnames: DNS:cloudfront.net, DNS:*.cloudfront.net"
+            ]
         },
         {
             "issuer": {
@@ -19515,7 +19474,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139829617088384:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139631031265152:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
