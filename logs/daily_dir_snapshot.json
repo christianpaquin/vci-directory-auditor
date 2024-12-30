@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2024-12-29T12:36:27Z",
+    "time": "2024-12-30T12:39:39Z",
     "issuerInfo": [
         {
             "issuer": {
@@ -5476,6 +5476,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -8052,8 +8060,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "DHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "DH, 2048 bits",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -11418,7 +11426,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140700036261760:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140574014351232:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -13124,7 +13132,7 @@
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 403 (Forbidden)"
+                "HTTPError: Response code 404 (Not Found)"
             ]
         },
         {
@@ -13647,22 +13655,7 @@
                 "name": "The State of Rhode Island",
                 "website": "https://covid.ri.gov/covid-19-prevention/401health-app"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "kid": "4miDO1rSeIyIF8xRD_oJHpy-6oDzh8plSSmTNeDDBSg",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "x5c": [
-                        "MIICBDCCAYmgAwIBAgIUEdBEW1MXXCvKpvzaqLLL1b/eGpEwCgYIKoZIzj0EAwMwIzEhMB8GA1UEAwwYU01BUlRIZWFsdGhDYXJkRXhhbXBsZUNBMB4XDTIxMTExNzIxMzk0OVoXDTIyMTExNzIxMzk0OVowJzElMCMGA1UEAwwcU01BUlRIZWFsdGhDYXJkRXhhbXBsZUlzc3VlcjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABLrKjBk1yC8FWMa8SE+ci7+8EN+9aft+u7kIg2c2DsF3Ew+er8BHFMXmlaadweyV55oH9wdHKbzFP0MRSM5FgdOjgZYwgZMwCQYDVR0TBAIwADALBgNVHQ8EBAMCB4AwOQYDVR0RBDIwMIYuaHR0cHM6Ly9zcGVjLnNtYXJ0aGVhbHRoLmNhcmRzL2V4YW1wbGVzL2lzc3VlcjAdBgNVHQ4EFgQUCWanP6/afYevoJDMshPNb3lXIfEwHwYDVR0jBBgwFoAUUGyJW6zgK8oBbuXHlxvW4pqzOMYwCgYIKoZIzj0EAwMDaQAwZgIxALc/cA+IuS0irUD/x8FF4xvfjy2WMpaZupPn9EPxHTssrREzNZzpwHH/6MzgxtilTQIxAPk+H5cUfuG8vyPZiunx06PwJ/vz0XuGAeYE+k8Wxu5KXuttgvSeYUNLoS678OaH1Q==",
-                        "MIIB/TCCAV+gAwIBAgIUSTOkc1QHC+jwmi3+1STv5JqSci8wCgYIKoZIzj0EAwQwJzElMCMGA1UEAwwcU01BUlRIZWFsdGhDYXJkRXhhbXBsZVJvb3RDQTAeFw0yMTExMTcyMTM5NDlaFw0yNjExMTYyMTM5NDlaMCMxITAfBgNVBAMMGFNNQVJUSGVhbHRoQ2FyZEV4YW1wbGVDQTB2MBAGByqGSM49AgEGBSuBBAAiA2IABJ+x7VdHhBHv60+l4agblnhgkL0SfSrYm93oepPNKZB9kYg/qLs1V4NyHDWXJPQvxbTFu/L/gMnfTP7cYbd5hqquxZtXSFdYgY3n7osHFLyGL5yOnGAb0VBx0JyHCc7rkqNQME4wDAYDVR0TBAUwAwEB/zAdBgNVHQ4EFgQUUGyJW6zgK8oBbuXHlxvW4pqzOMYwHwYDVR0jBBgwFoAUGW7h56vbq38t5WvheXE40E58tugwCgYIKoZIzj0EAwQDgYsAMIGHAkIBuRNr/EQ0rnWRzJCeHacKHLASfoOFd6fY4L/aHMBoMIw9jZCcmWKaVU4dI1wx6Q+M4S2YLHa5XU1ICtGH5eB6xJgCQWcWq7EVjvCaDmCIq0JQNlN8c+hvRc7uNnODv9Dg2PfYfsrFbhl/lwfjPiv7OY8Rh4DhyOcbCj3UWP0OmkND9AJx",
-                        "MIICJzCCAYmgAwIBAgIUXD4KN+St8TZGhCV9dK5KCbbuSM4wCgYIKoZIzj0EAwQwJzElMCMGA1UEAwwcU01BUlRIZWFsdGhDYXJkRXhhbXBsZVJvb3RDQTAeFw0yMTExMTcyMTM5NDlaFw0zMTExMTUyMTM5NDlaMCcxJTAjBgNVBAMMHFNNQVJUSGVhbHRoQ2FyZEV4YW1wbGVSb290Q0EwgZswEAYHKoZIzj0CAQYFK4EEACMDgYYABAGVb1zOKLCbiDY69cYLpFEzWWbx4a28c2aeQVM4ysjAZ0NBq9pxvudxOX2B/07O4OWWHciaCy5CidBA9NrE10WlywDKm7PBEUUPJPL7e7zY7mlgu4S5pgFIAxAcGHdthGLKawbadaK664RSL7z/Wr8UwNYN9pzZEN1vAqVaXdbIGM5zGKNQME4wDAYDVR0TBAUwAwEB/zAdBgNVHQ4EFgQUGW7h56vbq38t5WvheXE40E58tugwHwYDVR0jBBgwFoAUGW7h56vbq38t5WvheXE40E58tugwCgYIKoZIzj0EAwQDgYsAMIGHAkFpEhA4Z+zjAgJ42+aq8gsJQLoR9X6pB0VZ7pk6Gsn/3tkcsGnpnqeAhxBZ69qMJ1I5dnu/MrI+TAZuW6vSb3p9HwJCALT46K1ZSBmTy4iX6+PeCAVfTBzZTQ/agm7MiM1QOU/+NeywC+CWw7cKBqLKv+lXPedXNfzp9lsmUX15dQ9mpFxe"
-                    ],
-                    "crv": "P-256",
-                    "x": "usqMGTXILwVYxrxIT5yLv7wQ371p-367uQiDZzYOwXc",
-                    "y": "Ew-er8BHFMXmlaadweyV55oH9wdHKbzFP0MRSM5FgdM"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
@@ -13673,7 +13666,7 @@
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint's CORS 'access-control-allow-origin' header *, origin-list does not match the requested origin"
+                "RequestError: certificate has expired"
             ]
         },
         {
@@ -18258,7 +18251,7 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
                 "kexAlg": "ECDH, secp521r1, 521 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
@@ -19478,7 +19471,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140700036261760:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140574014351232:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
