@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2025-02-04T12:39:32Z",
+    "time": "2025-02-05T12:39:43Z",
     "issuerInfo": [
         {
             "issuer": {
@@ -6797,17 +6797,7 @@
                 "name": "Baptist Memorial Health Care",
                 "website": "https://mychart.baptistonecare.org/prd/"
             },
-            "keys": [
-                {
-                    "x": "2GZdaQDFH-ZKWuZDKstHINvzAYnlYX-z3Kd_nWRtbdY",
-                    "y": "l4Z-gC_mSkS6BE5QdMKL0RQPJJnSW12qMgTikWpDhLY",
-                    "kid": "6DSzdcfY2mk5IwLt85m2FZUufO42M0RaQeltkgsN8HU",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -6817,7 +6807,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "HTTPError: Response code 520 (undefined)"
+            ]
         },
         {
             "issuer": {
@@ -7577,7 +7569,17 @@
                 "name": "WellSpan Health",
                 "website": "https://my.wellspan.org/MyWellSpan"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "3tVddKTnQVQCLJX7Gue1EEZhaLXmrBrHRULMbmMDX_I",
+                    "y": "u8A_Vva-DKw1Yy02-LPt6DNi81xoTEFA5LbXI-NpWuk",
+                    "kid": "2CTIFrq4etN7ahQYM9VVQBH2JaHZvaqt6jvfl3CbMGo",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -7587,9 +7589,7 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "HTTPError: Response code 404 (Not Found)"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -11289,9 +11289,9 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -11392,7 +11392,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140522084395968:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139942207740864:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -16794,6 +16794,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -19370,7 +19378,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140522084395968:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139942207740864:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
