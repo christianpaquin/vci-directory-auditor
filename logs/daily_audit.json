@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2025-02-06T12:40:05Z",
+    "auditTime": "2025-02-07T12:38:48Z",
     "issuerCount": 635,
     "issuersWithErrors": [
         {
@@ -248,6 +248,18 @@
             "crls": [],
             "errors": [
                 "HTTPError: Response code 403 (Forbidden)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicproxy.uvmhealth.org/FHIR-ARR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "The University of Vermont Medical Center",
+                "website": "https://mychart.uvmhealth.org/MyChart/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "RequestError: connect ECONNREFUSED 12.152.228.119:443"
             ]
         },
         {
@@ -500,7 +512,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140557882973120:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139703004306368:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -1224,18 +1236,9 @@
                 "name": "Treat"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_128_GCM_SHA256",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
-                "SyntaxError: Unexpected token < in JSON at position 0"
+                "RequestError: read ECONNRESET"
             ]
         },
         {
@@ -1339,28 +1342,10 @@
                 "name": "FastMed",
                 "website": "https://www.fastmed.com/"
             },
-            "keys": [
-                {
-                    "x": "lrBei6Cngws2-nxry_X05OchwzsgACklqBg5GbvRmL8",
-                    "y": "814BG0Nk5cIzqc2rQeIUM-8vjgSlG_6Z84YezNQyAvQ",
-                    "kid": "zWvWe-FEE5LXNs8BHbL3cMpu9vqvMz5yla9M9rFUjyY",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_CHACHA20_POLY1305_SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
             "errors": [
-                "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin"
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -1484,7 +1469,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140557882973120:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139703004306368:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         }
     ],
@@ -1552,8 +1537,21 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2025-02-05T12:39:43Z",
+    "previousAuditTime": "2025-02-06T12:40:05Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
-    "removedKids": []
+    "removedKids": [
+        {
+            "iss": "https://epicproxy.uvmhealth.org/FHIR-ARR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "zBwvdXxZunOT7s39rKRmCkG8WntlwlwagOLKjopstSo"
+            ]
+        },
+        {
+            "iss": "https://external.fastmed.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "zWvWe-FEE5LXNs8BHbL3cMpu9vqvMz5yla9M9rFUjyY"
+            ]
+        }
+    ]
 }
