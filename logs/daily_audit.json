@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2025-03-01T12:37:35Z",
+    "auditTime": "2025-03-02T12:36:45Z",
     "issuerCount": 635,
     "issuersWithErrors": [
         {
@@ -441,6 +441,46 @@
         },
         {
             "issuer": {
+                "iss": "https://docket.care/ut",
+                "name": "State of Utah",
+                "website": "https://immunize.utah.gov/usiis/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_128_GCM_SHA256",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 403 (Forbidden)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://docket.care/nj",
+                "name": "State of New Jersey",
+                "website": "https://covid19.nj.gov/pages/vaxrecords"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_128_GCM_SHA256",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 403 (Forbidden)"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://covid19.quebec.ca/PreuveVaccinaleApi/issuer",
                 "name": "Gouvernement du Québec - Government of Quebec",
                 "website": "https://www.quebec.ca/vaccinationpassport"
@@ -457,17 +497,7 @@
                 "name": "Houston Methodist",
                 "website": "https://mychart.houstonmethodist.org/mychart-prod/"
             },
-            "keys": [
-                {
-                    "x": "eVXPEAN8cSBXkLkDZjYummMTu6QVY2Yy85F2wCala40",
-                    "y": "2M7ZLV2U3wA-8GCV-0rzk9f6EVsjfwJJjRBmiu7g4hg",
-                    "kid": "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -478,7 +508,27 @@
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin"
+                "HTTPError: Response code 500 (Internal Server Error)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://cdphe.colorado.gov",
+                "name": "State of Colorado",
+                "website": "https://mycolorado.state.co.us/myvaccine-record"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_128_GCM_SHA256",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 403 (Forbidden)"
             ]
         },
         {
@@ -510,7 +560,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139834342681536:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140512406391744:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -543,26 +593,6 @@
             "crls": [],
             "errors": [
                 "RequestError: getaddrinfo ENOTFOUND prodsoap1.tgh.org"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://soapprod.tvc.org/ARR-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Vancouver Clinic",
-                "website": "https://mychart.tvc.org/mychart/"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 503 (Service Unavailable)"
             ]
         },
         {
@@ -1345,6 +1375,26 @@
         },
         {
             "issuer": {
+                "iss": "https://docket.care/id",
+                "name": "State of Idaho",
+                "website": "https://healthandwelfare.idaho.gov/covid-19-vaccination"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_128_GCM_SHA256",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 403 (Forbidden)"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://shc.cdr-healthmed.com/issuer",
                 "name": "CDR Health",
                 "website": "https://www.patientportalfl.com/"
@@ -1395,6 +1445,26 @@
         },
         {
             "issuer": {
+                "iss": "https://docket.care/ak",
+                "name": "State of Alaska",
+                "website": "https://health.alaska.gov/dph/Epi/iz/Pages/default.aspx"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_128_GCM_SHA256",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 403 (Forbidden)"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://health.us.cue.dev/api/smart-health-card/production",
                 "name": "Cue Health",
                 "website": "https://cuehealth.com/contact/support/"
@@ -1423,6 +1493,26 @@
             "crls": [],
             "errors": [
                 "HTTPError: Response code 404 (Not Found)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://docket.care/wy",
+                "name": "State of Wyoming",
+                "website": "http://www.immunizewyoming.com"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_128_GCM_SHA256",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 403 (Forbidden)"
             ]
         },
         {
@@ -1514,7 +1604,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139834342681536:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140512406391744:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         }
     ],
@@ -1582,14 +1672,50 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2025-02-28T12:40:28Z",
+    "previousAuditTime": "2025-03-01T12:37:35Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://soapprod.tvc.org/ARR-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://docket.care/ut",
             "kids": [
-                "QaU54byp8IlYeVrsqXTjswt_xk-dngDumql_57nCacw"
+                "sBHR4URZTz8cq2kIV_JhTXwicbqp1tHtodItRSx0O0Q"
+            ]
+        },
+        {
+            "iss": "https://docket.care/nj",
+            "kids": [
+                "HvlLNClY2JAEhIhsZZ_CfRaxF5jdooWgaKAbLajhv2I"
+            ]
+        },
+        {
+            "iss": "https://epiclbsprxyprodpass.houstonmethodist.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4"
+            ]
+        },
+        {
+            "iss": "https://cdphe.colorado.gov",
+            "kids": [
+                "2mDaFWzZK1ACh7J9GKmeI5mvGuSidpSMFaEtEbMs2SM"
+            ]
+        },
+        {
+            "iss": "https://docket.care/id",
+            "kids": [
+                "4S5oS222XceZXz5ROPy8lyQhSIbPk4eTrMXXThyMGqA"
+            ]
+        },
+        {
+            "iss": "https://docket.care/ak",
+            "kids": [
+                "SYM1S7J-oUsFAlWk2Hh_JfDjT8W53HK8DGAAheuctzI"
+            ]
+        },
+        {
+            "iss": "https://docket.care/wy",
+            "kids": [
+                "jwqukbzQbN1RxccBTk5kcDeD6imAxn7EylrmnRw-Xnc"
             ]
         }
     ]

@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2025-03-01T12:37:35Z",
+    "time": "2025-03-02T12:36:45Z",
     "issuerInfo": [
         {
             "issuer": {
@@ -5476,6 +5476,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -5565,7 +5573,7 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
+                "cipher": "TLS_CHACHA20_POLY1305_SHA256",
                 "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
@@ -5594,7 +5602,7 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
+                "cipher": "TLS_CHACHA20_POLY1305_SHA256",
                 "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
@@ -8036,8 +8044,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "cipher": "DHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "DH, 2048 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -8306,9 +8314,9 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -8632,7 +8640,7 @@
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
                 "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "RSA-PSS",
+                "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
@@ -9333,17 +9341,7 @@
                 "name": "State of Utah",
                 "website": "https://immunize.utah.gov/usiis/"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "use": "sig",
-                    "crv": "P-256",
-                    "kid": "sBHR4URZTz8cq2kIV_JhTXwicbqp1tHtodItRSx0O0Q",
-                    "x": "uyzHUWf8EVXtlFW9nssxa1Z002rpc-GUw-YrZOZtmqo",
-                    "y": "oFofHWIlPqfqCCU9R3fJOaUoWdzVzTcSNgmtF0Qgb6w",
-                    "alg": "ES256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_128_GCM_SHA256",
@@ -9353,7 +9351,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "HTTPError: Response code 403 (Forbidden)"
+            ]
         },
         {
             "issuer": {
@@ -9361,17 +9361,7 @@
                 "name": "State of New Jersey",
                 "website": "https://covid19.nj.gov/pages/vaxrecords"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "use": "sig",
-                    "crv": "P-256",
-                    "kid": "HvlLNClY2JAEhIhsZZ_CfRaxF5jdooWgaKAbLajhv2I",
-                    "x": "FssCyCxGTEuKiKqo-MwLDQlxz1vdKll4YFMkQaXVOkY",
-                    "y": "A3nNMWC8IEQsZqH8Mp83qVLTA_X9eYwzr46o4-3YyRE",
-                    "alg": "ES256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_128_GCM_SHA256",
@@ -9381,7 +9371,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "HTTPError: Response code 403 (Forbidden)"
+            ]
         },
         {
             "issuer": {
@@ -9813,6 +9805,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -10481,17 +10481,7 @@
                 "name": "Houston Methodist",
                 "website": "https://mychart.houstonmethodist.org/mychart-prod/"
             },
-            "keys": [
-                {
-                    "x": "eVXPEAN8cSBXkLkDZjYummMTu6QVY2Yy85F2wCala40",
-                    "y": "2M7ZLV2U3wA-8GCV-0rzk9f6EVsjfwJJjRBmiu7g4hg",
-                    "kid": "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -10502,7 +10492,7 @@
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin"
+                "HTTPError: Response code 500 (Internal Server Error)"
             ]
         },
         {
@@ -10631,17 +10621,7 @@
                 "name": "State of Colorado",
                 "website": "https://mycolorado.state.co.us/myvaccine-record"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "kid": "2mDaFWzZK1ACh7J9GKmeI5mvGuSidpSMFaEtEbMs2SM",
-                    "crv": "P-256",
-                    "x": "EJrswgDkiAKdfeGL_RXI5AENbgrkd2ZrE5bLDHkB7RE",
-                    "y": "f16VYR8cqEytzDp5ednA2NYIRBgncdsb7mco87bFu8o"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_128_GCM_SHA256",
@@ -10651,7 +10631,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "HTTPError: Response code 403 (Forbidden)"
+            ]
         },
         {
             "issuer": {
@@ -11307,9 +11289,9 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -11410,7 +11392,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139834342681536:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140512406391744:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -11860,7 +11842,17 @@
                 "name": "Vancouver Clinic",
                 "website": "https://mychart.tvc.org/mychart/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "HyYcCS_WZ1opjC6VaT7kC59x6zr-cDHKZQIkpJyblww",
+                    "y": "yhXrFPwkiOeuIIzT7eQwY-1BfuuY3dZR0B5XPY0boCU",
+                    "kid": "QaU54byp8IlYeVrsqXTjswt_xk-dngDumql_57nCacw",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -11870,9 +11862,7 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "HTTPError: Response code 503 (Service Unavailable)"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -18133,17 +18123,7 @@
                 "name": "State of Idaho",
                 "website": "https://healthandwelfare.idaho.gov/covid-19-vaccination"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "use": "sig",
-                    "crv": "P-256",
-                    "kid": "4S5oS222XceZXz5ROPy8lyQhSIbPk4eTrMXXThyMGqA",
-                    "x": "-3MMGDAGtHivymPrsydbakabyg1atOZUsXgRSqbnDtY",
-                    "y": "u8sRhtE6iRuVLo1opEFcOEHreNQdC5IxA8qgVv2joqk",
-                    "alg": "ES256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_128_GCM_SHA256",
@@ -18153,7 +18133,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "HTTPError: Response code 403 (Forbidden)"
+            ]
         },
         {
             "issuer": {
@@ -18500,17 +18482,7 @@
                 "name": "State of Alaska",
                 "website": "https://health.alaska.gov/dph/Epi/iz/Pages/default.aspx"
             },
-            "keys": [
-                {
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "kid": "SYM1S7J-oUsFAlWk2Hh_JfDjT8W53HK8DGAAheuctzI",
-                    "kty": "EC",
-                    "use": "sig",
-                    "x": "1qO4uiq70-KEwL5j0nUNnM2gTL3fSe_bLGO09Rdmq6o",
-                    "y": "lgb-h4yikpkSnmjnbPc_TsbnvkZo2youZMDJ71h5wT4"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_128_GCM_SHA256",
@@ -18520,7 +18492,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "HTTPError: Response code 403 (Forbidden)"
+            ]
         },
         {
             "issuer": {
@@ -18644,17 +18618,7 @@
                 "name": "State of Wyoming",
                 "website": "http://www.immunizewyoming.com"
             },
-            "keys": [
-                {
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "kid": "jwqukbzQbN1RxccBTk5kcDeD6imAxn7EylrmnRw-Xnc",
-                    "kty": "EC",
-                    "use": "sig",
-                    "x": "N463_AWwPWW7cSSVqS5r3_MDrQZRPrcmrJbntiTQ-Wk",
-                    "y": "zJK3REFKoQSZcpwsC9p0Xl7a23tiH8eGpnloSNx2oHw"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_128_GCM_SHA256",
@@ -18664,7 +18628,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "HTTPError: Response code 403 (Forbidden)"
+            ]
         },
         {
             "issuer": {
@@ -18960,6 +18926,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "DHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "DH, 2048 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -19386,7 +19360,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139834342681536:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140512406391744:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
