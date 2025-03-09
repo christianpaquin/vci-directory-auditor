@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2025-03-08T12:30:50Z",
+    "auditTime": "2025-03-09T12:30:42Z",
     "issuerCount": 635,
     "issuersWithErrors": [
         {
@@ -125,26 +125,6 @@
                 "iss": "https://EpicFHIR.aurora.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Advocate Aurora Health",
                 "website": "https://livewell.aah.org/Chart/accesscheck.asp"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "RequestError: read ECONNRESET"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://unified-api.ucsf.edu/clinical/apex/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "UCSF Health",
-                "website": "https://www.ucsfhealth.org/mychart"
             },
             "keys": [],
             "tlsDetails": {
@@ -461,6 +441,26 @@
         },
         {
             "issuer": {
+                "iss": "https://epicproxy.et1095.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Kennedy Krieger Institute",
+                "website": "https://mychart.kennedykrieger.org/mychart/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 503 (Service Unavailable)"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://www.express-scripts.com/frontendservice/mobilepatient-proxy/1/shc",
                 "name": "Express Scripts",
                 "website": "https://www.express-scripts.com/login?routingPage=/frontend/consumer/%23/user/profile"
@@ -484,6 +484,18 @@
                 "iss": "https://covid19.quebec.ca/PreuveVaccinaleApi/issuer",
                 "name": "Gouvernement du Québec - Government of Quebec",
                 "website": "https://www.quebec.ca/vaccinationpassport"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicprdproxy.nch.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Northwest Community Hospital",
+                "website": "https://www.nch.org/landing/coronavirus/digital-proof-of-vaccination/"
             },
             "keys": [],
             "crls": [],
@@ -560,7 +572,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139732032453568:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140527254297536:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -922,26 +934,6 @@
             "crls": [],
             "errors": [
                 "RequestError: getaddrinfo ENOTFOUND app.outpost.health"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://soapprod.multicare.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "MultiCare",
-                "website": "https://mychart.multicare.org/mymulticare"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -1555,7 +1547,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139732032453568:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140527254297536:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         }
     ],
@@ -1623,20 +1615,20 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2025-03-07T12:40:39Z",
+    "previousAuditTime": "2025-03-08T12:30:50Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://unified-api.ucsf.edu/clinical/apex/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://epicproxy.et1095.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "ZwFzkFHXRFwE_0Jy0oyINwNZg4yLPKk5DW96xDwjMEo"
+                "RHJK4tfxSPdRGNqFUoL4lY6gyxTMz6qcE7WCiYeNnUs"
             ]
         },
         {
-            "iss": "https://soapprod.multicare.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://epicprdproxy.nch.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "kNi-D9BUk1ZhU1HjMqAanP-_ZfkeUiyrTw6wa0cPP4o"
+                "UjF5uQPh6HUHhByMFl-Fx_4H26-xSi2gb7n2wcgbjYw"
             ]
         }
     ]
