@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2025-03-22T12:38:11Z",
+    "auditTime": "2025-03-23T12:38:48Z",
     "issuerCount": 635,
     "issuersWithErrors": [
         {
@@ -441,6 +441,18 @@
         },
         {
             "issuer": {
+                "iss": "https://esp.ecommunity.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Community Health Network",
+                "website": "https://mychart.ecommunity.com/mychart"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "RequestError: read ECONNRESET"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://www.express-scripts.com/frontendservice/mobilepatient-proxy/1/shc",
                 "name": "Express Scripts",
                 "website": "https://www.express-scripts.com/login?routingPage=/frontend/consumer/%23/user/profile"
@@ -503,6 +515,26 @@
         },
         {
             "issuer": {
+                "iss": "https://waverify.doh.wa.gov/creds",
+                "name": "Washington State Department of Health",
+                "website": "https://waverify.doh.wa.gov/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 403 (Forbidden)"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://health-apis.duke.edu/FHIR/patient/DSTU2/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Duke University Health System",
                 "website": "https://www.dukemychart.org/home"
@@ -530,7 +562,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140084293704640:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140209126910912:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -825,7 +857,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140084293704640:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140209126910912:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -1242,6 +1274,18 @@
         },
         {
             "issuer": {
+                "iss": "https://hscsesoap.hscs.virginia.edu/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "UVA Health",
+                "website": "https://mychart.healthsystem.virginia.edu/mychart"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://s3.us-east-2.amazonaws.com/shc.vaccine.cookcountyil.gov",
                 "name": "Cook County Community Vaccination Program",
                 "website": "https://vaccine.cookcountyil.gov"
@@ -1525,7 +1569,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140084293704640:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140209126910912:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         }
     ],
@@ -1593,8 +1637,28 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2025-03-21T12:41:37Z",
+    "previousAuditTime": "2025-03-22T12:38:11Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
-    "removedKids": []
+    "removedKids": [
+        {
+            "iss": "https://esp.ecommunity.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "QRbdrG5uOgQbN1MdVA6bIpFxjVmXVX0l0BkWB8hIkjI",
+                "2CCK6UUXfB9q6zJ5M-mLNw9OPiRWDBuZCCk3LBgFuAM"
+            ]
+        },
+        {
+            "iss": "https://waverify.doh.wa.gov/creds",
+            "kids": [
+                "n0S0H6_mbA93e3pEu-a67qoiF4CAWYsOGoWo6TLHUzQ"
+            ]
+        },
+        {
+            "iss": "https://hscsesoap.hscs.virginia.edu/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "mj133szaaJRn3oBi7gpravOVAjSFse2tYfiAlUASsDY"
+            ]
+        }
+    ]
 }
