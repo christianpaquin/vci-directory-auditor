@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2025-06-16T12:50:52Z",
+    "auditTime": "2025-06-17T12:50:28Z",
     "issuerCount": 635,
     "issuersWithErrors": [
         {
@@ -454,6 +454,26 @@
         },
         {
             "issuer": {
+                "iss": "https://soap.uhcs.org/IC-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "University Health Care System",
+                "website": "https://www.universityhealth.org/patient-visitor-information/for-patients/medical-records-online-charts/mychart"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 502 (Bad Gateway)"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://www.express-scripts.com/frontendservice/mobilepatient-proxy/1/shc",
                 "name": "Express Scripts",
                 "website": "https://www.express-scripts.com/login?routingPage=/frontend/consumer/%23/user/profile"
@@ -474,22 +494,22 @@
         },
         {
             "issuer": {
-                "iss": "https://soapprod.hattiesburgclinic.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Hattiesburg Clinic and Forrest Health",
-                "website": "https://iris.hattiesburgclinic.com/iris"
+                "iss": "https://immunizationcard.manitoba.ca/api/national",
+                "name": "Government of Manitoba",
+                "website": "https://manitoba.ca/covid19/vaccine/immunizationrecord/residents.html#immunization-cards"
             },
             "keys": [],
             "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "4096",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "RequestError: self signed certificate in certificate chain"
             ]
         },
         {
@@ -584,7 +604,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139659031088064:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140021288590272:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -678,10 +698,28 @@
                 "name": "Dartmouth-Hitchcock Health",
                 "website": "https://www.mydh.org/portal/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "EuKd1Oiiw1j0XY_zZ3vqs2hkqqpuM8C9IOUYXnYy5pU",
+                    "y": "2mDGjDzJGVWNBkFn9IAXSgjv8EXj4TYlvtYFKo5wC8E",
+                    "kid": "z6FF4HeX1EdoV8suJV4RtcYq98-RGaqHyPIq2GBUqss",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "AES256-SHA",
+                "kexAlg": "RSA",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
         },
         {
@@ -865,7 +903,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139659031088064:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140021288590272:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -1440,28 +1478,10 @@
                 "name": "FastMed",
                 "website": "https://www.fastmed.com/"
             },
-            "keys": [
-                {
-                    "x": "lrBei6Cngws2-nxry_X05OchwzsgACklqBg5GbvRmL8",
-                    "y": "814BG0Nk5cIzqc2rQeIUM-8vjgSlG_6Z84YezNQyAvQ",
-                    "kid": "zWvWe-FEE5LXNs8BHbL3cMpu9vqvMz5yla9M9rFUjyY",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_CHACHA20_POLY1305_SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
             "errors": [
-                "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin"
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -1585,7 +1605,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139659031088064:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140021288590272:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -1673,15 +1693,26 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2025-06-15T12:43:58Z",
+    "previousAuditTime": "2025-06-16T12:50:52Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://soapprod.hattiesburgclinic.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://soap.uhcs.org/IC-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "Mfn5L3WBRV1T4KcjpYuNBwjuF8g7KtNLalYO-KlI2Ws",
-                "GACNzwRcDYM2QYg7JZs-0MNr3zwuGP6buRsZZalT0uU"
+                "m_Iqa--J0odnT7cyJiObD1px1jxmm0x5v00ETHXM1VM"
+            ]
+        },
+        {
+            "iss": "https://immunizationcard.manitoba.ca/api/national",
+            "kids": [
+                "YnYeVk1pCtYvnmOytVTq09igCGdu_SyJM2Wn29AV7AQ"
+            ]
+        },
+        {
+            "iss": "https://external.fastmed.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "zWvWe-FEE5LXNs8BHbL3cMpu9vqvMz5yla9M9rFUjyY"
             ]
         }
     ]
