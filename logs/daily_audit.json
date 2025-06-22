@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2025-06-21T12:43:52Z",
+    "auditTime": "2025-06-22T12:43:36Z",
     "issuerCount": 635,
     "issuersWithErrors": [
         {
@@ -284,18 +284,6 @@
         },
         {
             "issuer": {
-                "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Baptist Health",
-                "website": "https://mychart.baptist-health.org/mychart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://www.riteaid.com",
                 "name": "Rite Aid Pharmacy",
                 "website": "https://www.riteaid.com/pharmacy/vaccination-digital-proof"
@@ -446,18 +434,6 @@
         },
         {
             "issuer": {
-                "iss": "https://mobileprod.arcmd.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Austin Regional Clinic",
-                "website": "https://mychart.austinregionalclinic.com/mychart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://SMART.slhd.nsw.gov.au/health-card",
                 "name": "Sydney Local Health District",
                 "website": "https://www.nsw.gov.au/covid-19/vaccination/proof"
@@ -474,18 +450,6 @@
             "crls": [],
             "errors": [
                 "HTTPError: Response code 409 (Public access is not permitted on this storage account.)"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://esp.ecommunity.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Community Health Network",
-                "website": "https://mychart.ecommunity.com/mychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "RequestError: read ECONNRESET"
             ]
         },
         {
@@ -650,7 +614,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140393478642624:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139796616387520:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -744,10 +708,28 @@
                 "name": "Dartmouth-Hitchcock Health",
                 "website": "https://www.mydh.org/portal/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "EuKd1Oiiw1j0XY_zZ3vqs2hkqqpuM8C9IOUYXnYy5pU",
+                    "y": "2mDGjDzJGVWNBkFn9IAXSgjv8EXj4TYlvtYFKo5wC8E",
+                    "kid": "z6FF4HeX1EdoV8suJV4RtcYq98-RGaqHyPIq2GBUqss",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "AES256-SHA",
+                "kexAlg": "RSA",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
         },
         {
@@ -931,7 +913,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140393478642624:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139796616387520:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -1368,18 +1350,6 @@
         },
         {
             "issuer": {
-                "iss": "https://hscsesoap.hscs.virginia.edu/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "UVA Health",
-                "website": "https://mychart.healthsystem.virginia.edu/mychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epicprdext.stfranciscare.org/FhirProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Trinity Health of New England",
                 "website": "https://www.trinityhealthofne.org/patient-portal/"
@@ -1407,7 +1377,7 @@
             "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
-                "cipher": "TLS_AES_128_GCM_SHA256",
+                "cipher": "TLS_CHACHA20_POLY1305_SHA256",
                 "kexAlg": "X25519, 253 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
@@ -1676,6 +1646,26 @@
         },
         {
             "issuer": {
+                "iss": "https://w1soap.wakehealth.edu/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Atrium Health Wake Forest Baptist",
+                "website": "https://www.mywakehealth.org/mychart/Authentication/Login?"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "HTTPError: Response code 502 (Bad Gateway)"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://epicarrprod.uhnj.org/FHIR-Proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "University Hospital",
                 "website": "https://mychart.uhnj.org/MyChart-PRD/Authentication/Login?"
@@ -1683,7 +1673,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140393478642624:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139796616387520:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -1771,45 +1761,14 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2025-06-20T12:49:13Z",
+    "previousAuditTime": "2025-06-21T12:43:52Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://mobileprod.arcmd.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://w1soap.wakehealth.edu/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "sBU-IwhRjb9FeJRb-Trv6VRzF-dOOIeZsUeayinVGTE"
-            ]
-        },
-        {
-            "iss": "https://esp.ecommunity.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "QRbdrG5uOgQbN1MdVA6bIpFxjVmXVX0l0BkWB8hIkjI",
-                "2CCK6UUXfB9q6zJ5M-mLNw9OPiRWDBuZCCk3LBgFuAM"
-            ]
-        },
-        {
-            "iss": "https://pvcprod.gov.pe.ca",
-            "kids": [
-                "Z8YjtXO3hGPpbDR9wMcrifbcL-PswLyMFhEJGSn1yC0",
-                "uXqBkl4jkadfFUtcrkeVtXRaCCy-nNHA1aD6nKb0OJ4",
-                "rDW5Ssu6mvGAnouM1oaeiDh06OdTePgH9ZwC1MbwAoY",
-                "AWbze1dsT_69BBvlCv8g8rzUAyIBM3q6OT7zMQxBWVU",
-                "icKN8sxNH2ijHGcmqCOWHKziRPd25BoENF5Z0dVrkaI",
-                "SkSCQeF4JDcLSShAM5wejAAdB8rIT3X9-EH8rLNk0fY",
-                "L0ACjkybPcCgJOrMywfz3gJGDeEvxkUSa2j9Pbhjwz8",
-                "pCmOvJBUfo30WuG9UVlDCOvyBhPScLU2_CrAGy9A4Q8",
-                "gzeRVlR44Ia5cL67gN-6HhWsBikN_ZodlGAeGLv_HsI",
-                "D86U5NZ_OusITiBEqmgW2gRUAw1vhcbRtHujJ4wPx7w",
-                "JMCyyrr9wjXT5FY8rx6Jiel4DCfXS0ZDQPUuGdv4P1k",
-                "B5zoHRXFX54o1XgT9IbQLEqTc1GK4SEJg9vjd-K4n3o",
-                "cZxJnAOT6390E103SoaVyX2RNJenO46qyBcceU4A8go"
-            ]
-        },
-        {
-            "iss": "https://hscsesoap.hscs.virginia.edu/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "mj133szaaJRn3oBi7gpravOVAjSFse2tYfiAlUASsDY"
+                "WL1tYZCG8qwq2tS5U4UTOCBCGABLHfNMAO_NdjUJh3k"
             ]
         }
     ]
