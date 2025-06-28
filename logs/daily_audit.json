@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2025-06-27T12:49:18Z",
+    "auditTime": "2025-06-28T12:44:22Z",
     "issuerCount": 635,
     "issuersWithErrors": [
         {
@@ -284,18 +284,6 @@
         },
         {
             "issuer": {
-                "iss": "https://ep-rpfg.rivhs.com/Interconnect-FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Riverside Health System",
-                "website": "https://mychart.riversideonline.com"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://fhir.lakelandregional.org/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Spectrum Health Lakeland",
                 "website": "https://www.spectrumhealthlakeland.org/patient-visitor-guide/my-chart"
@@ -312,18 +300,6 @@
             "crls": [],
             "errors": [
                 "HTTPError: Response code 404 (Not Found)"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://eproxy.mercycare.org/oauth2/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Mercy Medical Center",
-                "website": "https://mychart.mercycare.org/MyChart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -457,14 +433,22 @@
         },
         {
             "issuer": {
-                "iss": "https://fhir.mainehealth.org/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "MaineHealth",
-                "website": "https://mychart.mainehealth.org/mychart"
+                "iss": "https://webproxyprd.monroeclinic.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Monroe Clinic",
+                "website": "https://mychart.monroeclinic.org/mychart"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "DHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "DH, 2048 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "HTTPError: Response code 503 (Service Unavailable)"
             ]
         },
         {
@@ -733,7 +717,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140363354864576:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139887198772160:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -870,18 +854,6 @@
             "crls": [],
             "errors": [
                 "RequestError: read ECONNRESET"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://rpprod.riversidehealthcare.net/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Riverside Healthcare",
-                "website": "https://www.riversidehealthcare.org/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -1044,7 +1016,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140363354864576:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139887198772160:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -1764,7 +1736,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140363354864576:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139887198772160:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -1785,18 +1757,6 @@
             "crls": [],
             "errors": [
                 "RequestError: unable to get local issuer certificate"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://phsfhir.primehealthcare.com/PHS-PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Prime Healthcare",
-                "website": "https://www.primehealthcare.com/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         }
     ],
@@ -1864,50 +1824,14 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2025-06-26T12:50:27Z",
+    "previousAuditTime": "2025-06-27T12:49:18Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://ep-rpfg.rivhs.com/Interconnect-FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://webproxyprd.monroeclinic.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "l0JUwp6xs9h_s9fCWzu3ocKdSnJx7MNN-HhM4uVghlQ"
-            ]
-        },
-        {
-            "iss": "https://eproxy.mercycare.org/oauth2/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "Uub2Z1O71aExs4C2Axu5LOw441TOEO7C3xWNHCMHJu4"
-            ]
-        },
-        {
-            "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "2Y6IshBllIuZBWuUMPeefWvqSHynjSDrmXHpOKo9JnU"
-            ]
-        },
-        {
-            "iss": "https://fhir.mainehealth.org/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "PF3kEL6tpYRX7p09lFg-81_GEEFh4qUvnWby61I37wo"
-            ]
-        },
-        {
-            "iss": "https://m.essentiahealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "j3YAS_YwqLBY9TEosFzQ6VFRpGrC4HwYG5UJj2k7W00"
-            ]
-        },
-        {
-            "iss": "https://rpprod.riversidehealthcare.net/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "9OyWmByj_GYeU5fMDuqwM-3slrDR7uqK0UzUefeUFkc"
-            ]
-        },
-        {
-            "iss": "https://phsfhir.primehealthcare.com/PHS-PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "G0NqqDaHKlQwmIEc8ED97sb7_cGVDDFoWfr09rmyZoY"
+                "oO116HgQJSQ0vizv0eT3uf7xnw_opl8E3scpLDlogJs"
             ]
         }
     ]
