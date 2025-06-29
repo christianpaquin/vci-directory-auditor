@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2025-06-28T12:44:22Z",
+    "time": "2025-06-29T12:45:17Z",
     "issuerInfo": [
         {
             "issuer": {
@@ -5468,6 +5468,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -5555,14 +5563,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -5584,14 +5584,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -5933,27 +5925,11 @@
                 "name": "Yale New Haven Health System and Yale University",
                 "website": "https://mychart.ynhhs.org/MyChart-PRD"
             },
-            "keys": [
-                {
-                    "x": "I4AzTlLReCmNFvjeCI5j0Atm7JmXf4xVJmLzQgCagd4",
-                    "y": "rchrXnw0iDvaOtbnEFJ_zT9B5bDQuFxp5x6cUpLK-fM",
-                    "kid": "57uZ0pBa-RU1i70nVRNhcfhjmCoenByGdoYbY_n_RNM",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -6272,28 +6248,10 @@
                 "name": "UC Health (Cincinnati)",
                 "website": "https://my.uchealth.com/myuchealth"
             },
-            "keys": [
-                {
-                    "x": "g_mOZz1Y2rHUVxjQKgEIpLYmWUeslTzzSMrioQOK2nM",
-                    "y": "PlmcCSgAUd706JI2GgjR3xRsKLIkcKZH3gQ2Qf_1SzY",
-                    "kid": "9V8aPz56KLm_uGwAKOmnboo7EWZiQOO_Lfoc2zAe61A",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "AES256-SHA",
-                "kexAlg": "RSA",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
             "errors": [
-                "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -6773,17 +6731,7 @@
                 "name": "Baptist Memorial Health Care",
                 "website": "https://mychart.baptistonecare.org/prd/"
             },
-            "keys": [
-                {
-                    "x": "2GZdaQDFH-ZKWuZDKstHINvzAYnlYX-z3Kd_nWRtbdY",
-                    "y": "l4Z-gC_mSkS6BE5QdMKL0RQPJJnSW12qMgTikWpDhLY",
-                    "kid": "6DSzdcfY2mk5IwLt85m2FZUufO42M0RaQeltkgsN8HU",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -6793,7 +6741,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -6857,27 +6807,11 @@
                 "name": "Presbyterian Healthcare Services",
                 "website": "https://mypres.phs.org"
             },
-            "keys": [
-                {
-                    "x": "n4He8-HPrRpu5Cpi7Y0UyeruKB5AMdnqFsJ-PMIGXEY",
-                    "y": "Dmel-bpvNqQOVwSlF64Y4aDgKTNmIb7RiDiFUE-xxVk",
-                    "kid": "isigIJLSjbRgCSNfgJANJ0-NQYxBva09-2KrSaYqcBI",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -7224,27 +7158,11 @@
                 "name": "Seattle Children's",
                 "website": "https://mychart.seattlechildrens.org/mychart/"
             },
-            "keys": [
-                {
-                    "x": "wQmyvY-RodpU1qEICNKYWOjbC7Tzh0PhOiYeEqGDTN8",
-                    "y": "cAHAOi2vq1MgJmjvzEliavylWyLC4zYOOgp0RYZO8Xs",
-                    "kid": "sLs5T5-kmtEAMY-KBvQqCuWiCWvfjAHUOH3b__-w10A",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_128_GCM_SHA256",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -7396,28 +7314,10 @@
                 "name": "Centura Health",
                 "website": "https://epic.mycenturahealth.org/MCH"
             },
-            "keys": [
-                {
-                    "x": "6d7SxS1r53Mg1ZssKe3ynBRRC857rk1DIPurzo6fkAw",
-                    "y": "_mkhZbSpNjrpVjgMR8xYmTdcPIZ9Yi1NaGcrMpu207s",
-                    "kid": "wCHGZVtkE3-PTtQasc41UDVYhjdoizeDKvCndmAbw3o",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
             "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -7494,27 +7394,11 @@
                 "name": "Beaumont Health",
                 "website": "https://mybeaumontchart.com/mychart"
             },
-            "keys": [
-                {
-                    "x": "iaTqSHcKw4bEMMHQ-UsGpBGYtUWblmu317BeLb01rKc",
-                    "y": "tMJSsoDOJu-geTA38aWARqlK5eA4m3UYFXP2zIF7U8M",
-                    "kid": "hOS6LGMSk4BDXFirAHIebJQ_OhJdXF2bSKzry3B3MYk",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -7523,17 +7407,9 @@
                 "website": "https://my.wellspan.org/MyWellSpan"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 503 (Service Unavailable)"
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -8243,9 +8119,9 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -8354,14 +8230,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -8595,27 +8463,11 @@
                 "name": "Franciscan Alliance",
                 "website": "https://franciscanmychart.org/Mychart"
             },
-            "keys": [
-                {
-                    "x": "9zluExlYJf_c05zw0IuT6is5BetcboaFWZUVpdnLJ84",
-                    "y": "Whw-6laMSvem-k9zypvQjTkHd_eHzx7_aipHkUfoVWo",
-                    "kid": "V9yROrH8TnnMh8hV0-0I4QrlZCTJP3Y5uvZNfmixFG0",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "4096",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -8651,27 +8503,11 @@
                 "name": "Austin Regional Clinic",
                 "website": "https://mychart.austinregionalclinic.com/mychart/"
             },
-            "keys": [
-                {
-                    "x": "VwoPo_VHjz3QNwtT9NUyByhzijdHAO46DkMqTofpQkE",
-                    "y": "kz0rY0AqmLtDkqlLoSCzcMtIU_gGhXFstKMWwsGufq4",
-                    "kid": "sBU-IwhRjb9FeJRb-Trv6VRzF-dOOIeZsUeayinVGTE",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -8867,36 +8703,11 @@
                 "name": "Community Health Network",
                 "website": "https://mychart.ecommunity.com/mychart"
             },
-            "keys": [
-                {
-                    "x": "sdtuPgG6YKiVbV_-b00F5GA_e7xffDlxDXybRJgpbEE",
-                    "y": "HUX_DohQFo3k01jRDxVqTfGtSc8NanQSlC3aZi6gOds",
-                    "kid": "QRbdrG5uOgQbN1MdVA6bIpFxjVmXVX0l0BkWB8hIkjI",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                },
-                {
-                    "x": "6iaPKvqyqryjuyIxYKREBURZgtX8Hmlzz9rnaveIksQ",
-                    "y": "IityyaaWs2hqp6PuiIVVsbThq24boYnE_lNz9p8Zp-g",
-                    "kid": "2CCK6UUXfB9q6zJ5M-mLNw9OPiRWDBuZCCk3LBgFuAM",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "4096",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -8904,27 +8715,11 @@
                 "name": "Golden Valley Health Centers",
                 "website": "https://mychart.gvhc.org/MyChartPRD/"
             },
-            "keys": [
-                {
-                    "x": "WAshoC7hhKa0bsZp8dxuJXg5BjQxBj1UfhKkqMnFH24",
-                    "y": "-UyMNSqsnnhYh-UWPK_FnAVffV5s-UCSQoMuXu7TdNs",
-                    "kid": "aAbdA1rmZf5y22T7fAFOGw5ZYciZxBc4-HT_rRg4428",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -9160,6 +8955,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -9359,17 +9162,9 @@
                 "website": "https://www.essentiamychart.org/MyChart"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
-                "RequestError: unable to get local issuer certificate"
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -9709,27 +9504,11 @@
                 "name": "ProMedica",
                 "website": "https://mychart.promedica.org/MyChart/"
             },
-            "keys": [
-                {
-                    "x": "Hty2sTB8Apkrr-Zvi7nuchk-U9dey3nS5wZxxsP6ZeY",
-                    "y": "3zXcnWpnWc6jJEvVUuHph2SZ4h7KSJm8HSnL3HoFAuk",
-                    "kid": "uPWKKpoWI3OIa11UbV9xdoRHdf5ZsYsAyvczK79L3RE",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -9886,27 +9665,11 @@
                 "name": "Bayhealth Medical Center",
                 "website": "https://epmychart.bayhealth.org/Mychart"
             },
-            "keys": [
-                {
-                    "x": "4hveK2kzzXi8wEIyeefUy7YN0YstZwqsqFGxoYdeqN8",
-                    "y": "fjpoYraIHwlUDJomnI9EZBbHZzpL6wORSRfqgv7Qh1Y",
-                    "kid": "Ya2s4TJq_SEWD8Kl_uDPLMmsYKHTsiNuRrv8cbQtq0o",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -9970,27 +9733,11 @@
                 "name": "University of Maryland Medical System",
                 "website": "https://myportfolio.umm.edu/MyChart/"
             },
-            "keys": [
-                {
-                    "x": "oXRbdDnQKT-mwLaCjzS4TwCqpxPompSY4039EhDzYCM",
-                    "y": "9TqmUf4XUT2Jyq889gZk0Q4HBjHC5C_SMqJ9qSxKQnM",
-                    "kid": "aF7NDjNDFWNS7W2l4H3y7fDq5Q9gjp7KllTjSMQ86aA",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -9998,27 +9745,11 @@
                 "name": "ThedaCare, Bellin Health, and Affiliates",
                 "website": "https://my.thedacare.org/MyChart"
             },
-            "keys": [
-                {
-                    "x": "Y2Dm5HaqGKxn48kTp03asGb4r3N4hdzA7-oBb5ZMrr4",
-                    "y": "BXVcerpkEZUzr7k60LY_C5sgTY5zn_hO3Si9YAhh5EM",
-                    "kid": "vG90M9FpB8F-RPF6JQ5RfxqzJUA50NLVb7LL-FoWa4k",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "4096",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -10026,27 +9757,11 @@
                 "name": "Boston Medical Center",
                 "website": "https://mychart.bmc.org/mychart"
             },
-            "keys": [
-                {
-                    "x": "SfYCSP7j4Je1zw-u_rQ4UMn0YjD8VoEj60xmOcKrz7g",
-                    "y": "e8SEwKnT5PNB19yc16p_XieSquVb40nwA1zrLzoh6O8",
-                    "kid": "C0Zydh0F8ZTQoQRVRZ7NNZi50G7MBAvmVTu4BBxDzf4",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -10396,7 +10111,17 @@
                 "name": "Houston Methodist",
                 "website": "https://mychart.houstonmethodist.org/mychart-prod/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "eVXPEAN8cSBXkLkDZjYummMTu6QVY2Yy85F2wCala40",
+                    "y": "2M7ZLV2U3wA-8GCV-0rzk9f6EVsjfwJJjRBmiu7g4hg",
+                    "kid": "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -10407,7 +10132,7 @@
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 500 (Internal Server Error)"
+                "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin"
             ]
         },
         {
@@ -11189,9 +10914,9 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -11292,7 +11017,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139887198772160:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140194326506432:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -11321,27 +11046,11 @@
                 "name": "Hurley Medical Center",
                 "website": "https://mychart.hurleymc.com/mychart"
             },
-            "keys": [
-                {
-                    "x": "oVtcAKLCvA9SlTle4iEGpOkijV2n2AwYJgxFTwjMiMY",
-                    "y": "pBIxDRnQZzNHFWzqiG-BBxioIP1_N0MTW-LdfwMLTAk",
-                    "kid": "afuyuVS8pziO1xq0DfZ9NYDzSy5dyyHw3LK-r1idZSg",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -11639,27 +11348,11 @@
                 "name": "Legacy Health",
                 "website": "https://myhealth.lhs.org/MyHealth"
             },
-            "keys": [
-                {
-                    "x": "oqx8Bp7CSdQYnNBRh72p-DUYu1Z-7AR9kCnx-5X9pkk",
-                    "y": "wYTO6zwy1ygLaYScak0Y8EkzN6BjW4HLbJhfbam7D4U",
-                    "kid": "Dvsk7w7EVG1eh8diJbqa-bOqOnZV_ySLH6Or99XH-cw",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -11751,27 +11444,11 @@
                 "name": "Vancouver Clinic",
                 "website": "https://mychart.tvc.org/mychart/"
             },
-            "keys": [
-                {
-                    "x": "HyYcCS_WZ1opjC6VaT7kC59x6zr-cDHKZQIkpJyblww",
-                    "y": "yhXrFPwkiOeuIIzT7eQwY-1BfuuY3dZR0B5XPY0boCU",
-                    "kid": "QaU54byp8IlYeVrsqXTjswt_xk-dngDumql_57nCacw",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -12206,17 +11883,7 @@
                 "name": "University of Kansas",
                 "website": "https://mychart.kansashealthsystem.com/mychart"
             },
-            "keys": [
-                {
-                    "x": "EBpbbRra06Nc4_eUoNJTd_RuQjy_HzWgA59ZB-Mi35U",
-                    "y": "mAV_jZkb07Y9LAV30AxXPMKKOzEW6PujiBs1zJ8LshY",
-                    "kid": "2TDcCQ1SKlwHt2abGxrB5vKjIfCt8CVOogI4YbVf59U",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -12226,7 +11893,10 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
+                "SyntaxError: Unexpected token < in JSON at position 0"
+            ]
         },
         {
             "issuer": {
@@ -12411,27 +12081,11 @@
                 "name": "WVU Medicine",
                 "website": "https://wvumedicine.org/"
             },
-            "keys": [
-                {
-                    "x": "zUHk1B6a2fq3Bwtr3YX_AsVi9UNhH6hRBbVuO579dEU",
-                    "y": "lz_vUPCWiqjCdrr0gzCuw-0pbgzSvUGOOpQFw-5abZ4",
-                    "kid": "wtPhmGoFcUyhN7SOOZ9c0LXEVBIWyYXNT_oejKWrMEM",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -14272,7 +13926,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139887198772160:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140194326506432:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -14309,45 +13963,11 @@
                 "name": "Cambridge Health Alliance",
                 "website": "https://mychart.challiance.org/mychart"
             },
-            "keys": [
-                {
-                    "x": "ITRnn-k5s81gLGFrF4ReJ4XS5XM1CYHRtkoj2lv0DZQ",
-                    "y": "cZ9Hs5250EKPN9lgF2c_B_RtZJKuu7K5RmSee1BrbU0",
-                    "kid": "AiB-cTlmIM07DDNjfdXghP_qAns0Y8eaXZ7CA1m7pW0",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                },
-                {
-                    "x": "HJ0sm7kvK5pnW_tb5_1addp5GVM7Ykj_RbxoPq1Nmok",
-                    "y": "pa-ppFbSmQ-33ICl4CWZ5COza7tSOTodddSoQG3rhbY",
-                    "kid": "zKbXKVoQpThDLFSiQPQVcljHkFIlPR3ZcVVJntSyk80",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                },
-                {
-                    "x": "Hz0sDDjNTlPBemkUKRXWv1OWf0q5m_f1VDS8mA2aVXM",
-                    "y": "4X_Ct7olHTRLtxrTLNl-RtXJ9mk4d3tiDizzr_xfJow",
-                    "kid": "HFh-_XqH7cgzvyA2pEGnlYSix9BvlrSOaD2aCSbmzYc",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "4096",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -14695,27 +14315,11 @@
                 "name": "Garnet Health",
                 "website": "https://mychart.garnethealth.org/GH"
             },
-            "keys": [
-                {
-                    "x": "vt7-qvq5RrILbr8cLcYy-ab_ok-zdahTuwtVASmghRI",
-                    "y": "A1J5qglz7g3_-ZJ5m9LDpXpoqU0eOW8uIufiD15vluI",
-                    "kid": "oN0RRJOk-S5CRlycQ60NpNnzSUyyxzqse5l7IVUZDe8",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -14970,27 +14574,11 @@
                 "name": "Lahey Health",
                 "website": "https://mylaheychart.org/MyChart"
             },
-            "keys": [
-                {
-                    "x": "fINgSvlfOnQ7wnNOCzXoU-6_BeA-ll8hTYJqZfgsJw4",
-                    "y": "DbzM-Ev7ROWo3-QwTYmE-FUE3EyC24_UP3zaAtYnUSI",
-                    "kid": "sD58-y5XzRBuAYTrnM5nS-UATnz-svgmrg9k5_HIrFM",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_128_GCM_SHA256",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "RequestError: read ECONNRESET"
+            ]
         },
         {
             "issuer": {
@@ -15082,27 +14670,11 @@
                 "name": "East Boston Neighborhood Health Center",
                 "website": "https://mychart.ebnhc.org/mychart"
             },
-            "keys": [
-                {
-                    "x": "VHf8NBWRBI_6hbe1NWYGW0PaWtrPY-_hddn3fTa37Cc",
-                    "y": "D6sVPyxpikrkkjIWs6_kTxlWifn5JLJz2jVfpN6Wosw",
-                    "kid": "OxiC0eIyFZe_j-3L3yr_ZOLaXc-VKbLjLtTqp5ShGL0",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -15351,27 +14923,11 @@
                 "name": "Stanford Health Care",
                 "website": "https://myhealth.stanfordhealthcare.org/"
             },
-            "keys": [
-                {
-                    "x": "u5hhTfIxnGf97XvEWO5_RGVx_fpAFIuDT_zlgJkG3kY",
-                    "y": "SFmGS52BGQ1HLWwoqy0k5FZt5owtxJ6zpAoDOT_Y0hI",
-                    "kid": "KmRsCPEpR5Z_SD5LKJ6a25hwZeEYHp6pRpZ7M1SC550",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -15435,27 +14991,11 @@
                 "name": "AdventHealth",
                 "website": "https://account.adventhealth.com/login"
             },
-            "keys": [
-                {
-                    "x": "5gfz58Le5frt4roZUzw3YoObIfnnlnwqBqhnNTjkl6k",
-                    "y": "swavamD005wdKXg5emnSWKfNn_pwef9yhJtDAEnJnGE",
-                    "kid": "NIYjamR_uv5paKe7T9kn4mueOQFx2WlSaNSZzwIUILA",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -17003,27 +16543,11 @@
                 "name": "Methodist Hospitals (IN)",
                 "website": "https://mychart.methodisthospitals.org/mychart"
             },
-            "keys": [
-                {
-                    "x": "F-AGqWq9JKAz6rcPXjztjQElXDZuhRJ7WUkoW7qrx1Y",
-                    "y": "bPkyWe4lt1tNCVnyeVmPmei5vJff_lZqd9sNaRTVW5g",
-                    "kid": "IHtj6CeVxA-5qztmSUXjoTNr9uAyU1xnYDY_Iw06GPI",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -17031,27 +16555,11 @@
                 "name": "UVA Health",
                 "website": "https://mychart.healthsystem.virginia.edu/mychart"
             },
-            "keys": [
-                {
-                    "x": "mcxsV-pN3vy2Q41iUf5S_WcWmhKOY9lZsfGGXvRUY84",
-                    "y": "xOQTwxl19k1BEPHNvhQYPXKeUnTEX0G_3C7DP0F8TKE",
-                    "kid": "mj133szaaJRn3oBi7gpravOVAjSFse2tYfiAlUASsDY",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -17267,27 +16775,11 @@
                 "name": "UK HealthCare",
                 "website": "https://mychart.uky.edu/MyChart"
             },
-            "keys": [
-                {
-                    "x": "SxzXfgmzYSVby7--BTQfLQ1s98-oE3tfq_rQ5CyHJVQ",
-                    "y": "YCIACyp6iWM_g7lta2CzX2drSuotoGud_q0P5rfXKyM",
-                    "kid": "un7DS_W0gHnag_FjJdQRlKNbSFAwV8E5kwSNXidBhug",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -17463,27 +16955,11 @@
                 "name": "Tucson Medical Center",
                 "website": "https://mychart.tmcaz.com/MyChart"
             },
-            "keys": [
-                {
-                    "x": "OhaKRcphX4ALcbQFhvvAx6EhqVfrLzAevRo2A6LvKr4",
-                    "y": "u39I5o70xm9lXWqP-z5UXvNt6sKBM6-Ng7Q5q0tVvBk",
-                    "kid": "ppnA6VBtBokd072FZXXFo8yCCo-_CRODMerPILOKiUI",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -17491,27 +16967,11 @@
                 "name": "Catholic Health",
                 "website": "https://www.chsli.org/catholic-health-mychart"
             },
-            "keys": [
-                {
-                    "x": "4_b1EEw0pxGPktGHHX72SNAgEDAp55iDt_GjTEJCxlo",
-                    "y": "ZUBSGphjyA-fzpIoVKFkDhU-uPl_VsiUDVfSlFpgALM",
-                    "kid": "ALVEROpd2CNyaE4RcZgG6T9cM38Erfg8oSIgiK_JSVo",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -17927,17 +17387,7 @@
                 "name": "Care New England",
                 "website": "https://www.carenewengland.org/"
             },
-            "keys": [
-                {
-                    "x": "QMUAJ1kkztzD485UzUS-mqGzDFw5QQG3pkfV28M9ifk",
-                    "y": "7MeywoHGW552h-r7bqo6iQx6DRl-16bm1kT-x8axIcE",
-                    "kid": "UPhXyYBV4mAMlCsVtscAJP2KfP7T3kBn7R70dS9P3Lg",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -17948,7 +17398,8 @@
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
+                "SyntaxError: Unexpected token S in JSON at position 0"
             ]
         },
         {
@@ -18041,27 +17492,11 @@
                 "name": "Cone Health",
                 "website": "https://www.conehealth.com/"
             },
-            "keys": [
-                {
-                    "x": "FU7ktBtfC2gkQIRYOzFkFqH9P8zfE5l_7d-CKdvGyMo",
-                    "y": "gxnZNKzBj0N45pDbeEY0m351wlccYGz6InNyEHhFkJU",
-                    "kid": "c4YIskOBonG1i9MK3foSK0u32Ocnr21Z2A7VVPD0X6o",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -18242,6 +17677,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -18488,27 +17931,11 @@
                 "name": "Emory Healthcare",
                 "website": "https://www.emoryhealthcare.org"
             },
-            "keys": [
-                {
-                    "x": "6EhY9HvHHxqwGibf1ADr12mNR17A6DU25jYbuWWwrnw",
-                    "y": "YTFGFfA8A3BcrjfG8dqkuNlSZCw6QLeBGK5usODLJ24",
-                    "kid": "2knCJErzIirepPhDkFlIHeLNXyVlh8msd7G-D-kxCmk",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -18600,27 +18027,11 @@
                 "name": "Luminis Health",
                 "website": "https://www.aahs.org/en/login"
             },
-            "keys": [
-                {
-                    "x": "DroFYdydFi_gfWL1hPgC4oK1DluvWXMRX0g_rEV5sow",
-                    "y": "OFkLh7TueKsOEy954HDvvj8ohX79iV6gGwd-DOWgRzg",
-                    "kid": "OmrNtWr0mK2ZYUqI8-KBmDBvvmdh5s6xqmX4ABMhbME",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -19151,17 +18562,7 @@
                 "name": "Atrium Health Wake Forest Baptist",
                 "website": "https://www.mywakehealth.org/mychart/Authentication/Login?"
             },
-            "keys": [
-                {
-                    "x": "zfvgqQhRCjZxl7zxx7DgMyZ1B-zehCDsnfFEn-rub8I",
-                    "y": "JpdeCQRsDkyXyOUNUFoGhzoArhUsLI9LfV8a51aHyis",
-                    "kid": "WL1tYZCG8qwq2tS5U4UTOCBCGABLHfNMAO_NdjUJh3k",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
@@ -19171,7 +18572,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "HTTPError: Response code 502 (Bad Gateway)"
+            ]
         },
         {
             "issuer": {
@@ -19207,27 +18610,11 @@
                 "name": "Memorial Hospital and Health Care Center",
                 "website": "https://mychart.mhhcc.org/MyChartPRD/Authentication/Login?"
             },
-            "keys": [
-                {
-                    "x": "ge0xzpw6FdufORkHDVS1FnbnSq8BT3_0eBnkMpY-lu8",
-                    "y": "-Ez43MDBvnl-laxsd2PhFFlW2f4YWfb5cJfn_FQoH_Y",
-                    "kid": "HBk1a-I_6M9bUeGkJxffwgrwJaynPikaQCHD1I3qPj4",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -19235,27 +18622,11 @@
                 "name": "PruittHealth",
                 "website": "https://www.pruitthealth.com/"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "kid": "35iLwiFy_yB7mTxH2IpdSA94Z0mbo2PB5xqoo02BFhU",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "6vZdLi5mX2BE4kzIb24o20g8OU1PXjspUcxOqR7RNS0",
-                    "y": "e9gPEpmg8H26r-VNxzMXOP4iLaNpsFFvRGs-KIRuxVc"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-CHACHA20-POLY1305",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -19266,7 +18637,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139887198772160:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140194326506432:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
