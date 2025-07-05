@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2025-07-04T12:49:08Z",
+    "auditTime": "2025-07-05T12:44:40Z",
     "issuerCount": 635,
     "issuersWithErrors": [
         {
@@ -154,18 +154,6 @@
         },
         {
             "issuer": {
-                "iss": "https://patientfhirapis.ynhh.org/PFF/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Yale New Haven Health System and Yale University",
-                "website": "https://mychart.ynhhs.org/MyChart-PRD"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://soap.phci.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "ProHealth",
                 "website": "https://mychart.prohealthcare.org/MyChart"
@@ -230,10 +218,28 @@
                 "name": "UC Health (Cincinnati)",
                 "website": "https://my.uchealth.com/myuchealth"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "g_mOZz1Y2rHUVxjQKgEIpLYmWUeslTzzSMrioQOK2nM",
+                    "y": "PlmcCSgAUd706JI2GgjR3xRsKLIkcKZH3gQ2Qf_1SzY",
+                    "kid": "9V8aPz56KLm_uGwAKOmnboo7EWZiQOO_Lfoc2zAe61A",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "AES256-SHA",
+                "kexAlg": "RSA",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
         },
         {
@@ -254,18 +260,6 @@
             "crls": [],
             "errors": [
                 "HTTPError: Response code 403 (Forbidden)"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epicfhir.phs.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Presbyterian Healthcare Services",
-                "website": "https://mypres.phs.org"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -310,30 +304,6 @@
         },
         {
             "issuer": {
-                "iss": "https://fhir.seattlechildrens.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Seattle Children's",
-                "website": "https://mychart.seattlechildrens.org/mychart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Baptist Health",
-                "website": "https://mychart.baptist-health.org/mychart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://www.riteaid.com",
                 "name": "Rite Aid Pharmacy",
                 "website": "https://www.riteaid.com/pharmacy/vaccination-digital-proof"
@@ -359,10 +329,28 @@
                 "name": "Centura Health",
                 "website": "https://epic.mycenturahealth.org/MCH"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "6d7SxS1r53Mg1ZssKe3ynBRRC857rk1DIPurzo6fkAw",
+                    "y": "_mkhZbSpNjrpVjgMR8xYmTdcPIZ9Yi1NaGcrMpu207s",
+                    "kid": "wCHGZVtkE3-PTtQasc41UDVYhjdoizeDKvCndmAbw3o",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
             ]
         },
         {
@@ -379,26 +367,22 @@
         },
         {
             "issuer": {
-                "iss": "https://moc.beaumont.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Beaumont Health",
-                "website": "https://mybeaumontchart.com/mychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://interconnect.wellspan.org/interconnect-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "WellSpan Health",
                 "website": "https://my.wellspan.org/MyWellSpan"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "HTTPError: Response code 503 (Service Unavailable)"
             ]
         },
         {
@@ -470,30 +454,6 @@
         },
         {
             "issuer": {
-                "iss": "https://ema.franciscanalliance.org/FHIR_PROXY/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Franciscan Alliance",
-                "website": "https://franciscanmychart.org/Mychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://mobileprod.arcmd.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Austin Regional Clinic",
-                "website": "https://mychart.austinregionalclinic.com/mychart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://SMART.slhd.nsw.gov.au/health-card",
                 "name": "Sydney Local Health District",
                 "website": "https://www.nsw.gov.au/covid-19/vaccination/proof"
@@ -510,30 +470,6 @@
             "crls": [],
             "errors": [
                 "HTTPError: Response code 409 (Public access is not permitted on this storage account.)"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://esp.ecommunity.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Community Health Network",
-                "website": "https://mychart.ecommunity.com/mychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://ep-rps.gvhc.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Golden Valley Health Centers",
-                "website": "https://mychart.gvhc.org/MyChartPRD/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -603,9 +539,17 @@
                 "website": "https://www.essentiamychart.org/MyChart"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "RequestError: unable to get local issuer certificate"
             ]
         },
         {
@@ -661,71 +605,21 @@
         },
         {
             "issuer": {
-                "iss": "https://fhir.promedica.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "ProMedica",
-                "website": "https://mychart.promedica.org/MyChart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epproxy.bayhealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Bayhealth Medical Center",
-                "website": "https://epmychart.bayhealth.org/Mychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://FHIR.umm.edu/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "University of Maryland Medical System",
-                "website": "https://myportfolio.umm.edu/MyChart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://arr.thedacare.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "ThedaCare, Bellin Health, and Affiliates",
-                "website": "https://my.thedacare.org/MyChart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://emerge-soap1.bmc.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Boston Medical Center",
-                "website": "https://mychart.bmc.org/mychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epiclbsprxyprodpass.houstonmethodist.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Houston Methodist",
                 "website": "https://mychart.houstonmethodist.org/mychart-prod/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "eVXPEAN8cSBXkLkDZjYummMTu6QVY2Yy85F2wCala40",
+                    "y": "2M7ZLV2U3wA-8GCV-0rzk9f6EVsjfwJJjRBmiu7g4hg",
+                    "kid": "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -736,7 +630,7 @@
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 500 (Internal Server Error)"
+                "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin"
             ]
         },
         {
@@ -801,7 +695,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139743542135744:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140643329543104:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -826,18 +720,6 @@
         },
         {
             "issuer": {
-                "iss": "https://fhir.hurleymc.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Hurley Medical Center",
-                "website": "https://mychart.hurleymc.com/mychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://prodsoap1.tgh.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Tampa General Hospital and University of South Florida",
                 "website": "https://mychart.tgh.org/mychart/"
@@ -846,30 +728,6 @@
             "crls": [],
             "errors": [
                 "RequestError: getaddrinfo ENOTFOUND prodsoap1.tgh.org"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://LHSPDXFHIRPRD.LHS.ORG/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Legacy Health",
-                "website": "https://myhealth.lhs.org/MyHealth"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://soapprod.tvc.org/ARR-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Vancouver Clinic",
-                "website": "https://mychart.tvc.org/mychart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -974,39 +832,6 @@
             "crls": [],
             "errors": [
                 "RequestError: read ECONNRESET"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://fhir.kansashealthsystem.com/interconnect-PRD_FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "University of Kansas",
-                "website": "https://mychart.kansashealthsystem.com/mychart"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "ECDSA",
-                "pubKeySize": "256",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
-                "SyntaxError: Unexpected token < in JSON at position 0"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://apps.mywvuchart.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "WVU Medicine",
-                "website": "https://wvumedicine.org/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -1169,19 +994,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139743542135744:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epicmobile.challiance.org/Interconnect-OAuth2/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Cambridge Health Alliance",
-                "website": "https://mychart.challiance.org/mychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "RequestError: write EPROTO 140643329543104:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -1206,18 +1019,6 @@
             "crls": [],
             "errors": [
                 "RequestError: getaddrinfo ENOTFOUND dashboard.au.accredify.io"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epic.garnethealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Garnet Health",
-                "website": "https://mychart.garnethealth.org/GH"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -1264,30 +1065,6 @@
         },
         {
             "issuer": {
-                "iss": "https://fhir.laheyhealth.org/proxy-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Lahey Health",
-                "website": "https://mylaheychart.org/MyChart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "RequestError: read ECONNRESET"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://ebmobile14.ebnhc.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "East Boston Neighborhood Health Center",
-                "website": "https://mychart.ebnhc.org/mychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://app.outpost.health/smart",
                 "name": "Outpost Healthcare",
                 "website": "https://www.outpost.health/patients"
@@ -1296,30 +1073,6 @@
             "crls": [],
             "errors": [
                 "RequestError: getaddrinfo ENOTFOUND app.outpost.health"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://sfd.stanfordmed.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Stanford Health Care",
-                "website": "https://myhealth.stanfordhealthcare.org/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://mobile.adventhealth.com/oauth2-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "AdventHealth",
-                "website": "https://account.adventhealth.com/login"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -1629,18 +1382,6 @@
         },
         {
             "issuer": {
-                "iss": "https://fhir.omhs.org/rp-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Owensboro Health",
-                "website": "https://mychart.omhs.org/mychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epicarr.optum.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "OptumCare National"
             },
@@ -1666,30 +1407,6 @@
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://mychart.methodisthospitals.org/FHIR-ARR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Methodist Hospitals (IN)",
-                "website": "https://mychart.methodisthospitals.org/mychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://hscsesoap.hscs.virginia.edu/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "UVA Health",
-                "website": "https://mychart.healthsystem.virginia.edu/mychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -1734,18 +1451,6 @@
         },
         {
             "issuer": {
-                "iss": "https://ukepicproxy.mc.uky.edu/Interconnect-PRD-OAuth2/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "UK HealthCare",
-                "website": "https://mychart.uky.edu/MyChart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://treat.com/shc-issuer",
                 "name": "Treat"
             },
@@ -1761,30 +1466,6 @@
             "crls": [],
             "errors": [
                 "HTTPError: Response code 404 (Not Found)"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://fhir.tmcaz.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Tucson Medical Center",
-                "website": "https://mychart.tmcaz.com/MyChart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epx1.chsli.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Catholic Health",
-                "website": "https://www.chsli.org/catholic-health-mychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -1838,7 +1519,17 @@
                 "name": "Care New England",
                 "website": "https://www.carenewengland.org/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "QMUAJ1kkztzD485UzUS-mqGzDFw5QQG3pkfV28M9ifk",
+                    "y": "7MeywoHGW552h-r7bqo6iQx6DRl-16bm1kT-x8axIcE",
+                    "kid": "UPhXyYBV4mAMlCsVtscAJP2KfP7T3kBn7R70dS9P3Lg",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -1849,20 +1540,7 @@
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
-                "SyntaxError: Unexpected token S in JSON at position 0"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epsoap.conehealth.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Cone Health",
-                "website": "https://www.conehealth.com/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
             ]
         },
         {
@@ -1949,30 +1627,6 @@
         },
         {
             "issuer": {
-                "iss": "https://epicrp-prd.eushc.org/OAUTH2-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Emory Healthcare",
-                "website": "https://www.emoryhealthcare.org"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epicarr.aahs.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Luminis Health",
-                "website": "https://www.aahs.org/en/login"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epicnsproxy.chop.edu/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Children's Hospital of Philadelphia",
                 "website": "https://www.chop.edu/"
@@ -2053,30 +1707,6 @@
         },
         {
             "issuer": {
-                "iss": "https://arrprd.mhhcc.org/OAuth2/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Memorial Hospital and Health Care Center",
-                "website": "https://mychart.mhhcc.org/MyChartPRD/Authentication/Login?"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://www.mypruitthealth.com/api/api/Vaccination/shc",
-                "name": "PruittHealth",
-                "website": "https://www.pruitthealth.com/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epicarrprod.uhnj.org/FHIR-Proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "University Hospital",
                 "website": "https://mychart.uhnj.org/MyChart-PRD/Authentication/Login?"
@@ -2084,7 +1714,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139743542135744:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140643329543104:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -2172,252 +1802,8 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2025-07-03T12:48:27Z",
+    "previousAuditTime": "2025-07-04T12:49:08Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
-    "removedKids": [
-        {
-            "iss": "https://patientfhirapis.ynhh.org/PFF/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "57uZ0pBa-RU1i70nVRNhcfhjmCoenByGdoYbY_n_RNM"
-            ]
-        },
-        {
-            "iss": "https://epic-soap.uchealth.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "9V8aPz56KLm_uGwAKOmnboo7EWZiQOO_Lfoc2zAe61A"
-            ]
-        },
-        {
-            "iss": "https://epicfhir.phs.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "isigIJLSjbRgCSNfgJANJ0-NQYxBva09-2KrSaYqcBI"
-            ]
-        },
-        {
-            "iss": "https://fhir.seattlechildrens.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "sLs5T5-kmtEAMY-KBvQqCuWiCWvfjAHUOH3b__-w10A"
-            ]
-        },
-        {
-            "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "2Y6IshBllIuZBWuUMPeefWvqSHynjSDrmXHpOKo9JnU"
-            ]
-        },
-        {
-            "iss": "https://epic-p-foreground.centura.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "wCHGZVtkE3-PTtQasc41UDVYhjdoizeDKvCndmAbw3o"
-            ]
-        },
-        {
-            "iss": "https://moc.beaumont.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "hOS6LGMSk4BDXFirAHIebJQ_OhJdXF2bSKzry3B3MYk"
-            ]
-        },
-        {
-            "iss": "https://ema.franciscanalliance.org/FHIR_PROXY/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "V9yROrH8TnnMh8hV0-0I4QrlZCTJP3Y5uvZNfmixFG0"
-            ]
-        },
-        {
-            "iss": "https://mobileprod.arcmd.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "sBU-IwhRjb9FeJRb-Trv6VRzF-dOOIeZsUeayinVGTE"
-            ]
-        },
-        {
-            "iss": "https://esp.ecommunity.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "QRbdrG5uOgQbN1MdVA6bIpFxjVmXVX0l0BkWB8hIkjI",
-                "2CCK6UUXfB9q6zJ5M-mLNw9OPiRWDBuZCCk3LBgFuAM"
-            ]
-        },
-        {
-            "iss": "https://ep-rps.gvhc.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "aAbdA1rmZf5y22T7fAFOGw5ZYciZxBc4-HT_rRg4428"
-            ]
-        },
-        {
-            "iss": "https://fhir.promedica.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "uPWKKpoWI3OIa11UbV9xdoRHdf5ZsYsAyvczK79L3RE"
-            ]
-        },
-        {
-            "iss": "https://epproxy.bayhealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "Ya2s4TJq_SEWD8Kl_uDPLMmsYKHTsiNuRrv8cbQtq0o"
-            ]
-        },
-        {
-            "iss": "https://FHIR.umm.edu/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "aF7NDjNDFWNS7W2l4H3y7fDq5Q9gjp7KllTjSMQ86aA"
-            ]
-        },
-        {
-            "iss": "https://arr.thedacare.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "vG90M9FpB8F-RPF6JQ5RfxqzJUA50NLVb7LL-FoWa4k"
-            ]
-        },
-        {
-            "iss": "https://emerge-soap1.bmc.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "C0Zydh0F8ZTQoQRVRZ7NNZi50G7MBAvmVTu4BBxDzf4"
-            ]
-        },
-        {
-            "iss": "https://epiclbsprxyprodpass.houstonmethodist.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4"
-            ]
-        },
-        {
-            "iss": "https://fhir.hurleymc.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "afuyuVS8pziO1xq0DfZ9NYDzSy5dyyHw3LK-r1idZSg"
-            ]
-        },
-        {
-            "iss": "https://LHSPDXFHIRPRD.LHS.ORG/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "Dvsk7w7EVG1eh8diJbqa-bOqOnZV_ySLH6Or99XH-cw"
-            ]
-        },
-        {
-            "iss": "https://soapprod.tvc.org/ARR-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "QaU54byp8IlYeVrsqXTjswt_xk-dngDumql_57nCacw"
-            ]
-        },
-        {
-            "iss": "https://fhir.kansashealthsystem.com/interconnect-PRD_FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "2TDcCQ1SKlwHt2abGxrB5vKjIfCt8CVOogI4YbVf59U"
-            ]
-        },
-        {
-            "iss": "https://apps.mywvuchart.com/FHIRproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "wtPhmGoFcUyhN7SOOZ9c0LXEVBIWyYXNT_oejKWrMEM"
-            ]
-        },
-        {
-            "iss": "https://epicmobile.challiance.org/Interconnect-OAuth2/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "AiB-cTlmIM07DDNjfdXghP_qAns0Y8eaXZ7CA1m7pW0",
-                "zKbXKVoQpThDLFSiQPQVcljHkFIlPR3ZcVVJntSyk80",
-                "HFh-_XqH7cgzvyA2pEGnlYSix9BvlrSOaD2aCSbmzYc"
-            ]
-        },
-        {
-            "iss": "https://epic.garnethealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "oN0RRJOk-S5CRlycQ60NpNnzSUyyxzqse5l7IVUZDe8"
-            ]
-        },
-        {
-            "iss": "https://fhir.laheyhealth.org/proxy-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "sD58-y5XzRBuAYTrnM5nS-UATnz-svgmrg9k5_HIrFM"
-            ]
-        },
-        {
-            "iss": "https://ebmobile14.ebnhc.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "OxiC0eIyFZe_j-3L3yr_ZOLaXc-VKbLjLtTqp5ShGL0"
-            ]
-        },
-        {
-            "iss": "https://sfd.stanfordmed.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "KmRsCPEpR5Z_SD5LKJ6a25hwZeEYHp6pRpZ7M1SC550"
-            ]
-        },
-        {
-            "iss": "https://mobile.adventhealth.com/oauth2-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "NIYjamR_uv5paKe7T9kn4mueOQFx2WlSaNSZzwIUILA"
-            ]
-        },
-        {
-            "iss": "https://fhir.omhs.org/rp-prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "M6-pmPcy46AynsAtYmyDCinqCsQomOALFc2sbrjOaiM"
-            ]
-        },
-        {
-            "iss": "https://mychart.methodisthospitals.org/FHIR-ARR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "IHtj6CeVxA-5qztmSUXjoTNr9uAyU1xnYDY_Iw06GPI"
-            ]
-        },
-        {
-            "iss": "https://hscsesoap.hscs.virginia.edu/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "mj133szaaJRn3oBi7gpravOVAjSFse2tYfiAlUASsDY"
-            ]
-        },
-        {
-            "iss": "https://ukepicproxy.mc.uky.edu/Interconnect-PRD-OAuth2/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "un7DS_W0gHnag_FjJdQRlKNbSFAwV8E5kwSNXidBhug"
-            ]
-        },
-        {
-            "iss": "https://fhir.tmcaz.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "ppnA6VBtBokd072FZXXFo8yCCo-_CRODMerPILOKiUI"
-            ]
-        },
-        {
-            "iss": "https://epx1.chsli.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "ALVEROpd2CNyaE4RcZgG6T9cM38Erfg8oSIgiK_JSVo"
-            ]
-        },
-        {
-            "iss": "https://cnesp001.carene.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "UPhXyYBV4mAMlCsVtscAJP2KfP7T3kBn7R70dS9P3Lg"
-            ]
-        },
-        {
-            "iss": "https://epsoap.conehealth.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "c4YIskOBonG1i9MK3foSK0u32Ocnr21Z2A7VVPD0X6o"
-            ]
-        },
-        {
-            "iss": "https://epicrp-prd.eushc.org/OAUTH2-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "2knCJErzIirepPhDkFlIHeLNXyVlh8msd7G-D-kxCmk"
-            ]
-        },
-        {
-            "iss": "https://epicarr.aahs.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "OmrNtWr0mK2ZYUqI8-KBmDBvvmdh5s6xqmX4ABMhbME"
-            ]
-        },
-        {
-            "iss": "https://arrprd.mhhcc.org/OAuth2/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "HBk1a-I_6M9bUeGkJxffwgrwJaynPikaQCHD1I3qPj4"
-            ]
-        },
-        {
-            "iss": "https://www.mypruitthealth.com/api/api/Vaccination/shc",
-            "kids": [
-                "35iLwiFy_yB7mTxH2IpdSA94Z0mbo2PB5xqoo02BFhU"
-            ]
-        }
-    ]
+    "removedKids": []
 }
