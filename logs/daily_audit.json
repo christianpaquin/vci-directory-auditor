@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2025-09-24T12:47:00Z",
+    "auditTime": "2025-09-25T12:48:49Z",
     "issuerCount": 637,
     "issuersWithErrors": [
         {
@@ -582,7 +582,7 @@
             },
             "crls": [],
             "errors": [
-                "RequestError: read ECONNRESET"
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -719,7 +719,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140481216912320:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140591999552448:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -752,6 +752,18 @@
             "crls": [],
             "errors": [
                 "RequestError: getaddrinfo ENOTFOUND prodsoap1.tgh.org"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://tpc-shield.tpcllp.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "The Portland Clinic",
+                "website": "https://mychart.tpcllp.com/mychart"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -1038,7 +1050,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140481216912320:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140591999552448:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -1446,6 +1458,18 @@
         },
         {
             "issuer": {
+                "iss": "https://SF1.rmcps.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Riverside Medical Clinic",
+                "website": "https://myhealthyconnection.riversidemedicalclinic.com/mychart"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://epicprdext.stfranciscare.org/FhirProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Trinity Health of New England",
                 "website": "https://www.trinityhealthofne.org/patient-portal/"
@@ -1600,6 +1624,18 @@
         },
         {
             "issuer": {
+                "iss": "https://epicaccess.templehealth.org/FhirProxyPrd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Temple Health",
+                "website": "https://www.templehealth.org/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://health.us.cue.dev/api/smart-health-card/production",
                 "name": "Cue Health",
                 "website": "https://cuehealth.com/contact/support/"
@@ -1738,7 +1774,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140481216912320:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140591999552448:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -1837,14 +1873,26 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2025-09-23T12:46:11Z",
+    "previousAuditTime": "2025-09-24T12:47:00Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://tpc-shield.tpcllp.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "2Y6IshBllIuZBWuUMPeefWvqSHynjSDrmXHpOKo9JnU"
+                "5vKTYrz-IoaW6hEqbeZGD-UIdlTJ5WtXQ9TpdzBlTPw"
+            ]
+        },
+        {
+            "iss": "https://SF1.rmcps.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "_Pr7qPqkGk9ScHxxOy1EtA1ckzpe7w4wN_lkCIbmUtU"
+            ]
+        },
+        {
+            "iss": "https://epicaccess.templehealth.org/FhirProxyPrd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "_a-kB8nWodnqIgCflOUDxUORfUD1aoUR6Bey8-mHyek"
             ]
         }
     ]
