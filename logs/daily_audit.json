@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2025-10-15T12:50:10Z",
+    "auditTime": "2025-10-16T12:49:56Z",
     "issuerCount": 638,
     "issuersWithErrors": [
         {
@@ -293,6 +293,26 @@
         },
         {
             "issuer": {
+                "iss": "https://iatrius.atriushealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Atrius Health",
+                "website": "https://myhealth.atriushealth.org/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "ECDSA",
+                "pubKeySize": "384",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: unable to get local issuer certificate"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://eprescribe-p.medisys.org/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "MediSys Health Network",
                 "website": "https://mychart.medisys.org/MyChart/"
@@ -562,7 +582,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: connect ECONNREFUSED 72.158.86.112:443"
+                "RequestError: connect ECONNREFUSED 216.186.180.112:443"
             ]
         },
         {
@@ -582,7 +602,7 @@
             },
             "crls": [],
             "errors": [
-                "RequestError: read ECONNRESET"
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -603,6 +623,26 @@
             "crls": [],
             "errors": [
                 "RequestError: self signed certificate in certificate chain"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://fhir.hfhs.org/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Henry Ford Health System",
+                "website": "https://mychart.hfhs.org/mychart"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: unable to get local issuer certificate"
             ]
         },
         {
@@ -727,7 +767,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140486411684800:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140515086363584:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -1066,7 +1106,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140486411684800:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140515086363584:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -1474,18 +1514,6 @@
         },
         {
             "issuer": {
-                "iss": "https://SF1.rmcps.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Riverside Medical Clinic",
-                "website": "https://myhealthyconnection.riversidemedicalclinic.com/mychart"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epicprdext.stfranciscare.org/FhirProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Trinity Health of New England",
                 "website": "https://www.trinityhealthofne.org/patient-portal/"
@@ -1586,6 +1614,27 @@
             "crls": [],
             "errors": [
                 "RequestError: getaddrinfo ENOTFOUND dvc.mohw.gov.tw"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://cnesp001.carene.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Care New England",
+                "website": "https://www.carenewengland.org/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
+                "SyntaxError: Unexpected token S in JSON at position 0"
             ]
         },
         {
@@ -1769,7 +1818,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140486411684800:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140515086363584:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -1868,26 +1917,26 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2025-10-14T12:50:39Z",
+    "previousAuditTime": "2025-10-15T12:50:10Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://epiclbsprxyprodpass.houstonmethodist.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://iatrius.atriushealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4"
+                "yV90BgTcAJ6o91JO3nzYcIaV-uuiS8HzvYFk6DHK-GE"
             ]
         },
         {
-            "iss": "https://SF1.rmcps.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://fhir.hfhs.org/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "_Pr7qPqkGk9ScHxxOy1EtA1ckzpe7w4wN_lkCIbmUtU"
+                "o0GnOoIBxND1SYy0EKl1d_qCXTNqKjtUCe--nVqrmsI"
             ]
         },
         {
-            "iss": "https://epicarr.aahs.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://cnesp001.carene.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "OmrNtWr0mK2ZYUqI8-KBmDBvvmdh5s6xqmX4ABMhbME"
+                "UPhXyYBV4mAMlCsVtscAJP2KfP7T3kBn7R70dS9P3Lg"
             ]
         }
     ]
