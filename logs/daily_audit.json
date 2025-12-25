@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2025-12-24T12:52:14Z",
+    "auditTime": "2025-12-25T12:51:22Z",
     "issuerCount": 638,
     "issuersWithErrors": [
         {
@@ -249,26 +249,6 @@
             "crls": [],
             "errors": [
                 "HTTPError: Response code 403 (Forbidden)"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://iatrius.atriushealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Atrius Health",
-                "website": "https://myhealth.atriushealth.org/"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "ECDSA",
-                "pubKeySize": "384",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "RequestError: unable to get local issuer certificate"
             ]
         },
         {
@@ -779,7 +759,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139897694895040:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139724208286656:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -841,6 +821,14 @@
                 "website": "https://www.vacuid.pr.gov/"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "HTTPError: Response code 403 (Site Disabled)"
@@ -1086,9 +1074,17 @@
                 "website": "https://mychart.mysrhs.com/mychart"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "ECDSA",
+                "pubKeySize": "256",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "HTTPError: Response code 502 (Bad Gateway)"
             ]
         },
         {
@@ -1120,7 +1116,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139897694895040:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139724208286656:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -1672,27 +1668,6 @@
         },
         {
             "issuer": {
-                "iss": "https://cnesp001.carene.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Care New England",
-                "website": "https://www.carenewengland.org/"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
-                "SyntaxError: Unexpected token S in JSON at position 0"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://shc.cdr-healthmed.com/issuer",
                 "name": "CDR Health",
                 "website": "https://www.patientportalfl.com/"
@@ -1911,7 +1886,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139897694895040:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139724208286656:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -2010,21 +1985,8 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2025-12-23T12:53:51Z",
+    "previousAuditTime": "2025-12-24T12:52:14Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
-    "removedKids": [
-        {
-            "iss": "https://cnesp001.carene.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "UPhXyYBV4mAMlCsVtscAJP2KfP7T3kBn7R70dS9P3Lg"
-            ]
-        },
-        {
-            "iss": "https://lsepprdsoap.lifespan.org/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "u5998105SW67sFwRs_iUr5Cu7lg46zySntjpQLEGRyA"
-            ]
-        }
-    ]
+    "removedKids": []
 }
