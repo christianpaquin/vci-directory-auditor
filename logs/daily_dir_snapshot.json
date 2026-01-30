@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2026-01-29T13:08:00Z",
+    "time": "2026-01-30T13:06:14Z",
     "issuerInfo": [
         {
             "issuer": {
@@ -5441,14 +5441,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -6642,8 +6634,8 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
                 "kexAlg": "ECDH, secp521r1, 521 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
@@ -6770,7 +6762,17 @@
                 "name": "Atrius Health",
                 "website": "https://myhealth.atriushealth.org/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "FmZ--m6k46pcWjv10m8A_FJ4N-U8tsduZJc9jMtkCJI",
+                    "y": "I6LV1OtPmZY-eVAVU0fnTF0P4P3JV3ZhC_kEs5Mlxwg",
+                    "kid": "yV90BgTcAJ6o91JO3nzYcIaV-uuiS8HzvYFk6DHK-GE",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -6780,9 +6782,7 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "RequestError: unable to get local issuer certificate"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -7899,8 +7899,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "cipher": "DHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "DH, 2048 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -8169,9 +8169,9 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -8281,9 +8281,9 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -9014,7 +9014,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: connect ECONNREFUSED 216.186.180.112:443"
+                "RequestError: connect ECONNREFUSED 72.158.86.112:443"
             ]
         },
         {
@@ -9625,11 +9625,19 @@
                 "name": "ProMedica",
                 "website": "https://mychart.promedica.org/MyChart/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "Hty2sTB8Apkrr-Zvi7nuchk-U9dey3nS5wZxxsP6ZeY",
+                    "y": "3zXcnWpnWc6jJEvVUuHph2SZ4h7KSJm8HSnL3HoFAuk",
+                    "kid": "uPWKKpoWI3OIa11UbV9xdoRHdf5ZsYsAyvczK79L3RE",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -11163,9 +11171,9 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -11266,7 +11274,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140283825138624:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139812164619200:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -11820,6 +11828,14 @@
                 "website": "https://www.vacuid.pr.gov/"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "HTTPError: Response code 403 (Site Disabled)"
@@ -14242,7 +14258,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140283825138624:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139812164619200:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -16364,6 +16380,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -19175,7 +19199,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140283825138624:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139812164619200:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {

@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2026-01-29T13:08:00Z",
+    "auditTime": "2026-01-30T13:06:14Z",
     "issuerCount": 637,
     "issuersWithErrors": [
         {
@@ -221,26 +221,6 @@
             "crls": [],
             "errors": [
                 "HTTPError: Response code 403 (Forbidden)"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://iatrius.atriushealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Atrius Health",
-                "website": "https://myhealth.atriushealth.org/"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
-                "authAlg": "ECDSA",
-                "pubKeySize": "384",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "RequestError: unable to get local issuer certificate"
             ]
         },
         {
@@ -547,7 +527,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: connect ECONNREFUSED 216.186.180.112:443"
+                "RequestError: connect ECONNREFUSED 72.158.86.112:443"
             ]
         },
         {
@@ -628,18 +608,6 @@
             "crls": [],
             "errors": [
                 "RequestError: Hostname/IP does not match certificate's altnames: Host: covid19.quebec.ca. is not in the cert's altnames: DNS:*.aeportal.thesmartcube.com, DNS:aeportal.thesmartcube.com"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://fhir.promedica.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "ProMedica",
-                "website": "https://mychart.promedica.org/MyChart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -773,7 +741,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140283825138624:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139812164619200:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -835,6 +803,14 @@
                 "website": "https://www.vacuid.pr.gov/"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "HTTPError: Response code 403 (Site Disabled)"
@@ -1114,7 +1090,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140283825138624:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139812164619200:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -1964,7 +1940,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140283825138624:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139812164619200:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -2063,27 +2039,8 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2026-01-28T13:01:24Z",
+    "previousAuditTime": "2026-01-29T13:08:00Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
-    "removedKids": [
-        {
-            "iss": "https://iatrius.atriushealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "yV90BgTcAJ6o91JO3nzYcIaV-uuiS8HzvYFk6DHK-GE"
-            ]
-        },
-        {
-            "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "2Y6IshBllIuZBWuUMPeefWvqSHynjSDrmXHpOKo9JnU"
-            ]
-        },
-        {
-            "iss": "https://fhir.promedica.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "uPWKKpoWI3OIa11UbV9xdoRHdf5ZsYsAyvczK79L3RE"
-            ]
-        }
-    ]
+    "removedKids": []
 }
