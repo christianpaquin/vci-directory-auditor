@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2026-04-14T13:56:23Z",
+    "time": "2026-04-15T13:49:29Z",
     "issuerInfo": [
         {
             "issuer": {
@@ -216,7 +216,17 @@
                 "name": "Cedars-Sinai Medical Center",
                 "website": "https://mycslink.cedars-sinai.org/mycslink"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "V8XJuSv07CqxugAHF4_3p6gFjK6p4SC02yJWDi2tfCs",
+                    "y": "a9yfFD4cQLRBMe-JPD-jlw6xpE3bdDdos5ofcT-y-fg",
+                    "kid": "CqfJ_R5DTOoBzVdpTiTCiD9xLkho4lKY0nxJVqTP-mA",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -226,9 +236,7 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "RequestError: unable to get local issuer certificate"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -6816,7 +6824,7 @@
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -7018,14 +7026,6 @@
                 "website": "https://mychart.sbch.org/mychart"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
                 "RequestError: unable to get local issuer certificate"
@@ -8159,9 +8159,9 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -8988,7 +8988,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: connect ECONNREFUSED 216.186.180.112:443"
+                "RequestError: connect ECONNREFUSED 72.158.86.112:443"
             ]
         },
         {
@@ -9471,8 +9471,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -9744,8 +9744,8 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
                 "kexAlg": "ECDH, secp521r1, 521 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
@@ -9931,6 +9931,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -11094,9 +11102,9 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -11197,7 +11205,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140452268047296:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140329251376064:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -11480,17 +11488,7 @@
                 "name": "The Portland Clinic",
                 "website": "https://mychart.tpcllp.com/mychart"
             },
-            "keys": [
-                {
-                    "x": "32ruNXDb-XeQnm5YpCuaMM4kj4h_j_xVMe9XyVdTMLw",
-                    "y": "4rU6UziLnhMBW-S08geUIIOPxj83_OIkouvy2JlrL6s",
-                    "kid": "5vKTYrz-IoaW6hEqbeZGD-UIdlTJ5WtXQ9TpdzBlTPw",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-SHA384",
@@ -11500,7 +11498,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -11751,6 +11751,14 @@
                 "website": "https://www.vacuid.pr.gov/"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "HTTPError: Response code 403 (Site Disabled)"
@@ -12658,7 +12666,17 @@
                 "iss": "https://cslinkmobile.csmc.edu",
                 "name": "Cedars-Sinai Health System"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "crv": "P-256",
+                    "x": "7Rlsuv_eFpdNQToBT7Q4H5ChQMQ333Hmv7V-t6qBFCs",
+                    "y": "VjpJjYwehcCb8Hg_DJloA-X9A7r4rC8KNfgQ4SkmnJ8",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "kid": "KBBgSdgGdb2_Nqufjj09pcISTziLYhj9meR19MmKLDk"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -12668,9 +12686,7 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "RequestError: unable to get local issuer certificate"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -14194,7 +14210,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140452268047296:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140329251376064:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -17366,7 +17382,17 @@
                 "name": "Hy-Vee",
                 "website": "https://www.hy-vee.com/my-pharmacy/digital-vaccine-records"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "kid": "C9m4nqmNWHe4eX_Dg_tyoLkMS-x3KvNfP0lMBx8Jd34",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "Ko1S6jIAuLNwF9k0duwZ8l5vsHQEEEE4rQRe66Cd8KI",
+                    "y": "RfqwZs6RHHYUXExuJp9VGMsB9cjWzb1wMrdbJCCyiEI"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -17376,9 +17402,7 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "MaxRedirectsError: Redirected 10 times. Aborting."
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -18661,8 +18685,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "DHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "DH, 2048 bits",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -19077,7 +19101,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140452268047296:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140329251376064:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
