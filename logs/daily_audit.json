@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2026-06-06T13:53:27Z",
+    "auditTime": "2026-06-07T14:03:48Z",
     "issuerCount": 637,
     "issuersWithErrors": [
         {
@@ -262,6 +262,14 @@
                 "website": "https://mychart.sbch.org/mychart"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "RequestError: unable to get local issuer certificate"
@@ -285,18 +293,6 @@
             "crls": [],
             "errors": [
                 "RequestError: self signed certificate in certificate chain"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Baptist Health",
-                "website": "https://mychart.baptist-health.org/mychart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -699,9 +695,17 @@
                 "website": "https://www.quebec.ca/vaccinationpassport"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "RequestError: self signed certificate"
             ]
         },
         {
@@ -730,7 +734,17 @@
                 "name": "Houston Methodist",
                 "website": "https://mychart.houstonmethodist.org/mychart-prod/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "eVXPEAN8cSBXkLkDZjYummMTu6QVY2Yy85F2wCala40",
+                    "y": "2M7ZLV2U3wA-8GCV-0rzk9f6EVsjfwJJjRBmiu7g4hg",
+                    "kid": "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -741,27 +755,7 @@
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 500 (Internal Server Error)"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://waverify.doh.wa.gov/creds",
-                "name": "Washington State Department of Health",
-                "website": "https://waverify.doh.wa.gov/"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 403 (Forbidden)"
+                "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin"
             ]
         },
         {
@@ -865,7 +859,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140717136681920:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140112347495360:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -886,6 +880,26 @@
             "crls": [],
             "errors": [
                 "HTTPError: Response code 500 (Internal Server Error)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://epicproxy.et1085.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "UI Health",
+                "website": "https://mychart.uillinois.edu/MyChart"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -1294,7 +1308,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140717136681920:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140112347495360:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -2189,7 +2203,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140717136681920:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140112347495360:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -2288,32 +2302,14 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2026-06-05T15:13:55Z",
+    "previousAuditTime": "2026-06-06T13:53:27Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://iatrius.atriushealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://epicproxy.et1085.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "yV90BgTcAJ6o91JO3nzYcIaV-uuiS8HzvYFk6DHK-GE"
-            ]
-        },
-        {
-            "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "2Y6IshBllIuZBWuUMPeefWvqSHynjSDrmXHpOKo9JnU"
-            ]
-        },
-        {
-            "iss": "https://epiclbsprxyprodpass.houstonmethodist.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4"
-            ]
-        },
-        {
-            "iss": "https://waverify.doh.wa.gov/creds",
-            "kids": [
-                "n0S0H6_mbA93e3pEu-a67qoiF4CAWYsOGoWo6TLHUzQ"
+                "i29n9wbau7IMZb0R6Zsk99aLyej7Zd7Ll5qc8GFqlW8"
             ]
         }
     ]
