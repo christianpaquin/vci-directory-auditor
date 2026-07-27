@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2026-07-26T13:38:18Z",
+    "time": "2026-07-27T14:45:26Z",
     "issuerInfo": [
         {
             "issuer": {
@@ -6746,7 +6746,17 @@
                 "name": "Atrius Health",
                 "website": "https://myhealth.atriushealth.org/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "FmZ--m6k46pcWjv10m8A_FJ4N-U8tsduZJc9jMtkCJI",
+                    "y": "I6LV1OtPmZY-eVAVU0fnTF0P4P3JV3ZhC_kEs5Mlxwg",
+                    "kid": "yV90BgTcAJ6o91JO3nzYcIaV-uuiS8HzvYFk6DHK-GE",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -6756,9 +6766,7 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "RequestError: unable to get local issuer certificate"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -7012,6 +7020,14 @@
                 "website": "https://mychart.sbch.org/mychart"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "RequestError: unable to get local issuer certificate"
@@ -7867,8 +7883,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "cipher": "DHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "DH, 2048 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -8121,9 +8137,9 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -8942,7 +8958,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: connect ECONNREFUSED 72.158.86.112:443"
+                "RequestError: connect ECONNREFUSED 216.186.180.112:443"
             ]
         },
         {
@@ -9667,6 +9683,15 @@
                     "crv": "P-256",
                     "x": "VKNNaSfsFCyiqagSgLqUMfh7yqCftnOPOM2dwI2wn7I",
                     "y": "EgKtRg9AzS3BwazaF6y2cN_5OumFwSbilBi2JTLkSUU"
+                },
+                {
+                    "kty": "EC",
+                    "kid": "m3v0cRgP7wTV_WNLXHWogrZeNHqoS2gg5LElOi-dY5U",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "lw0lcSEf2ec_fVGZAbeNG0KGrmrj_pYqVeEgvJKj7gM",
+                    "y": "pRrbDgTdttbJgTRZgWnwK81evElXC7OaA3FIAzxgbb0"
                 }
             ],
             "tlsDetails": {
@@ -9885,14 +9910,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -9957,6 +9974,15 @@
                     "crv": "P-256",
                     "x": "bzy7Q6u4FtYQfboujI1GlNSISJRjy_QThbCsOYVLUxo",
                     "y": "fX9falCBGUOfaVGrVCRUMYmy-8e7qxQRsdojDNCa-KQ"
+                },
+                {
+                    "kty": "EC",
+                    "kid": "JPiV89l7R8nJ0vT7wYCv0nSP71tZTIfGE3ceCYmIdJA",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "0QOmFgeuL9qN8cFTUe3qT2X0M_h6sPWv7PsgSBDubsg",
+                    "y": "uyNVfwIA1-etzO8jGRMbKEvnwZDQF9tPqJxluhNBC-8"
                 }
             ],
             "tlsDetails": {
@@ -9997,6 +10023,15 @@
                 },
                 {
                     "kty": "EC",
+                    "kid": "YjZL4HuX0n2xT6BuFcrRju0BLWmOg6AR0tqkbi7SLAs",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "OLgKTaacl3F0-u3Zfk-Z1E8v0IzkcziBoc3ZYX3SG-k",
+                    "y": "Th1x-P7RAbERFdfH36V9Tvhf8c47uB1KeoXiigv4_r4"
+                },
+                {
+                    "kty": "EC",
                     "kid": "FbZg_sa61DRoo5ifB_xkqfHTZUrbBZsCmsDnzM6Bed8",
                     "use": "sig",
                     "alg": "ES256",
@@ -10034,6 +10069,15 @@
                 },
                 {
                     "kty": "EC",
+                    "kid": "S-R2w2qyu4JZ7hGpSFIDzH45vS6JdoUk7Bl9sf4Kd5Y",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "J2zjtP-Rhrgnk2iwZj44dvazZCsZ5OJ1rZAEN6pYkCI",
+                    "y": "qXJw7rwosKLaL84Syq5WortpmSCLDJk4xQ9ZVkS0ZGE"
+                },
+                {
+                    "kty": "EC",
                     "kid": "ozmYC99KNgBq6yTWHZC-0MIyR69BcqObwX4AjObfZks",
                     "use": "sig",
                     "alg": "ES256",
@@ -10068,6 +10112,15 @@
                 "name": "CNMI Immunization Program"
             },
             "keys": [
+                {
+                    "kty": "EC",
+                    "kid": "2JUuEw0BOJYvbxklvGrGL7tCWb5JHk7DgmB3FwDs7Fc",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "G0wz_tJOxxEmnh7p4ViFHC27KU8jjxHkRW4oL3MkSnI",
+                    "y": "gdoH1lShlWioAMqDcLJcM-UmumoV5n2E6dNqqyLrJ5E"
+                },
                 {
                     "kty": "EC",
                     "kid": "0nxV9NjOS02OjRuI8RvBv9_vrt3f7KtcMadAk9rfyL8",
@@ -10125,6 +10178,15 @@
                 },
                 {
                     "kty": "EC",
+                    "kid": "JZ6To--yzjB6harSetZ-T4mXHqV6Maimvg1TuH81afw",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "mXvt0uEVItveb5huP2aZEmVsQp1wRJmNPWiw32iZP1Y",
+                    "y": "08jNgTfY4Ub_hegLWA3v4Eh_rM7hXcIcNq-kgW_fF3U"
+                },
+                {
+                    "kty": "EC",
                     "kid": "LHdtGovWBU0Wi8813Sx1jIESojQhL0pJG_flLnw9ACg",
                     "use": "sig",
                     "alg": "ES256",
@@ -10168,6 +10230,15 @@
                     "crv": "P-256",
                     "x": "MM8DFK80lsgrzWI-u1Ra-I6zk4RwaluCbBMfGBQK0nI",
                     "y": "kKBT-QSe_TY53slhbRrNxL1IlT3cVfN4IDMjo7FboJ8"
+                },
+                {
+                    "kty": "EC",
+                    "kid": "tq7iT2YDo8V1H6KTMWAFJ_ITb95VEwJ6HHf4_GUGnI4",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "Z79k0kWLZdk9Wi5Nc_4_78MVvObhhqrGzum9g0HNDTE",
+                    "y": "9lMDRVzLrhc1NrehDQDnb8OEtpYgiCVF97uKx-yQ-8g"
                 },
                 {
                     "kty": "EC",
@@ -10366,6 +10437,15 @@
                 },
                 {
                     "kty": "EC",
+                    "kid": "IXUbNMNgo2RPB5WBoOJrLwGiUEYraEo92N9v3ns-ewE",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "xsj_jbidVmJCRASSUApqe-g0grdip11Dd6ITdKlG8bw",
+                    "y": "rVSgybBl8HiFeK4Gwb81MtWyuIMpTvj0n295BE5UZC0"
+                },
+                {
+                    "kty": "EC",
                     "kid": "fWHJFnr8c8JSYMOoE6Dm1Tgk_emVkBlQpTzcmU1R5yY",
                     "use": "sig",
                     "alg": "ES256",
@@ -10523,17 +10603,7 @@
                 "name": "Michigan Medicine",
                 "website": "https://www.myuofmhealth.org/MyChart-PRD"
             },
-            "keys": [
-                {
-                    "x": "Elt_b7xxFiS98vsU49QsJJ7kSzdG6UV8R-kfCuHAuZg",
-                    "y": "rwKjjHUDHWQArdEsmTIYeRqbBftmeKk6AQD2xytuNRg",
-                    "kid": "2ERcjZgrojfX64RG8MBu6EvsW-7qmYGg_18LITMjO1s",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES128-SHA256",
@@ -10543,7 +10613,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "RequestError: unable to get local issuer certificate"
+            ]
         },
         {
             "issuer": {
@@ -10580,6 +10652,15 @@
                     "crv": "P-256",
                     "x": "TlKVZXlYiy-b87I1hj3l3TtogUAM3mH6ysqmd68cCM4",
                     "y": "MUqcmY6rYYWVsSTKVRg2-vQiwYlveNUqTrTH6dAkLaY"
+                },
+                {
+                    "kty": "EC",
+                    "kid": "ugYAJHoY7RLG0iWuWpysJXZczXVPpT_hXXHW8Fup__Y",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "VhhRn8d2cUH8JJa6k642_7dtUyW0n5XEjOGJ28am8bo",
+                    "y": "aW1SjMZG3AS8LhwF3mzpmQRuE7zofqRlk6Qd1Y0BKGY"
                 },
                 {
                     "kty": "EC",
@@ -11167,7 +11248,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140470995430336:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140219736120256:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -13893,6 +13974,15 @@
                 },
                 {
                     "kty": "EC",
+                    "kid": "YDiG2ZGfJ4SRzvOeJw4BrqDfO9eRfv7eU3U5mVFCsF8",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "WJlaTxbFDs3SesnSpuEagJHMi2ZBG3DZIqat3NMeiZg",
+                    "y": "B9TxAHJr84wjCFrp_btritkmSenX-B6nvHn12N5jClg"
+                },
+                {
+                    "kty": "EC",
                     "kid": "Yu40-F_1FcAln5ttSn9fuwDz19bTA86whJkEz08VQXA",
                     "use": "sig",
                     "alg": "ES256",
@@ -13939,6 +14029,15 @@
                 },
                 {
                     "kty": "EC",
+                    "kid": "M8QCeOrmerBLhnqQFgZTcFmsrM9Zw9yFBbWZoUmT6k4",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "6I6p_UEtCpZR2XP-xWpRddy7TgTI_ao0lkYefVlx9Ig",
+                    "y": "ZUra7RR9L8G-CZyrXc29P0WqxDoHRbUzk2QubqyB3no"
+                },
+                {
+                    "kty": "EC",
                     "kid": "D1RT-FLJ53Bz68nQwyXwD9IRf3y0JIxQlmGidf4mIDc",
                     "use": "sig",
                     "alg": "ES256",
@@ -13973,6 +14072,15 @@
                 "name": "American Samoa"
             },
             "keys": [
+                {
+                    "kty": "EC",
+                    "kid": "jR8W5AA2nmXne3IHtS-xLoDtWNgwjcoglo35qg8lCok",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "mMKNMHV0TLZZrzeU83-7gErmeEbk3PegZDxpnApedrg",
+                    "y": "usclYGXbqBEY2dGL6KDNZwU3KoBWCV6GYqyvl-aA-L8"
+                },
                 {
                     "kty": "EC",
                     "kid": "i3LY2PfkvMDAMneR0FjDjlaNKqNxRZVdOJBILL2S21E",
@@ -14019,6 +14127,15 @@
                 "website": "https://hsa.gov.fm/"
             },
             "keys": [
+                {
+                    "kty": "EC",
+                    "kid": "JUwlmoCMu3IkPxQC6YwRqkhIQxlhOTWXnjXCkKdFBxk",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "4eVMpJHFDo2yA4mL7D8LZU3VXgmLmGhDLGM8_olK0Qc",
+                    "y": "3vlFNHTdPiVuJ0xc5iaoD-0i6gEDoUokdenJAiYHIlw"
+                },
                 {
                     "kty": "EC",
                     "kid": "Y8zVcFHTTRCApVnMujtII_xeXXngxf4b5KjJ22wzw-o",
@@ -14121,6 +14238,15 @@
             "keys": [
                 {
                     "kty": "EC",
+                    "kid": "Aw7XCmTWJ3qJKwh7BQyIO9wFQ3-E5xZsav1RWEOY9TM",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "-BtM0VDFXXmhgMJ-ZYBzkWH7OmsiCwFbX5TVFyL_BmY",
+                    "y": "djb6jW6FgihMiCKp7J4y41md439tcu9ubbibxnPMv6k"
+                },
+                {
+                    "kty": "EC",
                     "kid": "psdIpRsv55C3WoeeZ8SgiCYTb7NwppbYvVDcy3MpVIo",
                     "use": "sig",
                     "alg": "ES256",
@@ -14187,7 +14313,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140470995430336:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140219736120256:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -14311,17 +14437,7 @@
                 "name": "Saint Francis Health System",
                 "website": "https://mychart.saintfrancis.com/mychart/"
             },
-            "keys": [
-                {
-                    "x": "eArzs6Pv7JCPRrGijN3WKDYTJqU00tE-9V1KHCDJAHU",
-                    "y": "mT7OOxw7DmRlAoghJGqyRg6EMZKDSbx-VDYSlVDfgEE",
-                    "kid": "Gnuke2ZfaUIYFahHcJgurDIOqva0X62u-0ZG1e98NFg",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -14331,7 +14447,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -14916,7 +15034,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140470995430336:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140219736120256:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -16831,17 +16949,7 @@
                 "name": "Methodist Hospitals (IN)",
                 "website": "https://mychart.methodisthospitals.org/mychart"
             },
-            "keys": [
-                {
-                    "x": "F-AGqWq9JKAz6rcPXjztjQElXDZuhRJ7WUkoW7qrx1Y",
-                    "y": "bPkyWe4lt1tNCVnyeVmPmei5vJff_lZqd9sNaRTVW5g",
-                    "kid": "IHtj6CeVxA-5qztmSUXjoTNr9uAyU1xnYDY_Iw06GPI",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
@@ -16851,7 +16959,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "HTTPError: Response code 404 (Not Found)"
+            ]
         },
         {
             "issuer": {
@@ -17618,7 +17728,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "RequestError: getaddrinfo ENOTFOUND dvc.mohw.gov.tw"
             ]
         },
         {
@@ -18117,6 +18227,15 @@
                     "crv": "P-256",
                     "x": "depwqPutX1r54cfq7Ckm80-jbgG7RlitNfpP0N4BMfo",
                     "y": "ZqM4pNLpvvNf2H_eytR14Jfu12OcxKqF_1PL_EZtNkA"
+                },
+                {
+                    "kty": "EC",
+                    "kid": "pH8uAQ3kqgztNBBRiCXAMeKkYZ2fQ028F_qPZoN4FCY",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "M8PS2rfk45V42qJBpmes1Pf_CFiaaYtZJ6D0JfZZnHE",
+                    "y": "hr5Yn6XgZV37fDh0pxa6ROAqU2y-Gb5xPGQTYVkG6CU"
                 },
                 {
                     "kty": "EC",
@@ -19046,7 +19165,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140470995430336:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140219736120256:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -19131,6 +19250,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
