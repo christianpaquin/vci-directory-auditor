@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2026-08-04T14:25:39Z",
+    "time": "2026-08-05T14:18:48Z",
     "issuerInfo": [
         {
             "issuer": {
@@ -6142,18 +6142,28 @@
                 "name": "OhioHealth",
                 "website": "https://mychart.ohiohealth.com/mychart"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "ls3_WB4qHrX-ShDnCbL7x1wXVGU2SWaNEGIBvXTj5TQ",
+                    "y": "CnJ70thIqBaolS4CgzPnvXmZVE33sZ8GoxaDhrQP-V4",
+                    "kid": "bmZaEJ1u1TD7LAAWuUTNaq0AycbDuCtJL1v9rZUvD9g",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.3",
-                "cipher": "TLS_AES_128_GCM_SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "ECDSA",
+                "pubKeySize": "256",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
-                "RequestError: self signed certificate in certificate chain"
+                "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin"
             ]
         },
         {
@@ -6746,7 +6756,17 @@
                 "name": "Atrius Health",
                 "website": "https://myhealth.atriushealth.org/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "FmZ--m6k46pcWjv10m8A_FJ4N-U8tsduZJc9jMtkCJI",
+                    "y": "I6LV1OtPmZY-eVAVU0fnTF0P4P3JV3ZhC_kEs5Mlxwg",
+                    "kid": "yV90BgTcAJ6o91JO3nzYcIaV-uuiS8HzvYFk6DHK-GE",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -6756,9 +6776,7 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "RequestError: unable to get local issuer certificate"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -6808,7 +6826,7 @@
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "kexAlg": "X25519, 253 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -7875,8 +7893,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "DHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "DH, 2048 bits",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -8243,7 +8261,7 @@
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -8447,7 +8465,7 @@
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
                 "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "RSA",
+                "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
@@ -8950,7 +8968,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: connect ECONNREFUSED 216.186.180.112:443"
+                "RequestError: connect ECONNREFUSED 72.158.86.112:443"
             ]
         },
         {
@@ -9544,19 +9562,11 @@
                 "name": "ProMedica",
                 "website": "https://mychart.promedica.org/MyChart/"
             },
-            "keys": [
-                {
-                    "x": "Hty2sTB8Apkrr-Zvi7nuchk-U9dey3nS5wZxxsP6ZeY",
-                    "y": "3zXcnWpnWc6jJEvVUuHph2SZ4h7KSJm8HSnL3HoFAuk",
-                    "kid": "uPWKKpoWI3OIa11UbV9xdoRHdf5ZsYsAyvczK79L3RE",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "HTTPError: Response code 404 (Not Found)"
+            ]
         },
         {
             "issuer": {
@@ -10333,7 +10343,17 @@
                 "name": "Houston Methodist",
                 "website": "https://mychart.houstonmethodist.org/mychart-prod/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "eVXPEAN8cSBXkLkDZjYummMTu6QVY2Yy85F2wCala40",
+                    "y": "2M7ZLV2U3wA-8GCV-0rzk9f6EVsjfwJJjRBmiu7g4hg",
+                    "kid": "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -10344,7 +10364,7 @@
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 500 (Internal Server Error)"
+                "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin"
             ]
         },
         {
@@ -10595,27 +10615,11 @@
                 "name": "Michigan Medicine",
                 "website": "https://www.myuofmhealth.org/MyChart-PRD"
             },
-            "keys": [
-                {
-                    "x": "Elt_b7xxFiS98vsU49QsJJ7kSzdG6UV8R-kfCuHAuZg",
-                    "y": "rwKjjHUDHWQArdEsmTIYeRqbBftmeKk6AQD2xytuNRg",
-                    "kid": "2ERcjZgrojfX64RG8MBu6EvsW-7qmYGg_18LITMjO1s",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -10850,17 +10854,7 @@
                 "name": "Oregon Health & Science University",
                 "website": "https://mychartweb.ohsu.edu/mychart"
             },
-            "keys": [
-                {
-                    "x": "AxpiUOem7Wa5AbnBJ26K30DO5H_-nu27XgrfuHK0vwc",
-                    "y": "gg-kyD3HqvwWrWnxStYlc3NgEKuqUOwpuGRdpxja11U",
-                    "kid": "GF4J7iNjERUsXgF7d3PTiHZMNMldLKLk4SP50qkJX-8",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
@@ -10870,7 +10864,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "HTTPError: Response code 502 (Bad Gateway)"
+            ]
         },
         {
             "issuer": {
@@ -11145,9 +11141,9 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -11248,7 +11244,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140581680966592:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140090568100800:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -12470,7 +12466,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "X25519, 253 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -12715,18 +12711,28 @@
                     "kid": "KSKKjFuopQFGUyRR5P3EQKnGiJQlnK95HGBbDfOa4mw"
                 },
                 {
-                    "kty": "RSA",
-                    "n": "1Wvj38JZdop9WJ97IJ0l-4ZNyVzrmidxU5a_aRQoyxvU3yvDDU4-kzH0xit1ESuOAEJS3OmbkrOc81WAtel_0gCFYf6DLVr48RWPsSeu77gPHqtvjchmVtJKwHSpdV7D5XuvwS9OCi1ufvTdwONfAgIGIOUfnuQgpqF3K5zZE-UGKo32adS05iYEtSLJ_hBMXD68z0_8lNqZj27lYcv-Qy8bG9C7WsEU6AtAffbg8z9pea2XAu_A7fjz5wNZBQPE9T8NcggGffX31eNXyQgdFEtBDDnRH15SFQJYBZbTclrbRU8Cjr5exj4WWIHFv_qRhqUvt3BnqVeU9bJneOhczQ",
                     "e": "AQAB",
-                    "alg": "RS256",
-                    "kid": "care-routing-agent-v1",
-                    "use": "sig"
+                    "n": "1OI4Jn-1lrSNHGGG16KCxfhvJzosfyn3fSscYzwjJYBLF41SazhvVFzqva_FeNZjkHlLCdufAdM2SLgg99MmlHBbkjCen_63tMsWzmdRMKXuO25K5vQ92IlwEBS3PnQ0XsVREVBhPCpmSs9HLlkoBnqu9qHJfxtbLvZWsZzT4BZpUZwPJ0AWZ_saaspigVzsgSJdN2imYCdIYQ6mRLwFV3H060vogSIJw0p9Fm7wKk-xWcivxfBuuT3riZc1x7oOUnTqkq7C8NKUhkTBdYYf5kBWooF-DIYq1UPQdv60zKl5aM4djMk9F1AXOob689G0hWTGY-rjQfgD4VeXek856w",
+                    "kty": "RSA",
+                    "kid": "KisA_zFxiTUDNRQjSJ0NsV92iJeu67VgTSvS-aWjElQ"
+                },
+                {
+                    "e": "AQAB",
+                    "n": "o59_GD2uygUaCyKLd3MI1QtZ2LI-EEKlq5DtsSPBRCWHrLCZgEQd2Sp-zzRVj5BHp3zZ31AyIJ9TbHrwF8Du7fQRZpziJmmQtpACzImbZ2mu9Gk2zAjUUEojeH_t6mGgddAPgvCyuE1skFynSya-QNZfB_IZJUwpIu4tzfRGEsDvxWri_w22vErN1-GtBQQ9rD8EWPKTFY_ST4ZL8CeSR0jyqnyaFnn2S_5RldDTrSjADSb-WUt1g47qcZ26vC_pgsXHQkj9hjH7qP7fLTE3Mp7RnbxydWkPtfphUGrSCYFU5A4mohEhGkYtPn_w432xcUlL3a4QreJ4d-JweixFaQ",
+                    "kty": "RSA",
+                    "kid": "koyXVYSOa-SHzd50vDWTqFvmKL4mzySqjoJB65jO7jk"
+                },
+                {
+                    "e": "AQAB",
+                    "n": "o5gf76A1uFUrJTBV-QGV8Ev6IbpcX6pjmKnR9BuAL5eqyQHbTmEpFqCKXXUPdDa2l2QKWjKRDaVEFnCyzAzH8C058OEu7WYhi-FRN-nm5AN80G6UyJ1wRJmZImyMRsFMXMvs5H9egOU_l8Ql4Nf6_-xAV-mlFUYPL_HkIbUXTIBx6nm-clqHyG51616HFkEEu04QOvnzmYi6tCqSxWXBgsr82ijm_4deQR6_c00R1HNX5FPWJ9rZf-hf_s4cee-EzyISbFQABMClsIHWR0z1cf1krBu2nnNI-9Rqw0ZjSXUHIus3yiuP0x3Zi_gtopsDCUCiq7rWa7x1-IWBbsaNHQ",
+                    "kty": "RSA",
+                    "kid": "RArP3AanbT-bUlU5OvDCcycrQG7TpPDRzTSh71zIRpI"
                 }
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "kexAlg": "X25519, 253 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -13992,14 +13998,6 @@
                     "y": "WiTw5tOktYtcKmtqB053KHM1m7GSoubHSN325mqyRE4"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -14305,7 +14303,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140581680966592:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140090568100800:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -17812,14 +17810,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -19173,7 +19163,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140581680966592:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140090568100800:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
