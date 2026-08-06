@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2026-08-05T14:18:48Z",
+    "auditTime": "2026-08-06T14:22:18Z",
     "issuerCount": 637,
     "issuersWithErrors": [
         {
@@ -329,18 +329,6 @@
         },
         {
             "issuer": {
-                "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Baptist Health",
-                "website": "https://mychart.baptist-health.org/mychart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://www.riteaid.com",
                 "name": "Rite Aid Pharmacy",
                 "website": "https://www.riteaid.com/pharmacy/vaccination-digital-proof"
@@ -552,7 +540,7 @@
             },
             "crls": [],
             "errors": [
-                "RequestError: self signed certificate in certificate chain"
+                "HTTPError: Response code 403 (Ip Forbidden)"
             ]
         },
         {
@@ -775,38 +763,6 @@
         },
         {
             "issuer": {
-                "iss": "https://fhir.promedica.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "ProMedica",
-                "website": "https://mychart.promedica.org/MyChart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 404 (Not Found)"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://epicmobile.corp.saint-lukes.org/FHIRPROXY/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Saint Luke's Health System KC",
-                "website": "https://mysaintlukes.corp.saint-lukes.org/MyChartPRD"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "RequestError: unable to get local issuer certificate"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://FHIR.umm.edu/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "University of Maryland Medical System",
                 "website": "https://myportfolio.umm.edu/MyChart/"
@@ -831,17 +787,7 @@
                 "name": "Houston Methodist",
                 "website": "https://mychart.houstonmethodist.org/mychart-prod/"
             },
-            "keys": [
-                {
-                    "x": "eVXPEAN8cSBXkLkDZjYummMTu6QVY2Yy85F2wCala40",
-                    "y": "2M7ZLV2U3wA-8GCV-0rzk9f6EVsjfwJJjRBmiu7g4hg",
-                    "kid": "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -852,7 +798,7 @@
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin"
+                "HTTPError: Response code 500 (Internal Server Error)"
             ]
         },
         {
@@ -873,18 +819,6 @@
             "crls": [],
             "errors": [
                 "HTTPError: Response code 403 (Forbidden)"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://mcproxyprd.med.umich.edu/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Michigan Medicine",
-                "website": "https://www.myuofmhealth.org/MyChart-PRD"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -949,26 +883,6 @@
         },
         {
             "issuer": {
-                "iss": "https://epicmobile.ohsu.edu/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Oregon Health & Science University",
-                "website": "https://mychartweb.ohsu.edu/mychart"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "4096",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "HTTPError: Response code 502 (Bad Gateway)"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://fhir.archildrens.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Arkansas Children's",
                 "website": "https://mychart.archildrens.org/mychart/"
@@ -988,7 +902,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140090568100800:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139761913252800:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -1080,6 +994,14 @@
                 "website": "https://www.vacuid.pr.gov/"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "HTTPError: Response code 403 (Site Disabled)"
@@ -1430,7 +1352,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140090568100800:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139761913252800:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -2365,7 +2287,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140090568100800:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139761913252800:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -2444,32 +2366,14 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2026-08-04T14:25:39Z",
+    "previousAuditTime": "2026-08-05T14:18:48Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://fhir.promedica.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://epiclbsprxyprodpass.houstonmethodist.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "uPWKKpoWI3OIa11UbV9xdoRHdf5ZsYsAyvczK79L3RE"
-            ]
-        },
-        {
-            "iss": "https://mcproxyprd.med.umich.edu/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "2ERcjZgrojfX64RG8MBu6EvsW-7qmYGg_18LITMjO1s"
-            ]
-        },
-        {
-            "iss": "https://epicmobile.ohsu.edu/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "GF4J7iNjERUsXgF7d3PTiHZMNMldLKLk4SP50qkJX-8"
-            ]
-        },
-        {
-            "iss": "https://api.cvshealth.com/public",
-            "kids": [
-                "care-routing-agent-v1"
+                "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4"
             ]
         }
     ]
