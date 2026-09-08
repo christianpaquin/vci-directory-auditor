@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2026-09-07T17:34:59Z",
+    "time": "2026-09-08T16:20:59Z",
     "issuerInfo": [
         {
             "issuer": {
@@ -7193,27 +7193,11 @@
                 "name": "Baptist Health",
                 "website": "https://mychart.baptist-health.org/mychart/"
             },
-            "keys": [
-                {
-                    "x": "hA1cB_UjKPGaLnIm9mlJ0wLrK6g5QCd_eae2UKFRvpw",
-                    "y": "o1SsIsu0ZWeSsGkyxR6it-8MdJRny_deosxdrm1a3FI",
-                    "kid": "2Y6IshBllIuZBWuUMPeefWvqSHynjSDrmXHpOKo9JnU",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -8547,27 +8531,11 @@
                 "name": "Austin Regional Clinic",
                 "website": "https://mychart.austinregionalclinic.com/mychart/"
             },
-            "keys": [
-                {
-                    "x": "VwoPo_VHjz3QNwtT9NUyByhzijdHAO46DkMqTofpQkE",
-                    "y": "kz0rY0AqmLtDkqlLoSCzcMtIU_gGhXFstKMWwsGufq4",
-                    "kid": "sBU-IwhRjb9FeJRb-Trv6VRzF-dOOIeZsUeayinVGTE",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -8968,7 +8936,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: connect ECONNREFUSED 216.186.180.112:443"
+                "RequestError: connect ECONNREFUSED 72.158.86.112:443"
             ]
         },
         {
@@ -9666,44 +9634,7 @@
                 "name": "Delaware Immunization Program",
                 "website": "https://delvax.dhss.delaware.gov/delvax_public/Application/PublicPortal"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "kid": "I4-2lo5sKoNGCI5wapC0rX-H6WGapwQzAMM0gxHK9Is",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "S1g4tD1cH7wzr_IwZw5uidxO3VJmeZ0r6lOEIxihFig",
-                    "y": "j1A50_S7NH6l3-a6lz56XKDAsfBb28CevzmexjQZLc0"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "12wyP5grpJw2DPkbE-WVV9HYnFHcIJijHBsCXzdDwN4",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "GN2WeQXY1qZ_Jzn5W5Hn8kKMDTHGIIdnFyN77jTvQBE",
-                    "y": "asQ4j8hj7AJPFvWOoGjUiVONdjkuRT2_MuGg5BRtrTE"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "FLG7R2OzT7hTQ3MzKu4Rm4HNlXsZCivg5hwgxQ2EdXQ",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "VKNNaSfsFCyiqagSgLqUMfh7yqCftnOPOM2dwI2wn7I",
-                    "y": "EgKtRg9AzS3BwazaF6y2cN_5OumFwSbilBi2JTLkSUU"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "m3v0cRgP7wTV_WNLXHWogrZeNHqoS2gg5LElOi-dY5U",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "lw0lcSEf2ec_fVGZAbeNG0KGrmrj_pYqVeEgvJKj7gM",
-                    "y": "pRrbDgTdttbJgTRZgWnwK81evElXC7OaA3FIAzxgbb0"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -9713,7 +9644,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
         },
         {
             "issuer": {
@@ -9723,8 +9656,8 @@
             },
             "keys": [],
             "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
                 "kexAlg": "ECDH, secp521r1, 521 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
@@ -9912,6 +9845,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -9949,44 +9890,7 @@
                 "name": "CT Department of Public Health",
                 "website": "https://portal.ct.gov/DPH/Immunizations/CT-WiZ-Access-My-Immunization-Record"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "kid": "sP1TC_urHxSpF9GvWBo4seZROa-veb73stfULCIvewA",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "JpxvBo0UvZJw8QaVC2hJS8pYbCqKvK118RgGjJQLmRs",
-                    "y": "1uXYTE0VoohpvWyrfivfxY60Bn-G3caKPhDT-__SzCg"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "SHg-tl0JfRIySOKcUcPwYCgFHLMIIUcKyEC824Ti8ao",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "Ixyk6M0lFbk5Tf8ycC7BCZ6oLJQSkvYLyaBp58CfKbo",
-                    "y": "K6p-sl5ZCKyD2UhZR7gwlosU2YkY-p4d5jrIxAz8Yjw"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "opFN570ZovxJD_LXLDJjkNC49Ew45K6chrFBMrwS2uY",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "bzy7Q6u4FtYQfboujI1GlNSISJRjy_QThbCsOYVLUxo",
-                    "y": "fX9falCBGUOfaVGrVCRUMYmy-8e7qxQRsdojDNCa-KQ"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "JPiV89l7R8nJ0vT7wYCv0nSP71tZTIfGE3ceCYmIdJA",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "0QOmFgeuL9qN8cFTUe3qT2X0M_h6sPWv7PsgSBDubsg",
-                    "y": "uyNVfwIA1-etzO8jGRMbKEvnwZDQF9tPqJxluhNBC-8"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -9996,7 +9900,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
         },
         {
             "issuer": {
@@ -10004,44 +9910,7 @@
                 "name": "State of Nevada",
                 "website": "https://izrecord.nv.gov/public/Application/PublicPortal"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "kid": "-_9-cZ0eu17-qRGoMJb1fF1l-HqIaOHRQXEY3Ls7cN0",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "-rmrUt4e010rq-plIFGRBNiuSuDGBgA3CkKK56fhTWo",
-                    "y": "15qEHtT9Ho8Nf4cO0vSyfJxFro6WXrvtN8gngFCvPJQ"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "ecqjBr8l3Ae0X_o4bFml8y9HVVAD0x2FadZmHUsDqks",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "o9b020qthI-z6EHTM-Fe_CVUb-0R2mSHtxQyAEC7-j0",
-                    "y": "g7V1LXtUez-j0jyK5p7G7j391c6U65xMHPOLUJLdAQ4"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "YjZL4HuX0n2xT6BuFcrRju0BLWmOg6AR0tqkbi7SLAs",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "OLgKTaacl3F0-u3Zfk-Z1E8v0IzkcziBoc3ZYX3SG-k",
-                    "y": "Th1x-P7RAbERFdfH36V9Tvhf8c47uB1KeoXiigv4_r4"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "FbZg_sa61DRoo5ifB_xkqfHTZUrbBZsCmsDnzM6Bed8",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "Fq_PBD-yrWbfG5E4jmezGEYlGXO3yAT3wJnujB3l_vc",
-                    "y": "iOfA_FpZ8qmO3XdNQxquBv8P-wiqSkqzOL7enZ8vaPE"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -10051,7 +9920,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
         },
         {
             "issuer": {
@@ -10059,44 +9930,7 @@
                 "name": "NM Department of Health",
                 "website": "http://vaxviewnm.org/"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "kid": "sIjKbrI8tHM9NaU8IsD17iu5I6Eu3UK38NOzqkll5ww",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "F2R-wsnjVX8AfQkU0rkf3cD6r6EZXmNjOGcZcK3gVfE",
-                    "y": "-2aq_Io6PY4mie5bDWaE0N5rK0VRF6hwiVlDQKTI5CQ"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "S-R2w2qyu4JZ7hGpSFIDzH45vS6JdoUk7Bl9sf4Kd5Y",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "J2zjtP-Rhrgnk2iwZj44dvazZCsZ5OJ1rZAEN6pYkCI",
-                    "y": "qXJw7rwosKLaL84Syq5WortpmSCLDJk4xQ9ZVkS0ZGE"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "ozmYC99KNgBq6yTWHZC-0MIyR69BcqObwX4AjObfZks",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "978FaSecSLwAtF8JtkeeXQRRMjxngd33LUDnfNNe7Ec",
-                    "y": "DJUPakYVLxMytpFzJfrlHWpBjRj8SgfMRYHvpx-YNNE"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "kC6gFXQmrDP9v9bk9M9E6lg-RCwbBqcrocG9JcxihIE",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "p25Oses3m0BFjjnVDlAf4wSB9cTx_9f_utlIAnSijsM",
-                    "y": "95DB65FaKJha3xD4UJympXwnj7_e-vWY7V1u---tk6Y"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -10106,51 +9940,16 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
         },
         {
             "issuer": {
                 "iss": "https://smarthealthcard.iisregistry.net/cnmi/issuer",
                 "name": "CNMI Immunization Program"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "kid": "2JUuEw0BOJYvbxklvGrGL7tCWb5JHk7DgmB3FwDs7Fc",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "G0wz_tJOxxEmnh7p4ViFHC27KU8jjxHkRW4oL3MkSnI",
-                    "y": "gdoH1lShlWioAMqDcLJcM-UmumoV5n2E6dNqqyLrJ5E"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "0nxV9NjOS02OjRuI8RvBv9_vrt3f7KtcMadAk9rfyL8",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "zHYhHucwE-3HCVNVjLeLDCKQ1PSAutsypvhwkwLn_G8",
-                    "y": "1ubUmIvWfAmousb4DYe0sog8u0jS85Ui8TZF-PfGknk"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "TAa2HiQ8voeMzxnULjblOAvzmTLTMpqj3GLt-omXLyI",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "c-kWWDl2ZgBxQ0DEr32zpkGckOPA7ZeM_qJKLCl5y44",
-                    "y": "jT0PvdCufMFLdf1pe-wqZiwmaqK49VHKspwvZ464YOk"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "quJcC2X6IoOfl-SPw-XYIgZnbXPtcZSsRBCWIh9XDZk",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "MLdi3kXsjdsj6cDPF1CoOwC9QaQIQQ00kTQtNzgfEpU",
-                    "y": "eXBRPSTGvt2WU46-Szhi77mxHqNuyDqivka3-qw0u6Q"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -10160,7 +9959,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
         },
         {
             "issuer": {
@@ -10168,44 +9969,7 @@
                 "name": "Guam Department of Public Health & Social Services",
                 "website": "https://dphss.guam.gov/"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "kid": "VlK8ZxfTL5GlfFKLjaP1MNci59vxBS9LwWLIYWb6m8g",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "NgayP_2pfFH8UngjhuCwtGBbTI6L0HMtJu49uds5WIU",
-                    "y": "iOe07_QuQ-kpPJII0gMVpd6Qkk1HnXX1OfRUaiV7epY"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "JZ6To--yzjB6harSetZ-T4mXHqV6Maimvg1TuH81afw",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "mXvt0uEVItveb5huP2aZEmVsQp1wRJmNPWiw32iZP1Y",
-                    "y": "08jNgTfY4Ub_hegLWA3v4Eh_rM7hXcIcNq-kgW_fF3U"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "LHdtGovWBU0Wi8813Sx1jIESojQhL0pJG_flLnw9ACg",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "PnjGADG8enMXoMo_6AkNBlqoSShqrX2N40Nwm7BXdJw",
-                    "y": "mii1sqogGOcWvJlPVs8ztCU9aCQUvtPHrWWRM4rXGwY"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "WrdwbpUCukt1cdxWx6yeeMc7PbZwTw5Ue2OTEM4AOPM",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "Pw4pXi9xiXQFV-VPoNdZqe_8KuuFqTlgNt9jB9ZyJms",
-                    "y": "cTBLyfAijTJcUbJ8nmULoMgEhyKaPfFKAfs4gLae52k"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -10215,7 +9979,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
         },
         {
             "issuer": {
@@ -10223,44 +9989,7 @@
                 "name": "Kentucky Registry",
                 "website": "https://www.chfs.ky.gov/agencies/dph/dehp/idb/Pages/kyirportal.aspx"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "kid": "1S-iRD3ntUKqHBGZ9QxtCY_Sae-FzDHE9PoIbpmKZh8",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "MM8DFK80lsgrzWI-u1Ra-I6zk4RwaluCbBMfGBQK0nI",
-                    "y": "kKBT-QSe_TY53slhbRrNxL1IlT3cVfN4IDMjo7FboJ8"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "tq7iT2YDo8V1H6KTMWAFJ_ITb95VEwJ6HHf4_GUGnI4",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "Z79k0kWLZdk9Wi5Nc_4_78MVvObhhqrGzum9g0HNDTE",
-                    "y": "9lMDRVzLrhc1NrehDQDnb8OEtpYgiCVF97uKx-yQ-8g"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "ZsbXnTYsC3gQ7RNwGy7_B4_ufC_b1-fQM7rAn4E_BZ8",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "vboReILVreU28k0mkz5oICKd7MEV3wzCPdWeDL6gGbQ",
-                    "y": "uUXdQCrgBZu_ZGd0-jt2wH7V6uNW8f6Qqxzwg2zZMCo"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "yNcM8v34DbXb67FZF648-GNecZVcz40zNprvRt7DRq4",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "O1f4bX5BDpt90T5dLnY1JKHjX5UZpI30cQkhkL0UQ44",
-                    "y": "iuogwPr15PFPfEXmnD-BI2FDplg9jDKSjgMgGTcf9IE"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -10270,7 +9999,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
         },
         {
             "issuer": {
@@ -10343,7 +10074,17 @@
                 "name": "Houston Methodist",
                 "website": "https://mychart.houstonmethodist.org/mychart-prod/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "eVXPEAN8cSBXkLkDZjYummMTu6QVY2Yy85F2wCala40",
+                    "y": "2M7ZLV2U3wA-8GCV-0rzk9f6EVsjfwJJjRBmiu7g4hg",
+                    "kid": "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -10354,7 +10095,7 @@
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 500 (Internal Server Error)"
+                "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin"
             ]
         },
         {
@@ -10418,44 +10159,7 @@
                 "iss": "https://smarthealthcard.iisregistry.net/palau/issuer",
                 "name": "Palau Registry"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "kid": "-EZL-DWbaDLopiBldA_Uu-G30zZqmVurT_BFYrM44xw",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "m2uV_Js9rWr6qhJOIvsuFjLITJtN44LkT4mCrXYsCVU",
-                    "y": "XEmOtUCJLKnsf877RXFKKE2XHoVfyx3BxaILsbcXSrA"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "XGk4rW9ZqV1gW9H-QU7ASMkAAUR6l_eSKtCy4V3jlts",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "pCNBernj68R-GxLdKYL8VsQLlx6WZcdjIqJr4bI1Zw0",
-                    "y": "POO0ndAtF_a-IutGR-duIskVqcNcoLkl7dbTm9GAS_g"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "IXUbNMNgo2RPB5WBoOJrLwGiUEYraEo92N9v3ns-ewE",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "xsj_jbidVmJCRASSUApqe-g0grdip11Dd6ITdKlG8bw",
-                    "y": "rVSgybBl8HiFeK4Gwb81MtWyuIMpTvj0n295BE5UZC0"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "fWHJFnr8c8JSYMOoE6Dm1Tgk_emVkBlQpTzcmU1R5yY",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "W0uKueqiYlsWScE52taRtFaALx3kPRsipcYrax81YYA",
-                    "y": "hvPJYNw4Tk956nUZF2bfDJWsMavqdiKGXBh_UhEE78c"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -10465,7 +10169,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
         },
         {
             "issuer": {
@@ -10653,44 +10359,7 @@
                 "name": "State of Colorado",
                 "website": "https://mycolorado.gov/myvaccine-record"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "kid": "0y1AaZ-QqSuViEC8bBIRFS1erSBs88nfHd9kOzJRbbQ",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "TlKVZXlYiy-b87I1hj3l3TtogUAM3mH6ysqmd68cCM4",
-                    "y": "MUqcmY6rYYWVsSTKVRg2-vQiwYlveNUqTrTH6dAkLaY"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "ugYAJHoY7RLG0iWuWpysJXZczXVPpT_hXXHW8Fup__Y",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "VhhRn8d2cUH8JJa6k642_7dtUyW0n5XEjOGJ28am8bo",
-                    "y": "aW1SjMZG3AS8LhwF3mzpmQRuE7zofqRlk6Qd1Y0BKGY"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "0IxqbAi-2_CCTSbl48cx-AZqKcgb9HeqVOQ2dv2EmR8",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "sicFg28cVh3LHppz--Sj0zj-CDU0KYxfc2VxSUbiKaA",
-                    "y": "DHr_Lnq4q8L_y5LN7Id4iqXBfjZ175KwnPjQIMwr-XQ"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "Ssf2nEbxbsGkAxMtC6W7KqRlzBgeFQVHqq_MtmBJHOg",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "F6bUI8ktBONFiHygFHW1Qe33sxuAddTuzeKQP0oTtSQ",
-                    "y": "Rx4V41Hjzh1sza6t5VMfsLd9kiXeYR2YpOZbfppzXuQ"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -10700,7 +10369,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
         },
         {
             "issuer": {
@@ -11155,9 +10826,9 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -11258,7 +10929,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140582063217600:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140478279097280:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -12060,17 +11731,7 @@
                 "iss": "https://fhir.myeverettclinic.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Optum WA"
             },
-            "keys": [
-                {
-                    "x": "8V9Zyc8XXzhOflLCigh4sURMyfsC3QY2YdD0_9vsCbM",
-                    "y": "LUVJcAy6xoYckiE4TWl_QZYjGvSxiR6VpCdyLM47d20",
-                    "kid": "vyUQoeFh-ln_mkfsVzfFDpxeRHEFggmM-uudcb6iq_k",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -12080,7 +11741,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "RequestError: unable to get local issuer certificate"
+            ]
         },
         {
             "issuer": {
@@ -12195,6 +11858,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "DH, 4096 bits",
+                "authAlg": "ECDSA",
+                "pubKeySize": "256",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -13950,44 +13621,7 @@
                 "name": "RMI Ministry of Health and Human Services",
                 "website": "https://webiz.rmihealth.org/webiznet_rmi/Login.aspx"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "kid": "7SA3vLNEZm7QPUKVbh3-pfn4ZYoMvdkgKMDb-Moln0s",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "HeyXG3qrKnesgwC68yq7BC0UuRojQ3JVaHm_wtmuzRs",
-                    "y": "6_z9vkIwteDmPoqNqKlq1Pl0qU41-geDY7Fcer6s6GA"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "YDiG2ZGfJ4SRzvOeJw4BrqDfO9eRfv7eU3U5mVFCsF8",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "WJlaTxbFDs3SesnSpuEagJHMi2ZBG3DZIqat3NMeiZg",
-                    "y": "B9TxAHJr84wjCFrp_btritkmSenX-B6nvHn12N5jClg"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "Yu40-F_1FcAln5ttSn9fuwDz19bTA86whJkEz08VQXA",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "ayzaUWZ_UiayHk_-_rLce6gaaBx76tCFzECmgcGPQeQ",
-                    "y": "9_GfeRAznheTalXdKmgByolscwKb2NHa_bS0wtV5dvw"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "c8wcfdgxcvz7SrShCywcTtOLL_i4nD_fxdxjmEF0jOo",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "l8x-bOch8iMPUMk1k5rsWevpd9uJNGcT5yePG7IqJNE",
-                    "y": "WiTw5tOktYtcKmtqB053KHM1m7GSoubHSN325mqyRE4"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -13997,7 +13631,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
         },
         {
             "issuer": {
@@ -14005,44 +13641,7 @@
                 "name": "City of Philadelphia",
                 "website": "https://vax.phila.gov/"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "kid": "HJO-M9DOdnUQvlLuHPJNEt8kmHMqsZ1gX74IVYNyDz4",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "lyVLJiZY6TJR-u8zlJGNjfJxYLlR9VfiLQ4IiQiEL4M",
-                    "y": "kWow0CkFHbgacK1PzDShtyOiPEwRV6ldnn4249R9218"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "M8QCeOrmerBLhnqQFgZTcFmsrM9Zw9yFBbWZoUmT6k4",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "6I6p_UEtCpZR2XP-xWpRddy7TgTI_ao0lkYefVlx9Ig",
-                    "y": "ZUra7RR9L8G-CZyrXc29P0WqxDoHRbUzk2QubqyB3no"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "D1RT-FLJ53Bz68nQwyXwD9IRf3y0JIxQlmGidf4mIDc",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "Kl7ZwnoTMCoFD7LeOlwRwqpz6WnbGYiql_-SKzMSHJo",
-                    "y": "Jffu0FOALk9C6VZU_o0XKMi3QLv_07mi3q7HXco4Q4w"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "6H-4ZaGIwKyC6rcLnD6VdbNvn6DY3D_1ue1JT1lXSCw",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "RnUP5aMy--CgQOFZ_caJUR1DFYosBhnHMFfFEj5FDZM",
-                    "y": "sd240-Ox6MmbxPvCmB1GrcOnrHy11YS79ZRk-7dc770"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -14052,51 +13651,16 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
         },
         {
             "issuer": {
                 "iss": "https://smarthealthcard.iisregistry.net/americansamoa/issuer",
                 "name": "American Samoa"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "kid": "jR8W5AA2nmXne3IHtS-xLoDtWNgwjcoglo35qg8lCok",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "mMKNMHV0TLZZrzeU83-7gErmeEbk3PegZDxpnApedrg",
-                    "y": "usclYGXbqBEY2dGL6KDNZwU3KoBWCV6GYqyvl-aA-L8"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "i3LY2PfkvMDAMneR0FjDjlaNKqNxRZVdOJBILL2S21E",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "c_fRfUpkzqNRaC2v6iiC0f5zitqtzUC49hUShpDd9tw",
-                    "y": "siNTak7SsO7Jiia9V-JWOEIqYl4eF0VRLUqoQFxboFo"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "Tu_Qv_i3fx3h_jiwVwOZot8OEZSIT9JL8QVAa3nNVYU",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "MMQQm26w-xh7oyKaoTV1L61b2KzLSS47m9ZIf4NFBFk",
-                    "y": "P_qQaiK5uWo5sQcbGLz7zjk_4njg4VC5MRw2LYiOkCo"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "SxcdZs1OrncCx6h3AQydSS4UatBuW9gABuam6LNBw3s",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "y2ypvPH-V2svLpcJtQgL6G0rh6FLqy2oMszu-F1a3jA",
-                    "y": "c9gTnSVbO-VKayiOVi9cwUezqqkakIIBCJndw8HYlnU"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -14106,7 +13670,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
         },
         {
             "issuer": {
@@ -14114,44 +13680,7 @@
                 "name": "FSM Department of Health and Social Affairs",
                 "website": "https://hsa.gov.fm/"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "kid": "JUwlmoCMu3IkPxQC6YwRqkhIQxlhOTWXnjXCkKdFBxk",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "4eVMpJHFDo2yA4mL7D8LZU3VXgmLmGhDLGM8_olK0Qc",
-                    "y": "3vlFNHTdPiVuJ0xc5iaoD-0i6gEDoUokdenJAiYHIlw"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "Y8zVcFHTTRCApVnMujtII_xeXXngxf4b5KjJ22wzw-o",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "z2A05NukRhrYK6NaJo8wqpAPSWUu8COOCH-iaVpE9-s",
-                    "y": "m7l2FF8GAQeuQQlHrDq2otRuK7ae4TI91z00_zc6-2Q"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "E4AO98ckAAWbmCqczAIV9A7ysiJ5G3cw0rUlTNtCZJo",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "phUPwmNG4r5kIII4T-3mvhbPkOcJjtGSGBDcGEC6TfU",
-                    "y": "-ad4hKaR6lEdLztJmP9lT018DK4G5UVQ_gv9Ch-g3rE"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "1Lrqv6iD3l1yUDHnFuyY3iP834R20gzMwGMBFx95-gQ",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "Zm51qO1yEgc1E8jIzh6uIDlSHWl-LoODHBksWwXwgm0",
-                    "y": "7FrlXxREUkW6eRz4AxAmkIgtYA6rRySx7bKyp-kcc9E"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -14161,7 +13690,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
         },
         {
             "issuer": {
@@ -14223,44 +13754,7 @@
                 "iss": "https://smarthealthcard.iisregistry.net/southcarolina/issuer",
                 "name": "South Carolina Department of Health and Environmental Control"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "kid": "Aw7XCmTWJ3qJKwh7BQyIO9wFQ3-E5xZsav1RWEOY9TM",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "-BtM0VDFXXmhgMJ-ZYBzkWH7OmsiCwFbX5TVFyL_BmY",
-                    "y": "djb6jW6FgihMiCKp7J4y41md439tcu9ubbibxnPMv6k"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "psdIpRsv55C3WoeeZ8SgiCYTb7NwppbYvVDcy3MpVIo",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "kWKOepHwWHAIOk_v_o3_95BWanVx4sVz_4X-EfJG1EU",
-                    "y": "muD8ksDQqLdlWSZ1XHYTIy7GbTary-INFgQKUCwFNdk"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "3_ZH2ats2Nzvgui9zIr-mTyPqUxAoqZfxE3uSBMfhBE",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "f0ZukURJQaloO1BcYs-bb_tiwG4L92ZhKdNTetB5yEI",
-                    "y": "1zDFO7-bm4gQ0UertkNondSOuQjDGcw2MEcD1cFstdQ"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "aXVR4MbqdILrV4ijhZgjGHKliXkCj80m4FfmkSArlXM",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "sEKALW3TTyqaLknj7P4Soyi3_DErJFCG1vS5drRKkkY",
-                    "y": "WDAn5m9dACAeHuLeQFOzWghxTz5ZKtlYKgcSNDZHW3o"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -14270,7 +13764,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
         },
         {
             "issuer": {
@@ -14301,7 +13797,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140582063217600:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140478279097280:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -15518,27 +15014,11 @@
                 "name": "Leon Medical Centers",
                 "website": "https://leonmedicalcenters.com/"
             },
-            "keys": [
-                {
-                    "x": "JJqmksQIy4SfBtUdT5pHr1uZcm7KdLiWqOPYrN6xylc",
-                    "y": "sxoFMNB_-vouKAxfKxX-KmpjdDptBKg_T3NiVznT2J0",
-                    "kid": "Jis4PRQuC3d6JcYIl1kZ5YbQ_SIEMZhBzlUHoW3o0gg",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "4096",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -17299,14 +16779,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -18060,44 +17532,7 @@
                 "name": "Arkansas Department of Health",
                 "website": "https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "kid": "FGkaP7p4ESRNTtiCyIJwAtj4CuG9nzJZ0cycfuMM8uM",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "wflad_5_Dn5mAZfjoD6tltkygP6-VVccqIY724ghyR8",
-                    "y": "UOBWJFBFDceFn2mOHvoQxzQ54qlvq4B76_ffo67szgI"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "ff6HwkUGShU2O0xNydY06px4cWhx8TCyrrhFkejCQbw",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "depwqPutX1r54cfq7Ckm80-jbgG7RlitNfpP0N4BMfo",
-                    "y": "ZqM4pNLpvvNf2H_eytR14Jfu12OcxKqF_1PL_EZtNkA"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "pH8uAQ3kqgztNBBRiCXAMeKkYZ2fQ028F_qPZoN4FCY",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "M8PS2rfk45V42qJBpmes1Pf_CFiaaYtZJ6D0JfZZnHE",
-                    "y": "hr5Yn6XgZV37fDh0pxa6ROAqU2y-Gb5xPGQTYVkG6CU"
-                },
-                {
-                    "kty": "EC",
-                    "kid": "lFbA0MEGShhlB3hX-JrGJdJrL1LYj1wXw6v24EJ9VSM",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "cykhchc0RjIaCvH3WxjXXBwL0FM7s8fuxbiFarBD_Fk",
-                    "y": "DxROAE7m-b8Q-Q3Zx8CIw5aD_ZPiEf8vvKqcTkvwkmE"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -18107,7 +17542,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
         },
         {
             "issuer": {
@@ -18320,14 +17757,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -18999,7 +18428,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140582063217600:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140478279097280:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -19290,11 +18719,27 @@
                 "iss": "https://api-global-ext.iom.int/smarthealth",
                 "name": "International Organization for Migration"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "kid": "xm6xJ8glufmpVWRKBh5-ZDXOgjJO11McLan3gcb1JUU",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "uOdZdF8IDmckwFflmSEWCGSrYP2bwf56QCYKaYbOFcs",
+                    "y": "cR3QPHRyjldGD2iWGjk2EDDEeT_26xVvxOUlRqH9BlM"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
+            "errors": []
         }
     ]
 }

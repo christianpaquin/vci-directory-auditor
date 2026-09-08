@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2026-09-07T17:34:59Z",
+    "auditTime": "2026-09-08T16:20:59Z",
     "issuerCount": 638,
     "issuersWithErrors": [
         {
@@ -369,6 +369,18 @@
         },
         {
             "issuer": {
+                "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Baptist Health",
+                "website": "https://mychart.baptist-health.org/mychart/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://www.riteaid.com",
                 "name": "Rite Aid Pharmacy",
                 "website": "https://www.riteaid.com/pharmacy/vaccination-digital-proof"
@@ -618,6 +630,18 @@
         },
         {
             "issuer": {
+                "iss": "https://mobileprod.arcmd.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Austin Regional Clinic",
+                "website": "https://mychart.austinregionalclinic.com/mychart/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://fhir.chppoc.org/Fhir-External/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Pediatric Physicians' Organization at Children's",
                 "website": "https://mychart.chppoc.org/mychart"
@@ -698,7 +722,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: connect ECONNREFUSED 216.186.180.112:443"
+                "RequestError: connect ECONNREFUSED 72.158.86.112:443"
             ]
         },
         {
@@ -803,14 +827,34 @@
         },
         {
             "issuer": {
+                "iss": "https://smarthealthcard.iisregistry.net/delaware/issuer",
+                "name": "Delaware Immunization Program",
+                "website": "https://delvax.dhss.delaware.gov/delvax_public/Application/PublicPortal"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://epicmobile.corp.saint-lukes.org/FHIRPROXY/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Saint Luke's Health System KC",
                 "website": "https://mysaintlukes.corp.saint-lukes.org/MyChartPRD"
             },
             "keys": [],
             "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
                 "kexAlg": "ECDH, secp521r1, 521 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
@@ -843,11 +887,140 @@
         },
         {
             "issuer": {
+                "iss": "https://smarthealthcard.iisregistry.net/connecticut/issuer",
+                "name": "CT Department of Public Health",
+                "website": "https://portal.ct.gov/DPH/Immunizations/CT-WiZ-Access-My-Immunization-Record"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://smarthealthcard.iisregistry.net/nevada/issuer",
+                "name": "State of Nevada",
+                "website": "https://izrecord.nv.gov/public/Application/PublicPortal"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://smarthealthcard.iisregistry.net/newmexico/issuer",
+                "name": "NM Department of Health",
+                "website": "http://vaxviewnm.org/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://smarthealthcard.iisregistry.net/cnmi/issuer",
+                "name": "CNMI Immunization Program"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://smarthealthcard.iisregistry.net/guam/issuer",
+                "name": "Guam Department of Public Health & Social Services",
+                "website": "https://dphss.guam.gov/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://smarthealthcard.iisregistry.net/kentucky/issuer",
+                "name": "Kentucky Registry",
+                "website": "https://www.chfs.ky.gov/agencies/dph/dehp/idb/Pages/kyirportal.aspx"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://epiclbsprxyprodpass.houstonmethodist.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Houston Methodist",
                 "website": "https://mychart.houstonmethodist.org/mychart-prod/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "eVXPEAN8cSBXkLkDZjYummMTu6QVY2Yy85F2wCala40",
+                    "y": "2M7ZLV2U3wA-8GCV-0rzk9f6EVsjfwJJjRBmiu7g4hg",
+                    "kid": "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -858,7 +1031,26 @@
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 500 (Internal Server Error)"
+                "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://smarthealthcard.iisregistry.net/palau/issuer",
+                "name": "Palau Registry"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: certificate has expired"
             ]
         },
         {
@@ -899,6 +1091,26 @@
             "crls": [],
             "errors": [
                 "HTTPError: Response code 404 (Not Found)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://smarthealthcard.iisregistry.net/colorado/issuer",
+                "name": "State of Colorado",
+                "website": "https://mycolorado.gov/myvaccine-record"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: certificate has expired"
             ]
         },
         {
@@ -962,7 +1174,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140582063217600:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140478279097280:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -1125,6 +1337,25 @@
             "crls": [],
             "errors": [
                 "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://fhir.myeverettclinic.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Optum WA"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: unable to get local issuer certificate"
             ]
         },
         {
@@ -1444,6 +1675,104 @@
         },
         {
             "issuer": {
+                "iss": "https://smarthealthcard.iisregistry.net/rmi/issuer",
+                "name": "RMI Ministry of Health and Human Services",
+                "website": "https://webiz.rmihealth.org/webiznet_rmi/Login.aspx"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://smarthealthcard.iisregistry.net/philadelphia/issuer",
+                "name": "City of Philadelphia",
+                "website": "https://vax.phila.gov/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://smarthealthcard.iisregistry.net/americansamoa/issuer",
+                "name": "American Samoa"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://smarthealthcard.iisregistry.net/fsm/issuer",
+                "name": "FSM Department of Health and Social Affairs",
+                "website": "https://hsa.gov.fm/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://smarthealthcard.iisregistry.net/southcarolina/issuer",
+                "name": "South Carolina Department of Health and Environmental Control"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://apis.changehealthcare.com/anon/dataservices/shc/v1/albertsons",
                 "name": "Albertsons Companies",
                 "website": "https://www.albertsons.com/pharmacy/covid-19.html"
@@ -1471,7 +1800,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140582063217600:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140478279097280:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -1674,6 +2003,18 @@
             "crls": [],
             "errors": [
                 "RequestError: certificate has expired"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://prodinterconnect.leonmedicalcenters.com/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Leon Medical Centers",
+                "website": "https://leonmedicalcenters.com/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         },
         {
@@ -2277,6 +2618,26 @@
         },
         {
             "issuer": {
+                "iss": "https://smarthealthcard.iisregistry.net/arkansas/issuer",
+                "name": "Arkansas Department of Health",
+                "website": "https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: certificate has expired"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://health.us.cue.dev/api/smart-health-card/production",
                 "name": "Cue Health",
                 "website": "https://cuehealth.com/contact/support/"
@@ -2496,7 +2857,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140582063217600:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140478279097280:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -2528,17 +2889,6 @@
             "crls": [],
             "errors": [
                 "RequestError: getaddrinfo ENOTFOUND healthpass.doh.hawaii.gov"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://api-global-ext.iom.int/smarthealth",
-                "name": "International Organization for Migration"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         }
     ],
@@ -2606,20 +2956,167 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2026-09-06T15:13:37Z",
+    "previousAuditTime": "2026-09-07T17:34:59Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://epiclbsprxyprodpass.houstonmethodist.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4"
+                "2Y6IshBllIuZBWuUMPeefWvqSHynjSDrmXHpOKo9JnU"
             ]
         },
         {
-            "iss": "https://api-global-ext.iom.int/smarthealth",
+            "iss": "https://mobileprod.arcmd.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "xm6xJ8glufmpVWRKBh5-ZDXOgjJO11McLan3gcb1JUU"
+                "sBU-IwhRjb9FeJRb-Trv6VRzF-dOOIeZsUeayinVGTE"
+            ]
+        },
+        {
+            "iss": "https://smarthealthcard.iisregistry.net/delaware/issuer",
+            "kids": [
+                "I4-2lo5sKoNGCI5wapC0rX-H6WGapwQzAMM0gxHK9Is",
+                "12wyP5grpJw2DPkbE-WVV9HYnFHcIJijHBsCXzdDwN4",
+                "FLG7R2OzT7hTQ3MzKu4Rm4HNlXsZCivg5hwgxQ2EdXQ",
+                "m3v0cRgP7wTV_WNLXHWogrZeNHqoS2gg5LElOi-dY5U"
+            ]
+        },
+        {
+            "iss": "https://smarthealthcard.iisregistry.net/connecticut/issuer",
+            "kids": [
+                "sP1TC_urHxSpF9GvWBo4seZROa-veb73stfULCIvewA",
+                "SHg-tl0JfRIySOKcUcPwYCgFHLMIIUcKyEC824Ti8ao",
+                "opFN570ZovxJD_LXLDJjkNC49Ew45K6chrFBMrwS2uY",
+                "JPiV89l7R8nJ0vT7wYCv0nSP71tZTIfGE3ceCYmIdJA"
+            ]
+        },
+        {
+            "iss": "https://smarthealthcard.iisregistry.net/nevada/issuer",
+            "kids": [
+                "-_9-cZ0eu17-qRGoMJb1fF1l-HqIaOHRQXEY3Ls7cN0",
+                "ecqjBr8l3Ae0X_o4bFml8y9HVVAD0x2FadZmHUsDqks",
+                "YjZL4HuX0n2xT6BuFcrRju0BLWmOg6AR0tqkbi7SLAs",
+                "FbZg_sa61DRoo5ifB_xkqfHTZUrbBZsCmsDnzM6Bed8"
+            ]
+        },
+        {
+            "iss": "https://smarthealthcard.iisregistry.net/newmexico/issuer",
+            "kids": [
+                "sIjKbrI8tHM9NaU8IsD17iu5I6Eu3UK38NOzqkll5ww",
+                "S-R2w2qyu4JZ7hGpSFIDzH45vS6JdoUk7Bl9sf4Kd5Y",
+                "ozmYC99KNgBq6yTWHZC-0MIyR69BcqObwX4AjObfZks",
+                "kC6gFXQmrDP9v9bk9M9E6lg-RCwbBqcrocG9JcxihIE"
+            ]
+        },
+        {
+            "iss": "https://smarthealthcard.iisregistry.net/cnmi/issuer",
+            "kids": [
+                "2JUuEw0BOJYvbxklvGrGL7tCWb5JHk7DgmB3FwDs7Fc",
+                "0nxV9NjOS02OjRuI8RvBv9_vrt3f7KtcMadAk9rfyL8",
+                "TAa2HiQ8voeMzxnULjblOAvzmTLTMpqj3GLt-omXLyI",
+                "quJcC2X6IoOfl-SPw-XYIgZnbXPtcZSsRBCWIh9XDZk"
+            ]
+        },
+        {
+            "iss": "https://smarthealthcard.iisregistry.net/guam/issuer",
+            "kids": [
+                "VlK8ZxfTL5GlfFKLjaP1MNci59vxBS9LwWLIYWb6m8g",
+                "JZ6To--yzjB6harSetZ-T4mXHqV6Maimvg1TuH81afw",
+                "LHdtGovWBU0Wi8813Sx1jIESojQhL0pJG_flLnw9ACg",
+                "WrdwbpUCukt1cdxWx6yeeMc7PbZwTw5Ue2OTEM4AOPM"
+            ]
+        },
+        {
+            "iss": "https://smarthealthcard.iisregistry.net/kentucky/issuer",
+            "kids": [
+                "1S-iRD3ntUKqHBGZ9QxtCY_Sae-FzDHE9PoIbpmKZh8",
+                "tq7iT2YDo8V1H6KTMWAFJ_ITb95VEwJ6HHf4_GUGnI4",
+                "ZsbXnTYsC3gQ7RNwGy7_B4_ufC_b1-fQM7rAn4E_BZ8",
+                "yNcM8v34DbXb67FZF648-GNecZVcz40zNprvRt7DRq4"
+            ]
+        },
+        {
+            "iss": "https://smarthealthcard.iisregistry.net/palau/issuer",
+            "kids": [
+                "-EZL-DWbaDLopiBldA_Uu-G30zZqmVurT_BFYrM44xw",
+                "XGk4rW9ZqV1gW9H-QU7ASMkAAUR6l_eSKtCy4V3jlts",
+                "IXUbNMNgo2RPB5WBoOJrLwGiUEYraEo92N9v3ns-ewE",
+                "fWHJFnr8c8JSYMOoE6Dm1Tgk_emVkBlQpTzcmU1R5yY"
+            ]
+        },
+        {
+            "iss": "https://smarthealthcard.iisregistry.net/colorado/issuer",
+            "kids": [
+                "0y1AaZ-QqSuViEC8bBIRFS1erSBs88nfHd9kOzJRbbQ",
+                "ugYAJHoY7RLG0iWuWpysJXZczXVPpT_hXXHW8Fup__Y",
+                "0IxqbAi-2_CCTSbl48cx-AZqKcgb9HeqVOQ2dv2EmR8",
+                "Ssf2nEbxbsGkAxMtC6W7KqRlzBgeFQVHqq_MtmBJHOg"
+            ]
+        },
+        {
+            "iss": "https://fhir.myeverettclinic.com/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "vyUQoeFh-ln_mkfsVzfFDpxeRHEFggmM-uudcb6iq_k"
+            ]
+        },
+        {
+            "iss": "https://smarthealthcard.iisregistry.net/rmi/issuer",
+            "kids": [
+                "7SA3vLNEZm7QPUKVbh3-pfn4ZYoMvdkgKMDb-Moln0s",
+                "YDiG2ZGfJ4SRzvOeJw4BrqDfO9eRfv7eU3U5mVFCsF8",
+                "Yu40-F_1FcAln5ttSn9fuwDz19bTA86whJkEz08VQXA",
+                "c8wcfdgxcvz7SrShCywcTtOLL_i4nD_fxdxjmEF0jOo"
+            ]
+        },
+        {
+            "iss": "https://smarthealthcard.iisregistry.net/philadelphia/issuer",
+            "kids": [
+                "HJO-M9DOdnUQvlLuHPJNEt8kmHMqsZ1gX74IVYNyDz4",
+                "M8QCeOrmerBLhnqQFgZTcFmsrM9Zw9yFBbWZoUmT6k4",
+                "D1RT-FLJ53Bz68nQwyXwD9IRf3y0JIxQlmGidf4mIDc",
+                "6H-4ZaGIwKyC6rcLnD6VdbNvn6DY3D_1ue1JT1lXSCw"
+            ]
+        },
+        {
+            "iss": "https://smarthealthcard.iisregistry.net/americansamoa/issuer",
+            "kids": [
+                "jR8W5AA2nmXne3IHtS-xLoDtWNgwjcoglo35qg8lCok",
+                "i3LY2PfkvMDAMneR0FjDjlaNKqNxRZVdOJBILL2S21E",
+                "Tu_Qv_i3fx3h_jiwVwOZot8OEZSIT9JL8QVAa3nNVYU",
+                "SxcdZs1OrncCx6h3AQydSS4UatBuW9gABuam6LNBw3s"
+            ]
+        },
+        {
+            "iss": "https://smarthealthcard.iisregistry.net/fsm/issuer",
+            "kids": [
+                "JUwlmoCMu3IkPxQC6YwRqkhIQxlhOTWXnjXCkKdFBxk",
+                "Y8zVcFHTTRCApVnMujtII_xeXXngxf4b5KjJ22wzw-o",
+                "E4AO98ckAAWbmCqczAIV9A7ysiJ5G3cw0rUlTNtCZJo",
+                "1Lrqv6iD3l1yUDHnFuyY3iP834R20gzMwGMBFx95-gQ"
+            ]
+        },
+        {
+            "iss": "https://smarthealthcard.iisregistry.net/southcarolina/issuer",
+            "kids": [
+                "Aw7XCmTWJ3qJKwh7BQyIO9wFQ3-E5xZsav1RWEOY9TM",
+                "psdIpRsv55C3WoeeZ8SgiCYTb7NwppbYvVDcy3MpVIo",
+                "3_ZH2ats2Nzvgui9zIr-mTyPqUxAoqZfxE3uSBMfhBE",
+                "aXVR4MbqdILrV4ijhZgjGHKliXkCj80m4FfmkSArlXM"
+            ]
+        },
+        {
+            "iss": "https://prodinterconnect.leonmedicalcenters.com/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "Jis4PRQuC3d6JcYIl1kZ5YbQ_SIEMZhBzlUHoW3o0gg"
+            ]
+        },
+        {
+            "iss": "https://smarthealthcard.iisregistry.net/arkansas/issuer",
+            "kids": [
+                "FGkaP7p4ESRNTtiCyIJwAtj4CuG9nzJZ0cycfuMM8uM",
+                "ff6HwkUGShU2O0xNydY06px4cWhx8TCyrrhFkejCQbw",
+                "pH8uAQ3kqgztNBBRiCXAMeKkYZ2fQ028F_qPZoN4FCY",
+                "lFbA0MEGShhlB3hX-JrGJdJrL1LYj1wXw6v24EJ9VSM"
             ]
         }
     ]
