@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2026-09-11T16:11:02Z",
+    "auditTime": "2026-09-12T15:18:23Z",
     "issuerCount": 638,
     "issuersWithErrors": [
         {
@@ -255,6 +255,26 @@
             "crls": [],
             "errors": [
                 "HTTPError: Response code 403 (Forbidden)"
+            ]
+        },
+        {
+            "issuer": {
+                "iss": "https://iatrius.atriushealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Atrius Health",
+                "website": "https://myhealth.atriushealth.org/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "ECDSA",
+                "pubKeySize": "384",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: unable to get local issuer certificate"
             ]
         },
         {
@@ -942,7 +962,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140491010706368:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140366123584448:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -1470,7 +1490,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140491010706368:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140366123584448:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -2256,6 +2276,26 @@
         },
         {
             "issuer": {
+                "iss": "https://epicproxy.et0939.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Spartanburg Regional Healthcare System",
+                "website": "https://www.spartanburgregional.com/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: self signed certificate in certificate chain"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://lsepprdsoap.lifespan.org/fhirproxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Lifespan",
                 "website": "https://www.lifespan.org/"
@@ -2363,9 +2403,18 @@
                 "website": "https://www.aahs.org/en/login"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "AES256-SHA",
+                "kexAlg": "RSA",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
-                "RequestError: getaddrinfo ENOTFOUND epicarr.aahs.org"
+                "RequestError: self signed certificate in certificate chain",
+                "TLS error: Static RSA SHOULD NOT be used, MUST prefer ECDHE and DHE"
             ]
         },
         {
@@ -2495,7 +2544,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140491010706368:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140366123584448:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -2527,17 +2576,6 @@
             "crls": [],
             "errors": [
                 "RequestError: getaddrinfo ENOTFOUND healthpass.doh.hawaii.gov"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://api-global-ext.iom.int/smarthealth",
-                "name": "International Organization for Migration"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
             ]
         }
     ],
@@ -2605,14 +2643,20 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2026-09-10T16:07:27Z",
+    "previousAuditTime": "2026-09-11T16:11:02Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://api-global-ext.iom.int/smarthealth",
+            "iss": "https://iatrius.atriushealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "xm6xJ8glufmpVWRKBh5-ZDXOgjJO11McLan3gcb1JUU"
+                "yV90BgTcAJ6o91JO3nzYcIaV-uuiS8HzvYFk6DHK-GE"
+            ]
+        },
+        {
+            "iss": "https://epicproxy.et0939.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "yMKx_IeaZkm9qVTh8hYzU0GFmS78a94I2ksJ-1xSzx8"
             ]
         }
     ]
