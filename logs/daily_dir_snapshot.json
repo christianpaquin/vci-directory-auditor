@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2026-09-13T15:55:06Z",
+    "time": "2026-09-14T17:56:31Z",
     "issuerInfo": [
         {
             "issuer": {
@@ -6636,11 +6636,27 @@
                 "name": "The University of Vermont Medical Center",
                 "website": "https://mychart.uvmhealth.org/MyChart/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "80_e1C0rPZUHvNqPQx2NpC-O5Dkc0rFnYL0s6OUUtEc",
+                    "y": "o7dD4N7S5THXcz6G8LeH5QNsQrecfLlbrZ7lzXnm_rc",
+                    "kid": "zBwvdXxZunOT7s39rKRmCkG8WntlwlwagOLKjopstSo",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
-            "errors": [
-                "RequestError: connect ECONNREFUSED 12.152.228.119:443"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -6802,7 +6818,7 @@
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "X25519, 253 bits",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -7185,27 +7201,11 @@
                 "name": "Baptist Health",
                 "website": "https://mychart.baptist-health.org/mychart/"
             },
-            "keys": [
-                {
-                    "x": "hA1cB_UjKPGaLnIm9mlJ0wLrK6g5QCd_eae2UKFRvpw",
-                    "y": "o1SsIsu0ZWeSsGkyxR6it-8MdJRny_deosxdrm1a3FI",
-                    "kid": "2Y6IshBllIuZBWuUMPeefWvqSHynjSDrmXHpOKo9JnU",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -7885,8 +7885,8 @@
             ],
             "tlsDetails": {
                 "version": "TLSv1.2",
-                "cipher": "DHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "DH, 2048 bits",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -9715,8 +9715,8 @@
             },
             "keys": [],
             "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
                 "kexAlg": "ECDH, secp521r1, 521 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
@@ -9904,14 +9904,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -10535,7 +10527,7 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "kexAlg": "X25519, 253 bits",
                 "authAlg": "RSA",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -11258,7 +11250,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139690991270848:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139882673171392:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -14301,7 +14293,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139690991270848:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139882673171392:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -14735,6 +14727,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -15510,27 +15510,11 @@
                 "name": "Leon Medical Centers",
                 "website": "https://leonmedicalcenters.com/"
             },
-            "keys": [
-                {
-                    "x": "JJqmksQIy4SfBtUdT5pHr1uZcm7KdLiWqOPYrN6xylc",
-                    "y": "sxoFMNB_-vouKAxfKxX-KmpjdDptBKg_T3NiVznT2J0",
-                    "kid": "Jis4PRQuC3d6JcYIl1kZ5YbQ_SIEMZhBzlUHoW3o0gg",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "4096",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -17700,17 +17684,7 @@
                 "name": "Care New England",
                 "website": "https://www.carenewengland.org/"
             },
-            "keys": [
-                {
-                    "x": "QMUAJ1kkztzD485UzUS-mqGzDFw5QQG3pkfV28M9ifk",
-                    "y": "7MeywoHGW552h-r7bqo6iQx6DRl-16bm1kT-x8axIcE",
-                    "kid": "UPhXyYBV4mAMlCsVtscAJP2KfP7T3kBn7R70dS9P3Lg",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -17720,7 +17694,10 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
+                "SyntaxError: Unexpected token S in JSON at position 0"
+            ]
         },
         {
             "issuer": {
@@ -18944,14 +18921,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -18992,7 +18961,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 139690991270848:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139882673171392:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -19283,11 +19252,27 @@
                 "iss": "https://api-global-ext.iom.int/smarthealth",
                 "name": "International Organization for Migration"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "kty": "EC",
+                    "kid": "xm6xJ8glufmpVWRKBh5-ZDXOgjJO11McLan3gcb1JUU",
+                    "use": "sig",
+                    "alg": "ES256",
+                    "crv": "P-256",
+                    "x": "uOdZdF8IDmckwFflmSEWCGSrYP2bwf56QCYKaYbOFcs",
+                    "y": "cR3QPHRyjldGD2iWGjk2EDDEeT_26xVvxOUlRqH9BlM"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
+            "errors": []
         }
     ]
 }
