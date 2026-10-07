@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2026-10-06T18:08:25Z",
+    "time": "2026-10-07T18:41:44Z",
     "issuerInfo": [
         {
             "issuer": {
@@ -6810,7 +6810,7 @@
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
-                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "kexAlg": "X25519, 253 bits",
                 "authAlg": "RSA-PSS",
                 "pubKeySize": "2048",
                 "compression": "NONE"
@@ -9926,14 +9926,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -11270,6 +11262,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_128_GCM_SHA256",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -11282,7 +11282,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140457431567296:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139634317831104:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -12755,6 +12755,14 @@
                     "n": "o5gf76A1uFUrJTBV-QGV8Ev6IbpcX6pjmKnR9BuAL5eqyQHbTmEpFqCKXXUPdDa2l2QKWjKRDaVEFnCyzAzH8C058OEu7WYhi-FRN-nm5AN80G6UyJ1wRJmZImyMRsFMXMvs5H9egOU_l8Ql4Nf6_-xAV-mlFUYPL_HkIbUXTIBx6nm-clqHyG51616HFkEEu04QOvnzmYi6tCqSxWXBgsr82ijm_4deQR6_c00R1HNX5FPWJ9rZf-hf_s4cee-EzyISbFQABMClsIHWR0z1cf1krBu2nnNI-9Rqw0ZjSXUHIus3yiuP0x3Zi_gtopsDCUCiq7rWa7x1-IWBbsaNHQ",
                     "kty": "RSA",
                     "kid": "RArP3AanbT-bUlU5OvDCcycrQG7TpPDRzTSh71zIRpI"
+                },
+                {
+                    "kty": "RSA",
+                    "use": "sig",
+                    "alg": "RS256",
+                    "kid": "808fbf83-06a2-4dcf-8864-6a66f7a92265",
+                    "n": "tgWuAXvf8mbN8JqGCJgM0t8m6Y_X7Qb9V4yMw1gHketwTzHGxc41Bkwl3tbvUHflY4td2e35JjGRN0BCjgbwE_kXmQFb2m_bBzEG8JmIJFAA8EovG5RqXKc4QJwttDZJnP-ktDGGGTAMa-U5Tvgz5bYD4B7aAnYBhqMu4pBdIfaa5o8giUrlrAF5kNb1vKD-vRn4-pvy13L9ObiZj71tb7U1fjL1sWDlCNFS-sFuWKlmeVIUjjPQZjq2xGO9geC5jEQ1QhMmksjiyUht3W3vTJaou8nBRgPlGYdPzmSQyi6kQstiMiDx7Hmq2EtCN6OnCNBLIA32cU0eesK_5HJhOw",
+                    "e": "AQAB"
                 }
             ],
             "tlsDetails": {
@@ -13264,27 +13272,11 @@
                 "name": "University of Iowa and our Community Connect Hospitals and Clinics: Cass Health, ISH, JCHC, MMC, VBCH and WMC",
                 "website": "https://mychart.uihealthcare.com/mychart"
             },
-            "keys": [
-                {
-                    "x": "cEBDWYfhbNZEoCkHyb60FEGpTkqX-LLYyjMdnRQFvXw",
-                    "y": "XiUkDme8X12re6N0DvX7nC5iQUMc4bHjcq4hxq-1w3o",
-                    "kid": "Y6mhj3wgC0EHH2aIx32rN3sgr2g4KWqnm9bceMWjiHg",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "kexAlg": "ECDH, secp384r1, 384 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -14315,7 +14307,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140457431567296:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139634317831104:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -16833,7 +16825,7 @@
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 502 (Bad Gateway)"
+                "HTTPError: Response code 404 (Not Found)"
             ]
         },
         {
@@ -17649,7 +17641,17 @@
                 "name": "Allina Health System",
                 "website": "https://account.allinahealth.org/dashboard/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "OyztZJjJX85p-NB8toqJCsDyrfVciy0dmkyC5rhoSl4",
+                    "y": "7I4YF-OQ3SLHLt8dSw6mQfqZZM6AXyWl9eq6eWwDp_U",
+                    "kid": "VcGBmQIW3DxECXXEHQBkbcyqOPFevpEz3Cghsjh--WE",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -17659,9 +17661,7 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "HTTPError: Response code 503 (Service Unavailable)"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -18989,7 +18989,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140457431567296:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 139634317831104:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
