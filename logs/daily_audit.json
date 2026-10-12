@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2026-10-11T17:32:56Z",
+    "auditTime": "2026-10-12T21:06:20Z",
     "issuerCount": 638,
     "issuersWithErrors": [
         {
@@ -112,7 +112,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "RequestError: getaddrinfo ENOTFOUND haiku.scrippshealth.org"
             ]
         },
         {
@@ -259,11 +259,31 @@
         },
         {
             "issuer": {
+                "iss": "https://epicproxy.uvmhealth.org/FHIR-ARR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "The University of Vermont Medical Center",
+                "website": "https://mychart.uvmhealth.org/MyChart/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "RequestError: connect ECONNREFUSED 12.152.228.119:443"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://iatrius.atriushealth.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Atrius Health",
                 "website": "https://myhealth.atriushealth.org/"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "ECDSA",
+                "pubKeySize": "384",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "RequestError: unable to get local issuer certificate"
@@ -316,6 +336,14 @@
                 "website": "https://mychart.sbch.org/mychart"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "RequestError: unable to get local issuer certificate"
@@ -378,6 +406,14 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
@@ -476,6 +512,14 @@
                 "website": "https://patientportal.lcmchealth.org/MyChart/"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "RequestError: unable to get local issuer certificate"
@@ -488,6 +532,14 @@
                 "website": "https://mychart.monroeclinic.org/mychart"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "HTTPError: Response code 503 (Service Unavailable)"
@@ -548,9 +600,9 @@
         },
         {
             "issuer": {
-                "iss": "https://rxproxy.sw.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Baylor Scott & White Health",
-                "website": "https://my.bswhealth.com/login"
+                "iss": "https://mobileprod.arcmd.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Austin Regional Clinic",
+                "website": "https://mychart.austinregionalclinic.com/mychart/"
             },
             "keys": [],
             "crls": [],
@@ -710,6 +762,14 @@
                 "website": "https://mychart.hfhs.org/mychart"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "RequestError: unable to get local issuer certificate"
@@ -761,17 +821,7 @@
                 "name": "Houston Methodist",
                 "website": "https://mychart.houstonmethodist.org/mychart-prod/"
             },
-            "keys": [
-                {
-                    "x": "eVXPEAN8cSBXkLkDZjYummMTu6QVY2Yy85F2wCala40",
-                    "y": "2M7ZLV2U3wA-8GCV-0rzk9f6EVsjfwJJjRBmiu7g4hg",
-                    "kid": "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -782,7 +832,7 @@
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin"
+                "HTTPError: Response code 500 (Internal Server Error)"
             ]
         },
         {
@@ -886,7 +936,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140225729936320:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140695825435584:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -926,7 +976,7 @@
             },
             "crls": [],
             "errors": [
-                "RequestError: certificate has expired"
+                "RequestError: self signed certificate in certificate chain"
             ]
         },
         {
@@ -948,6 +998,14 @@
                 "website": "https://www.vacuid.pr.gov/"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "HTTPError: Response code 403 (Site Disabled)"
@@ -1329,6 +1387,26 @@
         },
         {
             "issuer": {
+                "iss": "https://arr.mysrhs.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Singing River Health System",
+                "website": "https://mychart.mysrhs.com/mychart"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "ECDSA",
+                "pubKeySize": "256",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://fhir.conemaugh.org/arr-fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Conemaugh",
                 "website": "https://www.conemaugh.org/patients-and-visitors/patients-and-visitors/conemaugh-mychart-patient-portal"
@@ -1396,7 +1474,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140225729936320:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140695825435584:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -1504,6 +1582,14 @@
                 "website": "https://mychart.mah.org/mychart"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "HTTPError: Response code 503 (Service Unavailable)"
@@ -1619,6 +1705,14 @@
                 "name": "Heritage Valley Health System"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "X25519, 253 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "HTTPError: Response code 404 (Not Found)"
@@ -1975,6 +2069,14 @@
                 "website": "https://www.trinityhealthofne.org/patient-portal/"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "kexAlg": "ECDH, secp384r1, 384 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "RequestError: unable to get local issuer certificate"
@@ -2150,6 +2252,14 @@
                 "website": "https://www.sjhsyr.org/"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "kexAlg": "ECDH, prime256v1, 256 bits",
+                "authAlg": "RSA",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "RequestError: self signed certificate in certificate chain"
@@ -2457,7 +2567,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140225729936320:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140695825435584:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -2556,14 +2666,32 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2026-10-10T17:09:52Z",
+    "previousAuditTime": "2026-10-11T17:32:56Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://rxproxy.sw.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://epicproxy.uvmhealth.org/FHIR-ARR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "KFLKUh-mUZhkp5fye45PAcLesScYWHYaH49kZnT7ArE"
+                "zBwvdXxZunOT7s39rKRmCkG8WntlwlwagOLKjopstSo"
+            ]
+        },
+        {
+            "iss": "https://mobileprod.arcmd.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "sBU-IwhRjb9FeJRb-Trv6VRzF-dOOIeZsUeayinVGTE"
+            ]
+        },
+        {
+            "iss": "https://epiclbsprxyprodpass.houstonmethodist.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4"
+            ]
+        },
+        {
+            "iss": "https://arr.mysrhs.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "0PNSpYFAFnDHRb_G4FD8g5opxY0VwhgbOovYMkldhgg"
             ]
         }
     ]
