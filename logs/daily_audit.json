@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2026-10-19T18:33:19Z",
+    "auditTime": "2026-10-20T16:36:23Z",
     "issuerCount": 638,
     "issuersWithErrors": [
         {
@@ -359,18 +359,6 @@
         },
         {
             "issuer": {
-                "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Baptist Health",
-                "website": "https://mychart.baptist-health.org/mychart/"
-            },
-            "keys": [],
-            "crls": [],
-            "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://www.riteaid.com",
                 "name": "Rite Aid Pharmacy",
                 "website": "https://www.riteaid.com/pharmacy/vaccination-digital-proof"
@@ -600,6 +588,18 @@
         },
         {
             "issuer": {
+                "iss": "https://mobileprod.arcmd.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "Austin Regional Clinic",
+                "website": "https://mychart.austinregionalclinic.com/mychart/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://fhir.chppoc.org/Fhir-External/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Pediatric Physicians' Organization at Children's",
                 "website": "https://mychart.chppoc.org/mychart"
@@ -801,17 +801,7 @@
                 "name": "Houston Methodist",
                 "website": "https://mychart.houstonmethodist.org/mychart-prod/"
             },
-            "keys": [
-                {
-                    "x": "eVXPEAN8cSBXkLkDZjYummMTu6QVY2Yy85F2wCala40",
-                    "y": "2M7ZLV2U3wA-8GCV-0rzk9f6EVsjfwJJjRBmiu7g4hg",
-                    "kid": "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -822,7 +812,7 @@
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin"
+                "HTTPError: Response code 500 (Internal Server Error)"
             ]
         },
         {
@@ -926,7 +916,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140333242616768:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140628359658432:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -1008,6 +998,14 @@
                 "website": "https://www.vacuid.pr.gov/"
             },
             "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "kexAlg": "ECDH, secp521r1, 521 bits",
+                "authAlg": "RSA-PSS",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
                 "HTTPError: Response code 403 (Site Disabled)"
@@ -1237,28 +1235,18 @@
                 "name": "Government of Canada - Gouvernement du Canada",
                 "website": "https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/vaccine-proof/get-canadian.html"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "kid": "PieNn3ty3quAW_G_TUMwJEUaeh_QORyjlHfKwQ--CxM",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "5vlkZqxjyld5h8McxU7PgOKGv1ReS3cQ6XUg-pORR3k",
-                    "y": "ebHsDHNw0LBOlfkSaPNwSLEOQxki6S-g5T2gLU3myHw"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
                 "kexAlg": "ECDH, prime256v1, 256 bits",
-                "authAlg": "RSA-PSS",
-                "pubKeySize": "2048",
+                "authAlg": "ECDSA",
+                "pubKeySize": "256",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header"
+                "RequestError: Hostname/IP does not match certificate's altnames: Host: pvc.cloud.forces.gc.ca. is not in the cert's altnames: DNS:*.azureedge.net"
             ]
         },
         {
@@ -1448,7 +1436,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140333242616768:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140628359658432:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -2542,7 +2530,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 140333242616768:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 140628359658432:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -2641,20 +2629,26 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2026-10-18T15:38:11Z",
+    "previousAuditTime": "2026-10-19T18:33:19Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://api.baptist-health.org/Interconnect-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://mobileprod.arcmd.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "2Y6IshBllIuZBWuUMPeefWvqSHynjSDrmXHpOKo9JnU"
+                "sBU-IwhRjb9FeJRb-Trv6VRzF-dOOIeZsUeayinVGTE"
             ]
         },
         {
-            "iss": "https://epicproxy.rush.edu/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://epiclbsprxyprodpass.houstonmethodist.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "eWghKU5rTe2NuQ10H6LQzVLfwW5exhVgP795XCIv_vM"
+                "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4"
+            ]
+        },
+        {
+            "iss": "https://pvc.cloud.forces.gc.ca",
+            "kids": [
+                "PieNn3ty3quAW_G_TUMwJEUaeh_QORyjlHfKwQ--CxM"
             ]
         }
     ]
