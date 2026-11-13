@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2026-11-12T19:42:26Z",
+    "auditTime": "2026-11-13T19:24:38Z",
     "issuerCount": 638,
     "issuersWithErrors": [
         {
@@ -1506,6 +1506,25 @@
         },
         {
             "issuer": {
+                "iss": "https://epic-arr.utmb.edu/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "University of Texas Medical Branch",
+                "website": "https://www.utmbhealth.com/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "authAlg": "rsa_pss_rsae_sha256",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "RequestError: unable to get local issuer certificate"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://prd.salemhealth.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Salem Health",
                 "website": "https://mychart.salemhealth.org/MyChart"
@@ -1647,7 +1666,17 @@
                 "name": "Sutter Health",
                 "website": "https://mho.sutterhealth.org/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "KEwcQPcBxHwKt53aGnDhZCc0ZX-ohfrmUPqGdjuUwEA",
+                    "y": "2KG9Ywoqf1QZO2KE5QqfgCJ0MNGJEqyClIBO83fzSdE",
+                    "kid": "rOF8imMZYLD-BGdFIDl7bexBgpODIYr5_yPi57eNrVs",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES128-SHA",
@@ -1657,7 +1686,6 @@
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 500 (Internal Server Error)",
                 "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
             ]
         },
@@ -1782,17 +1810,7 @@
                 "name": "University of Texas Southwestern Medical Center",
                 "website": "https://www.utsouthwestern.edu/"
             },
-            "keys": [
-                {
-                    "x": "xuvlGYpZPS488hdMqclz8VgM9QLgsekp6SwTHWlBpAQ",
-                    "y": "ah0orR9ALYhHa5HYi-lXuHEc6AS9ve04QD6tRdhWdsQ",
-                    "kid": "X0n3H1Zf0Q0EKrY1ehuLMmuJ0ysWnkXPXNty_4_fl-U",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -1802,6 +1820,7 @@
             },
             "crls": [],
             "errors": [
+                "RequestError: unable to get local issuer certificate",
                 "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
             ]
         },
@@ -2068,14 +2087,14 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "authAlg": "rsa_pkcs1_sha256",
+                "authAlg": "rsa_pss_rsae_sha256",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
                 "RequestError: unable to get local issuer certificate",
-                "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
+                "TLS error: Unrecognized authentication algorithm: rsa_pss_rsae_sha256"
             ]
         },
         {
@@ -2587,7 +2606,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: connect ECONNREFUSED 216.186.180.112:443"
+                "RequestError: connect ECONNREFUSED 72.158.86.112:443"
             ]
         },
         {
@@ -2771,35 +2790,6 @@
             "crls": [],
             "errors": [
                 "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha512"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://soapproxy.umc.edu/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "University of Mississippi Medical Center",
-                "website": "https://www.umc.edu/mychart"
-            },
-            "keys": [
-                {
-                    "x": "CZVVWbJVE4CwcgAfeC-7NxmxH32PZY-3Z9HJuy6lCDA",
-                    "y": "jYaSu6yO6QMZwZ9CVMwmQM2MsuuPJ2jDeVRBiAoWWlI",
-                    "kid": "mxF4Ps18ovCh05dnazqw08rXkdDXqWCzpuUdG73PlvA",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "authAlg": "rsa_pkcs1_sha256",
-                "pubKeySize": "4096",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
             ]
         },
         {
@@ -3018,13 +3008,13 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "authAlg": "rsa_pkcs1_sha256",
+                "authAlg": "rsa_pss_rsae_sha256",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
-                "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
+                "TLS error: Unrecognized authentication algorithm: rsa_pss_rsae_sha256"
             ]
         },
         {
@@ -3834,35 +3824,6 @@
         },
         {
             "issuer": {
-                "iss": "https://soap.wellmont.org/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Ballad Health",
-                "website": "https://mychart.balladhealth.org/mychart"
-            },
-            "keys": [
-                {
-                    "x": "bQHnyBxdodpGdUvYIiC-4KNFGF1U_ijPN5Xv9gVV_VA",
-                    "y": "jfyOdySTYiwiF5lYJGOkDbZRvWvGvk7DrX0RxRH78DM",
-                    "kid": "IOq5euz9bZ_qQhioZsa4cn99d6URGojDuLtKXzNNL-E",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "authAlg": "rsa_pss_rsae_sha256",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "TLS error: Unrecognized authentication algorithm: rsa_pss_rsae_sha256"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epicproxy.et0764.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Confluence Health",
                 "website": "https://mychart.confluencehealth.org/MyChart"
@@ -3928,7 +3889,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 127786001374144:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 135614635707328:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -5740,7 +5701,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 127786001374144:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 135614635707328:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -6127,17 +6088,7 @@
                 "name": "Baylor Medicine",
                 "website": "https://mychart.bcm.edu/MyChartPRD/"
             },
-            "keys": [
-                {
-                    "x": "igBizDjpvWGQAHlcRPbiMWlISAfr4DDgZQJFs50_2bY",
-                    "y": "ErQ_uKDeMKicTAPrencwmEOqAvXZllY2w4zRCKUrvaU",
-                    "kid": "-h7TjqJB9Sn2yp2e9wO-Pf6YibiRGKjceNHgLGBvaM8",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
@@ -6147,6 +6098,7 @@
             },
             "crls": [],
             "errors": [
+                "RequestError: self signed certificate in certificate chain",
                 "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
             ]
         },
@@ -8845,7 +8797,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 127786001374144:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 135614635707328:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -9117,32 +9069,26 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2026-11-11T19:24:51Z",
+    "previousAuditTime": "2026-11-12T19:42:26Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://apiservices.sutterhealth.org/ifs/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://epic-arr.utmb.edu/fhir-prd/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "rOF8imMZYLD-BGdFIDl7bexBgpODIYr5_yPi57eNrVs"
+                "UwqgQQ5XiNYjrPXhb3R7g7icjJljvasf2FHyV6uahyY"
             ]
         },
         {
-            "iss": "https://ssproxy.pennhealth.com/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://EpicIntprxyPRD.swmed.edu/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "lNDhWY4Y1WKPClF2dDYw8WGEZE_L353mw931GE5pfTA"
+                "X0n3H1Zf0Q0EKrY1ehuLMmuJ0ysWnkXPXNty_4_fl-U"
             ]
         },
         {
-            "iss": "https://epiclbsprxyprodpass.houstonmethodist.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://fhir.clinical.bcm.edu/stage1fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4"
-            ]
-        },
-        {
-            "iss": "https://mcproxyprd.med.umich.edu/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "2ERcjZgrojfX64RG8MBu6EvsW-7qmYGg_18LITMjO1s"
+                "-h7TjqJB9Sn2yp2e9wO-Pf6YibiRGKjceNHgLGBvaM8"
             ]
         }
     ]

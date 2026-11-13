@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2026-11-12T19:42:26Z",
+    "time": "2026-11-13T19:24:38Z",
     "issuerInfo": [
         {
             "issuer": {
@@ -7469,17 +7469,7 @@
                 "name": "University of Texas Medical Branch",
                 "website": "https://www.utmbhealth.com/"
             },
-            "keys": [
-                {
-                    "x": "rplSV1pFcSl6glRAPLSInuzx7UT994nHE0BYBUCyz-I",
-                    "y": "pszzXMgjxJ06f8sZBPYzEaN5dnEhjLvosCsyscD2is0",
-                    "kid": "UwqgQQ5XiNYjrPXhb3R7g7icjJljvasf2FHyV6uahyY",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -7488,7 +7478,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "RequestError: unable to get local issuer certificate"
+            ]
         },
         {
             "issuer": {
@@ -7633,7 +7625,17 @@
                 "name": "Sutter Health",
                 "website": "https://mho.sutterhealth.org/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "KEwcQPcBxHwKt53aGnDhZCc0ZX-ohfrmUPqGdjuUwEA",
+                    "y": "2KG9Ywoqf1QZO2KE5QqfgCJ0MNGJEqyClIBO83fzSdE",
+                    "kid": "rOF8imMZYLD-BGdFIDl7bexBgpODIYr5_yPi57eNrVs",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES128-SHA",
@@ -7643,7 +7645,6 @@
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 500 (Internal Server Error)",
                 "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
             ]
         },
@@ -7822,17 +7823,7 @@
                 "name": "University of Texas Southwestern Medical Center",
                 "website": "https://www.utsouthwestern.edu/"
             },
-            "keys": [
-                {
-                    "x": "xuvlGYpZPS488hdMqclz8VgM9QLgsekp6SwTHWlBpAQ",
-                    "y": "ah0orR9ALYhHa5HYi-lXuHEc6AS9ve04QD6tRdhWdsQ",
-                    "kid": "X0n3H1Zf0Q0EKrY1ehuLMmuJ0ysWnkXPXNty_4_fl-U",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -7842,6 +7833,7 @@
             },
             "crls": [],
             "errors": [
+                "RequestError: unable to get local issuer certificate",
                 "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
             ]
         },
@@ -8313,14 +8305,14 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "authAlg": "rsa_pkcs1_sha256",
+                "authAlg": "rsa_pss_rsae_sha256",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
                 "RequestError: unable to get local issuer certificate",
-                "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
+                "TLS error: Unrecognized authentication algorithm: rsa_pss_rsae_sha256"
             ]
         },
         {
@@ -8832,7 +8824,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: connect ECONNREFUSED 216.186.180.112:443"
+                "RequestError: connect ECONNREFUSED 72.158.86.112:443"
             ]
         },
         {
@@ -9180,16 +9172,14 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "authAlg": "rsa_pkcs1_sha256",
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "authAlg": "rsa_pss_rsae_sha256",
                 "pubKeySize": "4096",
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -9434,13 +9424,13 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "authAlg": "rsa_pkcs1_sha256",
+                "authAlg": "rsa_pss_rsae_sha256",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
-                "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
+                "TLS error: Unrecognized authentication algorithm: rsa_pss_rsae_sha256"
             ]
         },
         {
@@ -11029,16 +11019,14 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
                 "authAlg": "rsa_pss_rsae_sha256",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "TLS error: Unrecognized authentication algorithm: rsa_pss_rsae_sha256"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -11134,7 +11122,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 127786001374144:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 135614635707328:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -14211,7 +14199,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 127786001374144:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 135614635707328:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -14688,17 +14676,7 @@
                 "name": "Baylor Medicine",
                 "website": "https://mychart.bcm.edu/MyChartPRD/"
             },
-            "keys": [
-                {
-                    "x": "igBizDjpvWGQAHlcRPbiMWlISAfr4DDgZQJFs50_2bY",
-                    "y": "ErQ_uKDeMKicTAPrencwmEOqAvXZllY2w4zRCKUrvaU",
-                    "kid": "-h7TjqJB9Sn2yp2e9wO-Pf6YibiRGKjceNHgLGBvaM8",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
@@ -14708,6 +14686,7 @@
             },
             "crls": [],
             "errors": [
+                "RequestError: self signed certificate in certificate chain",
                 "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
             ]
         },
@@ -18878,7 +18857,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 127786001374144:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 135614635707328:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
