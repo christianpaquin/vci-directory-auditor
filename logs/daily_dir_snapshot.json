@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "time": "2026-11-18T20:13:26Z",
+    "time": "2026-11-19T20:17:10Z",
     "issuerInfo": [
         {
             "issuer": {
@@ -6496,26 +6496,11 @@
                 "name": "The University of Vermont Medical Center",
                 "website": "https://mychart.uvmhealth.org/MyChart/"
             },
-            "keys": [
-                {
-                    "x": "80_e1C0rPZUHvNqPQx2NpC-O5Dkc0rFnYL0s6OUUtEc",
-                    "y": "o7dD4N7S5THXcz6G8LeH5QNsQrecfLlbrZ7lzXnm_rc",
-                    "kid": "zBwvdXxZunOT7s39rKRmCkG8WntlwlwagOLKjopstSo",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "authAlg": "rsa_pss_rsae_sha256",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "RequestError: connect ECONNREFUSED 12.152.228.119:443"
+            ]
         },
         {
             "issuer": {
@@ -7279,16 +7264,14 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "authAlg": "rsa_pkcs1_sha256",
+                "version": "TLSv1.3",
+                "cipher": "TLS_CHACHA20_POLY1305_SHA256",
+                "authAlg": "rsa_pss_rsae_sha256",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -8150,6 +8133,13 @@
                     "crv": "P-256"
                 }
             ],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "authAlg": "rsa_pss_rsae_sha256",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": []
         },
@@ -8240,14 +8230,14 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "authAlg": "rsa_pkcs1_sha256",
+                "authAlg": "rsa_pss_rsae_sha256",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
                 "RequestError: unable to get local issuer certificate",
-                "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
+                "TLS error: Unrecognized authentication algorithm: rsa_pss_rsae_sha256"
             ]
         },
         {
@@ -8572,17 +8562,8 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "authAlg": "rsa_pkcs1_sha256",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
-            "errors": [
-                "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -8759,7 +8740,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: connect ECONNREFUSED 72.158.86.112:443"
+                "RequestError: connect ECONNREFUSED 216.186.180.112:443"
             ]
         },
         {
@@ -9351,13 +9332,13 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "authAlg": "rsa_pss_rsae_sha256",
+                "authAlg": "rsa_pkcs1_sha256",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
-                "TLS error: Unrecognized authentication algorithm: rsa_pss_rsae_sha256"
+                "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
             ]
         },
         {
@@ -10139,7 +10120,17 @@
                 "name": "Houston Methodist",
                 "website": "https://mychart.houstonmethodist.org/mychart-prod/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "eVXPEAN8cSBXkLkDZjYummMTu6QVY2Yy85F2wCala40",
+                    "y": "2M7ZLV2U3wA-8GCV-0rzk9f6EVsjfwJJjRBmiu7g4hg",
+                    "kid": "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -10149,7 +10140,7 @@
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 500 (Internal Server Error)",
+                "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin",
                 "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
             ]
         },
@@ -10946,16 +10937,14 @@
                 }
             ],
             "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
                 "authAlg": "rsa_pss_rsae_sha256",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": [
-                "TLS error: Unrecognized authentication algorithm: rsa_pss_rsae_sha256"
-            ]
+            "errors": []
         },
         {
             "issuer": {
@@ -11051,7 +11040,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 124706633251776:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 134250314931136:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -11621,13 +11610,6 @@
                 "website": "https://www.vacuid.pr.gov/"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "authAlg": "rsa_pss_rsae_sha256",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
                 "HTTPError: Response code 403 (Site Disabled)"
@@ -13028,17 +13010,7 @@
                 "name": "University of Iowa and our Community Connect Hospitals and Clinics: Cass Health, ISH, JCHC, MMC, VBCH and WMC",
                 "website": "https://mychart.uihealthcare.com/mychart"
             },
-            "keys": [
-                {
-                    "x": "cEBDWYfhbNZEoCkHyb60FEGpTkqX-LLYyjMdnRQFvXw",
-                    "y": "XiUkDme8X12re6N0DvX7nC5iQUMc4bHjcq4hxq-1w3o",
-                    "kid": "Y6mhj3wgC0EHH2aIx32rN3sgr2g4KWqnm9bceMWjiHg",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -13048,6 +13020,7 @@
             },
             "crls": [],
             "errors": [
+                "RequestError: unable to get local issuer certificate",
                 "TLS error: Unrecognized authentication algorithm: rsa_pss_rsae_sha256"
             ]
         },
@@ -14119,7 +14092,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 124706633251776:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 134250314931136:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -17483,13 +17456,6 @@
                     "crv": "P-256"
                 }
             ],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "authAlg": "rsa_pss_rsae_sha256",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": []
         },
@@ -18194,17 +18160,7 @@
                 "name": "CVS Health",
                 "website": "https://care.cvs.com/"
             },
-            "keys": [
-                {
-                    "x": "RPvq62GN6LEA9lcSjqhYtBDqJl7FFMPN52kCQq7xjfE",
-                    "y": "MEzX6hkTT7SV5UdEMihyEwpZS_Mg25hPA7xcKfp9JCI",
-                    "kid": "R6-vROogzwE51ZIHxRl7tp8SSRoAfMcGeOoF_G2VGlo",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.3",
                 "cipher": "TLS_AES_256_GCM_SHA384",
@@ -18213,7 +18169,9 @@
                 "compression": "NONE"
             },
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         },
         {
             "issuer": {
@@ -18760,7 +18718,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 124706633251776:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 134250314931136:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -19053,26 +19011,11 @@
                 "iss": "https://api-global-ext.iom.int/smarthealth",
                 "name": "International Organization for Migration"
             },
-            "keys": [
-                {
-                    "kty": "EC",
-                    "kid": "xm6xJ8glufmpVWRKBh5-ZDXOgjJO11McLan3gcb1JUU",
-                    "use": "sig",
-                    "alg": "ES256",
-                    "crv": "P-256",
-                    "x": "uOdZdF8IDmckwFflmSEWCGSrYP2bwf56QCYKaYbOFcs",
-                    "y": "cR3QPHRyjldGD2iWGjk2EDDEeT_26xVvxOUlRqH9BlM"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "authAlg": "rsa_pss_rsae_sha256",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
+            "keys": [],
             "crls": [],
-            "errors": []
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         }
     ]
 }

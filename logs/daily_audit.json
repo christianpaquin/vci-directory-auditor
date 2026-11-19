@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2026-11-18T20:13:26Z",
+    "auditTime": "2026-11-19T20:17:10Z",
     "issuerCount": 638,
     "issuersWithErrors": [
         {
@@ -775,6 +775,18 @@
         },
         {
             "issuer": {
+                "iss": "https://epicproxy.uvmhealth.org/FHIR-ARR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "The University of Vermont Medical Center",
+                "website": "https://mychart.uvmhealth.org/MyChart/"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "RequestError: connect ECONNREFUSED 12.152.228.119:443"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://epicproxy.et1058.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Montage Health",
                 "website": "https://mychart.montagehealth.org/mychart"
@@ -1334,35 +1346,6 @@
             "crls": [],
             "errors": [
                 "RequestError: getaddrinfo ENOTFOUND ovc-api.optum.com"
-            ]
-        },
-        {
-            "issuer": {
-                "iss": "https://moc.beaumont.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Corewell Health",
-                "website": "https://mychart.corewellhealth.org/MyChart"
-            },
-            "keys": [
-                {
-                    "x": "iaTqSHcKw4bEMMHQ-UsGpBGYtUWblmu317BeLb01rKc",
-                    "y": "tMJSsoDOJu-geTA38aWARqlK5eA4m3UYFXP2zIF7U8M",
-                    "kid": "hOS6LGMSk4BDXFirAHIebJQ_OhJdXF2bSKzry3B3MYk",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "authAlg": "rsa_pkcs1_sha256",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
             ]
         },
         {
@@ -2106,14 +2089,14 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "authAlg": "rsa_pkcs1_sha256",
+                "authAlg": "rsa_pss_rsae_sha256",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
                 "RequestError: unable to get local issuer certificate",
-                "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
+                "TLS error: Unrecognized authentication algorithm: rsa_pss_rsae_sha256"
             ]
         },
         {
@@ -2423,35 +2406,6 @@
         },
         {
             "issuer": {
-                "iss": "https://ep-rps.gvhc.org/FHIR-PRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Golden Valley Health Centers",
-                "website": "https://mychart.gvhc.org/MyChartPRD/"
-            },
-            "keys": [
-                {
-                    "x": "WAshoC7hhKa0bsZp8dxuJXg5BjQxBj1UfhKkqMnFH24",
-                    "y": "-UyMNSqsnnhYh-UWPK_FnAVffV5s-UCSQoMuXu7TdNs",
-                    "kid": "aAbdA1rmZf5y22T7fAFOGw5ZYciZxBc4-HT_rRg4428",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "authAlg": "rsa_pkcs1_sha256",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://fhir.memorialcare.org/fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "MemorialCare",
                 "website": "https://mymemorialcare.memorialcare.org/MyChart"
@@ -2625,7 +2579,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: connect ECONNREFUSED 72.158.86.112:443"
+                "RequestError: connect ECONNREFUSED 216.186.180.112:443"
             ]
         },
         {
@@ -3046,13 +3000,13 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "authAlg": "rsa_pss_rsae_sha256",
+                "authAlg": "rsa_pkcs1_sha256",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
-                "TLS error: Unrecognized authentication algorithm: rsa_pss_rsae_sha256"
+                "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
             ]
         },
         {
@@ -3313,7 +3267,17 @@
                 "name": "Houston Methodist",
                 "website": "https://mychart.houstonmethodist.org/mychart-prod/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "eVXPEAN8cSBXkLkDZjYummMTu6QVY2Yy85F2wCala40",
+                    "y": "2M7ZLV2U3wA-8GCV-0rzk9f6EVsjfwJJjRBmiu7g4hg",
+                    "kid": "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -3323,7 +3287,7 @@
             },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 500 (Internal Server Error)",
+                "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin",
                 "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
             ]
         },
@@ -3862,35 +3826,6 @@
         },
         {
             "issuer": {
-                "iss": "https://soap.wellmont.org/FHIRPRD/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Ballad Health",
-                "website": "https://mychart.balladhealth.org/mychart"
-            },
-            "keys": [
-                {
-                    "x": "bQHnyBxdodpGdUvYIiC-4KNFGF1U_ijPN5Xv9gVV_VA",
-                    "y": "jfyOdySTYiwiF5lYJGOkDbZRvWvGvk7DrX0RxRH78DM",
-                    "kid": "IOq5euz9bZ_qQhioZsa4cn99d6URGojDuLtKXzNNL-E",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "authAlg": "rsa_pss_rsae_sha256",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "TLS error: Unrecognized authentication algorithm: rsa_pss_rsae_sha256"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epicproxy.et0764.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Confluence Health",
                 "website": "https://mychart.confluencehealth.org/MyChart"
@@ -3956,7 +3891,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 124706633251776:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 134250314931136:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -4228,13 +4163,6 @@
                 "website": "https://www.vacuid.pr.gov/"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "authAlg": "rsa_pss_rsae_sha256",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
                 "HTTPError: Response code 403 (Site Disabled)"
@@ -5133,17 +5061,7 @@
                 "name": "University of Iowa and our Community Connect Hospitals and Clinics: Cass Health, ISH, JCHC, MMC, VBCH and WMC",
                 "website": "https://mychart.uihealthcare.com/mychart"
             },
-            "keys": [
-                {
-                    "x": "cEBDWYfhbNZEoCkHyb60FEGpTkqX-LLYyjMdnRQFvXw",
-                    "y": "XiUkDme8X12re6N0DvX7nC5iQUMc4bHjcq4hxq-1w3o",
-                    "kid": "Y6mhj3wgC0EHH2aIx32rN3sgr2g4KWqnm9bceMWjiHg",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -5153,6 +5071,7 @@
             },
             "crls": [],
             "errors": [
+                "RequestError: unable to get local issuer certificate",
                 "TLS error: Unrecognized authentication algorithm: rsa_pss_rsae_sha256"
             ]
         },
@@ -5759,7 +5678,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 124706633251776:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 134250314931136:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -8482,6 +8401,25 @@
         },
         {
             "issuer": {
+                "iss": "https://retailepicfhir-uat.cvshealth.com/FhirProxyTST/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+                "name": "CVS Health",
+                "website": "https://care.cvs.com/"
+            },
+            "keys": [],
+            "tlsDetails": {
+                "version": "TLSv1.3",
+                "cipher": "TLS_AES_256_GCM_SHA384",
+                "authAlg": "rsa_pss_rsae_sha256",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
+        },
+        {
+            "issuer": {
                 "iss": "https://memorialhealthfhirprd.app.medcity.net/fhir-proxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "HCA National"
             },
@@ -8865,7 +8803,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 124706633251776:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 134250314931136:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -9071,6 +9009,17 @@
             "errors": [
                 "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha512"
             ]
+        },
+        {
+            "issuer": {
+                "iss": "https://api-global-ext.iom.int/smarthealth",
+                "name": "International Organization for Migration"
+            },
+            "keys": [],
+            "crls": [],
+            "errors": [
+                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+            ]
         }
     ],
     "issuerWithCRLCount": 0,
@@ -9137,16 +9086,32 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2026-11-17T20:39:39Z",
+    "previousAuditTime": "2026-11-18T20:13:26Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://www.hss.gov.nt.ca/covax",
+            "iss": "https://epicproxy.uvmhealth.org/FHIR-ARR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "8C-9TNgyGuOqc-3FXyNRq6m5U9S1wyhCS1TvpgjzkoU",
-                "AQlUbxO9XumTe_MC4BO5SVlYZFj9NRRBDcNYKyjk7tw",
-                "Qt9j1myNbxPdmlRIOw3CAo3lTEz14CQm8AIlK3oe4nk"
+                "zBwvdXxZunOT7s39rKRmCkG8WntlwlwagOLKjopstSo"
+            ]
+        },
+        {
+            "iss": "https://myepicapps.uihealthcare.org/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "Y6mhj3wgC0EHH2aIx32rN3sgr2g4KWqnm9bceMWjiHg"
+            ]
+        },
+        {
+            "iss": "https://retailepicfhir-uat.cvshealth.com/FhirProxyTST/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "kids": [
+                "R6-vROogzwE51ZIHxRl7tp8SSRoAfMcGeOoF_G2VGlo"
+            ]
+        },
+        {
+            "iss": "https://api-global-ext.iom.int/smarthealth",
+            "kids": [
+                "xm6xJ8glufmpVWRKBh5-ZDXOgjJO11McLan3gcb1JUU"
             ]
         }
     ]
