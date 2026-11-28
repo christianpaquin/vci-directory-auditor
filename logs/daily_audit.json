@@ -1,6 +1,6 @@
 {
     "directory": "https://raw.githubusercontent.com/the-commons-project/vci-directory/main/vci-issuers.json",
-    "auditTime": "2026-11-27T20:54:51Z",
+    "auditTime": "2026-11-28T19:45:14Z",
     "issuerCount": 638,
     "issuersWithErrors": [
         {
@@ -1903,35 +1903,6 @@
         },
         {
             "issuer": {
-                "iss": "https://erx.aspirus.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Aspirus",
-                "website": "https://myaspirus.org/MyChart"
-            },
-            "keys": [
-                {
-                    "x": "1X5S3xDjTzzkB9nvRUVMVNtG5KBzjfjiS3-bWW3cclA",
-                    "y": "t2IjGGHgJyVoVyvdiceHWSBcEbR_FryAY3u52KexUhU",
-                    "kid": "8wr-HDQqc2uqz_TgQAjati-OD41IpgJqGJDXd2CaSbg",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "authAlg": "rsa_pss_rsae_sha256",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "TLS error: Unrecognized authentication algorithm: rsa_pss_rsae_sha256"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epicproxy.et1024.epichosted.com/FHIRProxy/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "South Georgia Medical Center",
                 "website": "https://www.sgmc.org/"
@@ -2231,10 +2202,27 @@
                 "name": "Austin Regional Clinic",
                 "website": "https://mychart.austinregionalclinic.com/mychart/"
             },
-            "keys": [],
+            "keys": [
+                {
+                    "x": "VwoPo_VHjz3QNwtT9NUyByhzijdHAO46DkMqTofpQkE",
+                    "y": "kz0rY0AqmLtDkqlLoSCzcMtIU_gGhXFstKMWwsGufq4",
+                    "kid": "sBU-IwhRjb9FeJRb-Trv6VRzF-dOOIeZsUeayinVGTE",
+                    "use": "sig",
+                    "kty": "EC",
+                    "alg": "ES256",
+                    "crv": "P-256"
+                }
+            ],
+            "tlsDetails": {
+                "version": "TLSv1.2",
+                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
+                "authAlg": "rsa_pkcs1_sha256",
+                "pubKeySize": "2048",
+                "compression": "NONE"
+            },
             "crls": [],
             "errors": [
-                "TimeoutError: Timeout awaiting 'request' for 5000ms"
+                "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
             ]
         },
         {
@@ -2646,7 +2634,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: connect ECONNREFUSED 72.158.86.112:443"
+                "RequestError: connect ECONNREFUSED 216.186.180.112:443"
             ]
         },
         {
@@ -3067,13 +3055,13 @@
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
-                "authAlg": "rsa_pss_rsae_sha256",
+                "authAlg": "rsa_pkcs1_sha256",
                 "pubKeySize": "2048",
                 "compression": "NONE"
             },
             "crls": [],
             "errors": [
-                "TLS error: Unrecognized authentication algorithm: rsa_pss_rsae_sha256"
+                "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
             ]
         },
         {
@@ -3310,50 +3298,11 @@
         },
         {
             "issuer": {
-                "iss": "https://epicprdproxy.nch.org/prd-fhir/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Northwest Community Hospital",
-                "website": "https://www.nch.org/landing/coronavirus/digital-proof-of-vaccination/"
-            },
-            "keys": [
-                {
-                    "x": "iWC7qOI1vDoWSeyYFBFpD2hefM3qPHcZOjAOW17bQ80",
-                    "y": "9tRTdAEwDIPZZaoIHfU1nDd1IAGd-n-F5U4B2DYaWxw",
-                    "kid": "UjF5uQPh6HUHhByMFl-Fx_4H26-xSi2gb7n2wcgbjYw",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
-            "tlsDetails": {
-                "version": "TLSv1.2",
-                "cipher": "ECDHE-RSA-AES128-GCM-SHA256",
-                "authAlg": "rsa_pkcs1_sha256",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://epiclbsprxyprodpass.houstonmethodist.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "Houston Methodist",
                 "website": "https://mychart.houstonmethodist.org/mychart-prod/"
             },
-            "keys": [
-                {
-                    "x": "eVXPEAN8cSBXkLkDZjYummMTu6QVY2Yy85F2wCala40",
-                    "y": "2M7ZLV2U3wA-8GCV-0rzk9f6EVsjfwJJjRBmiu7g4hg",
-                    "kid": "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4",
-                    "use": "sig",
-                    "kty": "EC",
-                    "alg": "ES256",
-                    "crv": "P-256"
-                }
-            ],
+            "keys": [],
             "tlsDetails": {
                 "version": "TLSv1.2",
                 "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
@@ -3363,7 +3312,7 @@
             },
             "crls": [],
             "errors": [
-                "Issuer key endpoint's CORS 'access-control-allow-origin' header *, * does not match the requested origin",
+                "HTTPError: Response code 500 (Internal Server Error)",
                 "TLS error: Unrecognized authentication algorithm: rsa_pkcs1_sha256"
             ]
         },
@@ -3987,7 +3936,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 136409971907520:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 131753923500992:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -4259,16 +4208,9 @@
                 "website": "https://www.vacuid.pr.gov/"
             },
             "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "authAlg": "rsa_pss_rsae_sha256",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
             "crls": [],
             "errors": [
-                "HTTPError: Response code 403 (Site Disabled)"
+                "RequestError: Client network socket disconnected before secure TLS connection was established"
             ]
         },
         {
@@ -5781,7 +5723,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 136409971907520:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 131753923500992:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -7953,26 +7895,6 @@
         },
         {
             "issuer": {
-                "iss": "https://cnesp001.carene.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-                "name": "Care New England",
-                "website": "https://www.carenewengland.org/"
-            },
-            "keys": [],
-            "tlsDetails": {
-                "version": "TLSv1.3",
-                "cipher": "TLS_AES_256_GCM_SHA384",
-                "authAlg": "rsa_pss_rsae_sha256",
-                "pubKeySize": "2048",
-                "compression": "NONE"
-            },
-            "crls": [],
-            "errors": [
-                "Issuer key endpoint does not contain a CORS 'access-control-allow-origin' header",
-                "SyntaxError: Unexpected token S in JSON at position 0"
-            ]
-        },
-        {
-            "issuer": {
                 "iss": "https://mobileproxy.sjhsyr.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
                 "name": "St. Joseph’s Hospital Health Center",
                 "website": "https://www.sjhsyr.org/"
@@ -8898,7 +8820,7 @@
             "keys": [],
             "crls": [],
             "errors": [
-                "RequestError: write EPROTO 136409971907520:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
+                "RequestError: write EPROTO 131753923500992:error:14094458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1563:SSL alert number 112\n"
             ]
         },
         {
@@ -9170,20 +9092,14 @@
         "HCA National",
         "West Tennessee Healthcare"
     ],
-    "previousAuditTime": "2026-11-26T21:11:38Z",
+    "previousAuditTime": "2026-11-27T20:54:51Z",
     "newIssuerCount": 0,
     "deletedIssuerCount": 0,
     "removedKids": [
         {
-            "iss": "https://mobileprod.arcmd.com/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
+            "iss": "https://epiclbsprxyprodpass.houstonmethodist.org/PRD-FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
             "kids": [
-                "sBU-IwhRjb9FeJRb-Trv6VRzF-dOOIeZsUeayinVGTE"
-            ]
-        },
-        {
-            "iss": "https://cnesp001.carene.org/FHIR/api/epic/2021/Security/Open/EcKeys/32001/SHC",
-            "kids": [
-                "UPhXyYBV4mAMlCsVtscAJP2KfP7T3kBn7R70dS9P3Lg"
+                "SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4"
             ]
         }
     ]
